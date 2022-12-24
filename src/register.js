@@ -1,6 +1,10 @@
+const createElement = () => {
+    
+};
+
 
 const Error = (msg) => {
-    console.log(msg);
+    
 };
 
 const ElementById = (id) =>{
