@@ -1,5 +1,5 @@
-const createElement = () => {
-    
+const createElement = (tag) => {
+ const newElement = document.createElement(tag);
 };
 
 
