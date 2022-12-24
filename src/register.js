@@ -6,6 +6,10 @@ const ElementById = (id) =>{
 
 ElementById('reg_form').addEventListener ('submit', );
 
+const FormData = () => {
+    
+};
+
 const register = () => {
 
 };
