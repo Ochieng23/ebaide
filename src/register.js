@@ -4,9 +4,8 @@ const ElementById = (id) =>{
  return element;
 };
 
-ElementById('reg_form').addEventListener ('submit', getData);
-
-const getData = () => {
+const getData = (e) => {
+    e.preventDefault();
    const firstname = ElementById('firstname').value;
    const lastname = ElementById('lastname').value;
    const phonenumber = ElementById('phonenumber').value;
@@ -20,6 +19,9 @@ const getData = () => {
     password
    })
 };
+
+ElementById('reg_form').addEventListener ('submit', getData);
+
 
 const register = () => {
 
