@@ -4,10 +4,10 @@ const ElementById = (id) =>{
  return element;
 };
 
-ElementById('reg_form').addEventListener ('submit', );
+ElementById('reg_form').addEventListener ('submit', FormData);
 
 const FormData = () => {
-    
+    console.log('FormData');
 };
 
 const register = () => {
