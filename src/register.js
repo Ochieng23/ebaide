@@ -43,6 +43,23 @@ const getData = (e) => {
     email,
     password
    });
+   
+   fetch ( 'http://localhost:6000/api/auth/register', {
+    method: 'POST',
+    body: body,
+    headers: {
+        'Content-Type': 'application/json',
+    },
+   })
+   .then((response) =>{
+     return response.json ();
+   })
+   .then((data) => {
+    console.log (data);
+   })
+   .catch((error) => {
+  console.log (error);
+   });
 };
 
 ElementById('reg_form').addEventListener ('submit', getData);
