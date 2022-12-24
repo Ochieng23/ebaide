@@ -1,7 +1,8 @@
-const getElementById = (id) =>{
+const ElementById = (id) =>{
  const element = document.getElementById(id);
+ console.log(element);
 };
-
+ElementById()
 const getValueSelected = () => {
 
 };
