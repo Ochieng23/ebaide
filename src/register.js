@@ -1,16 +1,17 @@
-const createElement = (tag) => {
+const newElement = (tag) => {
  const newElement = document.createElement(tag);
  return newElement;
 };
-
-
-const Error = (msg) => {
-    
-};
-
+//Get Element
 const ElementById = (id) =>{
- const element = document.getElementById(id);
- return element;
+    const element = document.getElementById(id);
+    return element;
+   };
+//Error handling
+const Error = (msg) => {
+    const para = newElement('p');
+    para.innerHTML = msg;
+    ElementById('reg_form').appendChild(para);
 };
 
 const getData = (e) => {
