@@ -1,12 +1,17 @@
+document.addEventListener ('DOMContentLoaded',);
+
+const contentLoaded = () => {
+    
+};
+
 const ElementById = (id) =>{
  const element = document.getElementById(id);
- return element;
+ console.log (element.value);
 };
-ElementById('firstname');
-const getElementValue = (element) => {
-
-};
+ElementById('firstname')
 
 const register = () => {
 
 };
+
+
