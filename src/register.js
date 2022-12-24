@@ -55,10 +55,14 @@ const getData = (e) => {
      return response.json ();
    })
    .then((data) => {
-    console.log (data);
+     const para = newElement('p');
+     para.innerHTML = data.message;
+     document.body.appendChild(para);
    })
    .catch((error) => {
-  console.log (error);
+    const para = newElement('p');
+    para.innerHTML = error.error;
+    document.body.appendChild(para);
    });
 };
 
