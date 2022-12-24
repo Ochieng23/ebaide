@@ -55,6 +55,7 @@ const getData = (e) => {
      return response.json ();
    })
    .then((data) => {
+
      const para = newElement('p');
      para.innerHTML = data.message;
      document.body.appendChild(para);
@@ -68,9 +69,5 @@ const getData = (e) => {
 
 ElementById('reg_form').addEventListener ('submit', getData);
 
-
-const register = () => {
-
-};
 
 
