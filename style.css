@@ -155,9 +155,7 @@ header .search-bar-container label:hover{
   align-items: center;
   justify-content: center;
 }
-.login{
-  
-}
+
 .login-form-container.active{
   top:0;
 }
