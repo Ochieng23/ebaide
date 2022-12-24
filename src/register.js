@@ -1,5 +1,6 @@
 const createElement = (tag) => {
  const newElement = document.createElement(tag);
+ return newElement;
 };
 
 
