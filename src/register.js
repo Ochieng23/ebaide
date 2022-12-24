@@ -1,4 +1,8 @@
 
+const Error = (msg) => {
+    console.log(msg);
+};
+
 const ElementById = (id) =>{
  const element = document.getElementById(id);
  return element;
@@ -12,7 +16,14 @@ const getData = (e) => {
    const email = ElementById('email').value;
    const password= ElementById('password').value;
    
-   if(firstname === '' && lastname === '' && phonenumber === '' && email === '' && password === '') {};
+   if(firstname === '' && lastname === '' && phonenumber === '' && email === '' && password === '') {
+        Error ("All fields must be filled!");
+        return;
+   };
+   if ( password.length < 8 ) {
+     Error ("Password must be at least 8 characters");
+     return;
+   };
 };
 
 ElementById('reg_form').addEventListener ('submit', getData);
