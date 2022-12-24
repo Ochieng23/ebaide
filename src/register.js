@@ -1,9 +1,9 @@
 const ElementById = (id) =>{
  const element = document.getElementById(id);
- console.log(element);
+ return element;
 };
-ElementById()
-const getValueSelected = () => {
+ElementById('firstname');
+const getElementValue = (element) => {
 
 };
 
