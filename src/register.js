@@ -1,12 +1,7 @@
-document.addEventListener ('DOMContentLoaded',);
-
-const contentLoaded = () => {
-    
-};
 
 const ElementById = (id) =>{
  const element = document.getElementById(id);
- console.log (element.value);
+ return element.value;
 };
 ElementById('firstname')
 
