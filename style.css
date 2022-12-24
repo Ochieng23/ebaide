@@ -55,7 +55,7 @@ section{
   background:var(--orange);
   color:#fff;
   padding:.8rem 3rem;
-  border:.2rem solid var(--orange);
+  border:.2rem solid var(--black);
   cursor: pointer;
   font-size: 1.7rem;
 }
@@ -155,7 +155,9 @@ header .search-bar-container label:hover{
   align-items: center;
   justify-content: center;
 }
-
+.login{
+  
+}
 .login-form-container.active{
   top:0;
 }
