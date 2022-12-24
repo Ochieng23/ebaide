@@ -14,6 +14,11 @@ const Error = (msg) => {
     ElementById('reg_form').appendChild(para);
 };
 
+/**
+ * @TODO clear and replace error messages on every submit with error:
+ * @param {*} e 
+ * @returns 
+ */
 const getData = (e) => {
     e.preventDefault();
    const firstname = ElementById('firstname').value;
@@ -30,6 +35,14 @@ const getData = (e) => {
      Error ("Password must be at least 8 characters");
      return;
    };
+
+   const body = JSON.stringify( {
+    firstname,
+    lastname,
+    phonenumber,
+    email,
+    password
+   });
 };
 
 ElementById('reg_form').addEventListener ('submit', getData);
