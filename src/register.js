@@ -11,13 +11,8 @@ const getData = (e) => {
    const phonenumber = ElementById('phonenumber').value;
    const email = ElementById('email').value;
    const password= ElementById('password').value;
-   console.log ({
-    firstname,
-    lastname,
-    phonenumber,
-    email,
-    password
-   })
+   
+   if(firstname === '' && lastname === '' && phonenumber === '' && email === '' && password === '') {};
 };
 
 ElementById('reg_form').addEventListener ('submit', getData);
