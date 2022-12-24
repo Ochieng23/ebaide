@@ -44,7 +44,7 @@ const getData = (e) => {
     password
    });
    
-   fetch ( 'http://localhost:6000/api/auth/register', {
+   fetch ( 'https://46ce-105-163-156-86.in.ngrok.io/api/auth/register', {
     method: 'POST',
     body: body,
     headers: {
