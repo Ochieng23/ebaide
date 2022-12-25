@@ -7,6 +7,11 @@ const ElementById = (id) =>{
     const element = document.getElementById(id);
     return element;
    };
+
+   //Closing form on submission
+const closeRegistrationForm = () => {
+    ElementById('reg_form').style.display ='none';
+};
 //Error handling
 const Error = (msg) => {
     const para = newElement('p');
@@ -55,10 +60,10 @@ const getData = (e) => {
      return response.json ();
    })
    .then((data) => {
-
-     const para = newElement('p');
-     para.innerHTML = data.message;
-     document.body.appendChild(para);
+    closeRegistrationForm();
+    const para = newElement('p');
+    para.innerHTML = data.message;
+    document.body.appendChild(para);
    })
    .catch((error) => {
     const para = newElement('p');
