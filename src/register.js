@@ -75,4 +75,7 @@ const getData = (e) => {
 ElementById('reg_form').addEventListener ('submit', getData);
 
 
-
+export {
+  newElement,
+  ElementById,
+}
