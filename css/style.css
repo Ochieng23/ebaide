@@ -55,7 +55,7 @@ section{
   background:var(--orange);
   color:#fff;
   padding:.8rem 3rem;
-  border:.2rem solid var(--orange);
+  border:.2rem solid var(--black);
   cursor: pointer;
   font-size: 1.7rem;
 }

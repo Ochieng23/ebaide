@@ -70,11 +70,38 @@
         <input type="submit" value="register now" class="btn" />
         <input type="checkbox" id="remember" />
         <label for="remember">remember me</label>
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have an account? <a href="#">register now</a></p>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>
+          Have an account? Login Here
+          <a class="login" href="./login.html">Login</a>
+        </p>
       </form>
     </div>
-
+    <!---login section starts -->
+    <div class="login-form-container">
+      <form style="background-color: aliceblue" action="">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="btn">SIGN IN</button>
+        <p>forgot password? <a href="#">click here</a></p>
+      </form>
+    </div>
     <!-- home section starts  -->
 
     <section class="home" id="home">

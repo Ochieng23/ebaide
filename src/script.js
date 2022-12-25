@@ -6,6 +6,10 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+let loginSec = document.querySelector('.login')
+let addButton = document.querySelector('.addbtn')
+let editButton = document.querySelector('.editbtn')
+let deleteButton = document.querySelector('.delbtn')
 
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
@@ -32,7 +36,6 @@ formBtn.addEventListener('click', () =>{
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
-
 videoBtn.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         document.querySelector('.controls .active').classList.remove('active');
