@@ -60,7 +60,8 @@ const getData = (e) => {
      return response.json ();
    })
    .then((data) => {
-    closeRegistrationForm();
+    //closeRegistrationForm();
+    console.log (data);
     const para = newElement('p');
     para.innerHTML = data.message;
     document.body.appendChild(para);
@@ -75,7 +76,7 @@ const getData = (e) => {
 ElementById('reg_form').addEventListener ('submit', getData);
 
 
-export {
+module.exports = {
   newElement,
   ElementById,
 }
