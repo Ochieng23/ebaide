@@ -49,7 +49,7 @@ const getData = (e) => {
     password
    });
    
-   fetch ( 'https://46ce-105-163-156-86.in.ngrok.io/api/auth/register', {
+   fetch ( 'http://service.goebaide.com/api/auth/register', {
     method: 'POST',
     body: body,
     headers: {
