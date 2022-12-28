@@ -49,7 +49,7 @@ const getData = (e) => {
     password
    });
    
-   fetch ( 'http://service.goebaide.com/api/auth/register', {
+   fetch ( 'https://service.goebaide.com/api/auth/register', {
     method: 'POST',
     body: body,
     headers: {
@@ -61,7 +61,8 @@ const getData = (e) => {
    })
    .then((data) => {
     //closeRegistrationForm();
-    console.log (data);
+    console.log (data.status);
+    if ( data.status === 'error') {};
     const para = newElement('p');
     para.innerHTML = data.message;
     document.body.appendChild(para);
@@ -69,6 +70,7 @@ const getData = (e) => {
    .catch((error) => {
     const para = newElement('p');
     para.innerHTML = error.error;
+    console.log (para.innerHTML);
     document.body.appendChild(para);
    });
 };
