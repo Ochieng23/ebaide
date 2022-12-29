@@ -53,6 +53,7 @@ const getData = e => {
     Error ( "Repeat password and password must be similar!" );
     return;
   }
+  
   const body = JSON.stringify({
     firstname,
     lastname,
