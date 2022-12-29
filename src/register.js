@@ -31,13 +31,15 @@ const getData = e => {
   const phonenumber = ElementById("phonenumber").value;
   const email = ElementById("email").value;
   const password = ElementById("password").value;
+  const repeatPassword = ElementById("repeat-password").value;
 
   if (
     firstname === "" &&
     lastname === "" &&
     phonenumber === "" &&
     email === "" &&
-    password === ""
+    password === "" &&
+    repeatPassword === ""
   ) {
     Error("All fields must be filled!");
     return;
@@ -47,6 +49,10 @@ const getData = e => {
     return;
   }
 
+  if ( password === repeatPassword) {
+    Error ( "Repeat password and password must be similar!" );
+    return;
+  }
   const body = JSON.stringify({
     firstname,
     lastname,
