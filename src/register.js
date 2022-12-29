@@ -35,6 +35,7 @@ const getData = (e) => {
   const email = ElementById("email").value;
   const password = ElementById("password").value;
   const repeatPassword = ElementById("repeat-password").value;
+  const terms = ElementById("terms_of_service");
 
   if (ElementById("reg_form").childElementCount > 8) {
     clearingElement (ElementById("reg_form").lastElementChild);
@@ -72,6 +73,16 @@ const getData = (e) => {
     return;
   }
   
+  if (ElementById("reg_form").childElementCount > 8) {
+    clearingElement (ElementById("reg_form").lastElementChild);
+    return;
+  };
+
+  if ( !terms_of_service.checked){
+    Error("Please read the Terms of Service");
+    return;
+  };
+
   if (ElementById("reg_form").childElementCount > 8) {
     clearingElement (ElementById("reg_form").lastElementChild);
     return;
