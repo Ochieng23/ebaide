@@ -110,21 +110,25 @@ const getData = (e) => {
       //closeRegistrationForm();
       console.log(data.status);
       if (data.status === "error") {
-        const para = newElement("p");
-        para.innerHTML = data.error;
-        console.log(para);
-        document.body.appendChild(para);
+        Error (data.error);
         return;
       };
+
+      if (ElementById("reg_form").childElementCount > 8) {
+        clearingElement (ElementById("reg_form").lastElementChild);
+        return;
+      };
+      
       const para = newElement("p");
       para.innerHTML = data.message;
       document.body.appendChild(para);
     })
     .catch(error => {
-      const para = newElement("p");
-      para.innerHTML = error.error;
-      console.log(para.innerHTML);
-      document.body.appendChild(para);
+      Error(error.error);
+      if (ElementById("reg_form").childElementCount > 8) {
+        clearingElement (ElementById("reg_form").lastElementChild);
+        return;
+      };
     });
 };
 
