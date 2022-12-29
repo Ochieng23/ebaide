@@ -2,6 +2,9 @@ const newElement = tag => {
   const newElement = document.createElement(tag);
   return newElement;
 };
+const clearingElement = (child) => {
+  return document.removeChild(child)
+};
 //Get Element
 const ElementById = id => {
   const element = document.getElementById(id);
@@ -33,28 +36,42 @@ const getData = (e) => {
   const password = ElementById("password").value;
   const repeatPassword = ElementById("repeat-password").value;
 
+  if (ElementById("reg_form").childElementCount > 8) {
+    clearingElement (ElementById("reg_form").lastElementChild);
+    return;
+  };
   if (
-    firstname === "" &&
-    lastname === "" &&
-    phonenumber === "" &&
-    email === "" &&
-    password === "" &&
+    firstname === "" ||
+    lastname === "" ||
+    phonenumber === "" ||
+    email === "" ||
+    password === "" ||
     repeatPassword === ""
   ) {
-    console.log ( ElementById("reg_form").children)
     Error("All fields must be filled!");
     return;
-  }
+  };
+
+  if (ElementById("reg_form").childElementCount > 8) {
+    clearingElement (ElementById("reg_form").lastElementChild);
+    return;
+  };
+
   if (password.length < 8) {
     Error("Password must be at least 8 characters");
     return;
-  }
+  };
 
-  if ( password === repeatPassword) {
+   if (ElementById("reg_form").childElementCount > 8) {
+    clearingElement (ElementById("reg_form").lastElementChild);
+    return;
+  };
+
+  if ( password !== repeatPassword) {
     Error ( "Repeat password and password must be similar!" );
     return;
   }
-
+  clearingElement (ElementById("reg_form").lastElementChild);
   const body = JSON.stringify({
     firstname,
     lastname,
