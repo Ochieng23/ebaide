@@ -1,2 +1,2 @@
-const register = require ('./register');
-const name = "ocheing"
+const {getData} = require ('./register');
+getData ();
