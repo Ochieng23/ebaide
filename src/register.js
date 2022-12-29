@@ -3,7 +3,7 @@ const newElement = tag => {
   return newElement;
 };
 const clearingElement = (child) => {
-  return document.removeChild(child)
+  return child.remove()
 };
 //Get Element
 const ElementById = id => {
@@ -71,7 +71,12 @@ const getData = (e) => {
     Error ( "Repeat password and password must be similar!" );
     return;
   }
-  clearingElement (ElementById("reg_form").lastElementChild);
+  
+  if (ElementById("reg_form").childElementCount > 8) {
+    clearingElement (ElementById("reg_form").lastElementChild);
+    return;
+  };
+
   const body = JSON.stringify({
     firstname,
     lastname,
