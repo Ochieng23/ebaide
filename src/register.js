@@ -24,7 +24,7 @@ const Error = msg => {
  * @param {*} e 
  * @returns 
  */
-const getData = e => {
+const getData = (e) => {
   e.preventDefault();
   const firstname = ElementById("firstname").value;
   const lastname = ElementById("lastname").value;
@@ -41,6 +41,7 @@ const getData = e => {
     password === "" &&
     repeatPassword === ""
   ) {
+    console.log ( ElementById("reg_form").children)
     Error("All fields must be filled!");
     return;
   }
@@ -53,7 +54,7 @@ const getData = e => {
     Error ( "Repeat password and password must be similar!" );
     return;
   }
-  
+
   const body = JSON.stringify({
     firstname,
     lastname,
@@ -94,10 +95,4 @@ const getData = e => {
     });
 };
 
-ElementById("reg_form").addEventListener("submit", getData);
-
-module.exports = {
-  newElement,
-  ElementById,
-  getData
-};
+ElementById('reg_form').addEventListener('submit', getData);
