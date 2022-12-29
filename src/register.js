@@ -91,5 +91,6 @@ ElementById("reg_form").addEventListener("submit", getData);
 
 module.exports = {
   newElement,
-  ElementById
+  ElementById,
+  getData
 };
