@@ -130,10 +130,8 @@ const getData = (e) => {
         clearingElement (ElementById("reg_form").lastElementChild);
         return;
       };
+      successMessage ('reg_form', data.message);
       window.location.href = '/index.html';
-      const para = newElement("p");
-      para.innerHTML = data.message;
-      document.body.appendChild(para);
     })
     .catch(error => {
       Error(error.error);
