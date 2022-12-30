@@ -1,4 +1,4 @@
-const newElement = tag => {
+const newElement = (tag) => {
     const newElement = document.createElement(tag);
     return newElement;
   };
