@@ -18,4 +18,6 @@ const productObject = JSON.stringify( {
     'product-image': GetElementValue(GetElementById, 'image-input'),
 });
 
+
+
 console.log(productObject);
