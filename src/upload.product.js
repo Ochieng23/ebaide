@@ -19,7 +19,7 @@ const productObject = JSON.stringify( {
 });
 
 
-
+const GetToken = () => {};
 
 const uploadApiUri = 'https://service.goebaide.com/api/product/new';
 
