@@ -61,7 +61,8 @@ const newElement = (tag) => {
           clearingElement (ElementById("login_form").lastElementChild);
           return;
         };
-        console.log(data.token);
+        //console.log(data.token);
+        sessionStorage.setItem("login_token", data.token);
         setTimeout(window.location.href = '/index.html#packages', 6000);
       })
       .catch(error => {
