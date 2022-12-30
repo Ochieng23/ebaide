@@ -130,7 +130,7 @@ const getData = (e) => {
         clearingElement (ElementById("reg_form").lastElementChild);
         return;
       };
-      window.location.href = '/index.html/#login-form-container';
+      window.location.href = '/index.html';
       const para = newElement("p");
       para.innerHTML = data.message;
       document.body.appendChild(para);
