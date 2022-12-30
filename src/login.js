@@ -1,4 +1,3 @@
-alert("Error")
 const newElement = tag => {
     const newElement = document.createElement(tag);
     return newElement;
@@ -77,7 +76,7 @@ const newElement = tag => {
         //   return;
         // };
         console.log(data.token);
-        setTimeout(window.location.href = '/index.html', 6000);
+        setTimeout(window.location.href = '/index.html#packages', 6000);
       })
       .catch(error => {
         Error(error.error);
