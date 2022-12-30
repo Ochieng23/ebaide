@@ -15,7 +15,7 @@ const productObject = JSON.stringify( {
         size: GetElementValue(GetElementById, 'size-input'),
         quantity: GetElementValue(GetElementById, 'quantity-input'),
     },
-    
+    'product-image': GetElementValue(GetElementById, 'image-input'),
 });
 
 console.log(productObject);
