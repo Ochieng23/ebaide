@@ -60,5 +60,5 @@ const PingFetchRequest = (uri, prod, token) => {
 GetElementById("upload_product").addEventListener("submit", 
 (e, PingFetchRequest, uploadApiUri, productObject, GetToken) => {
     e.preventDefault();
-console.log("wives are cheat");
+    PingFetchRequest (uploadApiUri, productObject, GetToken);
 });
