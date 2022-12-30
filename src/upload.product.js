@@ -5,18 +5,18 @@ const GetElementById = id => {
 const GetElementValue = (elem, id) => {
   return elem(id).value;
 };
-if (
-  GetElementValue(GetElementById, "title-input") === "" ||
-  GetElementValue(GetElementById, "description-input") === "" ||
-  GetElementValue(GetElementById, "price-input") === "" ||
-  GetElementValue(GetElementById, "color-input") === "" ||
-  GetElementValue(GetElementById, "size-input") === "" ||
-  GetElementValue(GetElementById, "quantity-input") === "" ||
-  GetElementValue(GetElementById, "image-input") === ""
-) {
-  console.log("GetElementValue");
-  return;
-};
+// if (
+//   GetElementValue(GetElementById, "title-input") === "" ||
+//   GetElementValue(GetElementById, "description-input") === "" ||
+//   GetElementValue(GetElementById, "price-input") === "" ||
+//   GetElementValue(GetElementById, "color-input") === "" ||
+//   GetElementValue(GetElementById, "size-input") === "" ||
+//   GetElementValue(GetElementById, "quantity-input") === "" ||
+//   GetElementValue(GetElementById, "image-input") === ""
+// ) {
+//   console.log("GetElementValue");
+//   return;
+// };
 
 const productObject = JSON.stringify({
   title: GetElementValue(GetElementById, "title-input"),
@@ -37,8 +37,7 @@ const GetToken = () => {
 
 const uploadApiUri = "https://service.goebaide.com/api/product/new";
 
-const PingFetchRequest = (event, uri, prod, token) => {
-  event.preventDefault();
+const PingFetchRequest = (uri, prod, token) => {
   fetch(uri, {
     method: "POST",
     body: prod,
@@ -58,7 +57,8 @@ const PingFetchRequest = (event, uri, prod, token) => {
     });
 };
 
-GetElementById("upload_product").addEventListener(
-  "submit",
-  PingFetchRequest.bind(null, uploadApiUri, productObject, GetToken)
-);
+GetElementById("upload_product").addEventListener("submit", 
+(e, PingFetchRequest, uploadApiUri, productObject, GetToken) => {
+    e.preventDefault();
+console.log("wives are cheat");
+});
