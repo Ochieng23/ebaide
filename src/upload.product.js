@@ -35,4 +35,7 @@ const PingFetchRequest = (uri, prod, token) => {
             'Content-Type': 'application/json',
         },
     })
+    .then ( (response) => {
+        return response.json();
+    })
 };
