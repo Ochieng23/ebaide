@@ -41,31 +41,15 @@ const newElement = tag => {
     //   clearingElement (ElementById("login_form").lastElementChild);
     //   return;
     // };
-  
-    if (password.length < 8) {
-      Error("Password must be at least 8 characters");
-      return;
-    };
-  
     //  if (ElementById("login_form").childElementCount > 8) {
     //   clearingElement (ElementById("login_form").lastElementChild);
     //   return;
     // };
   
-    if ( password !== repeatPassword) {
-      Error ( "Repeat password and password must be similar!" );
-      return;
-    }
-    
     // if (ElementById("login_form").childElementCount > 8) {
     //   clearingElement (ElementById("login_form").lastElementChild);
     //   return;
     // };
-  
-    if ( !terms_of_service.checked){
-      Error("Please read the Terms of Service");
-      return;
-    };
   
     // if (ElementById("login_form").childElementCount > 8) {
     //   clearingElement (ElementById("login_form").lastElementChild);
@@ -80,7 +64,7 @@ const newElement = tag => {
       password
     });
   
-    fetch("https://service.goebaide.com/api/auth/register", {
+    fetch("https://service.goebaide.com/api/auth/login", {
       method: "POST",
       body: body,
       headers: {
