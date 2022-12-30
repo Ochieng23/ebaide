@@ -114,9 +114,14 @@ const getData = (e) => {
     })
     .then(data => {
       //closeRegistrationForm();
-      console.log(data.status);
       if (data.status === "error") {
-        Error (data.error);
+        const errorMessage = data.error.split(" ")[2];
+        const isemail= errorMessage.split("").includes ('@');
+        
+        if (isemail) {
+          Error (errorMessage + " already registered");
+          return;
+        }
         return;
       };
 
