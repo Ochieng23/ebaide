@@ -5,6 +5,14 @@ const GetElementById  = (id) => {
 const GetElementValue = (elem, id) => {
     return elem(id).value;
 };
+(GetElementValue(GetElementById, 'title-input') === '' ||
+GetElementValue(GetElementById, 'description-input')==='' ||
+GetElementValue(GetElementById, 'price-input') === '' ||
+GetElementValue(GetElementById, 'color-input') === '' ||
+GetElementValue(GetElementById, 'size-input')  === '' ||
+GetElementValue(GetElementById, 'quantity-input') === '' || )
+console.log('GetElementValue'):
+return;
 
 const productObject = JSON.stringify( {
     title: GetElementValue(GetElementById, 'title-input'),
