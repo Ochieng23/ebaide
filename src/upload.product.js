@@ -39,6 +39,10 @@ const PingFetchRequest = (e) => {
       return response.json();
     })
     .then(data => {
+      if ( data.error === 'jwt expired'){
+        window.location.href = '/index.html#login-form-container';
+        return;
+      };
       console.log(data);
     })
     .catch(err => {
