@@ -74,13 +74,6 @@ const newElement = tag => {
       .then(data => {
         //closeRegistrationForm();
         if (data.status === "error") {
-          const errorMessage = data.error.split(" ")[2];
-          const isemail= errorMessage.split("").includes ('@');
-          
-          if (isemail) {
-            Error (errorMessage + " already registered");
-            return;
-          }
           Error (data.error);
           return;
         };
