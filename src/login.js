@@ -14,7 +14,7 @@ const newElement = tag => {
   const Error = msg => {
     const para = newElement("p");
     para.innerHTML = msg;
-    ElementById("reg_form").appendChild(para);
+    ElementById("login_form").appendChild(para);
   };
   
   const successMessage = (parentElement, msg) => {
@@ -25,64 +25,52 @@ const newElement = tag => {
 
   const getData = (e) => {
     e.preventDefault();
-    const firstname = ElementById("firstname").value;
-    const lastname = ElementById("lastname").value;
-    const phonenumber = ElementById("phonenumber").value;
     const email = ElementById("email").value;
     const password = ElementById("password").value;
-    const repeatPassword = ElementById("repeat-password").value;
-    const terms = ElementById("terms_of_service");
   
-    if (ElementById("reg_form").childElementCount > 8) {
-      clearingElement (ElementById("reg_form").lastElementChild);
-      return;
-    };
-    if (
-      firstname === "" ||
-      lastname === "" ||
-      phonenumber === "" ||
-      email === "" ||
-      password === "" ||
-      repeatPassword === ""
-    ) {
+    // if (ElementById("login_form").childElementCount > 8) {
+    //   clearingElement (ElementById("login_form").lastElementChild);
+    //   return;
+    // };
+    if (email === "" || password === "") {
       Error("All fields must be filled!");
       return;
     };
   
-    if (ElementById("reg_form").childElementCount > 8) {
-      clearingElement (ElementById("reg_form").lastElementChild);
-      return;
-    };
+    // if (ElementById("login_form").childElementCount > 8) {
+    //   clearingElement (ElementById("login_form").lastElementChild);
+    //   return;
+    // };
   
     if (password.length < 8) {
       Error("Password must be at least 8 characters");
       return;
     };
   
-     if (ElementById("reg_form").childElementCount > 8) {
-      clearingElement (ElementById("reg_form").lastElementChild);
-      return;
-    };
+    //  if (ElementById("login_form").childElementCount > 8) {
+    //   clearingElement (ElementById("login_form").lastElementChild);
+    //   return;
+    // };
   
     if ( password !== repeatPassword) {
       Error ( "Repeat password and password must be similar!" );
       return;
     }
     
-    if (ElementById("reg_form").childElementCount > 8) {
-      clearingElement (ElementById("reg_form").lastElementChild);
-      return;
-    };
+    // if (ElementById("login_form").childElementCount > 8) {
+    //   clearingElement (ElementById("login_form").lastElementChild);
+    //   return;
+    // };
   
     if ( !terms_of_service.checked){
       Error("Please read the Terms of Service");
       return;
     };
   
-    if (ElementById("reg_form").childElementCount > 8) {
-      clearingElement (ElementById("reg_form").lastElementChild);
-      return;
-    };
+    // if (ElementById("login_form").childElementCount > 8) {
+    //   clearingElement (ElementById("login_form").lastElementChild);
+    //   return;
+    // };
   
     const body = JSON.stringify({
       firstname,
@@ -116,20 +104,20 @@ const newElement = tag => {
           return;
         };
   
-        if (ElementById("reg_form").childElementCount > 8) {
-          clearingElement (ElementById("reg_form").lastElementChild);
-          return;
-        };
-        successMessage ('reg_form', data.message)
+        // if (ElementById("login_form").childElementCount > 8) {
+        //   clearingElement (ElementById("login_form").lastElementChild);
+        //   return;
+        // };
+        successMessage ('login_form', data.message)
         setTimeout(window.location.href = '/index.html', 6000);
       })
       .catch(error => {
         Error(error.error);
-        if (ElementById("reg_form").childElementCount > 8) {
-          clearingElement (ElementById("reg_form").lastElementChild);
-          return;
-        };
+        // if (ElementById("login_form").childElementCount > 8) {
+        //   clearingElement (ElementById("login_form").lastElementChild);
+        //   return;
+        // };
       });
   };
   
-  ElementById('reg_form').addEventListener('submit', getData);
+  ElementById('login_form').addEventListener('submit', getData);
