@@ -25,13 +25,13 @@ const GetToken = () => {
 
 const uploadApiUri = 'https://service.goebaide.com/api/product/new';
 
-const PingFetchRequest = (uri, prod) => {
+const PingFetchRequest = (uri, prod, token) => {
 
     fetch (uri, {
         method: 'POST',
         body: prod,
         headers: {
-            'Authorization': 'Bearer ',
+            'Authorization': 'Bearer '+token,
             'Content-Type': 'application/json',
         }
     })
