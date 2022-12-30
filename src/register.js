@@ -10,11 +10,6 @@ const ElementById = id => {
   const element = document.getElementById(id);
   return element;
 };
-
-//Closing form on submission
-const closeRegistrationForm = () => {
-  ElementById("reg_form").style.display = "none";
-};
 //Error handling
 const Error = msg => {
   const para = newElement("p");
