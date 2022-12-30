@@ -122,6 +122,7 @@ const getData = (e) => {
           Error (errorMessage + " already registered");
           return;
         }
+        Error (data.error);
         return;
       };
 
