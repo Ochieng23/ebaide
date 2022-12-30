@@ -57,19 +57,19 @@ const newElement = (tag) => {
           return;
         };
   
-        // if (ElementById("login_form").childElementCount > 8) {
-        //   clearingElement (ElementById("login_form").lastElementChild);
-        //   return;
-        // };
+        if (ElementById("login_form").childElementCount > 9) {
+          clearingElement (ElementById("login_form").lastElementChild);
+          return;
+        };
         console.log(data.token);
         setTimeout(window.location.href = '/index.html#packages', 6000);
       })
       .catch(error => {
         Error(error.error);
-        // if (ElementById("login_form").childElementCount > 8) {
-        //   clearingElement (ElementById("login_form").lastElementChild);
-        //   return;
-        // };
+        if (ElementById("login_form").childElementCount > 9) {
+          clearingElement (ElementById("login_form").lastElementChild);
+          return;
+        };
       });
   };
   
