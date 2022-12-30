@@ -10,6 +10,7 @@ const productObject = JSON.stringify( {
     title: GetElementValue(GetElementById, 'title-input'),
     description: GetElementValue(GetElementById, 'description-input'),
     price: GetElementValue(GetElementById, 'price-input'),
+    
 });
 
 console.log(productObject);
