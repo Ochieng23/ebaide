@@ -18,9 +18,9 @@ const productObject = JSON.stringify( {
     'product-image': GetElementValue(GetElementById, 'image-input'),
 });
 
-
 const GetToken = () => {
     const token = sessionStorage.getItem('login_token');
+    return token;
 };
 
 const uploadApiUri = 'https://service.goebaide.com/api/product/new';
