@@ -16,7 +16,8 @@ if (
 ) {
   console.log("GetElementValue");
   return;
-}
+};
+
 const productObject = JSON.stringify({
   title: GetElementValue(GetElementById, "title-input"),
   description: GetElementValue(GetElementById, "description-input"),
