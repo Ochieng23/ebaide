@@ -45,3 +45,5 @@ const PingFetchRequest = (uri, prod, token) => {
         console.log(err);
     } );
 };
+
+GetElementById ('upload_product')
