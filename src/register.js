@@ -25,7 +25,7 @@ const Error = msg => {
 const successMessage = (parentElement, msg) => {
   const para = newElement("p");
   para.innerHTML = msg;
-  ElementById(parentElement).appendChild(para);
+  return ElementById(parentElement).appendChild(para);
 };
 
 /**
