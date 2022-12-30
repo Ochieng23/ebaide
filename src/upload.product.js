@@ -42,7 +42,7 @@ const PingFetchRequest = (uri, prod, token) => {
     method: "POST",
     body: prod,
     headers: {
-      Authorization: "Bearer " + token(),
+      "Authorization": "Bearer "+token(),
       "Content-Type": "application/json"
     }
   })
