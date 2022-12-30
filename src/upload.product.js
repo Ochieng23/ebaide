@@ -36,4 +36,3 @@ const PingFetchRequest = (uri, prod) => {
         }
     })
 };
-GetToken ();
