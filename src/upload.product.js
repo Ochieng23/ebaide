@@ -46,4 +46,5 @@ const PingFetchRequest = (uri, prod, token) => {
     } );
 };
 
-GetElementById ('upload_product').addEventListener ( 'submit', )
+GetElementById ('upload_product').addEventListener ( 'submit', 
+PingFetchRequest.bind(null, uploadApiUri, productObject, GetToken))
