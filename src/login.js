@@ -57,9 +57,6 @@ const newElement = tag => {
     // };
   
     const body = JSON.stringify({
-      firstname,
-      lastname,
-      phonenumber,
       email,
       password
     });
