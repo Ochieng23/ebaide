@@ -37,7 +37,8 @@ const GetToken = () => {
 
 const uploadApiUri = "https://service.goebaide.com/api/product/new";
 
-const PingFetchRequest = () => {
+const PingFetchRequest = (e) => {
+  e.preventDefault();
   fetch(uploadApiUri, {
     method: "POST",
     body: productObject,
@@ -58,4 +59,4 @@ const PingFetchRequest = () => {
 };
 
 GetElementById("upload_product").addEventListener("submit", 
-PingFetchRequest.bind(uploadApiUri, productObject, GetToken));
+PingFetchRequest);
