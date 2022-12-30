@@ -1,3 +1,4 @@
+alert("Error")
 const newElement = tag => {
     const newElement = document.createElement(tag);
     return newElement;
@@ -16,13 +17,6 @@ const newElement = tag => {
     para.innerHTML = msg;
     ElementById("login_form").appendChild(para);
   };
-  
-  const successMessage = (parentElement, msg) => {
-    const para = newElement("p");
-    para.innerHTML = msg;
-    return ElementById(parentElement).appendChild(para);
-  };
-
   const getData = (e) => {
     e.preventDefault();
     const email = ElementById("email").value;
@@ -82,7 +76,7 @@ const newElement = tag => {
         //   clearingElement (ElementById("login_form").lastElementChild);
         //   return;
         // };
-        successMessage ('login_form', data.message)
+        console.log(data.token);
         setTimeout(window.location.href = '/index.html', 6000);
       })
       .catch(error => {
