@@ -16,15 +16,16 @@ const newElement = (tag) => {
     para.innerHTML = msg;
     ElementById("login_form").appendChild(para);
   };
+  
   const getData = (e) => {
     e.preventDefault();
     const email = ElementById("email").value;
     const password = ElementById("password").value;
-    console.log(ElementById(login_form).childElementCount)
-    // if (ElementById("login_form").childElementCount > 8) {
-    //   clearingElement (ElementById("login_form").lastElementChild);
-    //   return;
-    // };
+    console.log(ElementById("login_form").childElementCount)
+    if (ElementById("login_form").childElementCount > 9) {
+      clearingElement (ElementById("login_form").lastElementChild);
+      return;
+    };
     if (email === "" || password === "") {
       Error("All fields must be filled!");
       return;
