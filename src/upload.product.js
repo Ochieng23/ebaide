@@ -33,6 +33,6 @@ const PingFetchRequest = (uri, prod, token) => {
         headers: {
             'Authorization': 'Bearer '+token,
             'Content-Type': 'application/json',
-        }
+        },
     })
 };
