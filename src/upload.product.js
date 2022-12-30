@@ -19,7 +19,9 @@ const productObject = JSON.stringify( {
 });
 
 
-const GetToken = () => {};
+const GetToken = () => {
+    const token = sessionStorage.getItem('login_token');
+};
 
 const uploadApiUri = 'https://service.goebaide.com/api/product/new';
 
@@ -34,4 +36,4 @@ const PingFetchRequest = (uri, prod) => {
         }
     })
 };
-console.log(productObject);
+GetToken ();
