@@ -33,7 +33,7 @@ const PingFetchRequest = (e) => {
     headers: {
       "Authorization": "Bearer "+GetToken(),
       "Content-Type": "application/json",
-    }
+    },
   })
     .then(response => {
       return response.json();
