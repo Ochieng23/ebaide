@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload product</title>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <style>
+    #upload_product {
+      border: 2px solid black;
+      padding: 20px;
+      margin: 10px;
+      background-color: orangered;
+    }
+    #description {
+      margin: 10px;
+    }
+    #title {
+      margin: 10px;
+    }
+    #upload-btn {
+      margin: 10px;
+    }
+    h1 {
+      text-align: center;
+    }
+    body {
+      background-color: orangered;
+    }
+  </style>
+  <body>
+    <header></header>
     <main>
-        <section>
-            <form action="#" id="upload_product">
-                <div id="title">
-                    <input type="text" id="title-input">
-                    <label for="title-input">Title</label>
-                </div>
-                <div id="description">
-                    <textarea cols="50" rows="30" id="description-input"></textarea>
-                    <label for="description-input">Blog body</label>
-                </div>
-                
-                <div id="upload-btn">
-                    <button type="submit">Create blog</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer>
+      <section>
+        <form action="#" id="upload_product">
+          <h1>UPLOAD BLOG SECTION</h1>
+          <div id="title">
+            <input type="text" id="title-input" />
+            <label for="title-input">Title</label>
+          </div>
+          <div id="description">
+            <textarea
+              cols="100"
+              rows="30"
+              id="description-input"
+              placeholder="WRITE BLOG HERE..."
+            ></textarea>
+          </div>
 
-    </footer>
-</body>
+          <div id="upload-btn">
+            <button type="submit">Create blog</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
