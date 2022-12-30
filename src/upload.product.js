@@ -38,4 +38,7 @@ const PingFetchRequest = (uri, prod, token) => {
     .then ( (response) => {
         return response.json();
     })
+    .then ( (data) => {
+        
+    })
 };
