@@ -22,6 +22,12 @@ const Error = msg => {
   ElementById("reg_form").appendChild(para);
 };
 
+const successMessage = (parentElement, msg) => {
+  const para = newElement("p");
+  para.innerHTML = msg;
+  ElementById(parentElement).appendChild(para);
+};
+
 /**
  * @TODO clear and replace error messages on every submit with error:
  * @param {*} e 
@@ -118,7 +124,7 @@ const getData = (e) => {
         clearingElement (ElementById("reg_form").lastElementChild);
         return;
       };
-      
+
       const para = newElement("p");
       para.innerHTML = data.message;
       document.body.appendChild(para);
