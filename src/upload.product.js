@@ -7,5 +7,9 @@ const GetElementValue = (elem, id) => {
 };
 
 const productObject = JSON.stringify( {
-    title:
+    title: GetElementValue(GetElementById, 'title-input'),
+    description: GetElementValue(GetElementById, 'description-input'),
+    price: GetElementValue(GetElementById, 'price-input'),
 });
+
+console.log(productObject);
