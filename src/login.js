@@ -30,25 +30,10 @@ const newElement = (tag) => {
       Error("All fields must be filled!");
       return;
     };
-  
-    // if (ElementById("login_form").childElementCount > 8) {
-    //   clearingElement (ElementById("login_form").lastElementChild);
-    //   return;
-    // };
-    //  if (ElementById("login_form").childElementCount > 8) {
-    //   clearingElement (ElementById("login_form").lastElementChild);
-    //   return;
-    // };
-  
-    // if (ElementById("login_form").childElementCount > 8) {
-    //   clearingElement (ElementById("login_form").lastElementChild);
-    //   return;
-    // };
-  
-    // if (ElementById("login_form").childElementCount > 8) {
-    //   clearingElement (ElementById("login_form").lastElementChild);
-    //   return;
-    // };
+    if (ElementById("login_form").childElementCount > 9) {
+      clearingElement (ElementById("login_form").lastElementChild);
+      return;
+    };
   
     const body = JSON.stringify({
       email,
