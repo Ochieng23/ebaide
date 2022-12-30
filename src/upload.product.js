@@ -46,4 +46,4 @@ const PingFetchRequest = (uri, prod, token) => {
     } );
 };
 
-GetElementById ('upload_product')
+GetElementById ('upload_product').addEventListener ( 'submit', )
