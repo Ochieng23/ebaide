@@ -19,7 +19,19 @@ const productObject = JSON.stringify( {
 });
 
 
+
+
 const uploadApiUri = 'https://service.goebaide.com/api/product/new';
 
-const PingFetchRequest = () => {};
+const PingFetchRequest = (uri, prod) => {
+
+    fetch (uri, {
+        method: 'POST',
+        body: prod,
+        headers: {
+            'Authorization': 'Bearer ',
+            'Content-Type': 'application/json',
+        }
+    })
+};
 console.log(productObject);
