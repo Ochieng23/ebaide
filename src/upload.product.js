@@ -88,6 +88,10 @@ const PingFetchRequest = e => {
   };
 
   console.log (productObject);
+
+  const formData = new FormData ();
+  
+
   fetch(uploadApiUri, {
     method: "POST",
     body: productObject,
