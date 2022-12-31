@@ -24,6 +24,7 @@ const ClearErrorMessage = (id) => {
 
 const AppendErrorMessage = (id, cb, message) => {
   GetElementById(id).prepend(cb (message));
+  //ClearErrorMessage(id);
 };
 
 // const GetToken = () => {
@@ -51,7 +52,7 @@ const PingFetchRequest = e => {
     100);
     return;
   }
-
+  ClearErrorMessage("upload_product");
   const productObject = JSON.stringify({
     title,
     description,
