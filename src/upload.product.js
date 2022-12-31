@@ -29,12 +29,12 @@ const AppendErrorMessage = (id, cb, message) => {
   GetElementById(id).prepend(cb (message));
 };
 
-// const GetToken = () => {
-//   const token = sessionStorage.getItem("login_token");
-//   return token;
-// };
+const GetToken = () => {
+  const token = sessionStorage.getItem("login_token");
+  return token;
+};
 
-// const uploadApiUri = "https://service.goebaide.com/api/product/new";
+const uploadApiUri = "https://service.goebaide.com/api/product/new";
 
 const PingFetchRequest = e => {
   e.preventDefault();
