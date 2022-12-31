@@ -58,14 +58,14 @@ const PingFetchRequest = e => {
   ClearErrorMessage("upload_product");
 
   if ( price < 1){
-    AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!");
+    AppendErrorMessage("upload_product", ErrorMessage, "Price can not be 0!");
     return;
   };
 
   ClearErrorMessage("upload_product");
 
   if ( quantity < 1){
-    AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!");
+    AppendErrorMessage("upload_product", ErrorMessage, "Quantity can not be 0 !");
     return;
   };
 
