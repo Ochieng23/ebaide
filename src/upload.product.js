@@ -109,7 +109,13 @@ const PingFetchRequest = e => {
 
   const formData = new FormData();
 
-  formData.append(productObject);
+  formData.append('title', productObject.title);
+  formData.append('description', productObject.description);
+  formData.append('price', productObject.price);
+  formData.append('color', productObject.color);
+  formData.append('size', productObject.size);
+  formData.append('quantity', productObject.quantity);
+  formData.append('product_image', productObject.product_image);
 
   fetch(uploadApiUri, {
     method: "POST",
