@@ -25,6 +25,11 @@ const PingFetchRequest = e => {
   const color = GetSelectedElementValue(GetElementById, "color-input");
   const image = GetSelectedElementValue(GetElementById, "image-input");
 
+  if (!title || !description || !price || !quantity || !size || !color || !image){
+    console.log("All fields are required!");
+    return;
+  }
+
   const productObject = JSON.stringify({
     title,
     description,
