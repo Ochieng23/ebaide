@@ -41,7 +41,8 @@ const PingFetchRequest = e => {
   const image = GetSelectedElementValue(GetElementById, "image-input");
 
   if (!title || !description || !price || !quantity || !size || !color || !image){
-    AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!");
+    window.location.href = "/html/upload.product.html#section_upload_product";
+    setTimeout();
     return;
   }
 
