@@ -6,3 +6,8 @@ const SelectElementById = (id) => {
 const GetValueOfSelectElement = (element, id) => {
     return element(id).value;
 };
+
+const CreateNewElement = (tag) => {
+    const element = document.createElement(tag);
+    return element;
+}
