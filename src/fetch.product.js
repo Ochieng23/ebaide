@@ -38,7 +38,7 @@ const PullProductsFromBackendAPI = () => {
         method: 'GET',
     })
     .then ( (response) =>{
-        
+        return response.json();
     })
     .then ()
     .catch ();
