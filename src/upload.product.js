@@ -7,6 +7,8 @@ const GetSelectedElementValue = (element, id) => {
   return element(id).value;
 };
 
+const GetSelectedElementFile = (element, id) => {};
+
 const CreateNewElement = (element) => {
   const newElement = document.createElement(element);
   return newElement;
@@ -80,31 +82,31 @@ const PingFetchRequest = e => {
       size,
       quantity,
     },
-    "product-image": image,
+    product_image: image,
   });
 
   console.log (productObject);
-  // fetch(uploadApiUri, {
-  //   method: "POST",
-  //   body: productObject,
-  //   headers: {
-  //     Authorization: "Bearer " + GetToken(),
-  //     "Content-Type": "application/json"
-  //   }
-  // })
-  //   .then(response => {
-  //     return response.json();
-  //   })
-  //   .then(data => {
-  //     if (data.error === "jwt expired") {
-  //       window.location.href = "/index.html#login-form-container";
-  //       return;
-  //     }
-  //     console.log(data);
-  //   })
-  //   .catch(err => {
-  //     console.log(err);
-  //   });
+  fetch(uploadApiUri, {
+    method: "POST",
+    body: productObject,
+    headers: {
+      Authorization: "Bearer " + GetToken(),
+      "Content-Type": "application/json"
+    }
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      if (data.error.split (" ").includes("jwt")) {
+        window.location.href = "/index.html#login-form-container";
+        return;
+      }
+      console.log(data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
 };
 
 GetElementById("upload_product").addEventListener("submit", PingFetchRequest);
