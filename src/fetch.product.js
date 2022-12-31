@@ -10,4 +10,4 @@ const GetValueOfSelectElement = (element, id) => {
 const CreateNewElement = (tag) => {
     const element = document.createElement(tag);
     return element;
-}
+};
