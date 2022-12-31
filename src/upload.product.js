@@ -22,7 +22,9 @@ const AppendErrorMessage = (id, cb, message) => {
   GetElementById(id).prepend(cb (message));
 };
 
-const ClearErrorMessage = (id, cb, message) => {};
+const ClearErrorMessage = (id) => {
+ console.log( GetElementById(id).childElementCount)
+};
 // const GetToken = () => {
 //   const token = sessionStorage.getItem("login_token");
 //   return token;
