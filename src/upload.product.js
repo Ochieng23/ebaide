@@ -120,16 +120,15 @@ const PingFetchRequest = e => {
   fetch(uploadApiUri, {
     method: "POST",
     body: formData,
-    headers: {
-      Authorization: "Bearer " + GetToken(),
-      "Content-Type": "multipart/form-data"
+    headers:{
+      Authorization:"Bearer " +GetToken()
     }
   })
     .then(response => {
       return response.json();
     })
     .then(data => {
-      if (data.error.split(" ").includes("jwt")) {
+      if (data.error) {
         window.location.href = "/index.html#login-form-container";
         return;
       }
