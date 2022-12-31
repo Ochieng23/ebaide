@@ -17,6 +17,11 @@ const ErrorMessage = (message) => {
   errorParagraph.innerHTML = message;
   return errorParagraph;
 };
+
+const AppendErrorMessage = (id, cb, message) => {
+  GetElementById(id).prepend(cb (message));
+};
+
 // const GetToken = () => {
 //   const token = sessionStorage.getItem("login_token");
 //   return token;
@@ -36,7 +41,7 @@ const PingFetchRequest = e => {
   const image = GetSelectedElementValue(GetElementById, "image-input");
 
   if (!title || !description || !price || !quantity || !size || !color || !image){
-    console.log("All fields are required!");
+    AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!");
     return;
   }
 
