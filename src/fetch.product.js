@@ -27,6 +27,6 @@ const GetSelectedElementWithClassName = (className) => {
 };
 
 const GetSelectedElementsWithClassName = (className) => {
-    const element = document.querySelector("."+className);
+    const element = document.querySelectorAll("."+className);
     return element;
 };
