@@ -57,6 +57,7 @@ const PingFetchRequest = e => {
   ClearErrorMessage("upload_product");
 
   
+
   const productObject = JSON.stringify({
     title,
     description,
