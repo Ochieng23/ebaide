@@ -129,6 +129,7 @@ const PingFetchRequest = e => {
     })
     .then(data => {
       if (data.error) {
+        AppendErrorMessage("upload_product", ErrorMessage, data.error);
         setTimeout(
           window.location.href = "/index.html#login-form-container", 5000
         );
