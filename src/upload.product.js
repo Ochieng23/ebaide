@@ -20,7 +20,7 @@ const ErrorMessage = (message) => {
 
 const ClearErrorMessage = (id) => {
   console.log( GetElementById(id).childElementCount)
- };
+};
 
 const AppendErrorMessage = (id, cb, message) => {
   GetElementById(id).prepend(cb (message));
