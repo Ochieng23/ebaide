@@ -12,4 +12,4 @@ const CreateNewElement = (tag) => {
     return element;
 };
 
-const
+const AddClassToNewElement = (element, tag, className) => {};
