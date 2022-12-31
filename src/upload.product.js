@@ -42,7 +42,9 @@ const PingFetchRequest = e => {
 
   if (!title || !description || !price || !quantity || !size || !color || !image){
     window.location.href = "/html/upload.product.html#section_upload_product";
-    setTimeout();
+    setTimeout(
+      AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!"),
+    1000);
     return;
   }
 
