@@ -16,3 +16,5 @@ const AddClassToNewElement = (element, tag, className) => {
     element(tag).classList.add(className);
     return;
 };
+
+const RemoveClassFromNewElement = (element) => {};
