@@ -4,5 +4,5 @@ const SelectElementById = (id) => {
 };
 
 const GetValueOfSelectElement = (element, id) => {
-    
+    return element(id).value;
 };
