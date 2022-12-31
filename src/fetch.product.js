@@ -12,4 +12,7 @@ const CreateNewElement = (tag) => {
     return element;
 };
 
-const AddClassToNewElement = (element, tag, className) => {};
+const AddClassToNewElement = (element, tag, className) => {
+    element(tag).classList.add(className);
+    return;
+};
