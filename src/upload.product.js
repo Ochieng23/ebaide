@@ -14,18 +14,20 @@ const GetSelectedElementValue = (element, id) => {
 
 // const uploadApiUri = "https://service.goebaide.com/api/product/new";
 
-const PingFetchRequest = (e) => {
+const PingFetchRequest = e => {
   e.preventDefault();
   const productObject = JSON.stringify({
     title: GetSelectedElementValue(GetElementById, "title-input"),
     description: GetSelectedElementValue(GetElementById, "description-input"),
     price: GetSelectedElementValue(GetElementById, "price-input"),
-    color: GetSelectedElementValue(GetElementById, "color-input"),
-    size: GetSelectedElementValue(GetElementById, "size-input"),
-    quantity: GetSelectedElementValue(GetElementById, "quantity-input"),
-    "product-image": GetElementValue(GetElementById, "image-input")
+    variation: {
+      color: GetSelectedElementValue(GetElementById, "color-input"),
+      size: GetSelectedElementValue(GetElementById, "size-input"),
+      quantity: GetSelectedElementValue(GetElementById, "quantity-input")
+    },
+    "product-image": GetSelectedElementValue(GetElementById, "image-input")
   });
-  console.log (productObject)
+  console.log(productObject);
   // fetch(uploadApiUri, {
   //   method: "POST",
   //   body: productObject,
