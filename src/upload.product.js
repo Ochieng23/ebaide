@@ -44,7 +44,7 @@ const PingFetchRequest = e => {
     window.location.href = "/html/upload.product.html#section_upload_product";
     setTimeout(
       AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!"),
-    1000);
+    100);
     return;
   }
 
