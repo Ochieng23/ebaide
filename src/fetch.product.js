@@ -11,3 +11,5 @@ const CreateNewElement = (tag) => {
     const element = document.createElement(tag);
     return element;
 };
+
+const
