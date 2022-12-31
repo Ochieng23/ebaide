@@ -135,12 +135,12 @@ const PingFetchRequest = e => {
         );
         return;
       }
-      console.log(data);
+      //console.log(data);
       AppendErrorMessage("upload_product", ErrorMessage, data.message);
       setTimeout(window.location.reload(), 5000);
     })
     .catch(err => {
-      console.log(err);
+      AppendErrorMessage("upload_product", ErrorMessage, err.error);
     });
 };
 
