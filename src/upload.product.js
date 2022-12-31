@@ -11,26 +11,26 @@ const GetSelectedElementFile = (element, id) => {
   return element(id).files[0];
 };
 
-const CreateNewElement = (element) => {
+const CreateNewElement = element => {
   const newElement = document.createElement(element);
   return newElement;
 };
 
-const ErrorMessage = (message) => {
-  const errorParagraph = CreateNewElement('p');
+const ErrorMessage = message => {
+  const errorParagraph = CreateNewElement("p");
   errorParagraph.innerHTML = message;
   return errorParagraph;
 };
 
-const ClearErrorMessage = (id) => {
-  if (GetElementById(id).childElementCount > 9){
-    GetElementById(id).removeChild(GetElementById(id).firstElementChild)
-  };
+const ClearErrorMessage = id => {
+  if (GetElementById(id).childElementCount > 9) {
+    GetElementById(id).removeChild(GetElementById(id).firstElementChild);
+  }
 };
 
 const AppendErrorMessage = (id, cb, message) => {
   ClearErrorMessage(id);
-  GetElementById(id).prepend(cb (message));
+  GetElementById(id).prepend(cb(message));
 };
 
 const GetToken = () => {
@@ -44,34 +44,54 @@ const PingFetchRequest = e => {
   e.preventDefault();
   //product properties
   const title = GetSelectedElementValue(GetElementById, "title-input");
-  const description = GetSelectedElementValue(GetElementById, "description-input");
+  const description = GetSelectedElementValue(
+    GetElementById,
+    "description-input"
+  );
   const price = GetSelectedElementValue(GetElementById, "price-input");
   const quantity = GetSelectedElementValue(GetElementById, "quantity-input");
   const size = GetSelectedElementValue(GetElementById, "size-input");
   const color = GetSelectedElementValue(GetElementById, "color-input");
   const image = GetSelectedElementFile(GetElementById, "image-input");
 
-  if (!title || !description || !price || !quantity || !size || !color || !image){
+  if (
+    !title ||
+    !description ||
+    !price ||
+    !quantity ||
+    !size ||
+    !color ||
+    !image
+  ) {
     window.location.href = "/html/upload.product.html#section_upload_product";
     setTimeout(
-      AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!"),
-    100);
+      AppendErrorMessage(
+        "upload_product",
+        ErrorMessage,
+        "All fields must be provided!"
+      ),
+      100
+    );
     return;
-  };
+  }
 
   ClearErrorMessage("upload_product");
 
-  if ( price < 1){
+  if (price < 1) {
     AppendErrorMessage("upload_product", ErrorMessage, "Price can not be 0!");
     return;
-  };
+  }
 
   ClearErrorMessage("upload_product");
 
-  if ( quantity < 1){
-    AppendErrorMessage("upload_product", ErrorMessage, "Quantity can not be 0 !");
+  if (quantity < 1) {
+    AppendErrorMessage(
+      "upload_product",
+      ErrorMessage,
+      "Quantity can not be 0 !"
+    );
     return;
-  };
+  }
 
   ClearErrorMessage("upload_product");
 
@@ -79,29 +99,31 @@ const PingFetchRequest = e => {
     title,
     description,
     price,
-    variation: {
-      color,
-      size,
-      quantity,
-    },
-    product_image: image,
+    color,
+    size,
+    quantity,
+    product_image: image
   };
 
-  console.log (productObject);
+  console.log(productObject);
+
+  const formData = new FormData();
+
+  formData.append(productObject);
 
   fetch(uploadApiUri, {
     method: "POST",
-    body: productObject,
+    body: formData,
     headers: {
       Authorization: "Bearer " + GetToken(),
-      "Content-Type": "multipart/form-data",
+      "Content-Type": "multipart/form-data"
     }
   })
     .then(response => {
       return response.json();
     })
     .then(data => {
-      if (data.error.split (" ").includes("jwt")) {
+      if (data.error.split(" ").includes("jwt")) {
         window.location.href = "/index.html#login-form-container";
         return;
       }
