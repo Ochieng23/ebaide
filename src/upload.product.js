@@ -19,13 +19,14 @@ const ErrorMessage = (message) => {
 };
 
 const ClearErrorMessage = (id) => {
-  if (GetElementById(id).childElementCount > 9){}
-  console.log( )
+  if (GetElementById(id).childElementCount > 9){
+    GetElementById(id).remove(GetElementById(id).firstElementChild)
+  };
 };
 
 const AppendErrorMessage = (id, cb, message) => {
   GetElementById(id).prepend(cb (message));
-  //ClearErrorMessage(id);
+  ClearErrorMessage(id);
 };
 
 // const GetToken = () => {
