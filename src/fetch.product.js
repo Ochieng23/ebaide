@@ -41,7 +41,11 @@ const PullProductsFromBackendAPI = () => {
         return response.json();
     })
     .then ( (data) => {
-        
+        if (data.error){
+
+            return;
+        };
+        console.log(data.data)
     })
-    .catch ();
+    .catch ( (err) => {});
 };
