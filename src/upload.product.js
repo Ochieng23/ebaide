@@ -7,7 +7,9 @@ const GetSelectedElementValue = (element, id) => {
   return element(id).value;
 };
 
-const GetSelectedElementFile = (element, id) => {};
+const GetSelectedElementFile = (element, id) => {
+  return element(id).files[0];
+};
 
 const CreateNewElement = (element) => {
   const newElement = document.createElement(element);
@@ -47,7 +49,7 @@ const PingFetchRequest = e => {
   const quantity = GetSelectedElementValue(GetElementById, "quantity-input");
   const size = GetSelectedElementValue(GetElementById, "size-input");
   const color = GetSelectedElementValue(GetElementById, "color-input");
-  const image = GetSelectedElementValue(GetElementById, "image-input");
+  const image = GetSelectedElementFile(GetElementById, "image-input");
 
   if (!title || !description || !price || !quantity || !size || !color || !image){
     window.location.href = "/html/upload.product.html#section_upload_product";
