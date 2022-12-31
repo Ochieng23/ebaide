@@ -19,7 +19,8 @@ const ErrorMessage = (message) => {
 };
 
 const ClearErrorMessage = (id) => {
-  console.log( GetElementById(id).childElementCount)
+  if (GetElementById(id).childElementCount > 9){}
+  console.log( )
 };
 
 const AppendErrorMessage = (id, cb, message) => {
