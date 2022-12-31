@@ -53,8 +53,10 @@ const PingFetchRequest = e => {
       AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!"),
     100);
     return;
-  }
+  };
   ClearErrorMessage("upload_product");
+
+  
   const productObject = JSON.stringify({
     title,
     description,
