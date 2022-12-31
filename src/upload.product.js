@@ -129,12 +129,14 @@ const PingFetchRequest = e => {
     })
     .then(data => {
       if (data.error) {
-        window.location.href = "/index.html#login-form-container";
+        setTimeout(
+          window.location.href = "/index.html#login-form-container", 5000
+        );
         return;
       }
       console.log(data);
       AppendErrorMessage("upload_product", ErrorMessage, data.message);
-      setTimeout(window.location.href = "/html/upload.product.html#section_upload_product", 3000);
+      setTimeout(window.location.reload(), 5000);
     })
     .catch(err => {
       console.log(err);
