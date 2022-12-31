@@ -134,6 +134,7 @@ const PingFetchRequest = e => {
       }
       console.log(data);
       AppendErrorMessage("upload_product", ErrorMessage, data.message);
+      setTimeout(window.location.href = "/html/upload.product.html#section_upload_product", 3000);
     })
     .catch(err => {
       console.log(err);
