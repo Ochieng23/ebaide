@@ -13,7 +13,9 @@ const CreateNewElement = (element) => {
 };
 
 const ErrorMessage = (message) => {
-
+  const errorParagraph = CreateNewElement('p');
+  errorParagraph.innerHTML = message;
+  return errorParagraph;
 };
 // const GetToken = () => {
 //   const token = sessionStorage.getItem("login_token");
