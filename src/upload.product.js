@@ -133,6 +133,7 @@ const PingFetchRequest = e => {
         return;
       }
       console.log(data);
+      AppendErrorMessage("upload_product", ErrorMessage, data.message);
     })
     .catch(err => {
       console.log(err);
