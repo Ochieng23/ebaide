@@ -16,7 +16,7 @@ const GetSelectedElementValue = (element, id) => {
 
 const PingFetchRequest = e => {
   e.preventDefault();
-  //variables
+  //product properties
   const title = GetSelectedElementValue(GetElementById, "title-input");
   const description = GetSelectedElementValue(GetElementById, "description-input");
   const price = GetSelectedElementValue(GetElementById, "price-input");
@@ -37,6 +37,7 @@ const PingFetchRequest = e => {
     "product-image": image,
   });
 
+  console.log (productObject);
   // fetch(uploadApiUri, {
   //   method: "POST",
   //   body: productObject,
