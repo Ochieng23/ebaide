@@ -34,7 +34,9 @@ const GetSelectedElementsWithClassName = (className) => {
 const ProductBackendAPIURI = 'https://service.goebaide.com/api/product/all_products';
 
 const PullProductsFromBackendAPI = () => {
-    fetch (ProductBackendAPIURI)
+    fetch (ProductBackendAPIURI, {
+        method: 'GET',
+    })
     .then ()
     .then ()
     .catch ();
