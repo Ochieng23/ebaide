@@ -37,7 +37,9 @@ const PullProductsFromBackendAPI = () => {
     fetch (ProductBackendAPIURI, {
         method: 'GET',
     })
-    .then ()
+    .then ( (response) =>{
+        
+    })
     .then ()
     .catch ();
 };
