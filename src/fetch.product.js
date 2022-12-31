@@ -3,4 +3,6 @@ const SelectElementById = (id) => {
     return element;
 };
 
-const GetValueOfSelectElement = () => {};
+const GetValueOfSelectElement = (element, id) => {
+    
+};
