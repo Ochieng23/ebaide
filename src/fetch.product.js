@@ -30,3 +30,4 @@ const GetSelectedElementsWithClassName = (className) => {
     const element = document.querySelectorAll("."+className);
     return element;
 };
+
