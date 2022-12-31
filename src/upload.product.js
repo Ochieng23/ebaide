@@ -7,7 +7,10 @@ const GetSelectedElementValue = (element, id) => {
   return element(id).value;
 };
 
-const CreateNewElement = (element) => {};
+const CreateNewElement = (element) => {
+  const newElement = document.createElement(element);
+  return newElement;
+};
 
 const ErrorMessage = (message) => {
 
