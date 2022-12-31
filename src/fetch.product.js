@@ -31,3 +31,11 @@ const GetSelectedElementsWithClassName = (className) => {
     return element;
 };
 
+const ProductBackendAPIURI = 'https://service.goebaide.com/api/product/all_products';
+
+const PullProductsFromBackendAPI = () => {
+    fetch (ProductBackendAPIURI)
+    .then ()
+    .then ()
+    .catch ();
+};
