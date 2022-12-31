@@ -7,6 +7,11 @@ const GetSelectedElementValue = (element, id) => {
   return element(id).value;
 };
 
+
+
+const ErrorMessage = (message) => {
+
+};
 // const GetToken = () => {
 //   const token = sessionStorage.getItem("login_token");
 //   return token;
