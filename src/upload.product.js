@@ -16,18 +16,27 @@ const GetSelectedElementValue = (element, id) => {
 
 const PingFetchRequest = e => {
   e.preventDefault();
+  //variables
+  const title = GetSelectedElementValue(GetElementById, "title-input");
+  const description = GetSelectedElementValue(GetElementById, "description-input");
+  const price = GetSelectedElementValue(GetElementById, "price-input");
+  const quantity = GetSelectedElementValue(GetElementById, "quantity-input");
+  const size = GetSelectedElementValue(GetElementById, "size-input");
+  const color = GetSelectedElementValue(GetElementById, "color-input");
+  const image = GetSelectedElementValue(GetElementById, "image-input");
+
   const productObject = JSON.stringify({
-    title: GetSelectedElementValue(GetElementById, "title-input"),
-    description: GetSelectedElementValue(GetElementById, "description-input"),
-    price: GetSelectedElementValue(GetElementById, "price-input"),
+    title,
+    description,
+    price,
     variation: {
-      color: GetSelectedElementValue(GetElementById, "color-input"),
-      size: GetSelectedElementValue(GetElementById, "size-input"),
-      quantity: GetSelectedElementValue(GetElementById, "quantity-input")
+      color,
+      size,
+      quantity,
     },
-    "product-image": GetSelectedElementValue(GetElementById, "image-input")
+    "product-image": image,
   });
-  console.log(productObject);
+
   // fetch(uploadApiUri, {
   //   method: "POST",
   //   body: productObject,
