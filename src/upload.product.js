@@ -54,9 +54,15 @@ const PingFetchRequest = e => {
     100);
     return;
   };
+
   ClearErrorMessage("upload_product");
 
+  if ( price < 1){
+    AppendErrorMessage("upload_product", ErrorMessage, "All fields must be provided!");
+    return;
+  };
   
+  ClearErrorMessage("upload_product");
 
   const productObject = JSON.stringify({
     title,
