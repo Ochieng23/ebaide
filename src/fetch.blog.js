@@ -25,7 +25,7 @@ const SelectElement = id => {
     return element;
   };
   
-  const GetSelectedElementsWithClassName = className => {
+  const GetElementsWithClassName = className => {
     const element = document.querySelectorAll("." + className);
     return element;
   };
