@@ -76,7 +76,6 @@ const PullProductsFromBackendAPI = () => {
           const titleIcons = CreateNewElement("i");
           const productDescription = CreateNewElement("p");
           const productRating = CreateNewElement("div");
-          const ratingStars = CreateNewElement("i");
           const productPrice = CreateNewElement("div");
           const productPriceEstimate = CreateNewElement("span");
           const buyNowBtn = CreateNewElement("button");
@@ -98,7 +97,9 @@ const PullProductsFromBackendAPI = () => {
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
           
          AddClassToNewElement (productRating, "stars");
-         for (let i= 0; i < 5; i++) {};
+         for (let i= 0; i < 5; i++) {
+
+         };
 
           console.log(productImage);
         }
