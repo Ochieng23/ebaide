@@ -12,7 +12,7 @@ const SelectElement = id => {
     return element;
   };
   
-  const AddClassToNewElement = (element, namedClass) => {
+  const AddClassToElement = (element, namedClass) => {
     element.classList.add(namedClass);
   };
   
