@@ -98,15 +98,6 @@ const SelectElement = id => {
   
             productDescription.innerHTML = `\n` +content;
             AppendChildToParentUsingElement (productContent, productDescription);
-            
-           AddClassToElement (productRating, "stars");
-           for (let i= 0; i < 5; i++) {
-              const ratingStars = CreateNewElement("i");
-              AddClassToElement (ratingStars, "fas");
-              AddClassToElement (ratingStars, "fa-star");
-              AppendChildToParentUsingElement (productRating, ratingStars);
-           };
-           AppendChildToParentUsingElement (productContent, productRating);
   
            AddClassToElement (productPrice, 'price');
            productPrice.innerHTML = "Ksh. "+price;
