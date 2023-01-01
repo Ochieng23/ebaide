@@ -38,7 +38,7 @@ const GetElementById = id => {
     return token;
   };
   
-  const uploadApiUri = "https://service.goebaide.com/api/product/new";
+  const uploadApiUri = "https://service.goebaide.com/api/blog/new";
   
   const PingFetchRequest = e => {
     e.preventDefault();
