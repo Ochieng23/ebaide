@@ -77,9 +77,10 @@ const PullProductsFromBackendAPI = () => {
           const buyNowBtn = CreateNewElement("button");
 
           AddClassToNewElement(divProductBox, "box");
-          //AddAttributeToElement(productImage, "src", )
+          AddAttributeToElement(productImage, "src", image);
+          //AddAttributeToElement
           //AddClassToNewElement()
-          console.log(data);
+          console.log(productImage);
         }
       );
     })
