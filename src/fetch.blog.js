@@ -34,7 +34,7 @@ const SelectElement = id => {
     cb(element).appendChild(child);
   };
   
-  AddAttributeToElement = (element, attribute, value) => {
+  AddAttributeNamedElement = (element, attribute, value) => {
     element.setAttribute(attribute, value);
   };
   
