@@ -50,7 +50,7 @@ const PullProductsFromBackendAPI = () => {
 
             return;
         };
-        const divproductBox = CreateNewElement ('div');
+        const divProductBox = CreateNewElement ('div');
         const productImage = CreateNewElement ('img');
         const productContent = CreateNewElement ('div');
         const titleText = CreateNewElement ('h3');
@@ -60,7 +60,10 @@ const PullProductsFromBackendAPI = () => {
         const productPrice = CreateNewElement ('div');
         const productPriceEstimate = CreateNewElement ('span');
         const buyNowBtn = CreateNewElement ('button');
-        console.log(div.outerHTML);
+
+        AddClassToNewElement ('divProductBox', 'box');
+
+        console.log(divProductBox.outerHTML);
     })
     .catch ( (err) => {
         console.error(err)
