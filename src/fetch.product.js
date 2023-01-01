@@ -100,6 +100,7 @@ const PullProductsFromBackendAPI = () => {
          for (let i= 0; i < 5; i++) {
             const ratingStars = CreateNewElement("i");
             AddClassToNewElement (ratingStars, "fas");
+            AddClassToNewElement (ratingStars, "fa-star");
          };
 
           console.log(productImage);
