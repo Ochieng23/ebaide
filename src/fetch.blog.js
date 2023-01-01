@@ -30,7 +30,7 @@ const SelectElement = id => {
     return element;
   };
   
-  AppendChildToParentElement = (element, cb, child) => {
+  AppendChildToParent = (element, cb, child) => {
     cb(element).appendChild(child);
   };
   
