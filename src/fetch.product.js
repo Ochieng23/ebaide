@@ -116,7 +116,8 @@ const PullProductsFromBackendAPI = () => {
          productPrice.innerHTML = "$"+price;
          productPriceEstimate.innerHTML = "$"+(price + 40);
 
-         AddClassToNewElement (buyNowBtn, 'btn')
+         AddClassToNewElement (buyNowBtn, 'btn');
+         AddAttributeToElement(buyNowBtn, "href", "#");
           console.log(productImage);
         }
       );
