@@ -16,11 +16,11 @@ const SelectElement = id => {
     element.classList.add(namedClass);
   };
   
-  const RemoveClassFromNewElement = (element, id, className) => {
+  const RemoveClassFromElement = (element, id, className) => {
     element(id).classList.remove(className);
   };
   
-  const GetSelectedElementWithClassName = className => {
+  const GetElementWithClassName = className => {
     const element = document.querySelector("." + className);
     return element;
   };
