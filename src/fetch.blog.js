@@ -46,7 +46,7 @@ const SelectElement = id => {
       element.appendChild(child);
     };
   
-  AppendElementAsFirstChildUsingElement = (element, child) => { 
+  AppendAsFirstChildUsingElement = (element, child) => { 
       element.prepend(child);
   };
   
