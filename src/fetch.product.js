@@ -99,6 +99,8 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement (titleIcons, "fas");
           AddClassToNewElement (titleIcons, "fa-map-marker-alt");
           titleText.innerHTML = title;
+          AppendElementAsFirstChildUsingElement(titleText, titleIcons);
+          AppendChildToParentElementUsingElement()
           
 
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
