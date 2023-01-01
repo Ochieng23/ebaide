@@ -51,6 +51,8 @@ const PullProductsFromBackendAPI = () => {
         const productDescription = CreateNewElement ('p');
         const productRating = CreateNewElement ('div');
         const ratingStars = CreateNewElement ('i');
+        const productPrice = CreateNewElement ('div');
+        const productPriceEstimate = CreateNewElement ('span');
         console.log(div.outerHTML);
     })
     .catch ( (err) => {
