@@ -102,6 +102,7 @@ const SelectElement = id => {
            productPrice.innerHTML = "\n" +date;
            AppendChildToParentUsingElement(productContent, productPrice);
   
+           buyNowBtn.innerHTML = "Read more...";
            AddClassToElement (buyNowBtn, 'btn');
            AddAttributeNamedElement(buyNowBtn, "href", "#");
            AddAttributeNamedElement(buyNowBtn, "type", "button");
