@@ -53,10 +53,6 @@ const GetElementById = id => {
     if (
       !title ||
       !description ||
-      !price ||
-      !quantity ||
-      !size ||
-      !color ||
       !image
     ) {
       window.location.href = "/html/upload.product.html#section_upload_product";
@@ -68,13 +64,6 @@ const GetElementById = id => {
         ),
         100
       );
-      return;
-    }
-  
-    ClearErrorMessage("upload_product");
-  
-    if (price < 1) {
-      AppendErrorMessage("upload_product", ErrorMessage, "Price can not be 0!");
       return;
     }
   
