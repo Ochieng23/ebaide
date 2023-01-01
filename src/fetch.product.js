@@ -86,7 +86,7 @@ const PullProductsFromBackendAPI = () => {
           const productRating = CreateNewElement("div");
           const productPrice = CreateNewElement("div");
           const productPriceEstimate = CreateNewElement("span");
-          const buyNowBtn = CreateNewElement("button");
+          const buyNowBtn = CreateNewElement("a");
 
           AddClassToNewElement(divProductBox, "box");
 
@@ -116,6 +116,7 @@ const PullProductsFromBackendAPI = () => {
          productPrice.innerHTML = "$"+price;
          productPriceEstimate.innerHTML = "$"+(price + 40);
 
+         AddClassToNewElement (buyNowBtn, 'btn')
           console.log(productImage);
         }
       );
