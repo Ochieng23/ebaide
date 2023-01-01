@@ -97,8 +97,8 @@ const PullProductsFromBackendAPI = () => {
 
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
           
+         AddClassToNewElement (productRating, "stars");
 
-          
           console.log(productImage);
         }
       );
