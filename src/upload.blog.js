@@ -48,10 +48,6 @@ const GetElementById = id => {
       GetElementById,
       "description-input"
     );
-    const price = GetSelectedElementValue(GetElementById, "price-input");
-    const quantity = GetSelectedElementValue(GetElementById, "quantity-input");
-    const size = GetSelectedElementValue(GetElementById, "size-input");
-    const color = GetSelectedElementValue(GetElementById, "color-input");
     const image = GetSelectedElementFile(GetElementById, "image-input");
   
     if (
