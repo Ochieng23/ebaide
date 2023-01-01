@@ -104,6 +104,7 @@ const SelectElement = id => {
   
            AddClassToElement (buyNowBtn, 'btn');
            AddAttributeNamedElement(buyNowBtn, "href", "#");
+           AddAttributeNamedElement(buyNowBtn, "type", "button");
            AppendChildToParentUsingElement(productContent, buyNowBtn);
   
            AppendChildToParentUsingElement(divProductBox, productContent);
