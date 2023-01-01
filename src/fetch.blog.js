@@ -38,7 +38,7 @@ const SelectElement = id => {
     element.setAttribute(attribute, value);
   };
   
-  AppendElementAsFirstChild = (element, cb, child) => { 
+  AppendAsFirstChild = (element, cb, child) => { 
       cb (element).prepend(child);
   };
   
