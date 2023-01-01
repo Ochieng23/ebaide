@@ -103,6 +103,7 @@ const PullProductsFromBackendAPI = () => {
           AppendChildToParentElementUsingElement(productContent, titleText);
 
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
+          AppendChildToParentElement (productContent, productDescription);
           
          AddClassToNewElement (productRating, "stars");
          for (let i= 0; i < 5; i++) {
