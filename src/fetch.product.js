@@ -101,7 +101,6 @@ const PullProductsFromBackendAPI = () => {
           titleText.innerHTML = title;
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
           AppendChildToParentElementUsingElement(productContent, titleText);
-          
 
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
           
