@@ -30,6 +30,8 @@ const GetSelectedElementsWithClassName = (className) => {
     return element;
 };
 
+
+
 const ProductBackendAPIURI = 'https://service.goebaide.com/api/product/all_products';
 
 const PullProductsFromBackendAPI = () => {
@@ -53,6 +55,7 @@ const PullProductsFromBackendAPI = () => {
         const ratingStars = CreateNewElement ('i');
         const productPrice = CreateNewElement ('div');
         const productPriceEstimate = CreateNewElement ('span');
+        const buyNowBtn = CreateNewElement ('button');
         console.log(div.outerHTML);
     })
     .catch ( (err) => {
