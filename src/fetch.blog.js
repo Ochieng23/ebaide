@@ -90,7 +90,7 @@ const SelectElement = id => {
         //     AddAttributeNamedElement(productImage, "src", 
         //     `https://service.goebaide.com/${image}`);
         //     AddAttributeNamedElement(productImage, "alt", "product image");
-        //     AppendChildToParentElementUsingElement(divProductBox, productImage)
+        //     AppendChildToParentUsingElement(divProductBox, productImage)
   
         //     AddClassToElement(productContent, "content");
   
@@ -98,31 +98,31 @@ const SelectElement = id => {
         //     AddClassToElement (titleIcons, "fa-map-marker-alt");
         //     titleText.innerHTML = title;
         //     AppendElementAsFirstChildUsingElement(titleText, titleIcons);
-        //     AppendChildToParentElementUsingElement(productContent, titleText);
+        //     AppendChildToParentUsingElement(productContent, titleText);
   
         //     productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
-        //     AppendChildToParentElementUsingElement (productContent, productDescription);
+        //     AppendChildToParentUsingElement (productContent, productDescription);
             
         //    AddClassToElement (productRating, "stars");
         //    for (let i= 0; i < 5; i++) {
         //       const ratingStars = CreateNewElement("i");
         //       AddClassToElement (ratingStars, "fas");
         //       AddClassToElement (ratingStars, "fa-star");
-        //       AppendChildToParentElementUsingElement (productRating, ratingStars);
+        //       AppendChildToParentUsingElement (productRating, ratingStars);
         //    };
-        //    AppendChildToParentElementUsingElement (productContent, productRating);
+        //    AppendChildToParentUsingElement (productContent, productRating);
   
         //    AddClassToElement (productPrice, 'price');
         //    productPrice.innerHTML = "Ksh. "+price;
         //    productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
-        //    AppendChildToParentElementUsingElement(productPrice, productPriceEstimate);
-        //    AppendChildToParentElementUsingElement(productContent, productPrice);
+        //    AppendChildToParentUsingElement(productPrice, productPriceEstimate);
+        //    AppendChildToParentUsingElement(productContent, productPrice);
   
         //    AddClassToElement (buyNowBtn, 'btn');
         //    AddAttributeNamedElement(buyNowBtn, "href", "#");
-        //    AppendChildToParentElementUsingElement(productContent, buyNowBtn);
+        //    AppendChildToParentUsingElement(productContent, buyNowBtn);
   
-        //    AppendChildToParentElementUsingElement(divProductBox, productContent);
+        //    AppendChildToParentUsingElement(divProductBox, productContent);
   
         //    AppendChildToParentElement("box-container", 
         //    GetSelectedElementWithClassName, divProductBox);
