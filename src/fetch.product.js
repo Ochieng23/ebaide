@@ -89,6 +89,7 @@ const PullProductsFromBackendAPI = () => {
           const buyNowBtn = CreateNewElement("a");
 
           AddClassToNewElement(divProductBox, "box");
+          AddAttributeToElement(divProductBox, "id", id);
 
           AddAttributeToElement(productImage, "src", image);
           AddAttributeToElement(productImage, "alt", "product image");
@@ -125,6 +126,9 @@ const PullProductsFromBackendAPI = () => {
          AppendChildToParentElementUsingElement(productContent, buyNowBtn);
 
          AppendChildToParentElementUsingElement(divProductBox, productContent);
+
+         AppendChildToParentElement("box-container", 
+         GetSelectedElementWithClassName, divProductBox);
         }
       );
     })
