@@ -16,8 +16,6 @@ const AddClassToNewElement = (element, tag, namedClass) => {
     return element(tag).classList.add(namedClass);
 };
 
-console.log( AddClassToNewElement (CreateNewElement, 'div', 'randomClass'))
-
 const RemoveClassFromNewElement = (element, id, className) => {
     element(id).classList.remove(className);
 };
@@ -46,8 +44,8 @@ const PullProductsFromBackendAPI = () => {
 
             return;
         };
-        // const div = AddClassToNewElement(CreateNewElement, 'div', "box");
-        // console.log(div.outerHTML);
+        const div = CreateNewElement ('div');
+        console.log(div.outerHTML);
     })
     .catch ( (err) => {
         console.error(err)
