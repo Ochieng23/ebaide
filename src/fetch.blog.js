@@ -85,7 +85,7 @@ const SelectElement = id => {
             const buyNowBtn = CreateElement("a");
   
             AddClassToElement(divProductBox, "box");
-            AddAttributeNamedElement(divProductBox, "id", id);
+            AddAttributeNamedElement(divProductBox, "id", blogid);
   
             AddAttributeNamedElement(productImage, "src", 
             `https://service.goebaide.com/${image}`);
@@ -94,10 +94,7 @@ const SelectElement = id => {
   
             AddClassToElement(productContent, "content");
   
-            AddClassToElement (titleIcons, "fas");
-            AddClassToElement (titleIcons, "fa-map-marker-alt");
             titleText.innerHTML = title;
-            AppendAsFirstChildUsingElement(titleText, titleIcons);
             AppendChildToParentUsingElement(productContent, titleText);
   
             productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
