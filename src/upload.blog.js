@@ -55,7 +55,7 @@ const GetElementById = id => {
       !description ||
       !image
     ) {
-      window.location.href = "/html/upload.blog.html#section_upload_product";
+      window.location.href = "/html/upload.blog.html#section_upload_blog";
       setTimeout(
         AppendErrorMessage(
           "upload_product",
