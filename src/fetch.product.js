@@ -48,6 +48,7 @@ const PullProductsFromBackendAPI = () => {
         const productImage = CreateNewElement ('img');
         const productContent = CreateNewElement ('div');
         const titleText = CreateNewElement ('h3');
+        const productDescription = CreateNewElement ('p');
         console.log(div.outerHTML);
     })
     .catch ( (err) => {
