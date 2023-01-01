@@ -69,23 +69,23 @@ const GetElementById = id => {
   
     ClearErrorMessage("upload_product");
   
-    const productObject = {
+    const blogObject = {
       title,
       description,
       blog_image: image
     };
   
-    console.log(productObject);
+    //console.log(blogObject);
   
     const formData = new FormData();
   
-    formData.append('title', productObject.title);
-    formData.append('description', productObject.description);
-    formData.append('price', productObject.price);
-    formData.append('color', productObject.color);
-    formData.append('size', productObject.size);
-    formData.append('quantity', productObject.quantity);
-    formData.append('product_image', productObject.product_image);
+    formData.append('title', blogObject.title);
+    formData.append('description', blogObject.description);
+    formData.append('price', blogObject.price);
+    formData.append('color', blogObject.color);
+    formData.append('size', blogObject.size);
+    formData.append('quantity', blogObject.quantity);
+    formData.append('blog_image', blogObject.blog_image);
   
     fetch(uploadApiUri, {
       method: "POST",
