@@ -112,7 +112,7 @@ const PullProductsFromBackendAPI = () => {
             AddClassToNewElement (ratingStars, "fa-star");
             AppendChildToParentElementUsingElement (productRating, ratingStars);
          };
-         AppendChildToParentElement (productContent, productRating)
+         AppendChildToParentElement (productContent, productRating);
 
          AddClassToNewElement (productPrice, 'price');
          productPrice.innerHTML = "$"+price;
