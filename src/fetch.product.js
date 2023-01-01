@@ -16,7 +16,7 @@ const AddClassToNewElement = (element, tag, namedClass) => {
     return element(tag).classList.add(namedClass);
 };
 
-console.log( AddClassToNewElement (createNewElement, 'div', 'randomClass'))
+console.log( AddClassToNewElement (CreateNewElement, 'div', 'randomClass'))
 
 const RemoveClassFromNewElement = (element, id, className) => {
     element(id).classList.remove(className);
