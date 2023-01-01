@@ -35,7 +35,7 @@ AppendChildToParentElement = (element, cb, child) => {
 };
 
 AddAttributeToElement = (element, attribute, value) => {
-    element.setAttribute(attribute, value);
+  element.setAttribute(attribute, value);
 };
 
 const ProductBackendAPIURI =
@@ -53,23 +53,35 @@ const PullProductsFromBackendAPI = () => {
         console.log(data);
         return;
       }
-      data.data.map(({}) => {
-        const divProductBox = CreateNewElement("div");
-        const productImage = CreateNewElement("img");
-        const productContent = CreateNewElement("div");
-        const titleText = CreateNewElement("h3");
-        const productDescription = CreateNewElement("p");
-        const productRating = CreateNewElement("div");
-        const ratingStars = CreateNewElement("i");
-        const productPrice = CreateNewElement("div");
-        const productPriceEstimate = CreateNewElement("span");
-        const buyNowBtn = CreateNewElement("button");
+      data.data.map(
+        ({
+          color,
+          description,
+          id,
+          image,
+          price,
+          quantity,
+          size,
+          title,
+          variation_id
+        }) => {
+          const divProductBox = CreateNewElement("div");
+          const productImage = CreateNewElement("img");
+          const productContent = CreateNewElement("div");
+          const titleText = CreateNewElement("h3");
+          const productDescription = CreateNewElement("p");
+          const productRating = CreateNewElement("div");
+          const ratingStars = CreateNewElement("i");
+          const productPrice = CreateNewElement("div");
+          const productPriceEstimate = CreateNewElement("span");
+          const buyNowBtn = CreateNewElement("button");
 
-        AddClassToNewElement(divProductBox, "box");
-        //AddAttributeToElement(productImage, "src", )
-        //AddClassToNewElement()
-        console.log (data)
-      });
+          AddClassToNewElement(divProductBox, "box");
+          //AddAttributeToElement(productImage, "src", )
+          //AddClassToNewElement()
+          console.log(data);
+        }
+      );
     })
     .catch(err => {
       console.error(err);
