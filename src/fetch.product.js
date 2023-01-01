@@ -80,6 +80,7 @@ const PullProductsFromBackendAPI = () => {
           AddAttributeToElement(productImage, "src", image);
           AddAttributeToElement(productImage, "alt", "product image");
           AddClassToNewElement(productContent, "content");
+          titleText.in
           console.log(productImage);
         }
       );
