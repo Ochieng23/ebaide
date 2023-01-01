@@ -122,8 +122,8 @@ const PullProductsFromBackendAPI = () => {
 
          AddClassToNewElement (buyNowBtn, 'btn');
          AddAttributeToElement(buyNowBtn, "href", "#");
-         AppendChildToParentElementUsingElement(productContent, productPrice);
-         
+         AppendChildToParentElementUsingElement(productContent, buyNowBtn);
+
           console.log(productImage);
         }
       );
