@@ -68,4 +68,4 @@ const PullProductsFromBackendAPI = () => {
     });
 };
 
-//PullProductsFromBackendAPI ();
+PullProductsFromBackendAPI ();
