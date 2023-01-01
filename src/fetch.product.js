@@ -91,6 +91,7 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(divProductBox, "box");
 
           AddAttributeToElement(productImage, "src", image);
+          AppendChildToParentElementUsingElement(divProductBox, productImage)
 
 
           AddAttributeToElement(productImage, "alt", "product image");
