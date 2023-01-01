@@ -80,11 +80,7 @@ const GetElementById = id => {
     const formData = new FormData();
   
     formData.append('title', blogObject.title);
-    formData.append('description', blogObject.description);
-    formData.append('price', blogObject.price);
-    formData.append('color', blogObject.color);
-    formData.append('size', blogObject.size);
-    formData.append('quantity', blogObject.quantity);
+    formData.append('body', blogObject.description);
     formData.append('blog_image', blogObject.blog_image);
   
     fetch(uploadApiUri, {
