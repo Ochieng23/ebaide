@@ -104,7 +104,7 @@ const PullProductsFromBackendAPI = () => {
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
           AppendChildToParentElementUsingElement(productContent, titleText);
 
-          productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
+          productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
           AppendChildToParentElementUsingElement (productContent, productDescription);
           
          AddClassToNewElement (productRating, "stars");
@@ -117,8 +117,8 @@ const PullProductsFromBackendAPI = () => {
          AppendChildToParentElementUsingElement (productContent, productRating);
 
          AddClassToNewElement (productPrice, 'price');
-         productPrice.innerHTML = "$"+price;
-         productPriceEstimate.innerHTML = "$"+(price + 40);
+         productPrice.innerHTML = "Ksh. "+price;
+         productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
          AppendChildToParentElementUsingElement(productPrice, productPriceEstimate);
          AppendChildToParentElementUsingElement(productContent, productPrice);
 
