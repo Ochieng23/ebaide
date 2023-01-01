@@ -1,13 +1,13 @@
-const SelectElementById = id => {
+const SelectElement = id => {
     const element = document.getElementById(id);
     return element;
   };
   
-  const GetValueOfSelectElement = (element, id) => {
+  const GetValueOfElement = (element, id) => {
     return element(id).value;
   };
   
-  const CreateNewElement = tag => {
+  const CreateElement = tag => {
     const element = document.createElement(tag);
     return element;
   };
