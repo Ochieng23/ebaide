@@ -42,6 +42,8 @@ AppendElementAsFirstChild = (element, cb, child) => {
     cb (element).prepend(child);
 };
 
+
+
 AppendElementAsFirstChildUsingElement = (element, child) => { 
     cb (element).prepend(child);
 };
