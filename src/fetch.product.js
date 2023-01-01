@@ -109,7 +109,7 @@ const PullProductsFromBackendAPI = () => {
             const ratingStars = CreateNewElement("i");
             AddClassToNewElement (ratingStars, "fas");
             AddClassToNewElement (ratingStars, "fa-star");
-
+            AppendChildToParentElementUsingElement (productRating, ratingStars);
          };
 
           console.log(productImage);
