@@ -132,6 +132,7 @@ const SelectElementById = id => {
         //    GetSelectedElementWithClassName, divProductBox);
         //   }
         // );
+        console.log (data.data)
       })
       .catch(err => {
         console.error(err);
