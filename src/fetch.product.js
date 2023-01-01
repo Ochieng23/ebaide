@@ -91,7 +91,8 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
 
-          AddAttributeToElement(productImage, "src", image);
+          AddAttributeToElement(productImage, "src", 
+          `https://service.goebaide.com/${image}`);
           AddAttributeToElement(productImage, "alt", "product image");
           AppendChildToParentElementUsingElement(divProductBox, productImage)
 
