@@ -38,7 +38,9 @@ AddAttributeToElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
-AppendElementAsFirstChild = (element, cb, child) => { };
+AppendElementAsFirstChild = (element, cb, child) => { 
+    cb (element).prepend(child);
+};
 
 const ProductBackendAPIURI =
   "https://service.goebaide.com/api/product/all_products";
