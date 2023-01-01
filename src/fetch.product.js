@@ -13,10 +13,8 @@ const CreateNewElement = (tag) => {
 };
 
 const AddClassToNewElement = (element, namedClass) => {
-    return element.classList.add(namedClass);
+    element.classList.add(namedClass);
 };
-
-
 
 const RemoveClassFromNewElement = (element, id, className) => {
     element(id).classList.remove(className);
@@ -26,6 +24,10 @@ const GetSelectedElementWithClassName = (className) => {
     const element = document.querySelector("."+className);
     return element;
 };
+
+let box = GetSelectedElementWithClassName ('box')
+
+console.log (box)
 
 const GetSelectedElementsWithClassName = (className) => {
     const element = document.querySelectorAll("."+className);
@@ -63,11 +65,11 @@ const PullProductsFromBackendAPI = () => {
 
         AddClassToNewElement ('divProductBox', 'box');
 
-        console.log(divProductBox.outerHTML);
+        //console.log(divProductBox.outerHTML);
     })
     .catch ( (err) => {
         console.error(err)
     });
 };
 
-PullProductsFromBackendAPI ();
+//PullProductsFromBackendAPI ();
