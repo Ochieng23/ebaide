@@ -42,7 +42,7 @@ AppendElementAsFirstChild = (element, cb, child) => {
     cb (element).prepend(child);
 };
 
-AppendElementAsFirstChild = (element, cb, child) => { 
+AppendElementAsFirstChildUsingElement = (element, child) => { 
     cb (element).prepend(child);
 };
 
