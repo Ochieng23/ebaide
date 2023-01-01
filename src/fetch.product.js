@@ -114,6 +114,8 @@ const PullProductsFromBackendAPI = () => {
          AddClassToNewElement (productPrice, 'price');
          productPrice.innerHTML = "$"+price;
 
+         productPriceEstimate.innerHTML = "$"+(price + 180);
+
           console.log(productImage);
         }
       );
