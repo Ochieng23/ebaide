@@ -65,69 +65,69 @@ const SelectElement = id => {
           console.log(data);
           return;
         }
-        // data.data.map(
-        //   ({
-        //     blogid,
-        //     content,
-        //     date,
-        //     image,
-        //     title,
-        //   }) => {
-        //     const divProductBox = CreateElement("div");
-        //     const productImage = CreateElement("img");
-        //     const productContent = CreateElement("div");
-        //     const titleText = CreateElement("h3");
-        //     const titleIcons = CreateElement("i");
-        //     const productDescription = CreateElement("p");
-        //     const productRating = CreateElement("div");
-        //     const productPrice = CreateElement("div");
-        //     const productPriceEstimate = CreateElement("span");
-        //     const buyNowBtn = CreateElement("a");
+        data.data.map(
+          ({
+            blogid,
+            content,
+            date,
+            image,
+            title,
+          }) => {
+            const divProductBox = CreateElement("div");
+            const productImage = CreateElement("img");
+            const productContent = CreateElement("div");
+            const titleText = CreateElement("h3");
+            const titleIcons = CreateElement("i");
+            const productDescription = CreateElement("p");
+            const productRating = CreateElement("div");
+            const productPrice = CreateElement("div");
+            const productPriceEstimate = CreateElement("span");
+            const buyNowBtn = CreateElement("a");
   
-        //     AddClassToElement(divProductBox, "box");
-        //     AddAttributeNamedElement(divProductBox, "id", id);
+            AddClassToElement(divProductBox, "box");
+            AddAttributeNamedElement(divProductBox, "id", id);
   
-        //     AddAttributeNamedElement(productImage, "src", 
-        //     `https://service.goebaide.com/${image}`);
-        //     AddAttributeNamedElement(productImage, "alt", "product image");
-        //     AppendChildToParentUsingElement(divProductBox, productImage)
+            AddAttributeNamedElement(productImage, "src", 
+            `https://service.goebaide.com/${image}`);
+            AddAttributeNamedElement(productImage, "alt", "product image");
+            AppendChildToParentUsingElement(divProductBox, productImage)
   
-        //     AddClassToElement(productContent, "content");
+            AddClassToElement(productContent, "content");
   
-        //     AddClassToElement (titleIcons, "fas");
-        //     AddClassToElement (titleIcons, "fa-map-marker-alt");
-        //     titleText.innerHTML = title;
-        //     AppendAsFirstChildUsingElement(titleText, titleIcons);
-        //     AppendChildToParentUsingElement(productContent, titleText);
+            AddClassToElement (titleIcons, "fas");
+            AddClassToElement (titleIcons, "fa-map-marker-alt");
+            titleText.innerHTML = title;
+            AppendAsFirstChildUsingElement(titleText, titleIcons);
+            AppendChildToParentUsingElement(productContent, titleText);
   
-        //     productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
-        //     AppendChildToParentUsingElement (productContent, productDescription);
+            productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
+            AppendChildToParentUsingElement (productContent, productDescription);
             
-        //    AddClassToElement (productRating, "stars");
-        //    for (let i= 0; i < 5; i++) {
-        //       const ratingStars = CreateNewElement("i");
-        //       AddClassToElement (ratingStars, "fas");
-        //       AddClassToElement (ratingStars, "fa-star");
-        //       AppendChildToParentUsingElement (productRating, ratingStars);
-        //    };
-        //    AppendChildToParentUsingElement (productContent, productRating);
+           AddClassToElement (productRating, "stars");
+           for (let i= 0; i < 5; i++) {
+              const ratingStars = CreateNewElement("i");
+              AddClassToElement (ratingStars, "fas");
+              AddClassToElement (ratingStars, "fa-star");
+              AppendChildToParentUsingElement (productRating, ratingStars);
+           };
+           AppendChildToParentUsingElement (productContent, productRating);
   
-        //    AddClassToElement (productPrice, 'price');
-        //    productPrice.innerHTML = "Ksh. "+price;
-        //    productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
-        //    AppendChildToParentUsingElement(productPrice, productPriceEstimate);
-        //    AppendChildToParentUsingElement(productContent, productPrice);
+           AddClassToElement (productPrice, 'price');
+           productPrice.innerHTML = "Ksh. "+price;
+           productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
+           AppendChildToParentUsingElement(productPrice, productPriceEstimate);
+           AppendChildToParentUsingElement(productContent, productPrice);
   
-        //    AddClassToElement (buyNowBtn, 'btn');
-        //    AddAttributeNamedElement(buyNowBtn, "href", "#");
-        //    AppendChildToParentUsingElement(productContent, buyNowBtn);
+           AddClassToElement (buyNowBtn, 'btn');
+           AddAttributeNamedElement(buyNowBtn, "href", "#");
+           AppendChildToParentUsingElement(productContent, buyNowBtn);
   
-        //    AppendChildToParentUsingElement(divProductBox, productContent);
+           AppendChildToParentUsingElement(divProductBox, productContent);
   
-        //    AppendChildToParentElement("box-container", 
-        //    GetSelectedElementWithClassName, divProductBox);
-        //   }
-        // );
+           AppendChildToParentElement("box-container", 
+           GetSelectedElementWithClassName, divProductBox);
+          }
+        );
         console.log (data.data)
       })
       .catch(err => {
