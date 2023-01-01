@@ -88,7 +88,7 @@ const PullProductsFromBackendAPI = () => {
           titleText.innerHTML = title;
 
           AddClassToNewElement (titleIcons, "fas");
-          AddClassToNewElement (titleIcons, "fas");
+          AddClassToNewElement (titleIcons, "fa-map-marker-alt");
           console.log(productImage);
         }
       );
