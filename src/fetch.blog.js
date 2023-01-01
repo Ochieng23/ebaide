@@ -85,11 +85,11 @@ const SelectElement = id => {
         //     const buyNowBtn = CreateElement("a");
   
         //     AddClassToElement(divProductBox, "box");
-        //     AddAttributeToElement(divProductBox, "id", id);
+        //     AddAttributeNamedElement(divProductBox, "id", id);
   
-        //     AddAttributeToElement(productImage, "src", 
+        //     AddAttributeNamedElement(productImage, "src", 
         //     `https://service.goebaide.com/${image}`);
-        //     AddAttributeToElement(productImage, "alt", "product image");
+        //     AddAttributeNamedElement(productImage, "alt", "product image");
         //     AppendChildToParentElementUsingElement(divProductBox, productImage)
   
         //     AddClassToElement(productContent, "content");
@@ -119,7 +119,7 @@ const SelectElement = id => {
         //    AppendChildToParentElementUsingElement(productContent, productPrice);
   
         //    AddClassToElement (buyNowBtn, 'btn');
-        //    AddAttributeToElement(buyNowBtn, "href", "#");
+        //    AddAttributeNamedElement(buyNowBtn, "href", "#");
         //    AppendChildToParentElementUsingElement(productContent, buyNowBtn);
   
         //    AppendChildToParentElementUsingElement(divProductBox, productContent);
