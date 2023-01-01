@@ -72,11 +72,7 @@ const GetElementById = id => {
     const productObject = {
       title,
       description,
-      price,
-      color,
-      size,
-      quantity,
-      product_image: image
+      blog_image: image
     };
   
     console.log(productObject);
