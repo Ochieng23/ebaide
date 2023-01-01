@@ -12,9 +12,11 @@ const CreateNewElement = (tag) => {
     return element;
 };
 
-const AddClassToNewElement = (element, tag, namedClass) => {
-    return element(tag).classList.add(namedClass);
+const AddClassToNewElement = (element, namedClass) => {
+    return element.classList.add(namedClass);
 };
+
+
 
 const RemoveClassFromNewElement = (element, id, className) => {
     element(id).classList.remove(className);
@@ -30,7 +32,9 @@ const GetSelectedElementsWithClassName = (className) => {
     return element;
 };
 
-AppendChildToParentElement = (id, cb, child) => {};
+AppendChildToParentElement = (id, cb, child) => {
+
+};
 
 const ProductBackendAPIURI = 'https://service.goebaide.com/api/product/all_products';
 
@@ -63,4 +67,4 @@ const PullProductsFromBackendAPI = () => {
     });
 };
 
-PullProductsFromBackendAPI ();
+//PullProductsFromBackendAPI ();
