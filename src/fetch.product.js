@@ -79,7 +79,7 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(productImage, "src", image);
           AddAttributeToElement(productImage, "alt", "product image");
-          //AddClassToNewElement()
+          AddClassToNewElement(productContent, "content");
           console.log(productImage);
         }
       );
