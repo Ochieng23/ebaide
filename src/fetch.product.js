@@ -92,6 +92,7 @@ const PullProductsFromBackendAPI = () => {
 
           AddAttributeToElement(productImage, "src", image);
 
+
           AddAttributeToElement(productImage, "alt", "product image");
 
           AddClassToNewElement(productContent, "content");
@@ -118,6 +119,7 @@ const PullProductsFromBackendAPI = () => {
 
          AddClassToNewElement (buyNowBtn, 'btn');
          AddAttributeToElement(buyNowBtn, "href", "#");
+
           console.log(productImage);
         }
       );
