@@ -45,7 +45,7 @@ const PullProductsFromBackendAPI = () => {
     })
     .then ( (data) => {
         if (data.error){
-
+            console.log(data);
             return;
         };
         const divProductBox = CreateNewElement ('div');
