@@ -21,12 +21,12 @@ const SelectElement = id => {
   };
   
   const GetElementWithClassName = className => {
-    const element = document.querySelector("." + className);
+    const element = document.querySelector(className);
     return element;
   };
   
   const GetElementsWithClassName = className => {
-    const element = document.querySelectorAll("." + className);
+    const element = document.querySelectorAll(className);
     return element;
   };
   
@@ -124,8 +124,8 @@ const SelectElement = id => {
   
            AppendChildToParentUsingElement(divProductBox, productContent);
   
-           AppendChildToParentElement("box-container", 
-           GetSelectedElementWithClassName, divProductBox);
+           AppendChildToParent("#box-container", 
+           GetElementWithClassName, divProductBox);
           }
         );
         console.log (data.data)
