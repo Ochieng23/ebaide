@@ -67,15 +67,11 @@ const SelectElement = id => {
         }
         // data.data.map(
         //   ({
-        //     color,
+        //     blogid,
         //     content,
-        //     id,
+        //     date,
         //     image,
-        //     price,
-        //     quantity,
-        //     size,
         //     title,
-        //     variation_id
         //   }) => {
         //     const divProductBox = CreateNewElement("div");
         //     const productImage = CreateNewElement("img");
