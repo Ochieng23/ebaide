@@ -78,7 +78,6 @@ const SelectElement = id => {
             const productContent = CreateElement("div");
             const titleText = CreateElement("h3");
             const productDescription = CreateElement("p");
-            const productRating = CreateElement("div");
             const productPrice = CreateElement("div");
             const productPriceEstimate = CreateElement("span");
             const buyNowBtn = CreateElement("a");
@@ -100,9 +99,7 @@ const SelectElement = id => {
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
-           productPrice.innerHTML = "Ksh. "+price;
-           productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
-           AppendChildToParentUsingElement(productPrice, productPriceEstimate);
+           productPrice.innerHTML = "\n" +date;
            AppendChildToParentUsingElement(productContent, productPrice);
   
            AddClassToElement (buyNowBtn, 'btn');
