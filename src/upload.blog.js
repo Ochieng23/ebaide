@@ -69,17 +69,6 @@ const GetElementById = id => {
   
     ClearErrorMessage("upload_product");
   
-    if (quantity < 1) {
-      AppendErrorMessage(
-        "upload_product",
-        ErrorMessage,
-        "Quantity can not be 0 !"
-      );
-      return;
-    }
-  
-    ClearErrorMessage("upload_product");
-  
     const productObject = {
       title,
       description,
