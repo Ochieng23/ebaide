@@ -38,6 +38,8 @@ AddAttributeToElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
+
+
 const ProductBackendAPIURI =
   "https://service.goebaide.com/api/product/all_products";
 
