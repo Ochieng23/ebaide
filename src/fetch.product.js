@@ -49,6 +49,8 @@ const PullProductsFromBackendAPI = () => {
         const productContent = CreateNewElement ('div');
         const titleText = CreateNewElement ('h3');
         const productDescription = CreateNewElement ('p');
+        const productRating = CreateNewElement ('div');
+        const ratingStars = CreateNewElement ('i');
         console.log(div.outerHTML);
     })
     .catch ( (err) => {
