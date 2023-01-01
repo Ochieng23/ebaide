@@ -53,7 +53,7 @@ const PullProductsFromBackendAPI = () => {
         console.log(data);
         return;
       }
-      data.data.map((data) => {
+      data.data.map(({}) => {
         const divProductBox = CreateNewElement("div");
         const productImage = CreateNewElement("img");
         const productContent = CreateNewElement("div");
