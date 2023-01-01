@@ -26,7 +26,7 @@ const GetSelectedElementWithClassName = (className) => {
 };
 
 let box = GetSelectedElementWithClassName ('box')
-
+AddClassToNewElement (box, 'newClass')
 console.log (box)
 
 const GetSelectedElementsWithClassName = (className) => {
