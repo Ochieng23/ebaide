@@ -31,7 +31,7 @@ const GetSelectedElementsWithClassName = (className) => {
 };
 
 AppendChildToParentElement = (id, cb, child) => {
-
+    
 };
 
 const ProductBackendAPIURI = 'https://service.goebaide.com/api/product/all_products';
