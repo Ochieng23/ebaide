@@ -85,10 +85,12 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement(productContent, "content");
 
-          titleText.innerHTML = title;
-
           AddClassToNewElement (titleIcons, "fas");
           AddClassToNewElement (titleIcons, "fa-map-marker-alt");
+
+          titleText.innerHTML = title;
+
+          
           console.log(productImage);
         }
       );
