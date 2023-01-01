@@ -59,7 +59,7 @@ const PullProductsFromBackendAPI = () => {
         const productPriceEstimate = CreateNewElement ('span');
         const buyNowBtn = CreateNewElement ('button');
 
-        AddClassToNewElement ('divProductBox', 'box');
+        AddClassToNewElement (divProductBox, 'box');
 
         //console.log(divProductBox.outerHTML);
     })
