@@ -49,7 +49,18 @@ const PullProductsFromBackendAPI = () => {
             return;
         };
         data.data.map ( () => {
+            const divProductBox = CreateNewElement ('div');
+        const productImage = CreateNewElement ('img');
+        const productContent = CreateNewElement ('div');
+        const titleText = CreateNewElement ('h3');
+        const productDescription = CreateNewElement ('p');
+        const productRating = CreateNewElement ('div');
+        const ratingStars = CreateNewElement ('i');
+        const productPrice = CreateNewElement ('div');
+        const productPriceEstimate = CreateNewElement ('span');
+        const buyNowBtn = CreateNewElement ('button');
 
+        AddClassToNewElement (divProductBox, 'box');
         })
         
     })
