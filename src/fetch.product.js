@@ -97,6 +97,8 @@ const PullProductsFromBackendAPI = () => {
 
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
           
+
+          
           console.log(productImage);
         }
       );
