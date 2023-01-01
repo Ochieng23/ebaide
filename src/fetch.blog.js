@@ -77,7 +77,6 @@ const SelectElement = id => {
             const productImage = CreateElement("img");
             const productContent = CreateElement("div");
             const titleText = CreateElement("h3");
-            const titleIcons = CreateElement("i");
             const productDescription = CreateElement("p");
             const productRating = CreateElement("div");
             const productPrice = CreateElement("div");
@@ -97,7 +96,7 @@ const SelectElement = id => {
             titleText.innerHTML = title;
             AppendChildToParentUsingElement(productContent, titleText);
   
-            productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
+            productDescription.innerHTML = `\n` +content;
             AppendChildToParentUsingElement (productContent, productDescription);
             
            AddClassToElement (productRating, "stars");
