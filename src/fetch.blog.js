@@ -53,7 +53,7 @@ const SelectElementById = id => {
   const ProductBackendAPIURI =
     "https://service.goebaide.com/api/product/all_products";
   
-  const PullProductsFromBackendAPI = () => {
+  const PullBlogsFromBackendAPI = () => {
     fetch(ProductBackendAPIURI, {
       method: "GET"
     })
@@ -138,4 +138,4 @@ const SelectElementById = id => {
       });
   };
   
-  PullProductsFromBackendAPI();
+  PullBlogsFromBackendAPI();
