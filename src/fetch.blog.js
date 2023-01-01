@@ -97,7 +97,7 @@ const SelectElement = id => {
         //     AddClassToElement (titleIcons, "fas");
         //     AddClassToElement (titleIcons, "fa-map-marker-alt");
         //     titleText.innerHTML = title;
-        //     AppendElementAsFirstChildUsingElement(titleText, titleIcons);
+        //     AppendAsFirstChildUsingElement(titleText, titleIcons);
         //     AppendChildToParentUsingElement(productContent, titleText);
   
         //     productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
