@@ -98,6 +98,7 @@ const PullProductsFromBackendAPI = () => {
           productDescription.innerHTML = `<h3>Product Description</h3> \n` +description;
           
          AddClassToNewElement (productRating, "stars");
+         for (let i= 0; i < 5; i++) {};
 
           console.log(productImage);
         }
