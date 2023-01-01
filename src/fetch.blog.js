@@ -50,11 +50,11 @@ const SelectElementById = id => {
       element.prepend(child);
   };
   
-  const ProductBackendAPIURI =
-    "https://service.goebaide.com/api/product/all_products";
+  const BlogBackendAPIURI =
+    "https://service.goebaide.com/api/blog/get";
   
   const PullBlogsFromBackendAPI = () => {
-    fetch(ProductBackendAPIURI, {
+    fetch(BlogBackendAPIURI, {
       method: "GET"
     })
       .then(response => {
