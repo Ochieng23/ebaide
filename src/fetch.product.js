@@ -48,7 +48,7 @@ const PullProductsFromBackendAPI = () => {
             console.log(data);
             return;
         };
-        
+        data.data
         const divProductBox = CreateNewElement ('div');
         const productImage = CreateNewElement ('img');
         const productContent = CreateNewElement ('div');
@@ -61,8 +61,6 @@ const PullProductsFromBackendAPI = () => {
         const buyNowBtn = CreateNewElement ('button');
 
         AddClassToNewElement (divProductBox, 'box');
-
-        console.log(divProductBox.outerHTML);
     })
     .catch ( (err) => {
         console.error(err)
