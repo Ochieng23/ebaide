@@ -42,7 +42,7 @@ const SelectElement = id => {
       cb (element).prepend(child);
   };
   
-  AppendChildToParentElementUsingElement = (element, child) => {
+  AppendChildToParentUsingElement = (element, child) => {
       element.appendChild(child);
     };
   
