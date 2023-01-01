@@ -69,6 +69,7 @@ const PullProductsFromBackendAPI = () => {
           const productImage = CreateNewElement("img");
           const productContent = CreateNewElement("div");
           const titleText = CreateNewElement("h3");
+          const titleIcons = CreateNewElement("i");
           const productDescription = CreateNewElement("p");
           const productRating = CreateNewElement("div");
           const ratingStars = CreateNewElement("i");
