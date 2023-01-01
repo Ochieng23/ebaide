@@ -105,7 +105,7 @@ const PingFetchRequest = e => {
     product_image: image
   };
 
-  console.log(productObject);
+  //console.log(productObject);
 
   const formData = new FormData();
 
