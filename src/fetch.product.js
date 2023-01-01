@@ -43,11 +43,11 @@ AppendElementAsFirstChild = (element, cb, child) => {
 };
 
 AppendChildToParentElementUsingElement = (element, child) => {
-    cb(element).appendChild(child);
+    element.appendChild(child);
   };
 
 AppendElementAsFirstChildUsingElement = (element, child) => { 
-    cb (element).prepend(child);
+    element.prepend(child);
 };
 
 const ProductBackendAPIURI =
@@ -98,7 +98,6 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement (titleIcons, "fas");
           AddClassToNewElement (titleIcons, "fa-map-marker-alt");
-
           titleText.innerHTML = title;
           
 
