@@ -122,6 +122,7 @@ const PullProductsFromBackendAPI = () => {
          AppendChildToParentElementUsingElement(productPrice, productPriceEstimate);
          AppendChildToParentElementUsingElement(productContent, productPrice);
 
+         buyNowBtn.innerHTML = 'Buy Now';
          AddClassToNewElement (buyNowBtn, 'btn');
          AddAttributeToElement(buyNowBtn, "href", "#");
          AddAttributeToElement(buyNowBtn, "type", "button");
