@@ -42,6 +42,10 @@ AppendElementAsFirstChild = (element, cb, child) => {
     cb (element).prepend(child);
 };
 
+AppendElementAsFirstChild = (element, cb, child) => { 
+    cb (element).prepend(child);
+};
+
 const ProductBackendAPIURI =
   "https://service.goebaide.com/api/product/all_products";
 
@@ -101,6 +105,7 @@ const PullProductsFromBackendAPI = () => {
             const ratingStars = CreateNewElement("i");
             AddClassToNewElement (ratingStars, "fas");
             AddClassToNewElement (ratingStars, "fa-star");
+
          };
 
           console.log(productImage);
