@@ -44,7 +44,8 @@ const PullProductsFromBackendAPI = () => {
 
             return;
         };
-        const div = CreateNewElement ('div');
+        const divproductBox = CreateNewElement ('div');
+        const productImage = CreateNewElement ('img');
         console.log(div.outerHTML);
     })
     .catch ( (err) => {
@@ -52,4 +53,4 @@ const PullProductsFromBackendAPI = () => {
     });
 };
 
-//PullProductsFromBackendAPI ();
+PullProductsFromBackendAPI ();
