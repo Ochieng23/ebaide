@@ -97,13 +97,13 @@ const GetElementById = id => {
         if (data.error) {
           AppendErrorMessage("upload_product", ErrorMessage, data.error);
           setTimeout(
-            window.location.href = "/index.html#login-form-container", 5000
+            window.location.href = "/index.html#login-form-container", 9000
           );
           return;
         }
-        //console.log(data);
-        AppendErrorMessage("upload_product", ErrorMessage, data.message);
-        setTimeout(window.location.reload(), 5000);
+        console.log(data);
+        AppendErrorMessage("upload_product", ErrorMessage, data.massage);
+        setTimeout(window.location.reload(), 9000);
       })
       .catch(err => {
         AppendErrorMessage("upload_product", ErrorMessage, err.error);
