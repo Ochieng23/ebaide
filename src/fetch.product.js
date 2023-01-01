@@ -25,10 +25,6 @@ const GetSelectedElementWithClassName = (className) => {
     return element;
 };
 
-let box = GetSelectedElementWithClassName ('box')
-AddClassToNewElement (box, 'newClass')
-console.log (box)
-
 const GetSelectedElementsWithClassName = (className) => {
     const element = document.querySelectorAll("."+className);
     return element;
