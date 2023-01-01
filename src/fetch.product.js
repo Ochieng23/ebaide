@@ -61,7 +61,7 @@ const PullProductsFromBackendAPI = () => {
 
         AddClassToNewElement (divProductBox, 'box');
 
-        //console.log(divProductBox.outerHTML);
+        console.log(divProductBox.outerHTML);
     })
     .catch ( (err) => {
         console.error(err)
