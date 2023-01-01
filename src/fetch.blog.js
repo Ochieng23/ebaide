@@ -73,18 +73,18 @@ const SelectElement = id => {
         //     image,
         //     title,
         //   }) => {
-        //     const divProductBox = CreateNewElement("div");
-        //     const productImage = CreateNewElement("img");
-        //     const productContent = CreateNewElement("div");
-        //     const titleText = CreateNewElement("h3");
-        //     const titleIcons = CreateNewElement("i");
-        //     const productDescription = CreateNewElement("p");
-        //     const productRating = CreateNewElement("div");
-        //     const productPrice = CreateNewElement("div");
-        //     const productPriceEstimate = CreateNewElement("span");
-        //     const buyNowBtn = CreateNewElement("a");
+        //     const divProductBox = CreateElement("div");
+        //     const productImage = CreateElement("img");
+        //     const productContent = CreateElement("div");
+        //     const titleText = CreateElement("h3");
+        //     const titleIcons = CreateElement("i");
+        //     const productDescription = CreateElement("p");
+        //     const productRating = CreateElement("div");
+        //     const productPrice = CreateElement("div");
+        //     const productPriceEstimate = CreateElement("span");
+        //     const buyNowBtn = CreateElement("a");
   
-        //     AddClassToNewElement(divProductBox, "box");
+        //     AddClassToElement(divProductBox, "box");
         //     AddAttributeToElement(divProductBox, "id", id);
   
         //     AddAttributeToElement(productImage, "src", 
@@ -92,10 +92,10 @@ const SelectElement = id => {
         //     AddAttributeToElement(productImage, "alt", "product image");
         //     AppendChildToParentElementUsingElement(divProductBox, productImage)
   
-        //     AddClassToNewElement(productContent, "content");
+        //     AddClassToElement(productContent, "content");
   
-        //     AddClassToNewElement (titleIcons, "fas");
-        //     AddClassToNewElement (titleIcons, "fa-map-marker-alt");
+        //     AddClassToElement (titleIcons, "fas");
+        //     AddClassToElement (titleIcons, "fa-map-marker-alt");
         //     titleText.innerHTML = title;
         //     AppendElementAsFirstChildUsingElement(titleText, titleIcons);
         //     AppendChildToParentElementUsingElement(productContent, titleText);
@@ -103,22 +103,22 @@ const SelectElement = id => {
         //     productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
         //     AppendChildToParentElementUsingElement (productContent, productDescription);
             
-        //    AddClassToNewElement (productRating, "stars");
+        //    AddClassToElement (productRating, "stars");
         //    for (let i= 0; i < 5; i++) {
         //       const ratingStars = CreateNewElement("i");
-        //       AddClassToNewElement (ratingStars, "fas");
-        //       AddClassToNewElement (ratingStars, "fa-star");
+        //       AddClassToElement (ratingStars, "fas");
+        //       AddClassToElement (ratingStars, "fa-star");
         //       AppendChildToParentElementUsingElement (productRating, ratingStars);
         //    };
         //    AppendChildToParentElementUsingElement (productContent, productRating);
   
-        //    AddClassToNewElement (productPrice, 'price');
+        //    AddClassToElement (productPrice, 'price');
         //    productPrice.innerHTML = "Ksh. "+price;
         //    productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
         //    AppendChildToParentElementUsingElement(productPrice, productPriceEstimate);
         //    AppendChildToParentElementUsingElement(productContent, productPrice);
   
-        //    AddClassToNewElement (buyNowBtn, 'btn');
+        //    AddClassToElement (buyNowBtn, 'btn');
         //    AddAttributeToElement(buyNowBtn, "href", "#");
         //    AppendChildToParentElementUsingElement(productContent, buyNowBtn);
   
