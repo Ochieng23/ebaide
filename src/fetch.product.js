@@ -132,6 +132,13 @@ const PullProductsFromBackendAPI = () => {
 
          AppendChildToParentElement("box-container", 
          GetSelectedElementWithClassName, divProductBox);
+
+         //HANDING VIEWING SINGLE PRODUCT:
+         const productCollection = 
+          GetSelectedElementsWithClassName('view-product')
+          for (let i = 0; i < productCollection.length; i++) {
+            console.log(productCollection.item(i));
+          };
         }
       );
     })
