@@ -2,7 +2,7 @@ const FindItemsByClassName = (name) => {
     const elements = document.querySelectorAll (name);
     return elements;
 };
-console.log(FindItemsByClassName ('.btn'))
+console.log(FindItemsByClassName ('viewproduct'))
 // const DisplaysingleProduct = () => {
 //     console.log('DisplaysingleProduct');
 // };
