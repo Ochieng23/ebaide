@@ -175,45 +175,45 @@ const PullProductsFromBackendAPI = () => {
             .then(data => {
               if (data.status === "success") {
                 window.location.href = "/html/product.html";
-                setTimeout(() => {
-                  const productContainer = SelectElementById(
-                    "view-single-product"
-                  );
+                // setTimeout(() => {
+                //   const productContainer = SelectElementById(
+                //     "view-single-product"
+                //   );
 
-                  const productBox = CreateNewElement("div");
-                  AddClassToNewElement(productBox, "col-lg-5");
-                  AddClassToNewElement(productBox, "col-md-12");
-                  AddClassToNewElement(productBox, "col-12");
+                //   const productBox = CreateNewElement("div");
+                //   AddClassToNewElement(productBox, "col-lg-5");
+                //   AddClassToNewElement(productBox, "col-md-12");
+                //   AddClassToNewElement(productBox, "col-12");
 
-                  const productFirstImage = CreateNewElement("img");
-                  AddClassToNewElement(productFirstImage, "mt-5");
-                  AddClassToNewElement(productFirstImage, "img-fluid");
-                  AddClassToNewElement(productFirstImage, "w-100");
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "alt",
-                    "product first image"
-                  );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "style",
-                    "width: 300px; height: 280px"
-                  );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "src",
-                    `https://service.goebaide.com/${data.data.image}`
-                  );
-                  AppendChildToParentElementUsingElement(
-                    productFirstImage,
-                    productBox
-                  );
+                //   const productFirstImage = CreateNewElement("img");
+                //   AddClassToNewElement(productFirstImage, "mt-5");
+                //   AddClassToNewElement(productFirstImage, "img-fluid");
+                //   AddClassToNewElement(productFirstImage, "w-100");
+                //   AddAttributeToElement(
+                //     productFirstImage,
+                //     "alt",
+                //     "product first image"
+                //   );
+                //   AddAttributeToElement(
+                //     productFirstImage,
+                //     "style",
+                //     "width: 300px; height: 280px"
+                //   );
+                //   AddAttributeToElement(
+                //     productFirstImage,
+                //     "src",
+                //     `https://service.goebaide.com/${data.data.image}`
+                //   );
+                //   AppendChildToParentElementUsingElement(
+                //     productFirstImage,
+                //     productBox
+                //   );
 
-                  AppendChildToParentElementUsingElement(
-                    productContainer,
-                    productBox
-                  );
-                }, 2000);
+                //   AppendChildToParentElementUsingElement(
+                //     productContainer,
+                //     productBox
+                //   );
+                // }, 2000);
               }
               console.log(data.data);
             })
