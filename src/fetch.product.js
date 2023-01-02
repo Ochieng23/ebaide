@@ -221,12 +221,12 @@ const PullProductsFromBackendAPI = () => {
                     AddClassToNewElement(smallImage, 'w-100');
                     AddClassToNewElement(smallImage, 'img-fluid');
                     AddAttributeToElement(
-                      smallImageGroupColumn,
+                      smallImage,
                       "src",
                       "https://service.goebaide.com"
                     );
                     AddAttributeToElement(
-                      smallImageGroupColumn,
+                      smallImage,
                       "alt",
                       "product-image-"+[i]
                     );
