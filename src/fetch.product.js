@@ -314,6 +314,11 @@ const PullProductsFromBackendAPI = () => {
                     };
 
                     const quantityToBuy = CreateNewElement('input');
+                    AddAttributeToElement(
+                      quantityToBuy,
+                      "type",
+                      "number"
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
