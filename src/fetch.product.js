@@ -322,7 +322,7 @@ const PullProductsFromBackendAPI = () => {
                     AddAttributeToElement(
                       quantityToBuy,
                       "style",
-                      
+                      ""
                     );
 
                     AppendChildToParentElementUsingElement(
