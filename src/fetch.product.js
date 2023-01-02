@@ -299,6 +299,7 @@ const PullProductsFromBackendAPI = () => {
                       AddAttributeToElement(
                         sizeListItem, 
                         'style',
+                        'font-size: 1em'
                         );
                     };
 
