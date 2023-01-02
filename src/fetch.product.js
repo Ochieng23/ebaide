@@ -134,6 +134,8 @@ const PullProductsFromBackendAPI = () => {
          GetSelectedElementWithClassName, divProductBox);
 
          //HANDING VIEWING SINGLE PRODUCT:
+         const productCollection = GetSelectedElementsWithClassName ('view-product');
+          console.log (productCollection)
         }
       );
     })
