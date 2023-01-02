@@ -178,6 +178,8 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement (productBox, "col-12");
                   
                   const productFirstImage = CreateNewElement ('img');
+                  AddClassToNewElement (productFirstImage, "mt-5");
+                  AddClassToNewElement (productFirstImage, "mt-5");
 
 
                   AppendChildToParentElementUsingElement (productContainer, productBox);
