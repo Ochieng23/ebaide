@@ -1,6 +1,6 @@
 const FindItemsByClassName = (name) => {
     const elements = document.querySelectorAll (name);
-    return elements;
+    console.log(elements);
 };
 
 const DisplaysingleProduct = () => {
@@ -12,3 +12,7 @@ const GetingClickedItemInAList =  (cb, className) => {
         console.log (cb(className)[i]);
     };
 };
+
+setTimeout(
+    FindItemsByClassName('.view-product'), 20000
+)
