@@ -30,7 +30,10 @@ const GetSelectedElementsWithClassName = className => {
   return element;
 };
 
-
+const QuerySelectorForDocumentElement = element => {
+  const element = document.querySelector("." + className);
+  return element;
+};
 
 AppendChildToParentElement = (element, cb, child) => {
   cb(element).appendChild(child);
