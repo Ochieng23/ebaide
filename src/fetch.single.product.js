@@ -3,4 +3,6 @@ const FindParentProductHolder = (id) => {
 };
 
 FindParentProductHolder ('view-single-product');
+
+
 console.log (test.children);
