@@ -147,6 +147,9 @@ const PullProductsFromBackendAPI = () => {
             fetch(SingleProductURI, {
               method: 'GET',
             })
+            .then ( (response) => {
+              return response.json();
+            })
            console.log(productid);
          });
        };
