@@ -222,8 +222,8 @@ const PullProductsFromBackendAPI = () => {
                     );
                     AddAttributeToElement(
                       smallImageGroupColumn,
-                      "src",
-                      "https://service.goebaide.com"
+                      "alt",
+                      "product-image-"+[i]
                     );
                   }
 
