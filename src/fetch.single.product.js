@@ -3,7 +3,7 @@ const FindParentProductHolder = (id) => {
 };
 
 const FindingClickedClhild = (cb, id) => {
-    const len = setTimeout (cb(id).children.length, 7000);
-    return len
+    const collection = cb(id).children;
+    return collection;
 };
 console.log ( FindingClickedClhild(FindParentProductHolder, 'view-single-product'));
