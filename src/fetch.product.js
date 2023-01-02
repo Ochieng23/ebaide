@@ -279,6 +279,9 @@ const PullProductsFromBackendAPI = () => {
                       productPriceSpanHolder,
                       priceSpanHolder
                       );
+                    AppendChildToParentElementUsingElement(
+
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
