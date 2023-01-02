@@ -134,6 +134,17 @@ const PullProductsFromBackendAPI = () => {
          GetSelectedElementWithClassName, divProductBox);
         }
       );
+       //HANDING VIEWING SINGLE PRODUCT:
+       const productCollection = 
+       GetSelectedElementsWithClassName('view-product')
+       for (let i = 0; i < productCollection.length; i++) {
+         productCollection.item(i).addEventListener ('click', () =>{
+           const productid = productCollection.item(i).parentElement.parentElement.id;
+           const SingleProductURI =
+            `https://service.goebaide.com/api/product/one_products/${productid}`;
+           console.log(productid);
+         });
+       };
     })
     .catch(err => {
       console.error(err);
