@@ -270,6 +270,10 @@ const PullProductsFromBackendAPI = () => {
                       productTitle
                     )
 
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      productBox
+                    )
                   AppendChildToParentElementUsingElement(
                     productContainer,
                     productBox
