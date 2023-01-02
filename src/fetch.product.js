@@ -337,6 +337,10 @@ const PullProductsFromBackendAPI = () => {
                     const addToCartButton = CreateNewElement ('button');
                     AddClassToNewElement(addToCartButton, 'btn');
                     addToCartButton.innerHTML = 'Add To Cart';
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      addToCartButton
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
