@@ -215,7 +215,7 @@ const PullProductsFromBackendAPI = () => {
                     "#body",
                     QuerySelectorForDocumentElement,
                     productContainer
-                  )
+                  );
                 }, 2000);
               }
               console.log(data.data);
