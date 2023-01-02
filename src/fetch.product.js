@@ -246,6 +246,7 @@ const PullProductsFromBackendAPI = () => {
                   )
 
                   const productInformation = CreateNewElement('div');
+                  AddClassToNewElement(productInformation, 'col-lg-5');
 
                   AppendChildToParentElementUsingElement(
                     productContainer,
