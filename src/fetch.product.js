@@ -250,7 +250,7 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement(productInformation, 'col-md-12');
                   AddClassToNewElement(productInformation, 'col-12');
                   AddClassToNewElement(productInformation, 'my-5');
-                  AddClassToNewElement(productInformation, 'col-lg-5');
+                  AddClassToNewElement(productInformation, 'pt-5');
 
                   AppendChildToParentElementUsingElement(
                     productContainer,
