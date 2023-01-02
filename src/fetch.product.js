@@ -296,6 +296,10 @@ const PullProductsFromBackendAPI = () => {
                         'value',
                         sizeArray[i]
                         );
+                      AddAttributeToElement(
+                        sizeListItem, 
+                        'style',
+                        );
                     };
 
                     AppendChildToParentElementUsingElement(
