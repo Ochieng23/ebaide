@@ -204,7 +204,6 @@ const PullProductsFromBackendAPI = () => {
                   );
                   AppendChildToParentElementUsingElement(
                     productFirstImage
-                    
                   );
 
                   AppendChildToParentElementUsingElement(
