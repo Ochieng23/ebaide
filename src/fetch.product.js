@@ -342,7 +342,14 @@ const PullProductsFromBackendAPI = () => {
                       productInformation,
                       addToCartButton
                     );
-                    
+
+                    const continueShoppingButton = CreateNewElement ('button');
+                    AddClassToNewElement(continueShoppingButton, 'btn');
+                    continueShoppingButton.innerHTML = 'Continue Shopping';
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      continueShoppingButton
+                    );
 
                     const productDescriptionDetails = CreateNewElement('h4');
                     productDescriptionDetails.innerHTML = 'Product Description';
