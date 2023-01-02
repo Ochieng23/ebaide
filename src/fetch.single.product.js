@@ -2,8 +2,9 @@ const FindItemsByClassName = (name) => {
     const elements = document.querySelectorAll (name);
     return elements;
 };
-console.log(FindItemsByClassName ('.box'));
 
-const GetingClickedItemInAList =  (cb, className) => {
-    for (let i = 0; i < cb (className).length; i++) {};
+const GetingClickedItemInAList =  (cb1, cb2, className) => {
+    for (let i = 0; i < cb1(className).length; i++) {
+        cb1(className)[i].addEventListener ('click', cb2, false);
+    };
 };
