@@ -136,7 +136,7 @@ const PullProductsFromBackendAPI = () => {
          //HANDING VIEWING SINGLE PRODUCT:
          const productCollection = 
           GetSelectedElementsWithClassName('view-product')
-          console.log(productCollection);
+          for (let i = 0; i < productCollection.length; i++) {};
         }
       );
     })
