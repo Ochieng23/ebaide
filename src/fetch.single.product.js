@@ -4,5 +4,5 @@ const FindParentProductHolder = (id) => {
 
 FindParentProductHolder ('view-single-product');
 
-
+const FindingClickedClhild = (cb, id) => {};
 console.log (test.children);
