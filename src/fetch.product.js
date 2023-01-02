@@ -30,6 +30,8 @@ const GetSelectedElementsWithClassName = className => {
   return element;
 };
 
+
+
 AppendChildToParentElement = (element, cb, child) => {
   cb(element).appendChild(child);
 };
