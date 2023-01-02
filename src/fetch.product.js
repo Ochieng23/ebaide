@@ -182,7 +182,10 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement (productFirstImage, "img-fluid");
                   AddClassToNewElement (productFirstImage, "w-100");
                   AddAttributeToElement(productFirstImage, "alt", "product first image");
-                  AddAttributeToElement (productFirstImage, "style", "width: 300px; height: 280px");
+                  AddAttributeToElement (productFirstImage, 
+                    "style", "width: 300px; height: 280px");
+                  AddAttributeToElement (productFirstImage, 
+                    "src", `https://service.goebaide.com/${data.data.image}`);
 
                   AppendChildToParentElementUsingElement (productContainer, productBox);
                 }, 2000);
