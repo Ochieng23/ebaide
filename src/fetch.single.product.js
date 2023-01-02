@@ -3,7 +3,9 @@ const FindItemsByClassName = (name) => {
     return elements;
 };
 
-const DisplaysingleProduct = () => {};
+const DisplaysingleProduct = () => {
+    console.log('DisplaysingleProduct');
+};
 
 const GetingClickedItemInAList =  (cb1, cb2, className) => {
     for (let i = 0; i < cb1(className).length; i++) {
