@@ -342,6 +342,7 @@ const PullProductsFromBackendAPI = () => {
                       productInformation,
                       addToCartButton
                     );
+                    
 
                     const productDescriptionDetails = CreateNewElement('h4');
                     productDescriptionDetails.innerHTML = 'Product Description';
