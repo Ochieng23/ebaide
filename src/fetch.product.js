@@ -241,6 +241,7 @@ const PullProductsFromBackendAPI = () => {
                     );
                   };
                   AppendChildToParentElementUsingElement(
+                    productBox,
                     smallImageGroup
                   )
 
