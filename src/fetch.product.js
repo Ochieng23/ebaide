@@ -272,6 +272,7 @@ const PullProductsFromBackendAPI = () => {
 
                     const productPriceSpanHolder = CreateNewElement('h2');
                     AddClassToNewElement(productPriceSpanHolder, 'price');
+                    const priceSpanHolder = CreateNewElement('span');
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
