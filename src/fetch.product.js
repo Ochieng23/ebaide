@@ -275,6 +275,10 @@ const PullProductsFromBackendAPI = () => {
 
                     const priceSpanHolder = CreateNewElement('span');
                     priceSpanHolder.innerHTML = 'Ksh. '+data.data[0].price;
+                    AppendChildToParentElementUsingElement(
+                      priceSpanHolder, 
+                      priceInformation
+                      );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
