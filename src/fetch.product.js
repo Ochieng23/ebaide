@@ -258,6 +258,7 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     const productTitle = CreateNewElement('h1');
+                    AddAttributeToElement(productTitle, 'style', 'font-weight: bolder;')
 
                   AppendChildToParentElementUsingElement(
                     productContainer,
