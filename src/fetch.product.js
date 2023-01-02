@@ -153,6 +153,7 @@ const PullProductsFromBackendAPI = () => {
             .then ( (data) => {
               if (data.status === 'success') {
                 window.location.href = '/html/product.html';
+                
                 console.log(data.data);
               };
             })
