@@ -266,7 +266,8 @@ const PullProductsFromBackendAPI = () => {
                     productTitle.innerHTML = data.data[0].title;
 
                     AppendChildToParentElementUsingElement(
-                      
+                      productInformation, 
+                      productTitle
                     )
 
                   AppendChildToParentElementUsingElement(
