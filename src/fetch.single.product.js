@@ -3,3 +3,4 @@ const FindItemsByClassName = (name) => {
     return elements;
 }
 console.log(FindItemsByClassName ('.box'));
+
