@@ -7,4 +7,4 @@ const FindingClickedClhild = (cb, id) => {
         cb(id)[i];
     };
 };
-console.log ( FindingClickedClhild, 'view-single-product');
+console.log ( FindParentProductHolder, 'view-single-product');
