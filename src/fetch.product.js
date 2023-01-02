@@ -301,6 +301,7 @@ const PullProductsFromBackendAPI = () => {
                         'style',
                         'font-size: 1em'
                         );
+                      sizeListItem.innerHTML = sizeArray[i];
                     };
 
                     AppendChildToParentElementUsingElement(
