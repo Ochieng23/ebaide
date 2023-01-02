@@ -351,7 +351,10 @@ const PullProductsFromBackendAPI = () => {
 
                     const fullDescriptionTextSpan = CreateNewElement('span');
                     fullDescriptionTextSpan.innerHTML = data.data[0].description;
-                    AppendChildToParentElementUsingElement();
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      fullDescriptionTextSpan
+                    );
         
                     AppendChildToParentElementUsingElement(
                       productBox, 
