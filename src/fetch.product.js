@@ -172,6 +172,7 @@ const PullProductsFromBackendAPI = () => {
                     "view-single-product"
                   );
                   
+                  
                 }, 2000);
               }
             })
