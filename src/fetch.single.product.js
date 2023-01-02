@@ -4,7 +4,6 @@ const FindParentProductHolder = (id) => {
 
 const FindingClickedClhild = (cb, id) => {
     const collection = cb(id).children;
-    const collectionArray = [...collection];
-    return collectionArray;
+    return collection.length ();
 };
 console.log ( FindingClickedClhild(FindParentProductHolder, 'view-single-product'));

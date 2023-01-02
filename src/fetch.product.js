@@ -132,6 +132,8 @@ const PullProductsFromBackendAPI = () => {
 
          AppendChildToParentElement("box-container", 
          GetSelectedElementWithClassName, divProductBox);
+
+         //HANDING VIEWING SINGLE PRODUCT:
         }
       );
     })
