@@ -171,7 +171,7 @@ const PullProductsFromBackendAPI = () => {
                   const productContainer = SelectElementById(
                     "view-single-product"
                   );
-                  alert(productContainer);
+                  
                 }, 2000);
               }
             })
