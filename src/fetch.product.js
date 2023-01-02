@@ -195,7 +195,7 @@ const PullProductsFromBackendAPI = () => {
                   AddAttributeToElement(
                     productFirstImage,
                     "style",
-                    "width: 300px; height: 280px"
+                    "width: 300px; height: auto;"
                   );
                   AddAttributeToElement(
                     productFirstImage,
