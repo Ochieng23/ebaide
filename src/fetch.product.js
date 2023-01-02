@@ -319,6 +319,9 @@ const PullProductsFromBackendAPI = () => {
                       "type",
                       "number"
                     );
+                    AddAttributeToElement(
+
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
