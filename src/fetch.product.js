@@ -325,7 +325,8 @@ const PullProductsFromBackendAPI = () => {
                       "width:30px; height: 10%;"
                     );
                     AddAttributeToElement(
-
+                      quantityToBuy,
+                      "value",
                     );
 
                     AppendChildToParentElementUsingElement(
