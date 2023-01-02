@@ -2,7 +2,7 @@ const FindItemsByClassName = (name) => {
     const elements = document.querySelectorAll (name);
     return elements;
 };
-console.log(FindItemsByClassName ('.view-product'))
+console.log(FindItemsByClassName ('.btn'))
 // const DisplaysingleProduct = () => {
 //     console.log('DisplaysingleProduct');
 // };
@@ -13,4 +13,4 @@ console.log(FindItemsByClassName ('.view-product'))
 //     };
 // };
 
-GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.view-product')
+//GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.view-product')
