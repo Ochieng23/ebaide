@@ -3,17 +3,14 @@ const FindItemsByClassName = (name) => {
     return elements;
 };
 
-document.addEventListener ('DOMContentLoaded', ()=>{
-    console.log(FindItemsByClassName ('view-product'));
-});
-// const DisplaysingleProduct = () => {
-//     console.log('DisplaysingleProduct');
-// };
+const DisplaysingleProduct = () => {
+    console.log('DisplaysingleProduct');
+};
 
-// const GetingClickedItemInAList =  (cb1, cb2, className) => {
-//     for (let i = 0; i < cb1(className).length; i++) {
-//         cb1(className)[i].addEventListener ('click', cb2);
-//     };
-// };
+const GetingClickedItemInAList =  (cb1, cb2, className) => {
+    for (let i = 0; i < cb1(className).length; i++) {
+        cb1(className)[i].addEventListener ('click', cb2);
+    };
+};
 
-//GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.view-product')
+GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.view-product')
