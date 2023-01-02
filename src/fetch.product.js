@@ -294,6 +294,7 @@ const PullProductsFromBackendAPI = () => {
                       AddAttributeToElement(
                         sizeListItem, 
                         'value',
+                        sizeArray[i]
                         );
                     };
 
