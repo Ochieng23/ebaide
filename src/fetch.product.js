@@ -320,7 +320,9 @@ const PullProductsFromBackendAPI = () => {
                       "number"
                     );
                     AddAttributeToElement(
-
+                      quantityToBuy,
+                      "style",
+                      
                     );
 
                     AppendChildToParentElementUsingElement(
