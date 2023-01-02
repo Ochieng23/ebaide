@@ -284,6 +284,8 @@ const PullProductsFromBackendAPI = () => {
                       productPriceSpanHolder
                     );
 
+                    const sizeList = CreateNewElement('select');
+
                     AppendChildToParentElementUsingElement(
                       productBox, 
                       productInformation
