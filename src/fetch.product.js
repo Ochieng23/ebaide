@@ -353,7 +353,7 @@ const PullProductsFromBackendAPI = () => {
                         window.location.href === 
                         `https://goebaide.com/index.html#packages`
                       ){
-                        window.location.href = 'http://localhost:5503/index.html';
+                        window.location.href = 'https://goebaide.com/';
                         return;
                       };
                       window.location.href = '/https://goebaide.com#packages';
