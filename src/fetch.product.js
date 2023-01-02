@@ -343,6 +343,9 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     const productDescriptionDetails = CreateNewElement('h4');
+                    AppendChildToParentElementUsingElement(
+
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
