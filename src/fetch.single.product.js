@@ -5,5 +5,5 @@ const FindItemsByClassName = (name) => {
 console.log(FindItemsByClassName ('.box'));
 
 const GetingClickedItemInAList =  (cb, className) => {
-    cb (className)
+    for (let i = 0; i < cb (className).length; i++) {};
 };
