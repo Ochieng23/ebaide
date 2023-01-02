@@ -134,8 +134,10 @@ const PullProductsFromBackendAPI = () => {
          GetSelectedElementWithClassName, divProductBox);
 
          //HANDING VIEWING SINGLE PRODUCT:
-         const productCollection = GetSelectedElementsWithClassName ('view-product');
-          console.log (productCollection)
+         const productCollection = setTimeout (
+          GetSelectedElementsWithClassName ('view-product'), 10000
+          );
+        
         }
       );
     })
