@@ -349,13 +349,14 @@ const PullProductsFromBackendAPI = () => {
                     continueShoppingButton.addEventListener('click', (e) =>{
                       e.preventDefault();
                       //console.log(window.location.href);
-                      window.location.href = '/index.html#packages';
                       if(
                         window.location.href === 
-                        `http://localhost:5503/index.html#packages`
+                        `https://goebaide.com/index.html#packages`
                       ){
                         window.location.href = 'http://localhost:5503/index.html';
+                        return;
                       };
+                      window.location.href = '/https://goebaide.com#packages';
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
