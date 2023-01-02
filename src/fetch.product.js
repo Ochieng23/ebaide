@@ -200,8 +200,9 @@ const PullProductsFromBackendAPI = () => {
                   AddAttributeToElement(
                     productFirstImage,
                     "src",
-                    `https://service.goebaide.com/${data.data.image}`
+                    `https://service.goebaide.com/${data.data[0].image}`
                   );
+                  console.log(data.data);
                   AppendChildToParentElementUsingElement(
                     productBox,
                     productFirstImage
@@ -218,7 +219,7 @@ const PullProductsFromBackendAPI = () => {
                   );
                 }, 100);
               }
-              console.log(data.data);
+              //console.log(data.data);
             })
             .catch(error => {
               console.log(error);
