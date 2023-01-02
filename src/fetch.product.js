@@ -141,8 +141,8 @@ const PullProductsFromBackendAPI = () => {
           AppendChildToParentElementUsingElement(divProductBox, productContent);
 
           AppendChildToParentElement(
-            "box-container",
-            GetSelectedElementWithClassName,
+            "product-container",
+            SelectElementById,
             divProductBox
           );
         }
@@ -177,11 +177,13 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement (productBox, "col-md-12");
                   AddClassToNewElement (productBox, "col-12");
                   
+                  const productFirstImage = CreateNewElement ('img');
 
-                  
+
                   AppendChildToParentElementUsingElement (productContainer, productBox);
                 }, 2000);
               }
+              console.log(data.data)
             })
             .catch(error => {
               console.log(error);
