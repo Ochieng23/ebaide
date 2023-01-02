@@ -218,6 +218,7 @@ const PullProductsFromBackendAPI = () => {
 
                     const smallImage = CreateNewElement('img');
                     AddClassToNewElement(smallImage, 'small-img');
+                    AddClassToNewElement(smallImage, 'w-100');
                     AddAttributeToElement(
                       smallImageGroupColumn,
                       "src",
