@@ -38,16 +38,16 @@ AddAttributeToElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
-AppendElementAsFirstChild = (element, cb, child) => { 
-    cb (element).prepend(child);
+AppendElementAsFirstChild = (element, cb, child) => {
+  cb(element).prepend(child);
 };
 
 AppendChildToParentElementUsingElement = (element, child) => {
-    element.appendChild(child);
-  };
+  element.appendChild(child);
+};
 
-AppendElementAsFirstChildUsingElement = (element, child) => { 
-    element.prepend(child);
+AppendElementAsFirstChildUsingElement = (element, child) => {
+  element.prepend(child);
 };
 
 const ProductBackendAPIURI =
@@ -91,77 +91,95 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
 
-          AddAttributeToElement(productImage, "src", 
-          `https://service.goebaide.com/${image}`);
+          AddAttributeToElement(
+            productImage,
+            "src",
+            `https://service.goebaide.com/${image}`
+          );
           AddAttributeToElement(productImage, "alt", "product image");
-          AppendChildToParentElementUsingElement(divProductBox, productImage)
+          AppendChildToParentElementUsingElement(divProductBox, productImage);
 
           AddClassToNewElement(productContent, "content");
 
-          AddClassToNewElement (titleIcons, "fas");
-          AddClassToNewElement (titleIcons, "fa-map-marker-alt");
+          AddClassToNewElement(titleIcons, "fas");
+          AddClassToNewElement(titleIcons, "fa-map-marker-alt");
           titleText.innerHTML = title;
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
           AppendChildToParentElementUsingElement(productContent, titleText);
 
-          productDescription.innerHTML = `<h2>Product Description</h2> \n` +description;
-          AppendChildToParentElementUsingElement (productContent, productDescription);
-          
-         AddClassToNewElement (productRating, "stars");
-         for (let i= 0; i < 5; i++) {
+          productDescription.innerHTML =
+            `<h2>Product Description</h2> \n` + description;
+          AppendChildToParentElementUsingElement(
+            productContent,
+            productDescription
+          );
+
+          AddClassToNewElement(productRating, "stars");
+          for (let i = 0; i < 5; i++) {
             const ratingStars = CreateNewElement("i");
-            AddClassToNewElement (ratingStars, "fas");
-            AddClassToNewElement (ratingStars, "fa-star");
-            AppendChildToParentElementUsingElement (productRating, ratingStars);
-         };
-         AppendChildToParentElementUsingElement (productContent, productRating);
+            AddClassToNewElement(ratingStars, "fas");
+            AddClassToNewElement(ratingStars, "fa-star");
+            AppendChildToParentElementUsingElement(productRating, ratingStars);
+          }
+          AppendChildToParentElementUsingElement(productContent, productRating);
 
-         AddClassToNewElement (productPrice, 'price');
-         productPrice.innerHTML = "Ksh. "+price;
-         productPriceEstimate.innerHTML = "Ksh. "+(price + 40);
-         AppendChildToParentElementUsingElement(productPrice, productPriceEstimate);
-         AppendChildToParentElementUsingElement(productContent, productPrice);
+          AddClassToNewElement(productPrice, "price");
+          productPrice.innerHTML = "Ksh. " + price;
+          productPriceEstimate.innerHTML = "Ksh. " + (price + 40);
+          AppendChildToParentElementUsingElement(
+            productPrice,
+            productPriceEstimate
+          );
+          AppendChildToParentElementUsingElement(productContent, productPrice);
 
-         buyNowBtn.innerHTML = 'Buy Now';
-         AddClassToNewElement (buyNowBtn, 'view-product');
-         AddClassToNewElement (buyNowBtn, 'btn');
-         AddAttributeToElement(buyNowBtn, "type", "button");
-         AppendChildToParentElementUsingElement(productContent, buyNowBtn);
+          buyNowBtn.innerHTML = "Buy Now";
+          AddClassToNewElement(buyNowBtn, "view-product");
+          AddClassToNewElement(buyNowBtn, "btn");
+          AddAttributeToElement(buyNowBtn, "type", "button");
+          AppendChildToParentElementUsingElement(productContent, buyNowBtn);
 
-         AppendChildToParentElementUsingElement(divProductBox, productContent);
+          AppendChildToParentElementUsingElement(divProductBox, productContent);
 
-         AppendChildToParentElement("box-container", 
-         GetSelectedElementWithClassName, divProductBox);
+          AppendChildToParentElement(
+            "box-container",
+            GetSelectedElementWithClassName,
+            divProductBox
+          );
         }
       );
-       //HANDING VIEWING SINGLE PRODUCT:
-       const productCollection = 
-       GetSelectedElementsWithClassName('view-product')
-       for (let i = 0; i < productCollection.length; i++) {
-         productCollection.item(i).addEventListener ('click', () =>{
-           const productid = productCollection.item(i).parentElement.parentElement.id;
-           const SingleProductURI =
-            `https://service.goebaide.com/api/product/one_products/${productid}`;
+      //HANDING VIEWING SINGLE PRODUCT:
+      const productCollection = GetSelectedElementsWithClassName(
+        "view-product"
+      );
+      for (let i = 0; i < productCollection.length; i++) {
+        productCollection.item(i).addEventListener("click", () => {
+          const productid = productCollection.item(i).parentElement
+            .parentElement.id;
+          const SingleProductURI = `https://service.goebaide.com/api/product/one_products/${productid}`;
 
-            //FETCH SINGLE PRODUCT:
-            fetch(SingleProductURI, {
-              method: 'GET',
-            })
-            .then ( (response) => {
+          //FETCH SINGLE PRODUCT:
+          fetch(SingleProductURI, {
+            method: "GET"
+          })
+            .then(response => {
               return response.json();
             })
-            .then ( (data) => {
-              if (data.status === 'success') {
-                window.location.href = '/html/product.html';
-                const productContainer = SelectElementById ('view-single-product');
-                console.log(data.data, productContainer);
-              };
+            .then(data => {
+              if (data.status === "success") {
+                window.location.href = "/html/product.html";
+                setTimeout(() => {
+                  const productContainer = SelectElementById(
+                    "view-single-product"
+                  );
+                  alert(productContainer);
+                }, 5000);
+              }
             })
-            .catch ( (error) => {
+            .catch(error => {
               console.log(error);
             });
-         });
-       };
+        });
+      }
     })
     .catch(err => {
       console.error(err);
