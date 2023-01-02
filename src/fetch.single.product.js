@@ -1,4 +1,4 @@
-document.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const FindItemsByClassName = className => {
     return document.querySelectorAll(className);
   };
@@ -7,4 +7,5 @@ document.addEventListener("load", () => {
   for (let i = 0; i < productCollection.length; i++) {
     console.log(productCollection.item(i));
   }
+  console.log("content loaded");
 });
