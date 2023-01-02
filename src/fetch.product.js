@@ -232,7 +232,7 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     AppendChildToParentElementUsingElement(
-                      
+                      smallImageGroupColumn
                     )
                   };
 
