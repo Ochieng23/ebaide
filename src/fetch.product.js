@@ -153,8 +153,8 @@ const PullProductsFromBackendAPI = () => {
             .then ( (data) => {
               if (data.status === 'success') {
                 window.location.href = '/html/product.html';
-                SelectElementById ('view-single-product');
-                console.log(data.data);
+                const productContainer = SelectElementById ('view-single-product');
+                console.log(data.data, productContainer);
               };
             })
             .catch ( (error) => {
