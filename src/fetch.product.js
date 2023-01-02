@@ -350,7 +350,12 @@ const PullProductsFromBackendAPI = () => {
                       e.preventDefault();
                       console.log(window.location.href);
                       window.location.href = '/index.html#packages';
-                      if(){};
+                      if(
+                        window.location.href === 
+                        `http://localhost:5503/index.html#packages`
+                      ){
+                        window.location.href = 'http://localhost:5503/index.html';
+                      };
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
