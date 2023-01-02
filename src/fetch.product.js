@@ -172,7 +172,8 @@ const PullProductsFromBackendAPI = () => {
                     "view-single-product"
                   );
                   
-                  
+                  const productBox = CreateNewElement ('div');
+                  AddClassToNewElement (productBox, "col-lg-5")
                 }, 2000);
               }
             })
