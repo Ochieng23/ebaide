@@ -257,6 +257,8 @@ const PullProductsFromBackendAPI = () => {
                     'background-color: white;'
                     );
 
+                    const productTitle = CreateNewElement('h1');
+
                   AppendChildToParentElementUsingElement(
                     productContainer,
                     productBox
