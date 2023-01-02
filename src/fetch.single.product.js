@@ -8,3 +8,4 @@ const GetingClickedItemInAList =  (cb1, cb2, className) => {
         cb1(className)[i].addEventListener ('click', cb2, false);
     };
 };
+
