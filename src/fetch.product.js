@@ -291,6 +291,10 @@ const PullProductsFromBackendAPI = () => {
                     const sizeArray = data.data[0].size.split(' ');
                     for (let i = 0; i < sizeArray.length; i++) {
                       const sizeListItem = CreateNewElement('option');
+                      AddAttributeToElement(
+                        sizeListItem, 
+                        'value',
+                        );
                     };
 
                     AppendChildToParentElementUsingElement(
