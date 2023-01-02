@@ -288,6 +288,9 @@ const PullProductsFromBackendAPI = () => {
                     AddClassToNewElement(sizeList, 'my-3');
                     AddAttributeToElement(sizeList, 'style', 'height: 10%;');
 
+                    
+                    //const sizeListItem;
+
                     AppendChildToParentElementUsingElement(
                       productBox, 
                       productInformation
