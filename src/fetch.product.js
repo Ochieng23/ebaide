@@ -155,7 +155,7 @@ const PullProductsFromBackendAPI = () => {
             })
             .catch ( (error) => {
               console.log(error);
-            })
+            });
          });
        };
     })
