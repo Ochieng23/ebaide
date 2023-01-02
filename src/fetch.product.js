@@ -176,7 +176,7 @@ const PullProductsFromBackendAPI = () => {
               if (data.status === "success") {
                 ClearContentOfElement(
                   QuerySelectorForDocumentElement, 
-                  data.data()
+                  "#body"
                   );
                 // setTimeout(() => {
                 //   const productContainer = SelectElementById(
