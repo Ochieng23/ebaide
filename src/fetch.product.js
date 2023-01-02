@@ -324,6 +324,9 @@ const PullProductsFromBackendAPI = () => {
                       "style",
                       "width:30px; height: 10%;"
                     );
+                    AddAttributeToElement(
+
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
