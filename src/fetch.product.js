@@ -216,7 +216,8 @@ const PullProductsFromBackendAPI = () => {
                       "small-img-col"
                     );
 
-                    
+                    const smallImage = CreateNewElement('img');
+
                     AddAttributeToElement(
                       smallImageGroupColumn,
                       "src",
