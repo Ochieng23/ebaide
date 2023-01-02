@@ -142,6 +142,11 @@ const PullProductsFromBackendAPI = () => {
            const productid = productCollection.item(i).parentElement.parentElement.id;
            const SingleProductURI =
             `https://service.goebaide.com/api/product/one_products/${productid}`;
+
+            //FETCH SINGLE PRODUCT:
+            fetch(SingleProductURI, {
+              method: 'GET',
+            })
            console.log(productid);
          });
        };
