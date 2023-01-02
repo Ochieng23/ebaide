@@ -255,7 +255,7 @@ const PullProductsFromBackendAPI = () => {
                     productInformation, 
                     'style', 
                     'background-color: white;'
-                    )
+                    );
 
                   AppendChildToParentElementUsingElement(
                     productContainer,
