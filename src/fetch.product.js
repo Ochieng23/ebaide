@@ -289,8 +289,9 @@ const PullProductsFromBackendAPI = () => {
                     AddAttributeToElement(sizeList, 'style', 'height: 10%;');
 
                     const sizeArray = data.data[0].size.split(' ');
-                    for (let i = 0; i < sizeArray.length; i++) {};
-                    //const sizeListItem;
+                    for (let i = 0; i < sizeArray.length; i++) {
+
+                    };
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
