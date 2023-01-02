@@ -203,6 +203,7 @@ const PullProductsFromBackendAPI = () => {
                     `https://service.goebaide.com/${data.data.image}`
                   );
                   AppendChildToParentElementUsingElement(
+                    productBox,
                     productFirstImage
                   );
 
