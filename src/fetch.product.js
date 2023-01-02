@@ -334,6 +334,8 @@ const PullProductsFromBackendAPI = () => {
                       quantityToBuy
                     );
 
+                    const addToCartButton = CreateNewElement ('button');
+
                     AppendChildToParentElementUsingElement(
                       productBox, 
                       productInformation
