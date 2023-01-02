@@ -280,7 +280,8 @@ const PullProductsFromBackendAPI = () => {
                       priceSpanHolder
                       );
                     AppendChildToParentElementUsingElement(
-
+                      productInformation,
+                      productPriceSpanHolder
                     );
 
                     AppendChildToParentElementUsingElement(
