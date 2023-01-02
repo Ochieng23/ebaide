@@ -2,8 +2,10 @@ const FindItemsByClassName = (name) => {
     const elements = document.querySelectorAll (name);
     return elements;
 };
-console.log(FindItemsByClassName ('view-product'));
-document.addEventListener ('DOMContentLoaded', ()=>{});
+
+document.addEventListener ('DOMContentLoaded', ()=>{
+    console.log(FindItemsByClassName ('view-product'));
+});
 // const DisplaysingleProduct = () => {
 //     console.log('DisplaysingleProduct');
 // };
