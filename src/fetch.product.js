@@ -236,7 +236,7 @@ const PullProductsFromBackendAPI = () => {
                       smallImage
                     );
                     AppendChildToParentElementUsingElement(
-                      
+                      smallImageGroup,
                       smallImageGroupColumn
                     );
                   };
