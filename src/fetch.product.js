@@ -285,6 +285,7 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     const sizeList = CreateNewElement('select');
+                    AddClassToNewElement(sizeList, 'my-3');
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
