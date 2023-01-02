@@ -174,14 +174,9 @@ const PullProductsFromBackendAPI = () => {
             })
             .then(data => {
               if (data.status === "success") {
-                ClearContentOfElement(
-                  QuerySelectorForDocumentElement, 
-                  "#body"
-                  );
+                ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
                 setTimeout(() => {
-                  const productContainer = SelectElementById(
-                    "view-single-product"
-                  );
+                  const productContainer = CreateNewElement("div");
 
                   const productBox = CreateNewElement("div");
                   AddClassToNewElement(productBox, "col-lg-5");
