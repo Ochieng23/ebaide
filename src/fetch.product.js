@@ -346,7 +346,9 @@ const PullProductsFromBackendAPI = () => {
                     const continueShoppingButton = CreateNewElement ('button');
                     AddClassToNewElement(continueShoppingButton, 'btn');
                     continueShoppingButton.innerHTML = 'Continue Shopping';
-                    continueShoppingButton.addEventListener('click', () =>{});
+                    continueShoppingButton.addEventListener('click', (e) =>{
+                      e.preventDefault();
+                    });
                     AppendChildToParentElementUsingElement(
                       productInformation,
                       continueShoppingButton
