@@ -174,7 +174,10 @@ const PullProductsFromBackendAPI = () => {
             })
             .then(data => {
               if (data.status === "success") {
-                window.location.href = "/html/product.html";
+                ClearContentOfElement(
+                  QuerySelectorForDocumentElement, 
+                  data.data()
+                  );
                 // setTimeout(() => {
                 //   const productContainer = SelectElementById(
                 //     "view-single-product"
