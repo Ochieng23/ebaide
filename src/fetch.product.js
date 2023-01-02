@@ -212,6 +212,10 @@ const PullProductsFromBackendAPI = () => {
                   for (let i = 0; i < 4; i++) {
                     const smallImageGroupColumn = CreateNewElement('div');
                     AddClassToNewElement(smallImageGroupColumn, 'small-img-col');
+                    AddAttributeToElement(
+                      smallImageGroupColumn, 
+                      'src', 
+                      "https://service.goebaide.com")
                   };
 
                   AppendChildToParentElementUsingElement(
