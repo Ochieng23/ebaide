@@ -299,7 +299,7 @@ const PullProductsFromBackendAPI = () => {
                       AddAttributeToElement(
                         sizeListItem, 
                         'style',
-                        'font-size: 1em'
+                        'font-size: 1em;'
                         );
                       sizeListItem.innerHTML = sizeArray[i];
                       AppendChildToParentElementUsingElement(
@@ -322,7 +322,7 @@ const PullProductsFromBackendAPI = () => {
                     AddAttributeToElement(
                       quantityToBuy,
                       "style",
-                      ""
+                      "height: 10%;"
                     );
 
                     AppendChildToParentElementUsingElement(
