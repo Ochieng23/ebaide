@@ -309,6 +309,7 @@ const PullProductsFromBackendAPI = () => {
 
                       AppendChildToParentElementUsingElement (
                         productInformation,
+                        sizeList
                       );
                     };
 
