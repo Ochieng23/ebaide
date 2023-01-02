@@ -208,7 +208,7 @@ const PullProductsFromBackendAPI = () => {
                   );
 
                   const smallImageGroup = CreateNewElement ('div');
-                  AddClassToNewElement(smallImageGroup, )
+                  AddClassToNewElement(smallImageGroup, 'small-img-group');
 
 
                   AppendChildToParentElementUsingElement(
