@@ -180,6 +180,8 @@ const PullProductsFromBackendAPI = () => {
                   const productFirstImage = CreateNewElement ('img');
                   AddClassToNewElement (productFirstImage, "mt-5");
                   AddClassToNewElement (productFirstImage, "img-fluid");
+                  AddClassToNewElement (productFirstImage, "w-100");
+                  AddAttributeToElement(productFirstImage, "alt", "product first image");
 
 
                   AppendChildToParentElementUsingElement (productContainer, productBox);
