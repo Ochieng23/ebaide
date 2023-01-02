@@ -151,6 +151,7 @@ const PullProductsFromBackendAPI = () => {
               return response.json();
             })
             .then ( (data) => {
+              if (data.status === 'success') {};
               console.log(data);
             })
             .catch ( (error) => {
