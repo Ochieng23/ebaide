@@ -212,6 +212,8 @@ const PullProductsFromBackendAPI = () => {
                     productBox
                   );
                   AppendChildToParentElement (
+                    "#body",
+                    QuerySelectorForDocumentElement,
                     
                   )
                 }, 2000);
