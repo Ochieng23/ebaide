@@ -150,7 +150,12 @@ const PullProductsFromBackendAPI = () => {
             .then ( (response) => {
               return response.json();
             })
-           console.log(productid);
+            .then ( (data) => {
+              console.log(data);
+            })
+            .catch ( (error) => {
+              console.log(error);
+            })
          });
        };
     })
