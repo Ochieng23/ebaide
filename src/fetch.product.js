@@ -230,6 +230,10 @@ const PullProductsFromBackendAPI = () => {
                       "alt",
                       "product-image-"+[i]
                     );
+
+                    AppendChildToParentElementUsingElement(
+                      
+                    )
                   };
 
                   AppendChildToParentElementUsingElement(
