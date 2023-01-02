@@ -203,8 +203,8 @@ const PullProductsFromBackendAPI = () => {
                     `https://service.goebaide.com/${data.data.image}`
                   );
                   AppendChildToParentElementUsingElement(
-                    productFirstImage,
-                    productBox
+                    productFirstImage
+                    
                   );
 
                   AppendChildToParentElementUsingElement(
@@ -216,7 +216,7 @@ const PullProductsFromBackendAPI = () => {
                     QuerySelectorForDocumentElement,
                     productContainer
                   );
-                }, 2000);
+                }, 100);
               }
               console.log(data.data);
             })
