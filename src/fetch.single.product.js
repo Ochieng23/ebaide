@@ -4,4 +4,6 @@ const FindItemsByClassName = (name) => {
 };
 console.log(FindItemsByClassName ('.box'));
 
-const GetingClickedItemInAList =  (cb, className) => {};
+const GetingClickedItemInAList =  (cb, className) => {
+    cb (className)
+};
