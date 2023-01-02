@@ -348,6 +348,7 @@ const PullProductsFromBackendAPI = () => {
                     continueShoppingButton.innerHTML = 'Continue Shopping';
                     continueShoppingButton.addEventListener('click', (e) =>{
                       e.preventDefault();
+                      window.location.href = '/index.html#packages';
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
