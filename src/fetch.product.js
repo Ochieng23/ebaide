@@ -228,7 +228,7 @@ const PullProductsFromBackendAPI = () => {
                     AddAttributeToElement(
                       smallImage,
                       "alt",
-                      "product-image-"+[i]
+                      "product-image-"+[i+1]
                     );
 
                     AppendChildToParentElementUsingElement(
