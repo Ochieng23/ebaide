@@ -114,7 +114,7 @@ const SelectElement = id => {
            GetElementWithClassName, divProductBox);
           }
         );
-        console.log (data.data)
+        //console.log (data.data)
       })
       .catch(err => {
         console.error(err);
