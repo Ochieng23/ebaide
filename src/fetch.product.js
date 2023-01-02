@@ -211,7 +211,9 @@ const PullProductsFromBackendAPI = () => {
                     productContainer,
                     productBox
                   );
-                  AppendChildToParentElement ()
+                  AppendChildToParentElement (
+                    
+                  )
                 }, 2000);
               }
               console.log(data.data);
