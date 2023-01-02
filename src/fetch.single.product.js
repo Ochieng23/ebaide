@@ -13,4 +13,4 @@ const GetingClickedItemInAList =  (cb1, cb2, className) => {
     };
 };
 
-GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.box')
+GetingClickedItemInAList (FindItemsByClassName, DisplaysingleProduct, '.view-product')
