@@ -182,7 +182,7 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement (productFirstImage, "img-fluid");
                   AddClassToNewElement (productFirstImage, "w-100");
                   AddAttributeToElement(productFirstImage, "alt", "product first image");
-                  AddAttributeToElement (productFirstImage, "style", "width: 300px");
+                  AddAttributeToElement (productFirstImage, "style", "width: 300px; height: 280px");
 
                   AppendChildToParentElementUsingElement (productContainer, productBox);
                 }, 2000);
