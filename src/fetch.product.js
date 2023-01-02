@@ -329,6 +329,10 @@ const PullProductsFromBackendAPI = () => {
                       "value",
                       '1'
                     );
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      quantityToBuy
+                    );
 
                     AppendChildToParentElementUsingElement(
                       productBox, 
