@@ -93,7 +93,6 @@ const SelectElement = id => {
               "style", 
               "width:40%; height:25%;"
               );
-
             AppendChildToParentUsingElement(divProductBox, productImage)
   
             AddClassToElement(productContent, "content");
