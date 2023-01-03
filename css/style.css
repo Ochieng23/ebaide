@@ -1298,11 +1298,12 @@ header .search-bar-container label:hover{
   color:var(--orange);
 }
 
-
-
-.blogs-box {
+.blog-display {
   display: grid;
   grid-template-columns: 40% 40%;
+}
+
+.blogs-box {
   background-color: #fff;
   height: 130vh;
 }
