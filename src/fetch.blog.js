@@ -87,10 +87,16 @@ const SelectElement = id => {
   
             AddClassToElement(divProductBox, "box");
             AddAttributeNamedElement(divProductBox, "id", blogid);
-  
+            
             AddAttributeNamedElement(productImage, "src", 
             `https://service.goebaide.com/${image}`);
             AddAttributeNamedElement(productImage, "alt", "product image");
+            AddAttributeNamedElement (
+              productImage, 
+              "style", 
+              "width"
+              );
+
             AppendChildToParentUsingElement(divProductBox, productImage)
   
             AddClassToElement(productContent, "content");
