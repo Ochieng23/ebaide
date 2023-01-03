@@ -114,7 +114,7 @@ const PullProductsFromBackendAPI = () => {
           AddAttributeToElement (
             titleText, 
             "style",
-            "height:7vh;"
+            "height:20vh;"
             );
           titleText.innerHTML = title;
           AppendChildToParentElementUsingElement(productContent, titleText);
