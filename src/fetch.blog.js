@@ -95,7 +95,7 @@ const SelectElement = id => {
               );
             AppendChildToParentUsingElement(divProductBox, productImage)
   
-            AddClassToElement(productContent, "content");
+            AddClassToElement(productContent, "blog-content");
   
             titleText.innerHTML = title;
             AppendChildToParentUsingElement(productContent, titleText);
