@@ -1300,13 +1300,14 @@ header .search-bar-container label:hover{
 
 .blog-display {
   display: grid;
-  grid-template-columns: 47.5% 47.5%;
-  column-gap: 5%;
+  grid-template-columns: 48.8% 48.8%;
+  column-gap: 2.5%;
+  row-gap: 1.2%;
 }
 
 .blogs-box {
   background-color: #fff;
-  height: 130vh;
+  height: 100vh;
 }
 .blog-content {
   padding: 4% 8%;
