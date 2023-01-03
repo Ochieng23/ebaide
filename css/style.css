@@ -1300,12 +1300,15 @@ header .search-bar-container label:hover{
   color:var(--orange);
 }
 
-.blog-display {
-  display: grid;
-  grid-template-columns: 48.8% 48.8%;
-  column-gap: 2.5%;
-  row-gap: 1.2%;
-  margin-bottom: 4%;
+@media (min-width:900px) {
+  .blog-display {
+    display: grid;
+    grid-template-columns: 48.8% 48.8%;
+    column-gap: 2.5%;
+    row-gap: 1.2%;
+    margin-bottom: 4%;
+  }
+  
 }
 
 .blogs-box {
@@ -1359,10 +1362,26 @@ header .search-bar-container label:hover{
 }
 
 @media (max-width:768px){
+  body{
+    width: 100vw;
+  }
+header{
+  
+  width: 100vw;
+}
 
   #menu-bar{
     display: initial;
   }
+header .logo{
+  width: 70px;
+  margin-left: -16px;
+}
+
+.cart{
+  color: #eee;
+  font-size: 25px;
+}
 
   header .navbar{
     position: absolute;
@@ -1375,15 +1394,32 @@ header .search-bar-container label:hover{
 
   header .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    width: 100vw;
+    
+    display: grid;
+    grid-template-rows: auto;
   }
 
   header .navbar a{
-    display: block;
+    
     border-radius: .5rem;
     padding:1.5rem;
     margin:1.5rem 0;    
     background:#222;
+    
   }
+  .icons{
+    display: none;
+  }
+.blog-display{
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1.2em;
+}
+.blog-content > p {
+  font-size: 1.6em;
+  font-weight: 400;
+}
 
 }
 
@@ -1400,5 +1436,6 @@ header .search-bar-container label:hover{
   .contact .row form .inputBox input{
     width:100%;
   }
+  
 
 }
