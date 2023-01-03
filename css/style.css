@@ -1303,6 +1303,7 @@ header .search-bar-container label:hover{
   grid-template-columns: 48.8% 48.8%;
   column-gap: 2.5%;
   row-gap: 1.2%;
+  margin-bottom: 4%;
 }
 
 .blogs-box {
