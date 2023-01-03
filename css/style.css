@@ -1317,7 +1317,10 @@ header .search-bar-container label:hover{
   font-size: 2.8em;
   font-weight: 700;
 }
-
+.blog-content > p {
+  font-size: 2.8em;
+  font-weight: 700;
+}
 
 
 
