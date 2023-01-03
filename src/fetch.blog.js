@@ -81,7 +81,9 @@ const SelectElement = id => {
             const productPrice = CreateElement("div");
             const productPriceEstimate = CreateElement("span");
             const buyNowBtn = CreateElement("a");
-  
+
+            productImage.style.width = '50%' 
+            productImage.style.height = '25%' 
             AddClassToElement(divProductBox, "box");
             AddAttributeNamedElement(divProductBox, "id", blogid);
   
