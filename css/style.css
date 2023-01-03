@@ -1300,10 +1300,10 @@ header .search-bar-container label:hover{
 
 .blogs-box {
   background-color: #fff;
-  height: 120vh;
+  height: 130vh;
 }
 .blog-content {
-  
+  padding: 4% 8%;
 }
 
 
