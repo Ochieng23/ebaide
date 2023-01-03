@@ -91,7 +91,7 @@ const SelectElement = id => {
             AddAttributeNamedElement (
               productImage, 
               "style", 
-              "width:40%; height:255;"
+              "width:40%; height:25%;"
               );
 
             AppendChildToParentUsingElement(divProductBox, productImage)
