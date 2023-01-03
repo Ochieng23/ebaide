@@ -115,13 +115,6 @@ const PullProductsFromBackendAPI = () => {
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
           AppendChildToParentElementUsingElement(productContent, titleText);
 
-          productDescription.innerHTML =
-            `<h2>Product Description</h2> \n` + description;
-          AppendChildToParentElementUsingElement(
-            productContent,
-            productDescription
-          );
-
           AddClassToNewElement(productRating, "stars");
           for (let i = 0; i < 5; i++) {
             const ratingStars = CreateNewElement("i");
