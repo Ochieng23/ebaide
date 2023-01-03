@@ -35,9 +35,7 @@ formBtn.addEventListener('click', () =>{
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
-regForm.addEventListener('click',()=>{
-  regClose.classList.remove('active')
-})
+
 videoBtn.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         document.querySelector('.controls .active').classList.remove('active');
@@ -89,3 +87,5 @@ var swiper = new Swiper(".brand-slider", {
         },
       },
 });
+//--------contact form---------
+

@@ -5,6 +5,7 @@
 }
 body{
   background-color:  #F28500;
+ 
 }
 *{
   font-family: 'Nunito', sans-serif;
@@ -1364,10 +1365,10 @@ header .search-bar-container label:hover{
 
 }
 
-@media (max-width:450px){
+@media (max-width:550px){
 
   html{
-    font-size: 50%;
+    font-size: 30%;
   }
 
   .heading span{
@@ -1377,5 +1378,7 @@ header .search-bar-container label:hover{
   .contact .row form .inputBox input{
     width:100%;
   }
+  
+
 
 }
