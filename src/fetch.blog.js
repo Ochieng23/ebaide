@@ -79,7 +79,6 @@ const SelectElement = id => {
             const titleText = CreateElement("h3");
             const productDescription = CreateElement("p");
             const productPrice = CreateElement("div");
-            const productPriceEstimate = CreateElement("span");
             const buyNowBtn = CreateElement("a");
   
             AddClassToElement(divProductBox, "blogs-box");
