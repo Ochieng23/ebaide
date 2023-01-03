@@ -1298,6 +1298,10 @@ header .search-bar-container label:hover{
   color:var(--orange);
 }
 
+.blogs-box {
+  background-color: #fff;
+  height: 120vh;
+}
 
 
 
