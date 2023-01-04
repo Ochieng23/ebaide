@@ -188,7 +188,6 @@ const PostedDateUpdater = (cb, d) => {
            setInterval (() => {
              let resultArray = PostedDateUpdater (PostDateCount, date);
              let resultArrayLength = resultArray.length;
-             console.log (resultArrayLength)
              //productPrice.innerHTML = "\n" + resultArray[-1], 
              1000
            })
