@@ -149,7 +149,7 @@ const PostedDateUpdater = (cb, d) => {
             title,
           }) => {
             const dateCount = setInterval (
-              
+
             );
 
             const divProductBox = CreateElement("div");
@@ -182,7 +182,7 @@ const PostedDateUpdater = (cb, d) => {
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
-           productPrice.innerHTML = "\n" +date;
+           productPrice.innerHTML = "\n" +  ;
            AppendChildToParentUsingElement(productContent, productPrice);
   
            buyNowBtn.innerHTML = "Read more...";
