@@ -78,8 +78,10 @@ const PostedDateUpdater = (cb, date) => {
         if (temp[prop] < 1){
           continue;
         }else{
-          return outputSincePosted += 
+          return outputSincePosted = `
           
+          `;
+
         };
     };
    };
