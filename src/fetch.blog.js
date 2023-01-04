@@ -82,7 +82,7 @@ const PostedDateUpdater = (cb, date) => {
           return outputSincePosted += temp[prop] + textString;
 
         };
-        break;
+
     };
    };
 };
