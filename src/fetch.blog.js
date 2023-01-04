@@ -81,6 +81,8 @@ const SelectElement = id => {
               months,
               years
             ] = [
+              date.getSeconds(),
+              date.getMinutes(),
               
             ]
 
