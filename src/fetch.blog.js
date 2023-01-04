@@ -123,9 +123,6 @@ const PostedDateUpdater = (cb, d) => {
           return outputSincePosted += temp[prop] + textString;
     };
    };
-   setTimeout (
-    PostedDateUpdater (PostDateCount, )
-   );
 };
 
   const BlogBackendAPIURI =
