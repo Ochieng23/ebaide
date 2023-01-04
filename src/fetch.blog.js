@@ -185,7 +185,9 @@ const PostedDateUpdater = (cb, d) => {
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
-           setInterval ()
+           setInterval (() => {
+            
+           })
            AppendChildToParentUsingElement(productContent, productPrice);
   
            buyNowBtn.innerHTML = "Read more...";
