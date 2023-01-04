@@ -89,7 +89,7 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "months ago" :'month ago';
-          return outputSincePosted += temp[prop] + textString;
+          outputSincePosted += temp[prop] + textString;
         };
         break
       case 'weeks':
