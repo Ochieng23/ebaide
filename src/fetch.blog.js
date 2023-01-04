@@ -75,7 +75,13 @@ const PostedDateUpdater = (cb, date) => {
    for (let prop in temp) {
     switch (prop) {
       case 'years':
-        if (temp[prop] < 1)
+        if (temp[prop] < 1){
+          continue;
+        }else{
+          return {
+            
+           }
+        };
     };
    };
 };
