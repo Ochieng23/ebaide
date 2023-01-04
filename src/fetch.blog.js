@@ -73,7 +73,14 @@ const SelectElement = id => {
             image,
             title,
           }) => {
-            
+            const [
+              seconds,
+              minutes,
+              hours,
+              days,
+              months,
+              years
+            ]
 
             const divProductBox = CreateElement("div");
             const productImage = CreateElement("img");
