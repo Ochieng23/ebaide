@@ -121,7 +121,6 @@ const PostedDateUpdater = (cb, date) => {
       default:
           let textString = temp[prop] > 1 ? "seconds ago" :'second ago';
           return outputSincePosted += temp[prop] + textString;
-        };
     };
    };
 };
