@@ -1372,6 +1372,10 @@ header .search-bar-container label:hover{
   body{
     width: 100vw;
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 header{
   
   width: 100vw;
