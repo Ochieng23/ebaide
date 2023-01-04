@@ -50,9 +50,9 @@ const SelectElement = id => {
       element.prepend(child);
   };
   
-const PostDateCount = (date) => {
+const PostDateCount = (dt) => {
   const currentTime = Date.now ();
-  const sincePosting = currentTime - date.getTime ();
+  const sincePosting = currentTime - dt.getTime ();
   const seconds = Math.floor ((sincePosting / 1000) % 60);
   const minutes = Math.floor ((sincePosting / (1000 * 60)) % 60);
   const hours = Math.floor ((sincePosting / (1000 * 60 * 60)) % 24);
@@ -124,7 +124,7 @@ const PostedDateUpdater = (cb, date) => {
     };
    };
    setTimeout (
-
+    PostedDateUpdater (PostDateCount, )
    );
 };
 
