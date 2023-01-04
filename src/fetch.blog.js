@@ -83,7 +83,7 @@ const SelectElement = id => {
             ] = [
               date.getSeconds(),
               date.getMinutes(),
-              
+              date.getHours(),
             ]
 
             const divProductBox = CreateElement("div");
