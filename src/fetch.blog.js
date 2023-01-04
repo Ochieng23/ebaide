@@ -188,7 +188,7 @@ const PostedDateUpdater = (cb, d) => {
            setInterval (() => {
              let resultArray = PostedDateUpdater (PostDateCount, date);
              let resultArrayLength = resultArray.length;
-             //productPrice.innerHTML = "\n" + resultArray[-1], 
+             productPrice.innerHTML = "\n" + resultArray[resultArrayLength-1], 
              1000
            })
            AppendChildToParentUsingElement(productContent, productPrice);
