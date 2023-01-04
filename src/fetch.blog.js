@@ -188,10 +188,10 @@ const PostedDateUpdater = (cb, d) => {
            setInterval (() => {
              let resultString = PostedDateUpdater (PostDateCount, date)
              if(resultString.includes ('day')){
-             resultString.indexOf('day')
-             console.log (resultString)
+              let dayPos = resultString.indexOf('day')
+              console.log (dayPos)
             }
-             "something went wrong"
+             //"something went wrong"
             //productPrice.innerHTML = "\n" +, 
             //1000
            })
