@@ -81,8 +81,9 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "years ago" :'year ago';
-          return outputSincePosted += temp[prop] + textString;
+          outputSincePosted += temp[prop] + textString;
         };
+        break;
       case 'months':
         if (temp[prop] < 1){
           continue;
