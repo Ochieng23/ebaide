@@ -59,7 +59,13 @@ const PostDateCount = (date) => {
   const days = Math.floor ((sincePosting / (1000 * 60 * 60 * 24)) % 30);
   const months = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30)) % 365);
   const years = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30 * 365)));
-  return {};
+  return {
+    seconds,
+    minutes,
+    hours,
+    days,
+
+  };
 
 };
 
