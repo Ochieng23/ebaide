@@ -183,7 +183,7 @@ const PostedDateUpdater = (cb, d) => {
             let contentArray = content.split(" ");
             let reducedContent = [];
             for (let i = 0; i < 30; i++){
-              let reducedContent = contentArray[i];
+              let reducedContent = [...reducedContent, contentArray[i]];
               console.log(joinedContent);
               //productDescription.innerHTML = `\n` +;
             }
