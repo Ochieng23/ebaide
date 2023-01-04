@@ -73,7 +73,7 @@ const PostDateCount = (dt) => {
 
 const PostedDateUpdater = (cb, d) => {
    let temp = cb (d);
-   let outputSincePosted = '';
+   let outputSincePosted = [];
    for (let prop in temp) {
     switch (prop) {
       case 'years':
@@ -189,7 +189,8 @@ const PostedDateUpdater = (cb, d) => {
              let resultString = PostedDateUpdater (PostDateCount, date)
              if(resultString.includes ('day')){
               let dayPos = resultString.indexOf('day')
-              console.log (dayPos)
+              productPrice.innerHTML = "\n" +resultString
+              //console.log (dayPos)
             }
              //"something went wrong"
             //productPrice.innerHTML = "\n" +, 
