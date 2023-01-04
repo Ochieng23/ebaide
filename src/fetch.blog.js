@@ -181,8 +181,10 @@ const PostedDateUpdater = (cb, d) => {
             titleText.innerHTML = title;
             AppendChildToParentUsingElement(productContent, titleText);
             let contentArray = content.split(" ");
+            let reducedContent = [];
             for (let i = 0; i < 30; i++){
-              
+              let reducedContent = contentArray[i];
+              console.log(joinedContent);
               //productDescription.innerHTML = `\n` +;
             }
             AppendChildToParentUsingElement (productContent, productDescription);
