@@ -187,7 +187,7 @@ const PostedDateUpdater = (cb, d) => {
            AddClassToElement (productPrice, 'price');
            setInterval (() => {
              let resultString = PostedDateUpdater (PostDateCount, date)
-
+             resultString.includes ('day')
             //productPrice.innerHTML = "\n" +, 
             //1000
            })
