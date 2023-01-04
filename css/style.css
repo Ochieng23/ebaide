@@ -1336,6 +1336,7 @@ header .search-bar-container label:hover{
 .blog-description {
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
 
