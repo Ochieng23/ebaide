@@ -71,6 +71,7 @@ const PostDateCount = (date) => {
 
 const PostedDateUpdater = (cb, date) => {
    let temp = cb (date);
+   let outputSincePosted = '';
    for (let prop in temp) {};
 };
 
