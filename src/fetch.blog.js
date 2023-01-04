@@ -51,8 +51,8 @@ const SelectElement = id => {
   };
   
 const PostDateCount = (date) => {
-  const currentTime = date.now ();
-  const sincePosting
+  const currentTime = Date.now ();
+  const sincePosting = currentTime - date.getTime ();
 };
 
   const BlogBackendAPIURI =
