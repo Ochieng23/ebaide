@@ -73,6 +73,7 @@ const SelectElement = id => {
             image,
             title,
           }) => {
+            
             const divProductBox = CreateElement("div");
             const productImage = CreateElement("img");
             const productContent = CreateElement("div");
