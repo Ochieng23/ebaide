@@ -80,9 +80,9 @@ const PostedDateUpdater = (cb, date) => {
         }else{
           let textString = temp[prop] > 1 ? "years ago" :'year ago';
           return outputSincePosted += temp[prop] + textString;
-
         };
-
+      case 'months':
+        
     };
    };
 };
