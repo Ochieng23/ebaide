@@ -180,7 +180,11 @@ const PostedDateUpdater = (cb, d) => {
   
             titleText.innerHTML = title;
             AppendChildToParentUsingElement(productContent, titleText);
-            AddClassToElement(productDescription, "blog-description");
+            let contentArray = content.split(" ");
+            for (let i = 0; i < contentArray.length; i++){
+              
+            }
+            console.log (contentArray)
             productDescription.innerHTML = `\n` +content;
             AppendChildToParentUsingElement (productContent, productDescription);
   
