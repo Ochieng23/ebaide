@@ -1337,6 +1337,7 @@ header .search-bar-container label:hover{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-line-clamp: 5;
 }
 
 
