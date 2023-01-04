@@ -148,7 +148,9 @@ const PostedDateUpdater = (cb, d) => {
             image,
             title,
           }) => {
-            
+            const dateCount = setInterval (
+              
+            );
 
             const divProductBox = CreateElement("div");
             const productImage = CreateElement("img");
