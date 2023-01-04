@@ -57,7 +57,7 @@ const PostDateCount = (date) => {
   const minutes = Math.floor ((sincePosting / (1000 * 60)) % 60);
   const hours = Math.floor ((sincePosting / (1000 * 60 * 60)) % 24);
   const days = Math.floor ((sincePosting / (1000 * 60 * 60 * 24)) % 30);
-  const 
+  const months = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30)) % 365);
 };
 
   const BlogBackendAPIURI =
