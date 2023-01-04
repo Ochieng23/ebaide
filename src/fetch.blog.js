@@ -56,9 +56,10 @@ const PostDateCount = (date) => {
   const seconds = Math.floor ((sincePosting / 1000) % 60);
   const minutes = Math.floor ((sincePosting / (1000 * 60)) % 60);
   const hours = Math.floor ((sincePosting / (1000 * 60 * 60)) % 24);
-  const days = Math.floor ((sincePosting / (1000 * 60 * 60 * 24)) % 30);
-  const months = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30)) % 365);
-  const years = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30 * 365)));
+  const days = Math.floor ((sincePosting / (1000 * 60 * 60 * 24)) % 7);
+  const weeks = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 7)) % 4);
+  const months = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 7 * 4)) % 52);
+  const years = Math.floor ((sincePosting / (1000 * 60 * 60 * 24 * 30 * 52)));
   return {
     seconds,
     minutes,
@@ -88,6 +89,7 @@ const PostedDateUpdater = (cb, date) => {
           let textString = temp[prop] > 1 ? "months ago" :'month ago';
           return outputSincePosted += temp[prop] + textString;
         };
+      case 'weeks':
     };
    };
 };
