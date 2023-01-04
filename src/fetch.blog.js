@@ -85,7 +85,7 @@ const SelectElement = id => {
               date.getMinutes(),
               date.getHours(),
               date.getDate(),
-              date.getMonths(),
+              date.getMonth(),
             ]
 
             const divProductBox = CreateElement("div");
