@@ -65,6 +65,7 @@ const PostDateCount = (date) => {
     minutes,
     hours,
     days,
+    weeks,
     months,
     years,
   };
