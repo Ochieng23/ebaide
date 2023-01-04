@@ -53,7 +53,7 @@ const SelectElement = id => {
 const PostDateCount = (date) => {
   const currentTime = Date.now ();
   const sincePosting = currentTime - date.getTime ();
-  const seconds = Math.floor (sincePosting);
+  const seconds = Math.floor ((sincePosting / 1000));
 };
 
   const BlogBackendAPIURI =
