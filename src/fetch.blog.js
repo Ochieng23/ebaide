@@ -88,7 +88,7 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "months ago" :'month ago';
-          return outputSincePosted += temp[prop] + textString;
+          return outputSincePosted += temp[prop] + "months ago";
         };
       case 'weeks':
         if (temp[prop] < 1){
@@ -102,7 +102,7 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "days ago" :'day ago';
-          return outputSincePosted += temp[prop] + textString;
+          return outputSincePosted += temp[prop] +  "days ago";
         };
       case 'hours':
         if (temp[prop] < 1){
