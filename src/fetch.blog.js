@@ -80,6 +80,8 @@ const SelectElement = id => {
               days,
               months,
               years
+            ] = [
+              
             ]
 
             const divProductBox = CreateElement("div");
