@@ -52,7 +52,7 @@ const SelectElement = id => {
   
 const PostDateCount = (dt) => {
   const currentTime = Date.now ();
-  const sincePosting = currentTime - dt.getTime ();
+  const sincePosting = currentTime -  Date.parse(dt);
   const seconds = Math.floor ((sincePosting / 1000) % 60);
   const minutes = Math.floor ((sincePosting / (1000 * 60)) % 60);
   const hours = Math.floor ((sincePosting / (1000 * 60 * 60)) % 24);
