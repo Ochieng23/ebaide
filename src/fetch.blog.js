@@ -72,7 +72,9 @@ const PostDateCount = (date) => {
 const PostedDateUpdater = (cb, date) => {
    let temp = cb (date);
    let outputSincePosted = '';
-   for (let prop in temp) {};
+   for (let prop in temp) {
+    switch (prop) {};
+   };
 };
 
   const BlogBackendAPIURI =
