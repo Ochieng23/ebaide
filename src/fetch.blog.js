@@ -186,7 +186,8 @@ const PostedDateUpdater = (cb, d) => {
   
            AddClassToElement (productPrice, 'price');
            setInterval (() => {
-            
+            productPrice.innerHTML = "\n" +PostedDateUpdater (PostDateCount, date), 
+            1000
            })
            AppendChildToParentUsingElement(productContent, productPrice);
   
