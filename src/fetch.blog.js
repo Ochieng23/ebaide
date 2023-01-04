@@ -64,9 +64,9 @@ const PostDateCount = (date) => {
     minutes,
     hours,
     days,
-
+    months,
+    years,
   };
-
 };
 
   const BlogBackendAPIURI =
