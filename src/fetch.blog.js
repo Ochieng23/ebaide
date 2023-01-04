@@ -81,14 +81,14 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "years ago" :'year ago';
-          return outputSincePosted += temp[prop] + "years ago";
+          return outputSincePosted += temp[prop] + textString;
         };
       case 'months':
         if (temp[prop] < 1){
           continue;
         }else{
           let textString = temp[prop] > 1 ? "months ago" :'month ago';
-          return outputSincePosted += temp[prop] + "months ago";
+          return outputSincePosted += temp[prop] + textString;
         };
       case 'weeks':
         if (temp[prop] < 1){
@@ -102,25 +102,25 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "days ago" :'day ago';
-          return outputSincePosted += temp[prop] +  "days ago";
+          return outputSincePosted += temp[prop] + textString;
         };
       case 'hours':
         if (temp[prop] < 1){
           continue;
         }else{
           let textString = temp[prop] > 1 ? "hours ago" :'hour ago';
-          return outputSincePosted += temp[prop] + "hours ago";
+          return outputSincePosted += temp[prop] + textString;
         };
       case 'minutes':
         if (temp[prop] < 1){
           continue;
         }else{
           let textString = temp[prop] > 1 ? "minutes ago" :'minute ago';
-          return outputSincePosted += temp[prop] + "minutes ago";
+          return outputSincePosted += temp[prop] + textString;
         };
       default:
           let textString = temp[prop] > 1 ? "seconds ago" :'second ago';
-          return outputSincePosted += temp[prop] + "seconds ago";
+          return outputSincePosted += temp[prop] + textString;
     };
    };
 };
@@ -178,7 +178,7 @@ const PostedDateUpdater = (cb, d) => {
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
-           productPrice.innerHTML = "\n" +  PostedDateUpdater (PostDateCount, date)
+           productPrice.innerHTML = "\n" +PostedDateUpdater (PostDateCount, date);
            AppendChildToParentUsingElement(productContent, productPrice);
   
            buyNowBtn.innerHTML = "Read more...";
