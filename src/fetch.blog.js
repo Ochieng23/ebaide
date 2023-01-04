@@ -74,7 +74,7 @@ const SelectElement = id => {
             title,
           }) => {
             const currTime = Date.now();
-            const  = currTime - date.getTime();
+            const timeDifference = currTime - date.getTime();
             const divProductBox = CreateElement("div");
             const productImage = CreateElement("img");
             const productContent = CreateElement("div");
