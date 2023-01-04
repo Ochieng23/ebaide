@@ -113,8 +113,9 @@ const PostedDateUpdater = (cb, d) => {
           continue;
         }else{
           let textString = temp[prop] > 1 ? "hours ago" :'hour ago';
-          return outputSincePosted += temp[prop] + textString;
+          outputSincePosted += temp[prop] + textString;
         };
+        break;
       case 'minutes':
         if (temp[prop] < 1){
           continue;
