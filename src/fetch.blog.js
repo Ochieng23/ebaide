@@ -69,7 +69,7 @@ const PostDateCount = (date) => {
   };
 };
 
-
+const PostedDateUpdater = (cb, date) => {};
 
   const BlogBackendAPIURI =
     "https://service.goebaide.com/api/blog/get";
