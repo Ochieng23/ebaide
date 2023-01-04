@@ -50,7 +50,9 @@ const SelectElement = id => {
       element.prepend(child);
   };
   
-const 
+const PostDateCount = (date) => {
+  
+};
 
   const BlogBackendAPIURI =
     "https://service.goebaide.com/api/blog/get";
