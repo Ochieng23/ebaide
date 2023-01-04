@@ -1382,6 +1382,7 @@ header{
 }
 .cart{
   margin-right: 0em;
+  font-size: 3.3em;
 }
 
   #menu-bar{
@@ -1393,8 +1394,9 @@ header .logo{
 }
 
 .cart{
-  color: #eee;
+  color: white;
   font-size: 25px;
+  margin-top: 6px;
 }
 
   header .navbar{
@@ -1422,9 +1424,15 @@ header .logo{
     background:#222;
     
   }
-  .icons{
-    display: none;
-  }
+  #search-btn{
+    display:none;
+  
+}
+#login-btn{
+  font-size: 3.3em;
+  margin-right: -5em;
+  margin-top: 5px;
+}
 .blog-display{
   display: grid;
   grid-template-rows: auto;
