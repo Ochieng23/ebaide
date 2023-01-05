@@ -358,7 +358,7 @@ const PullProductsFromBackendAPI = () => {
                         window.location.href = 'https://goebaide.com/';
                         return;
                       };
-                      window.location.href = '/https://goebaide.com#packages';
+                      window.location.href = 'https://goebaide.com#packages';
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
