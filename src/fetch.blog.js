@@ -195,7 +195,6 @@ const PullBlogsFromBackendAPI = () => {
         buyNowBtn.innerHTML = "Read more...";
         AddClassToElement(buyNowBtn, "view-blog");
         AddClassToElement(buyNowBtn, "btn");
-        AddAttributeNamedElement(buyNowBtn, "href", "#");
         AddAttributeNamedElement(buyNowBtn, "type", "button");
         AppendChildToParentUsingElement(productContent, buyNowBtn);
 
