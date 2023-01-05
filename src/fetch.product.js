@@ -165,7 +165,7 @@ const PullProductsFromBackendAPI = () => {
         productCollection.item(i).addEventListener("click", () => {
           const productid = productCollection.item(i).parentElement
             .parentElement.id;
-          const SingleProductURI = data.data.filter( (product) => {
+          const SingleProduct = data.data.filter( (product) => {
             return product.id === productid;
           });
 
