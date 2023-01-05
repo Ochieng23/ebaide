@@ -169,7 +169,6 @@ const PullProductsFromBackendAPI = () => {
             return product.id === productid;
           });
 
-          //FETCH SINGLE PRODUCT:
           fetch(SingleProductURI, {
             method: "GET"
           })
