@@ -309,7 +309,7 @@ const PullBlogsFromBackendAPI = () => {
               }
               window.location.reload();
               });
-                  AppendChildToParentElementUsingElement(
+              AppendChildToParentElementUsingElement(
                     productInformation,
                     continueShoppingButton
                   );
