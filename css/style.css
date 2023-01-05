@@ -1333,6 +1333,9 @@ header .search-bar-container label:hover{
   font-size: 1.2em;
   font-weight: 400;
 }
+.title-positioning {
+  height: ;
+}
 .blog-description {
   height: 100px;
   overflow: hidden;
@@ -1340,6 +1343,7 @@ header .search-bar-container label:hover{
   display: -webkit-box;
   -webkit-line-clamp: 2;
 }
+
 
 
 
