@@ -330,7 +330,7 @@ const PullBlogsFromBackendAPI = () => {
               );
                   AppendChildToParentElement(
                     "#body",
-                    QuerySelectorForDocumentElement,
+                    GetElementWithClassName,
                     productContainer
                   );
                 }, 100);
