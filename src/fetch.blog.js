@@ -252,7 +252,7 @@ const PullBlogsFromBackendAPI = () => {
             );
 
             const smallImageGroup = CreateNewElement("div");
-                  AddClassToNewElement(smallImageGroup, "small-img-group");
+            AddClassToNewElement(smallImageGroup, "small-img-group");
                   for (let i = 0; i < 4; i++) {
                     const smallImageGroupColumn = CreateNewElement("div");
                     AddClassToNewElement(
