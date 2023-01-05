@@ -208,7 +208,7 @@ const PullBlogsFromBackendAPI = () => {
         );
       });
       //HANDING VIEWING SINGLE BLOG:
-      const productCollection = GetSelectedElementsWithClassName("view-blog");
+      const productCollection = GetElementsWithClassName("view-blog");
       for (let i = 0; i < productCollection.length; i++) {
         productCollection.item(i).addEventListener("click", () => {
           const blogid = productCollection.item(i).parentElement
