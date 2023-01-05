@@ -225,7 +225,7 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToNewElement(productBox, "col-lg-5");
             AddClassToNewElement(productBox, "col-md-12");
             AddClassToNewElement(productBox, "col-12");
-                  AddAttributeToElement(productBox, "id", data.data[0].id);
+            AddAttributeToElement(productBox, "id", SingleBlog[0].blogid);
 
                   const productFirstImage = CreateNewElement("img");
                   AddClassToNewElement(productFirstImage, "mt-5");
