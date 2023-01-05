@@ -294,8 +294,6 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
-                  
-
                   const quantityToBuy = CreateElement("input");
                   AddAttributeToElement(quantityToBuy, "type", "number");
                   AddAttributeToElement(
