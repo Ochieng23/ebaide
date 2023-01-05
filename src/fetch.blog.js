@@ -307,8 +307,8 @@ const PullBlogsFromBackendAPI = () => {
                 window.location.reload();
                 return;
               }
-                    window.location.reload();
-                  });
+              window.location.reload();
+              });
                   AppendChildToParentElementUsingElement(
                     productInformation,
                     continueShoppingButton
