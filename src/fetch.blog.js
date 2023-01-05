@@ -289,10 +289,10 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder,
               priceSpanHolder
             );
-                  AppendChildToParentElementUsingElement(
-                    productInformation,
-                    productPriceSpanHolder
-                  );
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              productPriceSpanHolder
+            );
 
                   const sizeList = CreateElement("select");
                   AddClassToElement(sizeList, "my-3");
