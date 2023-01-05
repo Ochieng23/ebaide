@@ -211,7 +211,7 @@ const PullBlogsFromBackendAPI = () => {
       const productCollection = GetSelectedElementsWithClassName("view-blog");
       for (let i = 0; i < productCollection.length; i++) {
         productCollection.item(i).addEventListener("click", () => {
-          const productid = productCollection.item(i).parentElement
+          const blogid = productCollection.item(i).parentElement
             .parentElement.id;
           const SingleBlog = ``;
 
