@@ -30,26 +30,25 @@ const GetElementsWithClassName = className => {
   return element;
 };
 
-AppendChildToParent = (element, cb, child) => {
+const AppendChildToParent = (element, cb, child) => {
   cb(element).appendChild(child);
 };
 
-AddAttributeNamedElement = (element, attribute, value) => {
+const AddAttributeNamedElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
-AppendAsFirstChild = (element, cb, child) => {
+const AppendAsFirstChild = (element, cb, child) => {
   cb(element).prepend(child);
 };
 
-AppendChildToParentUsingElement = (element, child) => {
+const AppendChildToParentUsingElement = (element, child) => {
   element.appendChild(child);
 };
 
-AppendAsFirstChildUsingElement = (element, child) => {
+const AppendAsFirstChildUsingElement = (element, child) => {
   element.prepend(child);
 };
-
 const ClearElementContent = (cb, element) => {
   cb(element).innerHTML = "";
 };
