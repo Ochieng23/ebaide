@@ -271,10 +271,10 @@ const PullBlogsFromBackendAPI = () => {
             );
             productTitle.innerHTML = SingleBlog[0].title;
 
-                  AppendChildToParentElementUsingElement(
-                    productInformation,
-                    productTitle
-                  );
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              productTitle
+            );
 
                   const productPriceSpanHolder = CreateNewElement("h2");
                   AddClassToNewElement(productPriceSpanHolder, "price");
