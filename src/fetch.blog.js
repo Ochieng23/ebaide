@@ -331,8 +331,8 @@ const PullBlogsFromBackendAPI = () => {
                 "#body",
                 GetElementWithClassName,
                 productContainer
-                  );
-                }, 100);
+              );
+            }, 100);
               }
               //console.log(data.data);
             })
