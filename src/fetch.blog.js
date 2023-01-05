@@ -333,7 +333,7 @@ const PullBlogsFromBackendAPI = () => {
                 productContainer
               );
             }, 100);
-        })
+        });
       }    
       //console.log (data.data)
     })
