@@ -114,7 +114,7 @@ const PullProductsFromBackendAPI = () => {
           AddAttributeToElement (
             titleText, 
             "style",
-            "height:20vh;"
+            "height:10vh;"
             );
           let titleArray = title.split(" ");
           let reducedTitle = [];
