@@ -232,15 +232,15 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToNewElement(productFirstImage, "img-fluid");
             AddClassToNewElement(productFirstImage, "w-100");
             AddAttributeToElement(
-                    productFirstImage,
-                    "alt",
-                    "product first image"
-                  );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "style",
-                    "width: 300px; height: auto;"
-                  );
+              productFirstImage,
+              "alt",
+              "blog image"
+            );
+            AddAttributeToElement(
+              productFirstImage,
+              "style",
+              "width: 300px; height: auto;"
+            );
                   AddAttributeToElement(
                     productFirstImage,
                     "src",
