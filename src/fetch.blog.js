@@ -408,10 +408,10 @@ const PostedDateUpdater = (cb, d) => {
                         window.location.href === 
                         `https://goebaide.com/index.html#packages`
                       ){
-                        window.location.href = 'https://goebaide.com/';
+                        window.location.reload();
                         return;
                       };
-                      window.location.href = 'https://goebaide.com#packages';
+                      window.location.reload();
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
