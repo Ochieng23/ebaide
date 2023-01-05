@@ -362,7 +362,10 @@ const PullProductsFromBackendAPI = () => {
                         });
                         return;
                       };
-                      window.location.href = 'https://goebaide.com#packages';
+                      window.location.reload();
+                      setTimeout ( () => {
+                        window.location.href = 'https://goebaide.com/index.html#blog', 1500
+                      });
                     });
                     AppendChildToParentElementUsingElement(
                       productInformation,
