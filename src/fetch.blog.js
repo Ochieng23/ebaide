@@ -50,6 +50,10 @@ AppendAsFirstChildUsingElement = (element, child) => {
   element.prepend(child);
 };
 
+const ClearElementContent = (cb, element) => {
+  cb(element).innerHTML = "";
+};
+
 const PostDateCount = dt => {
   const currentTime = Date.now();
   const sincePosting = currentTime - Date.parse(dt);
