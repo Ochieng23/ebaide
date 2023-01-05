@@ -1330,11 +1330,11 @@ header .search-bar-container label:hover{
   font-weight: 700;
 }
 .blog-content > p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 .title-positioning {
-  height: 7vh;
+  height: 20vh;
   background-color: red !important;
 }
 .blog-description {
