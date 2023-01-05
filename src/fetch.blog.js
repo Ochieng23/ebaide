@@ -406,7 +406,7 @@ const PostedDateUpdater = (cb, d) => {
                       //console.log(window.location.href);
                       if(
                         window.location.href === 
-                        `https://goebaide.com/index.html#packages`
+                        `https://goebaide.com/index.html#blog`
                       ){
                         window.location.reload();
                         return;
