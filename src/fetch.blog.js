@@ -294,13 +294,6 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
-
-                  AddAttributeToElement(quantityToBuy, "value", "1");
-                  AppendChildToParentElementUsingElement(
-                    productInformation,
-                    quantityToBuy
-                  );
-
                   const addToCartButton = CreateElement("button");
                   AddClassToElement(addToCartButton, "btn");
                   addToCartButton.innerHTML = "Add To Cart";
