@@ -263,8 +263,8 @@ const PullBlogsFromBackendAPI = () => {
               "background-color: white;"
             );
 
-                  const productTitle = CreateNewElement("h1");
-                  AddAttributeToElement(
+            const productTitle = CreateNewElement("h1");
+            AddAttributeToElement(
                     productTitle,
                     "style",
                     "font-weight: bolder;"
