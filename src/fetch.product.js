@@ -254,6 +254,7 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement(productInformation, 'col-12');
                   AddClassToNewElement(productInformation, 'my-5');
                   AddClassToNewElement(productInformation, 'pt-5');
+                  
                   AddAttributeToElement(
                     productInformation, 
                     'style', 
