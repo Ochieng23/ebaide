@@ -374,7 +374,7 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     const fullDescriptionTextSpan = CreateNewElement('span');
-                    fullDescriptionTextSpan.innerHTML = data.data[0].description;
+                    fullDescriptionTextSpan.innerHTML = SingleProduct[0].description;
                     AppendChildToParentElementUsingElement(
                       productInformation,
                       fullDescriptionTextSpan
@@ -396,10 +396,6 @@ const PullProductsFromBackendAPI = () => {
                 }, 100);
               }
               //console.log(data.data);
-            })
-            .catch(error => {
-              console.log(error);
-            });
         });
       }
     })
