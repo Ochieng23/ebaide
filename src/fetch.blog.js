@@ -281,10 +281,10 @@ const PullBlogsFromBackendAPI = () => {
 
             const priceSpanHolder = CreateNewElement("span");
             priceSpanHolder.innerHTML = "Ksh. " + data.data[0].price;
-                  AppendChildToParentElementUsingElement(
-                    productPriceSpanHolder,
-                    priceSpanHolder
-                  );
+            AppendChildToParentElementUsingElement(
+              productPriceSpanHolder,
+              priceSpanHolder
+            );
                   AppendChildToParentElementUsingElement(
                     productInformation,
                     productPriceSpanHolder
