@@ -117,7 +117,7 @@ const PullProductsFromBackendAPI = () => {
             "height:20vh;"
             );
           let titleArray = title.split(" ");
-          for (let i = 0; i < 3; i++) {
+          for (let i = 0; i < 3; i++) {}
           titleText.innerHTML = title;
           AppendChildToParentElementUsingElement(productContent, titleText);
 
