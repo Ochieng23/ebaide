@@ -228,23 +228,23 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement(productBox, "col-lg-5");
             AddClassToElement(productBox, "col-md-12");
             AddClassToElement(productBox, "col-12");
-            AddAttributeToElement(productBox, "id", SingleBlog[0].blogid);
+            AddAttributeNamedElement(productBox, "id", SingleBlog[0].blogid);
 
             const productFirstImage = CreateElement("img");
             AddClassToElement(productFirstImage, "mt-5");
             AddClassToElement(productFirstImage, "img-fluid");
             AddClassToElement(productFirstImage, "w-100");
-            AddAttributeToElement(
+            AddAttributeNamedElement(
               productFirstImage,
               "alt",
               "blog image"
             );
-            AddAttributeToElement(
+            AddAttributeNamedElement(
               productFirstImage,
               "style",
               "width: 300px; height: auto;"
             );
-            AddAttributeToElement(
+            AddAttributeNamedElement(
               productFirstImage,
               "src",
               `https://service.goebaide.com/${SingleBlog[0].image}`
@@ -260,14 +260,14 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement(productInformation, "col-12");
             AddClassToElement(productInformation, "my-5");
             AddClassToElement(productInformation, "pt-5");
-            AddAttributeToElement(
+            AddAttributeNamedElement(
               productInformation,
               "style",
               "background-color: white;"
             );
 
             const productTitle = CreateElement("h1");
-            AddAttributeToElement(
+            AddAttributeNamedElement(
               productTitle,
               "style",
               "font-weight: bolder;"
