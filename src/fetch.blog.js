@@ -289,7 +289,13 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement(productPriceSpanHolder, "price");
 
             const priceSpanHolder = CreateElement("span");
-            priceSpanHolder.innerHTML = SingleBlog[0].date;
+            setInterval(() => {
+              let resultArray = PostedDateUpdater(PostDateCount, date);
+              let resultArrayLength = resultArray.length;
+              (productPrice.innerHTML =
+                "\n" + resultArray[resultArrayLength - 1]), 1000;
+            });
+            
             AppendChildToParentUsingElement(
               productPriceSpanHolder,
               priceSpanHolder
