@@ -251,12 +251,6 @@ const PullBlogsFromBackendAPI = () => {
               productFirstImage
             );
 
-    
-                  AppendChildToParentElementUsingElement(
-                    productBox,
-                    smallImageGroup
-                  );
-
                   const productInformation = CreateNewElement("div");
                   AddClassToNewElement(productInformation, "col-lg-5");
                   AddClassToNewElement(productInformation, "col-md-12");
