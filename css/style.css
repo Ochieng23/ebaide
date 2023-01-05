@@ -1335,6 +1335,7 @@ header .search-bar-container label:hover{
 }
 .title-positioning {
   height: 7vh;
+  background-color: red !important;
 }
 .blog-description {
   height: 100px;
