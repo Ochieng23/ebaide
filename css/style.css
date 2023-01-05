@@ -1336,6 +1336,9 @@ header .search-bar-container label:hover{
 .title-positioning {
   height: 20vh;
 }
+.date-style{
+  font-weight: 800;
+}
 .blog-description {
   height: 100px;
   overflow: hidden;
