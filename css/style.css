@@ -396,6 +396,7 @@ header .search-bar-container label:hover{
 }
 .services{
   margin-top: -4em;
+  margin-bottom: 5em;
   height: max-content;
 }
 .services .box-container{
