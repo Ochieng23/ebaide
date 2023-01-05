@@ -166,7 +166,7 @@ const PullProductsFromBackendAPI = () => {
           const productid = productCollection.item(i).parentElement
             .parentElement.id;
           const SingleProductURI = data.data.filter( (product) => {
-            
+            return product.id === productid;
           });
 
           //FETCH SINGLE PRODUCT:
