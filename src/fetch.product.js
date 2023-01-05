@@ -394,7 +394,6 @@ const PullProductsFromBackendAPI = () => {
                     productContainer
                   );
                 }, 100);
-              }
               //console.log(data.data);
         });
       }
