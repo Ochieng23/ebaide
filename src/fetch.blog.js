@@ -284,7 +284,7 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement(productPriceSpanHolder, "price");
 
             const priceSpanHolder = CreateElement("span");
-            priceSpanHolder.innerHTML = "Ksh. " + SingleBlog[0].date;
+            priceSpanHolder.innerHTML = SingleBlog[0].date;
             AppendChildToParentElementUsingElement(
               productPriceSpanHolder,
               priceSpanHolder
