@@ -216,7 +216,7 @@ const PullBlogsFromBackendAPI = () => {
           const SingleBlog = data.data.filter( (blog) => {
             return blog.blogid = blogid;
           });
-          console.log (SingleBlog)
+          console.log (SingleBlog[0])
           //FETCH SINGLE BLOG:
           fetch( {
             method: "GET"
