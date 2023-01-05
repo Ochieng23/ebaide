@@ -219,7 +219,7 @@ const PostedDateUpdater = (cb, d) => {
             .parentElement.id;
           const SingleProductURI = `https://service.goebaide.com/api/product/one_products/${productid}`;
 
-          //FETCH SINGLE PRODUCT:
+          //FETCH SINGLE BLOG:
           fetch(SingleProductURI, {
             method: "GET"
           })
