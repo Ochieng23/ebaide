@@ -1339,7 +1339,8 @@ header .search-bar-container label:hover{
   height: 20vh;
 }
 .date-style{
-  font-weight: 800;
+  font-weight: 400;
+  font-size: ;
   text-transform: lowercase;
 }
 .blog-description {
