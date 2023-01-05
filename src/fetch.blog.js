@@ -218,7 +218,7 @@ const PullBlogsFromBackendAPI = () => {
           });
           console.log (SingleBlog)
           //FETCH SINGLE BLOG:
-          fetch(SingleProductURI, {
+          fetch( {
             method: "GET"
           })
             .then(response => {
