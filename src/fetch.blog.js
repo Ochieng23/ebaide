@@ -315,7 +315,7 @@ const PullBlogsFromBackendAPI = () => {
                 `https://goebaide.com/index.html#blog`
               ) {
                 window.location.reload();
-                setTimeout ( () => {})
+                setTimeout ( () => {});
                 return;
               }
               window.location.reload();
