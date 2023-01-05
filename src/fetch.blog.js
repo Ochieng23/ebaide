@@ -251,39 +251,7 @@ const PullBlogsFromBackendAPI = () => {
               productFirstImage
             );
 
-            const smallImageGroup = CreateNewElement("div");
-            AddClassToNewElement(smallImageGroup, "small-img-group");
-                  for (let i = 0; i < 4; i++) {
-                    const smallImageGroupColumn = CreateNewElement("div");
-                    AddClassToNewElement(
-                      smallImageGroupColumn,
-                      "small-img-col"
-                    );
-
-                    const smallImage = CreateNewElement("img");
-                    AddClassToNewElement(smallImage, "small-img");
-                    AddClassToNewElement(smallImage, "w-100");
-                    AddClassToNewElement(smallImage, "img-fluid");
-                    AddAttributeToElement(
-                      smallImage,
-                      "src",
-                      "https://service.goebaide.com"
-                    );
-                    AddAttributeToElement(
-                      smallImage,
-                      "alt",
-                      "product-image-" + [i + 1]
-                    );
-
-                    AppendChildToParentElementUsingElement(
-                      smallImageGroupColumn,
-                      smallImage
-                    );
-                    AppendChildToParentElementUsingElement(
-                      smallImageGroup,
-                      smallImageGroupColumn
-                    );
-                  }
+    
                   AppendChildToParentElementUsingElement(
                     productBox,
                     smallImageGroup
