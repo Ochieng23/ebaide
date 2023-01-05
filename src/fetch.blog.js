@@ -310,9 +310,9 @@ const PullBlogsFromBackendAPI = () => {
               window.location.reload();
               });
               AppendChildToParentElementUsingElement(
-                    productInformation,
-                    continueShoppingButton
-                  );
+                productInformation,
+                continueShoppingButton
+              );
 
                   const productDescriptionDetails = CreateElement("h4");
                   productDescriptionDetails.innerHTML = "Product Description";
