@@ -119,7 +119,7 @@ const PullProductsFromBackendAPI = () => {
           let titleArray = title.split(" ");
           let reducedTitle = [];
           for (let i = 0; i < 3; i++) {
-            reducedTitle = [reducedTitle, titleArray[i]];
+            reducedTitle = [...reducedTitle, titleArray[i]];
           }
           titleText.innerHTML = `${reducedTitle.join(" ")}...`;
           AppendChildToParentElementUsingElement(productContent, titleText);
