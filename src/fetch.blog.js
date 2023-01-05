@@ -218,7 +218,7 @@ const PullBlogsFromBackendAPI = () => {
           const SingleBlog = data.data.filter( (blog) => {
             return blog.blogid === blogid;
           });
-          console.log (SingleBlog[0])
+          console.log (SingleBlog)
           //FETCH SINGLE BLOG:
           ClearElementContent(QuerySelectorForDocumentElement, "#body");
           setTimeout(() => {
