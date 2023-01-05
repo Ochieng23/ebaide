@@ -316,12 +316,14 @@ const PullBlogsFromBackendAPI = () => {
               ) {
                 window.location.reload();
                 setTimeout ( () => {
-                  
+
                 });
                 return;
               }
               window.location.reload();
-              setTimeout ( () => {});
+              setTimeout ( () => {
+                
+              });
               });
               AppendChildToParentUsingElement(
                 productInformation,
