@@ -246,10 +246,10 @@ const PullBlogsFromBackendAPI = () => {
               "src",
               `https://service.goebaide.com/${SingleBlog[0].image}`
             );
-                  AppendChildToParentElementUsingElement(
-                    productBox,
-                    productFirstImage
-                  );
+            AppendChildToParentElementUsingElement(
+              productBox,
+              productFirstImage
+            );
 
                   const smallImageGroup = CreateNewElement("div");
                   AddClassToNewElement(smallImageGroup, "small-img-group");
