@@ -290,12 +290,12 @@ const PullBlogsFromBackendAPI = () => {
 
             const priceSpanHolder = CreateElement("span");
             setInterval(() => {
-              let resultArray = PostedDateUpdater(PostDateCount, date);
+              let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
               let resultArrayLength = resultArray.length;
               (productPrice.innerHTML =
                 "\n" + resultArray[resultArrayLength - 1]), 1000;
             });
-            
+            priceSpanHolder.innerHTML = ;
             AppendChildToParentUsingElement(
               productPriceSpanHolder,
               priceSpanHolder
