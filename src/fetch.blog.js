@@ -304,9 +304,9 @@ const PullBlogsFromBackendAPI = () => {
                 window.location.href ===
                 `https://goebaide.com/index.html#blog`
               ) {
-                      window.location.reload();
-                      return;
-                    }
+                window.location.reload();
+                return;
+              }
                     window.location.reload();
                   });
                   AppendChildToParentElementUsingElement(
