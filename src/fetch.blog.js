@@ -250,7 +250,7 @@ const PullBlogsFromBackendAPI = () => {
               "src",
               `https://service.goebaide.com/${SingleBlog[0].image}`
             );
-            AppendChildToParentElementUsingElement(
+            AppendChildToParentUsingElement(
               productBox,
               productFirstImage
             );
@@ -275,7 +275,7 @@ const PullBlogsFromBackendAPI = () => {
             );
             productTitle.innerHTML = SingleBlog[0].title;
 
-            AppendChildToParentElementUsingElement(
+            AppendChildToParentUsingElement(
               productInformation,
               productTitle
             );
@@ -285,11 +285,11 @@ const PullBlogsFromBackendAPI = () => {
 
             const priceSpanHolder = CreateElement("span");
             priceSpanHolder.innerHTML = SingleBlog[0].date;
-            AppendChildToParentElementUsingElement(
+            AppendChildToParentUsingElement(
               productPriceSpanHolder,
               priceSpanHolder
             );
-            AppendChildToParentElementUsingElement(
+            AppendChildToParentUsingElement(
               productInformation,
               productPriceSpanHolder
             );
@@ -309,22 +309,22 @@ const PullBlogsFromBackendAPI = () => {
               }
               window.location.reload();
               });
-              AppendChildToParentElementUsingElement(
+              AppendChildToParentUsingElement(
                 productInformation,
                 continueShoppingButton
               );
               const fullDescriptionTextSpan = CreateElement("span");
               fullDescriptionTextSpan.innerHTML = SingleBlog[0].description;
-              AppendChildToParentElementUsingElement(
+              AppendChildToParentUsingElement(
                 productInformation,
                 fullDescriptionTextSpan
               );
 
-              AppendChildToParentElementUsingElement(
+              AppendChildToParentUsingElement(
                 productBox,
                 productInformation
               );
-              AppendChildToParentElementUsingElement(
+              AppendChildToParentUsingElement(
                 productContainer,
                 productBox
               );
