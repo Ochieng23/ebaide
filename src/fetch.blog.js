@@ -322,7 +322,7 @@ const PullBlogsFromBackendAPI = () => {
               }
               window.location.reload();
               setTimeout ( () => {
-
+                window.location.href = 'https://goebaide.com/index.html#blog', 1500
               });
               });
               AppendChildToParentUsingElement(
