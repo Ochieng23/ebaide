@@ -296,7 +296,7 @@ const PullBlogsFromBackendAPI = () => {
 
                   const addToCartButton = CreateElement("button");
                   AddClassToElement(addToCartButton, "btn");
-                  addToCartButton.innerHTML = "Add To Cart";
+                  addToCartButton.innerHTML = "Continue reading";
                   AppendChildToParentElementUsingElement(
                     productInformation,
                     addToCartButton
