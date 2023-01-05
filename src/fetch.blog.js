@@ -294,13 +294,13 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
-                  const addToCartButton = CreateElement("button");
-                  AddClassToElement(addToCartButton, "btn");
-                  addToCartButton.innerHTML = "Continue reading";
-                  AppendChildToParentElementUsingElement(
-                    productInformation,
-                    addToCartButton
-                  );
+            const addToCartButton = CreateElement("button");
+            AddClassToElement(addToCartButton, "btn");
+            addToCartButton.innerHTML = "Continue reading";
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              addToCartButton
+            );
 
                   const continueShoppingButton = CreateElement("button");
                   AddClassToElement(continueShoppingButton, "btn");
