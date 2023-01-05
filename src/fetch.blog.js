@@ -333,14 +333,7 @@ const PullBlogsFromBackendAPI = () => {
                 productContainer
               );
             }, 100);
-              }
-              //console.log(data.data);
-            })
-            .catch(error => {
-              console.log(error);
-            });
-        });
-      }
+              
       //console.log (data.data)
     })
     .catch(err => {
