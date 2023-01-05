@@ -294,10 +294,10 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
-                  const continueShoppingButton = CreateElement("button");
-                  AddClassToElement(continueShoppingButton, "btn");
-                  continueShoppingButton.innerHTML = "Continue reading";
-                  continueShoppingButton.addEventListener("click", e => {
+            const continueShoppingButton = CreateElement("button");
+            AddClassToElement(continueShoppingButton, "btn");
+            continueShoppingButton.innerHTML = "Continue reading";
+            continueShoppingButton.addEventListener("click", e => {
                     e.preventDefault();
                     //console.log(window.location.href);
                     if (
