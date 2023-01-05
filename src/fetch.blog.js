@@ -327,7 +327,7 @@ const PullBlogsFromBackendAPI = () => {
                 productContainer,
                 productBox
               );
-                  AppendChildToParentElement(
+              AppendChildToParent(
                     "#body",
                     GetElementWithClassName,
                     productContainer
