@@ -312,12 +312,6 @@ const PullBlogsFromBackendAPI = () => {
                 productInformation,
                 continueShoppingButton
               );
-              const fullDescriptionTextSpan = CreateElement("span");
-              fullDescriptionTextSpan.innerHTML = SingleBlog[0].description;
-              AppendChildToParentUsingElement(
-                productInformation,
-                fullDescriptionTextSpan
-              );
 
               AppendChildToParentUsingElement(
                 productBox,
