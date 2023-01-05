@@ -121,7 +121,7 @@ const PullProductsFromBackendAPI = () => {
           for (let i = 0; i < 3; i++) {
             reducedTitle = [reducedTitle, titleArray[i]];
           }
-          titleText.innerHTML = `${reducedTitle}...`;
+          titleText.innerHTML = `${reducedTitle.join(" ")}...`;
           AppendChildToParentElementUsingElement(productContent, titleText);
 
           AddClassToNewElement(productRating, "stars");
