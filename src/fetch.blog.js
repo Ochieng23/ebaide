@@ -80,7 +80,7 @@ const PostedDateUpdater = (cb, d) => {
         if (temp[prop] < 1){
           continue;
         }else{
-          let textString = temp[prop] > 1 ? "years ago" :'year ago';
+          let textString = temp[prop] > 1 ? "yrs ago" :'yr ago';
           outputSincePosted = [...outputSincePosted, temp[prop] + textString];
         };
         break;
@@ -112,7 +112,7 @@ const PostedDateUpdater = (cb, d) => {
         if (temp[prop] < 1){
           continue;
         }else{
-          let textString = temp[prop] > 1 ? "hours ago" :'hour ago';
+          let textString = temp[prop] > 1 ? "hrs ago" :'hr ago';
           outputSincePosted = [...outputSincePosted, temp[prop] + textString];
         };
         break;
@@ -125,7 +125,6 @@ const PostedDateUpdater = (cb, d) => {
         };
         break;
       case 'seconds':
-          let textString = temp[prop] > 1 ? "seconds ago" :'second ago';
           outputSincePosted = [...outputSincePosted, temp[prop] + textString];
     };
    };
