@@ -221,10 +221,10 @@ const PullBlogsFromBackendAPI = () => {
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
 
-                  const productBox = CreateNewElement("div");
-                  AddClassToNewElement(productBox, "col-lg-5");
-                  AddClassToNewElement(productBox, "col-md-12");
-                  AddClassToNewElement(productBox, "col-12");
+            const productBox = CreateNewElement("div");
+            AddClassToNewElement(productBox, "col-lg-5");
+            AddClassToNewElement(productBox, "col-md-12");
+            AddClassToNewElement(productBox, "col-12");
                   AddAttributeToElement(productBox, "id", data.data[0].id);
 
                   const productFirstImage = CreateNewElement("img");
