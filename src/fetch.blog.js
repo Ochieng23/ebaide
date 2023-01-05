@@ -198,6 +198,7 @@ const PostedDateUpdater = (cb, d) => {
            AppendChildToParentUsingElement(productContent, productPrice);
   
            buyNowBtn.innerHTML = "Read more...";
+           AddClassToElement (buyNowBtn, 'view-blog');
            AddClassToElement (buyNowBtn, 'btn');
            AddAttributeNamedElement(buyNowBtn, "href", "#");
            AddAttributeNamedElement(buyNowBtn, "type", "button");
@@ -211,7 +212,7 @@ const PostedDateUpdater = (cb, d) => {
         );
               //HANDING VIEWING SINGLE BLOG:
       const productCollection = GetSelectedElementsWithClassName(
-        "view-product"
+        "view-blog"
       );
       for (let i = 0; i < productCollection.length; i++) {
         productCollection.item(i).addEventListener("click", () => {
