@@ -213,8 +213,8 @@ const PullBlogsFromBackendAPI = () => {
         productCollection.item(i).addEventListener("click", () => {
           const blogid = productCollection.item(i).parentElement
             .parentElement.id;
-          const SingleBlog = data.data.filter( (data) => {
-            
+          const SingleBlog = data.data.filter( (blog) => {
+
           });
 
           //FETCH SINGLE BLOG:
