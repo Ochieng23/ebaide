@@ -320,14 +320,14 @@ const PullBlogsFromBackendAPI = () => {
                 fullDescriptionTextSpan
               );
 
-                  AppendChildToParentElementUsingElement(
-                    productBox,
-                    productInformation
-                  );
-                  AppendChildToParentElementUsingElement(
-                    productContainer,
-                    productBox
-                  );
+              AppendChildToParentElementUsingElement(
+                productBox,
+                productInformation
+              );
+              AppendChildToParentElementUsingElement(
+                productContainer,
+                productBox
+              );
                   AppendChildToParentElement(
                     "#body",
                     QuerySelectorForDocumentElement,
