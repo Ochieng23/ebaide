@@ -328,9 +328,9 @@ const PullBlogsFromBackendAPI = () => {
                 productBox
               );
               AppendChildToParent(
-                    "#body",
-                    GetElementWithClassName,
-                    productContainer
+                "#body",
+                GetElementWithClassName,
+                productContainer
                   );
                 }, 100);
               }
