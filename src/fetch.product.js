@@ -170,15 +170,6 @@ const PullProductsFromBackendAPI = () => {
           const SingleProduct = data.data.filter( (product) => {
             return product.id === productid;
           });
-
-          fetch(SingleProductURI, {
-            method: "GET"
-          })
-            .then(response => {
-              return response.json();
-            })
-            .then(data => {
-              if (data.status === "success") {
                 ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
                 setTimeout(() => {
                   const productContainer = CreateNewElement("div");
