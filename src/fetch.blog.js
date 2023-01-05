@@ -219,15 +219,15 @@ const PullBlogsFromBackendAPI = () => {
           //FETCH SINGLE BLOG:
           ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
           setTimeout(() => {
-            const productContainer = CreateNewElement("div");
+            const productContainer = CreateElement("div");
 
-            const productBox = CreateNewElement("div");
+            const productBox = CreateElement("div");
             AddClassToElement(productBox, "col-lg-5");
             AddClassToElement(productBox, "col-md-12");
             AddClassToElement(productBox, "col-12");
             AddAttributeToElement(productBox, "id", SingleBlog[0].blogid);
 
-            const productFirstImage = CreateNewElement("img");
+            const productFirstImage = CreateElement("img");
             AddClassToElement(productFirstImage, "mt-5");
             AddClassToElement(productFirstImage, "img-fluid");
             AddClassToElement(productFirstImage, "w-100");
@@ -251,7 +251,7 @@ const PullBlogsFromBackendAPI = () => {
               productFirstImage
             );
 
-            const productInformation = CreateNewElement("div");
+            const productInformation = CreateElement("div");
             AddClassToElement(productInformation, "col-lg-5");
             AddClassToElement(productInformation, "col-md-12");
             AddClassToElement(productInformation, "col-12");
@@ -263,7 +263,7 @@ const PullBlogsFromBackendAPI = () => {
               "background-color: white;"
             );
 
-            const productTitle = CreateNewElement("h1");
+            const productTitle = CreateElement("h1");
             AddAttributeToElement(
               productTitle,
               "style",
@@ -276,10 +276,10 @@ const PullBlogsFromBackendAPI = () => {
               productTitle
             );
 
-            const productPriceSpanHolder = CreateNewElement("h2");
+            const productPriceSpanHolder = CreateElement("h2");
             AddClassToElement(productPriceSpanHolder, "price");
 
-            const priceSpanHolder = CreateNewElement("span");
+            const priceSpanHolder = CreateElement("span");
             priceSpanHolder.innerHTML = "Ksh. " + SingleBlog[0].date;
             AppendChildToParentElementUsingElement(
               productPriceSpanHolder,
@@ -290,7 +290,7 @@ const PullBlogsFromBackendAPI = () => {
                     productPriceSpanHolder
                   );
 
-                  const sizeList = CreateNewElement("select");
+                  const sizeList = CreateElement("select");
                   AddClassToElement(sizeList, "my-3");
                   AddAttributeToElement(
                     sizeList,
@@ -300,7 +300,7 @@ const PullBlogsFromBackendAPI = () => {
 
                   const sizeArray = data.data[0].size.split(" ");
                   for (let i = 0; i < sizeArray.length; i++) {
-                    const sizeListItem = CreateNewElement("option");
+                    const sizeListItem = CreateElement("option");
                     AddAttributeToElement(sizeListItem, "value", sizeArray[i]);
                     AddAttributeToElement(
                       sizeListItem,
@@ -319,7 +319,7 @@ const PullBlogsFromBackendAPI = () => {
                     );
                   }
 
-                  const quantityToBuy = CreateNewElement("input");
+                  const quantityToBuy = CreateElement("input");
                   AddAttributeToElement(quantityToBuy, "type", "number");
                   AddAttributeToElement(
                     quantityToBuy,
@@ -332,7 +332,7 @@ const PullBlogsFromBackendAPI = () => {
                     quantityToBuy
                   );
 
-                  const addToCartButton = CreateNewElement("button");
+                  const addToCartButton = CreateElement("button");
                   AddClassToElement(addToCartButton, "btn");
                   addToCartButton.innerHTML = "Add To Cart";
                   AppendChildToParentElementUsingElement(
@@ -340,7 +340,7 @@ const PullBlogsFromBackendAPI = () => {
                     addToCartButton
                   );
 
-                  const continueShoppingButton = CreateNewElement("button");
+                  const continueShoppingButton = CreateElement("button");
                   AddClassToElement(continueShoppingButton, "btn");
                   continueShoppingButton.innerHTML = "Continue Shopping";
                   continueShoppingButton.addEventListener("click", e => {
@@ -360,14 +360,14 @@ const PullBlogsFromBackendAPI = () => {
                     continueShoppingButton
                   );
 
-                  const productDescriptionDetails = CreateNewElement("h4");
+                  const productDescriptionDetails = CreateElement("h4");
                   productDescriptionDetails.innerHTML = "Product Description";
                   AppendChildToParentElementUsingElement(
                     productInformation,
                     productDescriptionDetails
                   );
 
-                  const fullDescriptionTextSpan = CreateNewElement("span");
+                  const fullDescriptionTextSpan = CreateElement("span");
                   fullDescriptionTextSpan.innerHTML = data.data[0].description;
                   AppendChildToParentElementUsingElement(
                     productInformation,
