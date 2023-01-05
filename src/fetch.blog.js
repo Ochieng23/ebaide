@@ -251,7 +251,7 @@ const PullBlogsFromBackendAPI = () => {
               productFirstImage
             );
 
-                  const productInformation = CreateNewElement("div");
+            const productInformation = CreateNewElement("div");
                   AddClassToNewElement(productInformation, "col-lg-5");
                   AddClassToNewElement(productInformation, "col-md-12");
                   AddClassToNewElement(productInformation, "col-12");
