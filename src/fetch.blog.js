@@ -217,15 +217,7 @@ const PullBlogsFromBackendAPI = () => {
           });
           console.log (SingleBlog[0])
           //FETCH SINGLE BLOG:
-          fetch( {
-            method: "GET"
-          })
-            .then(response => {
-              return response.json();
-            })
-            .then(data => {
-              if (data.status === "success") {
-                ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
+          ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
                 setTimeout(() => {
                   const productContainer = CreateNewElement("div");
 
