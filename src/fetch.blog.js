@@ -218,8 +218,8 @@ const PullBlogsFromBackendAPI = () => {
           console.log (SingleBlog[0])
           //FETCH SINGLE BLOG:
           ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
-                setTimeout(() => {
-                  const productContainer = CreateNewElement("div");
+          setTimeout(() => {
+            const productContainer = CreateNewElement("div");
 
                   const productBox = CreateNewElement("div");
                   AddClassToNewElement(productBox, "col-lg-5");
