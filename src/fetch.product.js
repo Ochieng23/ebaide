@@ -165,7 +165,7 @@ const PullProductsFromBackendAPI = () => {
         productCollection.item(i).addEventListener("click", () => {
           const productid = productCollection.item(i).parentElement
             .parentElement.id;
-          const SingleProductURI = `https://service.goebaide.com/api/product/one_products/${productid}`;
+          const SingleProductURI = data.data.;
 
           //FETCH SINGLE PRODUCT:
           fetch(SingleProductURI, {
