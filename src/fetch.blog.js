@@ -241,11 +241,11 @@ const PullBlogsFromBackendAPI = () => {
               "style",
               "width: 300px; height: auto;"
             );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "src",
-                    `https://service.goebaide.com/${data.data[0].image}`
-                  );
+            AddAttributeToElement(
+              productFirstImage,
+              "src",
+              `https://service.goebaide.com/${data.data[0].image}`
+            );
                   AppendChildToParentElementUsingElement(
                     productBox,
                     productFirstImage
