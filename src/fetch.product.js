@@ -178,7 +178,7 @@ const PullProductsFromBackendAPI = () => {
                   AddClassToNewElement(productBox, "col-lg-5");
                   AddClassToNewElement(productBox, "col-md-12");
                   AddClassToNewElement(productBox, "col-12");
-                  AddAttributeToElement(productBox, "id", data.data[0].id);
+                  AddAttributeToElement(productBox, "id", SingleProduct[0].id);
 
                   const productFirstImage = CreateNewElement("img");
                   AddClassToNewElement(productFirstImage, "mt-5");
@@ -197,7 +197,7 @@ const PullProductsFromBackendAPI = () => {
                   AddAttributeToElement(
                     productFirstImage,
                     "src",
-                    `https://service.goebaide.com/${data.data[0].image}`
+                    `https://service.goebaide.com/${SingleProduct[0].image}`
                   );
                   AppendChildToParentElementUsingElement(
                     productBox,
@@ -261,7 +261,7 @@ const PullProductsFromBackendAPI = () => {
                       'style', 
                       'font-weight: bolder;'
                       );
-                    productTitle.innerHTML = data.data[0].title;
+                    productTitle.innerHTML = SingleProduct[0].title;
 
                     AppendChildToParentElementUsingElement(
                       productInformation, 
@@ -272,7 +272,7 @@ const PullProductsFromBackendAPI = () => {
                     AddClassToNewElement(productPriceSpanHolder, 'price');
 
                     const priceSpanHolder = CreateNewElement('span');
-                    priceSpanHolder.innerHTML = 'Ksh. '+data.data[0].price;
+                    priceSpanHolder.innerHTML = 'Ksh. '+SingleProduct[0].price;
                     AppendChildToParentElementUsingElement(
                       productPriceSpanHolder,
                       priceSpanHolder
