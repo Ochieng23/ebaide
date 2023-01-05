@@ -395,9 +395,8 @@ header .search-bar-container label:hover{
   text-decoration: line-through;
 }
 .services{
-  margin-top: -4em;
-  margin-bottom: 5em;
-  height: max-content;
+  height:fit-content;
+  padding-bottom: 4em;
 }
 .services .box-container{
   display: flex;
