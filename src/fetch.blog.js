@@ -279,6 +279,12 @@ const PullBlogsFromBackendAPI = () => {
               productTitle
             );
 
+            const fullDescriptionTextSpan = CreateElement("span");
+              fullDescriptionTextSpan.innerHTML = SingleBlog[0].description;
+              AppendChildToParentUsingElement(
+                productInformation,
+                fullDescriptionTextSpan
+              );
             const productPriceSpanHolder = CreateElement("h2");
             AddClassToElement(productPriceSpanHolder, "price");
 
