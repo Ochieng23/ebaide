@@ -356,7 +356,10 @@ const PullProductsFromBackendAPI = () => {
                         window.location.href === 
                         `https://goebaide.com/index.html#packages`
                       ){
-                        window.location.href = 'https://goebaide.com/';
+                        window.location.reload();
+                        setTimeout ( () => {
+                          window.location.href = 'https://goebaide.com/index.html#blog', 1500
+                        });
                         return;
                       };
                       window.location.href = 'https://goebaide.com#packages';
