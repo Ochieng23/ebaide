@@ -177,7 +177,7 @@ const PostedDateUpdater = (cb, d) => {
             AppendChildToParentUsingElement(divProductBox, productImage)
   
             AddClassToElement(productContent, "blog-content");
-            AddClassToElement (titleText, '')
+            AddClassToElement (titleText, 'title-positioning');
             titleText.innerHTML = title;
             AppendChildToParentUsingElement(productContent, titleText);
             let contentArray = content.split(" ");
