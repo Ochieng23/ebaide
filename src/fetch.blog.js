@@ -184,9 +184,8 @@ const PostedDateUpdater = (cb, d) => {
             let reducedContent = [];
             for (let i = 0; i < 30; i++){
               reducedContent = [...reducedContent, contentArray[i]];
-
             }
-            console.log();
+            
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
