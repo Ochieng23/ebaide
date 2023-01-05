@@ -214,9 +214,9 @@ const PullBlogsFromBackendAPI = () => {
           const blogid = productCollection.item(i).parentElement
             .parentElement.id;
           const SingleBlog = data.data.filter( (blog) => {
-
+            return blog.blogid = blogid;
           });
-
+          console.log (SingleBlog)
           //FETCH SINGLE BLOG:
           fetch(SingleProductURI, {
             method: "GET"
