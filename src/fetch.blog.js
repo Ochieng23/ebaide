@@ -294,34 +294,7 @@ const PullBlogsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
-                  const sizeList = CreateElement("select");
-                  AddClassToElement(sizeList, "my-3");
-                  AddAttributeToElement(
-                    sizeList,
-                    "style",
-                    "width:100px; height: 10%;"
-                  );
-
-                  const sizeArray = data.data[0].size.split(" ");
-                  for (let i = 0; i < sizeArray.length; i++) {
-                    const sizeListItem = CreateElement("option");
-                    AddAttributeToElement(sizeListItem, "value", sizeArray[i]);
-                    AddAttributeToElement(
-                      sizeListItem,
-                      "style",
-                      "font-size: 1em;"
-                    );
-                    sizeListItem.innerHTML = sizeArray[i];
-                    AppendChildToParentElementUsingElement(
-                      sizeList,
-                      sizeListItem
-                    );
-
-                    AppendChildToParentElementUsingElement(
-                      productInformation,
-                      sizeList
-                    );
-                  }
+                  
 
                   const quantityToBuy = CreateElement("input");
                   AddAttributeToElement(quantityToBuy, "type", "number");
