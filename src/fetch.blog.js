@@ -209,7 +209,7 @@ const PostedDateUpdater = (cb, d) => {
            GetElementWithClassName, divProductBox);
           }
         );
-              //HANDING VIEWING SINGLE PRODUCT:
+              //HANDING VIEWING SINGLE BLOG:
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
       );
