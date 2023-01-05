@@ -216,7 +216,7 @@ const PullBlogsFromBackendAPI = () => {
           const blogid = productCollection.item(i).parentElement
             .parentElement.id;
           const SingleBlog = data.data.filter( (blog) => {
-            return blog.blogid = blogid;
+            return blog.blogid === blogid;
           });
           console.log (SingleBlog[0])
           //FETCH SINGLE BLOG:
