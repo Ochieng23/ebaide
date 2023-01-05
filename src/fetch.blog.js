@@ -189,6 +189,7 @@ const PostedDateUpdater = (cb, d) => {
             AppendChildToParentUsingElement (productContent, productDescription);
   
            AddClassToElement (productPrice, 'price');
+           AddClassToElement (productPrice, 'date-style');
            setInterval (() => {
              let resultArray = PostedDateUpdater (PostDateCount, date);
              let resultArrayLength = resultArray.length;
