@@ -298,12 +298,12 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement(continueShoppingButton, "btn");
             continueShoppingButton.innerHTML = "Continue reading";
             continueShoppingButton.addEventListener("click", e => {
-                    e.preventDefault();
-                    //console.log(window.location.href);
-                    if (
-                      window.location.href ===
-                      `https://goebaide.com/index.html#blog`
-                    ) {
+              e.preventDefault();
+              //console.log(window.location.href);
+              if (
+                window.location.href ===
+                `https://goebaide.com/index.html#blog`
+              ) {
                       window.location.reload();
                       return;
                     }
