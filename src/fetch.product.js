@@ -372,6 +372,7 @@ const PullProductsFromBackendAPI = () => {
                 }
               );
 
+            console.log(modifiedItems);
               // if (isItemAddToCart.length === 0) {
               //   cartArray = [...storedCartItems, cartArrayItem];
               //   localStorage.setItem("cart-items", JSON.stringify(cartArray));
