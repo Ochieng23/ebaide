@@ -5,6 +5,7 @@ const FindSingleElement = (identifer) => {
 
 const FindSingleElementByID = (identifer) => {
     const element = document.getElementById(identifer);
+    return element;
 };
 
 const ClearContent = (cd, identifer) => {
