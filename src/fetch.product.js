@@ -352,7 +352,7 @@ const PullProductsFromBackendAPI = () => {
               const {id, title, image} = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
-              const cartArrayItem = {}
+              const cartArrayItem = {};
               //Handling Clicking Go To Cart Button
             });
 
