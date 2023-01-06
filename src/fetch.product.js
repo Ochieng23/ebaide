@@ -342,6 +342,7 @@ const PullProductsFromBackendAPI = () => {
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
 
+              let cartArray = [];
               //Handling Clicking Go To Cart Button
             });
 
