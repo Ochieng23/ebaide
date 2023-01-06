@@ -53,7 +53,7 @@ const Cart = e => {
     AppendChildToDynamicElement(cartDiv, goBackToGoProductButton);
     
     goBackToGoProductButton.addEventListener ('click', (e) => {
-
+      e.preventDefault();
     });
 
 
