@@ -97,6 +97,7 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
+          
 
           AddAttributeToElement(
             productImage,
@@ -179,17 +180,25 @@ const PullProductsFromBackendAPI = () => {
                 ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
                 setTimeout(() => {
                   const productContainer = CreateNewElement("div");
+                  AddClassToNewElement(productContainer,'row')
+                  
+                  AddAttributeToElement(productContainer, 'style', 'border: 2px solid black; display:flex;')
 
                   const productBox = CreateNewElement("div");
+                  AddClassToNewElement(productBox, 'product-box')
+                  AddClassToNewElement(productBox, 'col')
+                  AddAttributeToElement(productBox, 'style', 'border: 2px solid black')
                   AddClassToNewElement(productBox, "col-lg-5");
                   AddClassToNewElement(productBox, "col-md-12");
                   AddClassToNewElement(productBox, "col-12");
                   AddAttributeToElement(productBox, "id", data.data[0].id);
 
                   const productFirstImage = CreateNewElement("img");
+                  AddClassToNewElement(productFirstImage, 'product-image')
+                  
                   AddClassToNewElement(productFirstImage, "mt-5");
                   AddClassToNewElement(productFirstImage, "img-fluid");
-                  AddClassToNewElement(productFirstImage, "w-100");
+                  /*AddClassToNewElement(productFirstImage, "w-100");*/
                   AddAttributeToElement(
                     productFirstImage,
                     "alt",
@@ -198,7 +207,7 @@ const PullProductsFromBackendAPI = () => {
                   AddAttributeToElement(
                     productFirstImage,
                     "style",
-                    "width: 300px; height: auto;"
+                    "width: 50vw; height: 60vh;padding:0px;margin:20px;"
                   );
                   AddAttributeToElement(
                     productFirstImage,
@@ -218,10 +227,15 @@ const PullProductsFromBackendAPI = () => {
                       smallImageGroupColumn,
                       "small-img-col"
                     );
+                    AddAttributeToElement(
+                      smallImageGroup,
+                      'style',
+                      'width: 50vw; margin:20px;'
+                    )
 
                     const smallImage = CreateNewElement('img');
                     AddClassToNewElement(smallImage, 'small-img');
-                    AddClassToNewElement(smallImage, 'w-100');
+                    /*AddClassToNewElement(smallImage, 'w-100');*/
                     AddClassToNewElement(smallImage, 'img-fluid');
                     AddAttributeToElement(
                       smallImage,
@@ -233,6 +247,7 @@ const PullProductsFromBackendAPI = () => {
                       "alt",
                       "product-image-"+[i+1]
                     );
+                    
 
                     AppendChildToParentElementUsingElement(
                       smallImageGroupColumn,
@@ -249,6 +264,7 @@ const PullProductsFromBackendAPI = () => {
                   )
 
                   const productInformation = CreateNewElement('div');
+                  AddClassToNewElement(productInformation, 'product-info')
                   AddClassToNewElement(productInformation, 'col-lg-5');
                   AddClassToNewElement(productInformation, 'col-md-12');
                   AddClassToNewElement(productInformation, 'col-12');
@@ -260,6 +276,7 @@ const PullProductsFromBackendAPI = () => {
                     'style', 
                     'background-color: white;'
                     );
+                    AddClassToNewElement(productInformation, 'col')
 
                     const productTitle = CreateNewElement('h1');
                     AddAttributeToElement(
@@ -279,6 +296,7 @@ const PullProductsFromBackendAPI = () => {
 
                     const priceSpanHolder = CreateNewElement('span');
                     priceSpanHolder.innerHTML = 'Ksh. '+data.data[0].price;
+                                       
                     AppendChildToParentElementUsingElement(
                       productPriceSpanHolder,
                       priceSpanHolder
@@ -347,6 +365,10 @@ const PullProductsFromBackendAPI = () => {
                     );
 
                     const continueShoppingButton = CreateNewElement ('button');
+                    AddAttributeToElement(continueShoppingButton,
+                      'style',
+                      'margin-left:5px'
+                      )
                     AddClassToNewElement(continueShoppingButton, 'btn');
                     continueShoppingButton.innerHTML = 'Continue Shopping';
                     continueShoppingButton.addEventListener('click', (e) =>{
