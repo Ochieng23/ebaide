@@ -1506,7 +1506,7 @@ header .logo{
   text-transform: lowercase !important;
   background-color: red;
   text-align: center;
-  margin: 25%;
+  padding: 25%;
 }
 .emptyCartTextSpan::first-letter{
   text-transform: uppercase !important;
