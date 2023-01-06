@@ -697,8 +697,7 @@ header .search-bar-container label:hover{
     width:100%;
   }
 
-}
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+}@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
   --orange: #F28500;
@@ -1317,6 +1316,7 @@ header .search-bar-container label:hover{
     column-gap: 2.5%;
     row-gap: 1.2%;
     margin-bottom: 4%;
+    
   }
   
 }
@@ -1333,6 +1333,7 @@ header .search-bar-container label:hover{
 .product-box{
   width: 100vw;
 }
+
 
 .blogs-box {
   background-color: #fff;
@@ -1409,6 +1410,10 @@ header .search-bar-container label:hover{
 header{
   
   width: 100vw;
+}
+.cart{
+  margin-right: 0em;
+  font-size: 3.3em;
 }
 
   #menu-bar{
