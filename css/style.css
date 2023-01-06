@@ -1330,7 +1330,9 @@ header .search-bar-container label:hover{
 .product-box{
   width: 100vw;
 }
-
+.product-description{
+  text-transform: lowercase;
+}
 
 .blogs-box {
   background-color: #fff;
