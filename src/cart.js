@@ -27,7 +27,7 @@ const AppendChildToDynamicElement = (parent, child) => {
 };
 
 const AddClass = (element, className) => {
-
+  element.classList.add(className);
 };
 
 const Cart = e => {
