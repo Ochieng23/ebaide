@@ -1517,6 +1517,9 @@ header .logo{
 .go-back-to-product {
   text-transform: capitalize;
 }
+.btn-cart-icon{
+  
+}
 .btn-cart-icon > i {
   display: block;
 }
