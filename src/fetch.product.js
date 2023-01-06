@@ -361,6 +361,7 @@ const PullProductsFromBackendAPI = () => {
               };
 
               cartArray = [...cartArray, cartArrayItem];
+              
               console.log(cartArray);
               //Handling Clicking Go To Cart Button
             });
