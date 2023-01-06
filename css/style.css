@@ -1344,13 +1344,11 @@ header .search-bar-container label:hover{
   text-transform: lowercase;
 }
 .blog-description {
-  height: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
+  text-transform: lowercase;
 }
-
+.blog-description::first-letter {
+  text-transform: uppercase;
+}
 
 
 
