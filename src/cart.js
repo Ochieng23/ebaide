@@ -4,7 +4,7 @@ const FindElement = (identifer) => {
 };
 
 const ClearContent = (cd, identifer) => {
-    cb (identifer)
+    const element = cb (identifer)
 };
 
 FindElement ('.cart').addEventListener('click', () => {
