@@ -1316,9 +1316,24 @@ header .search-bar-container label:hover{
     column-gap: 2.5%;
     row-gap: 1.2%;
     margin-bottom: 4%;
+    
   }
   
 }
+.product-info{
+  margin-left: 20px;
+  width: 50vw;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 1em;
+  
+  
+
+}
+.product-box{
+  width: 100vw;
+}
+
 
 .blogs-box {
   background-color: #fff;
