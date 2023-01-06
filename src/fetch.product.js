@@ -286,6 +286,7 @@ const PullProductsFromBackendAPI = () => {
               "width:100px; height: 10%;"
             );
 
+            
             const sizeArray = SingleProduct[0].size.split(" ");
             for (let i = 0; i < sizeArray.length; i++) {
               const sizeListItem = CreateNewElement("option");
