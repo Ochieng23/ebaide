@@ -1333,7 +1333,9 @@ header .search-bar-container label:hover{
 .product-description{
   text-transform: lowercase;
 }
-
+.product-description::first-letter{
+  text-transform: uppercase;
+}
 .blogs-box {
   background-color: #fff;
   height: 100vh;
