@@ -56,10 +56,7 @@ const Cart = e => {
       e.preventDefault();
       window.location.href = 'index.html#packages';
       if (window.location.href === 'http://localhost:5503/index.html#packages'){
-        window.location.reload ();
-        setTimeout (
-          window.location.href = 'index.html#packages', 500
-        );
+        //window.location.reload ();
       };
     });
 
