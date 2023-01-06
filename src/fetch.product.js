@@ -369,7 +369,9 @@ const PullProductsFromBackendAPI = () => {
                   return {
                     ...item,
                     itemQuantityToBuy: parseFloat(itemQuantityToBuy) + 1
-                  }
+                  };
+                }else{
+                  return item;
                 }
               })
             console.log(modifiedItems);
