@@ -318,7 +318,7 @@ const PullProductsFromBackendAPI = () => {
             );
 
             addToCartButton.addEventListener("click", (e) => {
-              
+              e.preventDefault();
             });
 
             const continueShoppingButton = CreateNewElement("button");
