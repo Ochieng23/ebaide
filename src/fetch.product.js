@@ -348,7 +348,7 @@ const PullProductsFromBackendAPI = () => {
               const pickedItem = data.data.filter (
                 item => item.id === idOfItemAddToCart
               );
-              console.log(idOfItemAddToCart);
+              console.log(pickedItem);
               //Handling Clicking Go To Cart Button
             });
 
