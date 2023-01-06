@@ -317,8 +317,8 @@ const PullProductsFromBackendAPI = () => {
               addToCartButton
             );
 
+            addToCartButton.addEventListener("click",);
 
-            
             const continueShoppingButton = CreateNewElement("button");
             AddClassToNewElement(continueShoppingButton, "btn");
             continueShoppingButton.innerHTML = "Continue Shopping";
