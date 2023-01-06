@@ -1,4 +1,6 @@
-const FindElementByID = (identifer) => {
+const FindElement = (identifer) => {
     const element = document.querySelector(identifer);
     return element;
 };
+
+Find
