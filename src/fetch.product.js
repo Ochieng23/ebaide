@@ -344,6 +344,7 @@ const PullProductsFromBackendAPI = () => {
               AddClassToNewElement(addToCartButton, "view-cart-button");
 
               let cartArray = [];
+              localStorage.setItem("cart-items", JSON.stringify(cartArray));
               const idOfItemAddToCart =
                 addToCartButton.parentElement.parentElement.id;
               const pickedItem = data.data.filter(
