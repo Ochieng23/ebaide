@@ -1497,6 +1497,7 @@ header .logo{
 }
 .cart-container{
   background-color: #fff;
+  margin: 0 auto;
 }
 .emptyCartTextSpan {
   font-size:1.2em;
