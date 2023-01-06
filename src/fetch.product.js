@@ -344,7 +344,6 @@ const PullProductsFromBackendAPI = () => {
               AddClassToNewElement(addToCartButton, "view-cart-button");
 
               let cartArray = [];
-              localStorage.setItem("cart-items", JSON.stringify(cartArray));
               const idOfItemAddToCart =
                 addToCartButton.parentElement.parentElement.id;
               const pickedItem = data.data.filter(
@@ -364,7 +363,6 @@ const PullProductsFromBackendAPI = () => {
               const storedCartItems = JSON.parse(
                 localStorage.getItem("cart-items")
               );
-            console.log(modifiedItems);
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
             localStorage.setItem("cart-items", JSON.stringify(cartArray));
