@@ -175,6 +175,7 @@ const PullBlogsFromBackendAPI = () => {
 
         AddClassToElement(productContent, "blog-content");
         AddClassToElement(titleText, "title-positioning");
+        AddClassToElement (titleText, "blog-description")
         titleText.innerHTML = title;
         AppendChildToParentUsingElement(productContent, titleText);
 
