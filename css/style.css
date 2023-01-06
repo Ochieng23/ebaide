@@ -1525,7 +1525,7 @@ header .logo{
   width: 90%;
   padding-right: 8%;
 }
-.btn-cart-icon
+.btn-cart-icon:hover{}
 .btn-cart-icon > i {
   display: block;
 }
