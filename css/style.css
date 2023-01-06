@@ -1505,4 +1505,6 @@ header .logo{
   display: block;
   text-transform: lowercase !important;;
 }
-.emptyCartTextSpan ::first-letter{}
+.emptyCartTextSpan ::first-letter{
+  text-transform: uppercase !important;
+}
