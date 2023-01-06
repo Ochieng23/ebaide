@@ -252,6 +252,7 @@ const PullProductsFromBackendAPI = () => {
               "style",
               "font-weight: bolder;"
             );
+            AddClassToNewElement(productsTitle, "product-description");
             productTitle.innerHTML = SingleProduct[0].title;
 
             AppendChildToParentElementUsingElement(
