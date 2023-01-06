@@ -365,17 +365,18 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items")
               );
 
-              const isItemAddToCart = storedCartItems.map(
+              const modifiedItems = storedCartItems.map(
                 (item) => {
-                  item.id === cartArrayItem.id
+                  item.id === cartArrayItem.id;
+                  item = {...item, itemQuantityToBuy: parseInt(itemQuantityToBuy) + 1};
                 }
               );
 
-              if (isItemAddToCart.length === 0) {
-                cartArray = [...storedCartItems, cartArrayItem];
-                localStorage.setItem("cart-items", JSON.stringify(cartArray));
-              }
-              console.log("Item already added to cart");
+              // if (isItemAddToCart.length === 0) {
+              //   cartArray = [...storedCartItems, cartArrayItem];
+              //   localStorage.setItem("cart-items", JSON.stringify(cartArray));
+              // }
+              //console.log("Item already added to cart");
               //Handling Clicking Go To Cart Button
             });
 
