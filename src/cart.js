@@ -38,6 +38,7 @@ const Cart = e => {
     AddClass (cartDiv, "cart-container");
 
     const emptyCartTextSpan = CreateNewHTMLElement("span");
+    AddClass (emptyCartTextSpan, "emptyCartTextSpan");
     emptyCartTextSpan.innerHTML = "Your Cart is empty";
     AppendChildToDynamicElement (cartDiv, emptyCartTextSpan);
     AppendHTMLChildToStaticElement(
