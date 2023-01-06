@@ -1503,8 +1503,9 @@ header .logo{
 .emptyCartTextSpan {
   font-size:2em;
   display: block;
-  text-transform: lowercase !important;;
+  text-transform: lowercase !important;
+  margin: 25%;
 }
-.emptyCartTextSpan ::first-letter{
+.emptyCartTextSpan::first-letter{
   text-transform: uppercase !important;
 }
