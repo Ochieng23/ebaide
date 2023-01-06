@@ -1504,7 +1504,7 @@ header .logo{
   font-size:2em;
   display: block;
   text-transform: lowercase !important;
-  background-color: red;
+  background-color: #fff;
   text-align: center;
   padding: 25%;
 }
