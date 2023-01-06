@@ -22,14 +22,17 @@ const AppendHTMLChildToStaticElement = (indentifier, cb, child) => {
   cb(indentifier).appendChild(child);
 };
 
+
+
 const Cart = e => {
   e.preventDefault();
   ClearContent(FindSingleElement, "#body");
   setTimeout(() => {
+    const cartDiv = CreateNewHTMLElement('div');
     const emptyCartTextSpan = CreateNewHTMLElement("span");
     emptyCartTextSpan.innerHTML = "Your Cart is empty";
     AppendHTMLChildToStaticElement(
-      "#body",
+      cartDiv,
       FindSingleElement,
       emptyCartTextSpan
     );
