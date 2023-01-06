@@ -361,7 +361,7 @@ const PullProductsFromBackendAPI = () => {
               };
 
               cartArray = [...cartArray, cartArrayItem];
-              
+              localStorage.setItem('cart-items', JSON.stringify(cartArray));
               console.log(cartArray);
               //Handling Clicking Go To Cart Button
             });
