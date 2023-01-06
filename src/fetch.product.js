@@ -339,7 +339,8 @@ const PullProductsFromBackendAPI = () => {
               e.preventDefault();
               addToCartButtonSpan.innerHTML = "Go to Cart";
               RemoveClass(addToCartButtonIcon, 'fa-cart-plus');
-              fa-shopping-cart
+              AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
+              
               AddClassToNewElement(addToCartButton, "view-cart-button");
             });
 
