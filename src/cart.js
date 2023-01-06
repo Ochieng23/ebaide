@@ -26,7 +26,7 @@ const AppendChildToDynamicElement = (parent, child) => {
   parent.appendChild(child);
 };
 
-
+const AddClass = ()
 
 const Cart = e => {
   e.preventDefault();
