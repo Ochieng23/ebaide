@@ -3,4 +3,6 @@ const FindElement = (identifer) => {
     return element;
 };
 
-FindElement ()
+FindElement ('.cart').addEventListener('click', () => {
+    
+})
