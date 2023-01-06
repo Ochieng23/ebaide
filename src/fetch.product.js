@@ -374,8 +374,8 @@ const PullProductsFromBackendAPI = () => {
 
             console.log(modifiedItems);
               // if (isItemAddToCart.length === 0) {
-              //   cartArray = [...storedCartItems, cartArrayItem];
-              //   localStorage.setItem("cart-items", JSON.stringify(cartArray));
+            cartArray = [ cartArrayItem];
+            localStorage.setItem("cart-items", JSON.stringify(cartArray));
               // }
               //console.log("Item already added to cart");
               //Handling Clicking Go To Cart Button
