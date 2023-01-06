@@ -47,7 +47,7 @@ const Cart = e => {
       cartDiv
     );
 
-    
+   const goBackToGoProductButton = CreateNewHTMLElement("button"); 
   }, 1500);
 };
 
