@@ -365,10 +365,10 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items")
               );
 
-              const isItemAddToCart = storedCartItems.filter(
-                item => item.id === cartArrayItem.id
+              const isItemAddToCart = storedCartItems.map(
+                (item) => {item.id === cartArrayItem.id}
               );
-              
+
               if (isItemAddToCart.length === 0) {
                 cartArray = [...storedCartItems, cartArrayItem];
                 localStorage.setItem("cart-items", JSON.stringify(cartArray));
