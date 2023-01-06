@@ -284,6 +284,7 @@ const PullBlogsFromBackendAPI = () => {
             );
 
             const fullDescriptionTextSpan = CreateElement("span");
+            AddClassToElement (fullDescriptionTextSpan, "blog-description");
             fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
             AppendChildToParentUsingElement(
               productInformation,
