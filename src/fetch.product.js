@@ -343,7 +343,7 @@ const PullProductsFromBackendAPI = () => {
               AddClassToNewElement(addToCartButton, "view-cart-button");
 
               let cartArray = [];
-              
+              const idOfItemAddToCart = 
               //Handling Clicking Go To Cart Button
             });
 
