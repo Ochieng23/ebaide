@@ -365,6 +365,7 @@ const PullProductsFromBackendAPI = () => {
               const isItemAddToCart = storedCartItems.filter(
                 item => item.id === cartArrayItem.id
               );
+              console.log(isItemAddToCart);
               cartArray = [cartArrayItem];
               localStorage.setItem('cart-items', JSON.stringify(cartArray));
               //Handling Clicking Go To Cart Button
