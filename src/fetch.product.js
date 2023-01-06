@@ -312,6 +312,8 @@ const PullProductsFromBackendAPI = () => {
             const addToCartButton = CreateNewElement("button");
             AddClassToNewElement(addToCartButton, "btn");
             AddClassToNewElement(addToCartButton, 'btn-cart-icon');
+
+            const addToCartButtonSpan = CreateNewElement("span");
             addToCartButton.innerHTML = "Add To Cart";
 
             const addToCartButtonIcon = CreateNewElement("i");
