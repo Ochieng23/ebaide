@@ -50,6 +50,7 @@ const Cart = e => {
    const goBackToGoProductButton = CreateNewHTMLElement("button"); 
    AddClass (goBackToGoProductButton, 'btn');
    goBackToGoProductButton.textContent = "Back to product";
+   
 
   }, 1500);
 };
