@@ -1527,8 +1527,8 @@ header .logo{
 }
 .btn-cart-icon > i {
   display: block;
-  background-color: red !important;
 }
 .btn-cart-icon > span {
   display: block;
+  margin-left: 2em;
 }
