@@ -3,7 +3,9 @@ const FindSingleElement = (identifer) => {
     return element;
 };
 
-const FindSingleElementByID = (identifer) => {};
+const FindSingleElementByID = (identifer) => {
+    const element = document.getElementById(identifer);
+};
 
 const ClearContent = (cd, identifer) => {
     const element = cb (identifer);
