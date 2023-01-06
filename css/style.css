@@ -1522,7 +1522,8 @@ header .logo{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+  width: 90%;
+  padding-right: 8%;
 }
 .btn-cart-icon > i {
   display: block;
