@@ -239,6 +239,10 @@ header .search-bar-container label:hover{
   color: white;
   font-size: 2.4em;
   margin-right: -4em;
+}.cart{
+  color: white;
+  font-size: 2.4em;
+  margin-right: -4em;
 }
 .home{
   min-height: 100vh;
@@ -796,6 +800,8 @@ header .navbar a:hover{
 }
 header .icons{
   margin-right: -4em;
+}header .icons{
+  margin-right: -4em;
 }
 header .icons i{
   font-size: 2.5rem;
@@ -1316,8 +1322,16 @@ header .search-bar-container label:hover{
     column-gap: 2.5%;
     row-gap: 1.2%;
     margin-bottom: 4%;
+    @media (min-width:900px) {
+  .blog-display {
+    display: grid;
+    grid-template-columns: 48.8% 48.8%;
+    column-gap: 2.5%;
+    row-gap: 1.2%;
+    margin-bottom: 4%;
     
   }
+    }
   
 }
 .product-info{
@@ -1365,6 +1379,51 @@ header .search-bar-container label:hover{
 .blog-description::first-letter {
   text-transform: uppercase;
 }
+}
+.product-info{
+  margin-left: 20px;
+  width: 50vw;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 1em;
+  
+  
+
+}
+.product-box{
+  width: 100vw;
+}
+
+
+.blogs-box {
+  background-color: #fff;
+  height: 100vh;
+}
+.blog-content {
+  padding: 4% 8%;
+}
+.blog-content > h3 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+.blog-content > p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+.title-positioning {
+  height: 20vh;
+}
+.date-style{
+  font-weight: 800;
+}
+.blog-description {
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
 
 
 
@@ -1416,10 +1475,35 @@ header{
   margin-right: 0em;
   font-size: 3.3em;
 }
+  body{
+    width: 100vw;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+  
+  width: 100vw;
+}
+.cart{
+  margin-right: 0em;
+  font-size: 3.3em;
+}
 
   #menu-bar{
     display: initial;
   }
+header .logo{
+  width: 70px;
+  margin-left: -16px;
+}
+
+.cart{
+  color: white;
+  font-size: 25px;
+  margin-top: 6px;
+}
 header .logo{
   width: 70px;
   margin-left: -16px;
@@ -1446,19 +1530,43 @@ header .logo{
     
     display: grid;
     grid-template-rows: auto;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-rows: auto;
   }
 
   header .navbar a{
+    
     
     border-radius: .5rem;
     padding:1.5rem;
     margin:1.5rem 0;    
     background:#222;
     
+    
   }
   #search-btn{
     display:none;
+    #search-btn{
+    display:none;
   
+}
+#login-btn{
+  font-size: 3.3em;
+  margin-right: -5em;
+  margin-top: 5px;
+}
+.blog-display{
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1.2em;
+}
+.blog-content > p {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
 }
 #login-btn{
   font-size: 3.3em;
@@ -1491,7 +1599,8 @@ header .logo{
     width:100%;
   }
 }
-
+  
 .cart {
   cursor: pointer;
+
 }

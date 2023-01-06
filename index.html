@@ -10,6 +10,11 @@
       type="image/x-icon"
     />
     <link
+      rel="shortcut icon"
+      href="./images/6bfac305-8e67-424e-b8d5-9a5bbdaa6ae6-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -39,8 +44,19 @@
         cursor: pointer;
       }
     </style>
+    <style>
+      .small-img-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+      .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body id="body">
+  <body id="body" id="body">
     <!-- header section starts  -->
 
     <header>
@@ -51,7 +67,9 @@
       <nav class="navbar navbar-expand">
         <a class="nav-link" href="#home">home</a>
         <a class="nav-link" href="#footer">About Me</a>
+        <a class="nav-link" href="#footer">About Me</a>
         <a class="nav-link" href="#packages">Merchandise</a>
+        <a class="nav-link" href="#services">Blogs</a>
         <a class="nav-link" href="#services">Blogs</a>
         <a class="nav-link" href="#gallery">Gallery</a>
         <a class="nav-link" href="#contact">contact</a>
@@ -64,6 +82,9 @@
       <div class="cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
       </div>
+      <div class="cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
 
       <form action="" class="search-bar-container">
         <input type="search" id="search-bar" placeholder="search here..." />
@@ -72,11 +93,78 @@
     </header>
 
     <!-- header section ends -->
-    <div id="success_registration"></div>
+    <div id="success_registration"></div>    <div id="success_registration"></div>
     <!-- login form container  -->
 
     <div class="login-form-container" id="login-form-container">
+    <div class="login-form-container" id="login-form-container">
       <i class="fas fa-times" id="form-close"></i>
+      <section class="vh-100" style="background-color: #f28500">
+        <div class="container py-5 h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col col-xl-10">
+              <div class="card" style="border-radius: 1rem">
+                <div class="row g-0">
+                  <div class="col-md-6 col-lg-5 d-none d-md-block">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                      alt="login form"
+                      class="img-fluid"
+                      style="border-radius: 1rem 0 0 1rem"
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+                      <form id="login_form">
+                        <div class="d-flex align-items-center mb-3 pb-1">
+                          <i
+                            class="fas fa-cubes fa-2x me-3"
+                            style="color: #ff6219"
+                          ></i>
+                          <span style="font-weight: bolder; font-size: 30px"
+                            >LOGIN</span
+                          >
+                        </div>
+
+                        <h5
+                          class="fw-normal mb-3 pb-3"
+                          style="letter-spacing: 1px"
+                        >
+                          Sign into your account
+                        </h5>
+
+                        <div class="form-outline mb-4">
+                          <input
+                            type="email"
+                            id="email"
+                            class="form-control form-control-lg"
+                          />
+                          <label class="form-label" for="email"
+                            >Email address</label
+                          >
+                        </div>
+
+                        <div class="form-outline mb-4">
+                          <input
+                            type="password"
+                            id="password"
+                            class="form-control form-control-lg"
+                          />
+                          <label class="form-label" for="password"
+                            >Password</label
+                          >
+                        </div>
+
+                        <div class="pt-1 mb-4">
+                          <button
+                            class="btn btn-dark btn-lg btn-block"
+                            type="submit"
+                          >
+                            Login
+                          </button>
+                        </div>
       <section class="vh-100" style="background-color: #f28500">
         <div class="container py-5 h-100">
           <div
@@ -165,6 +253,27 @@
         </div>
       </section>
     </div>
+                        <a class="small text-muted" href="#!"
+                          >Forgot password?</a
+                        >
+                        <p class="mb-5 pb-lg-2" style="color: #393f81">
+                          Don't have an account?
+                          <a href="./html/login.html" style="color: #393f81"
+                            >Register here</a
+                          >
+                        </p>
+                        <a href="#!" class="small text-muted">Terms of use.</a>
+                        <a href="#!" class="small text-muted">Privacy policy</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!---login section starts -->
     <div class="login-form-container">
       <form style="background-color: aliceblue" action="">
@@ -196,7 +305,7 @@
       <div class="content">
         <h3>adventure is worthwhile</h3>
         <p>discover <strong>vanlife </strong> with me, do what excites!</p>
-        <a href="#services" class="btn">discover more</a>
+        <a href="#servicesservices" class="btn">discover more</a>
       </div>
 
       <div class="controls">
@@ -237,12 +346,14 @@
         <span>e</span>
       </h1>
       <div class="box-container" id="product-container"></div>
+      <div class="box-container" id="product-container"></div>
     </section>
 
     <!-- packages section ends -->
 
     <!-- blog section starts  -->
 
+    <section class="services" id="blogs">
     <section class="services" id="blogs">
       <h1 class="heading">
         <span>B</span>
@@ -252,6 +363,7 @@
         <span>S</span>
       </h1>
 
+      <div class="blog-display" id="box-container"></div>
       <div class="blog-display" id="box-container"></div>
     </section>
 
@@ -397,7 +509,7 @@
           />
         </div>
 
-        <form style="border: 2px solid black" action="">
+        <form style="border: 2px solid black" style="border: 2px solid black" action="">
           <div class="inputBox">
             <input type="text" placeholder="name" />
             <input type="email" placeholder="email" />
@@ -414,9 +526,14 @@
             rows="10"
           ></textarea>
           <input
+           
             type="submit"
+           
             class="btn"
+           
             value="send message"
+            style="background-color: black"
+         
             style="background-color: black"
           />
         </form>
@@ -441,7 +558,7 @@
 
     <!-- footer section  -->
 
-    <section class="footer" id="footer">
+    <section class="footer" id="footer" id="footer">
       <div class="box-container">
         <div class="box">
           <h3>about me</h3>
@@ -461,6 +578,9 @@
         <div class="box">
           <h3>quick links</h3>
           <a class="nav-link" href="#">home</a>
+
+          <a class="nav-link" href="#">Merch</a>
+          <a class="nav-link" href="#">Blog</a>
 
           <a class="nav-link" href="#">Merch</a>
           <a class="nav-link" href="#">Blog</a>
@@ -488,10 +608,13 @@
 
     <!-- custom js file link  -->
     <script src="./src/script.js" defer></script>
+    <script src="./src/login.js" defer defer></script>
     <script src="./src/login.js" defer></script>
     <script src="./src/fetch.product.js" async></script>
-    <script src="./src/fetch.blog.js" async></script>
-    <script src="./src/fetch.single.product.js"></script>
+    <script src="./sfetch.product.js" async></script>
+    <script src="./src/fc/fetch.blotch.blog.js" async></script>
+    <scr.js" async></script>
+    <script src="./pt src="./src/ferc/fetch.singlch.single.p.productoduct.js"></script>
     <script src="./src/cart.js" async></script>
   </body>
 </html>
