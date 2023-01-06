@@ -315,7 +315,10 @@ const PullProductsFromBackendAPI = () => {
 
             const addToCartButtonIcon = CreateNewElement("i");
             AddClassToNewElement(addToCartButtonIcon, "fa-cart-plus");
-            AppendElementAsFirstChildUsingElement(addToCartButton, addToCartButtonIcon);
+            AppendElementAsFirstChildUsingElement(
+              addToCartButton, 
+              addToCartButtonIcon
+              );
             AppendChildToParentElementUsingElement(
               productInformation,
               addToCartButton
