@@ -37,6 +37,8 @@ const Cart = e => {
     const cartDiv = CreateNewHTMLElement('div');
     AddClass (cartDiv, "cart-container");
 
+
+    
     const emptyCartTextSpan = CreateNewHTMLElement("span");
     AddClass (emptyCartTextSpan, "emptyCartTextSpan");
     emptyCartTextSpan.innerHTML = "Your Cart is empty";
