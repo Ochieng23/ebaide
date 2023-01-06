@@ -365,13 +365,6 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items")
               );
 
-              const modifiedItems = storedCartItems.map(
-                (item) => {
-                  item.id === cartArrayItem.id;
-                  item = {...item, itemQuantityToBuy: parseInt(itemQuantityToBuy) + 1};
-                }
-              );
-
             console.log(modifiedItems);
               // if (isItemAddToCart.length === 0) {
             cartArray = [ cartArrayItem];
