@@ -285,7 +285,7 @@ const PullProductsFromBackendAPI = () => {
               "style",
               "width:100px; height: 10%;"
             );
-            AddAttributeToElement (sizeList, "name", "size");
+            AddAttributeToElement(sizeList, "name", "size");
 
             const sizeArray = SingleProduct[0].size.split(" ");
             for (let i = 0; i < sizeArray.length; i++) {
@@ -300,7 +300,7 @@ const PullProductsFromBackendAPI = () => {
                 sizeList
               );
             }
-        
+
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
             AddAttributeToElement(
@@ -316,7 +316,7 @@ const PullProductsFromBackendAPI = () => {
 
             const addToCartButton = CreateNewElement("button");
             AddClassToNewElement(addToCartButton, "btn");
-            AddClassToNewElement(addToCartButton, 'btn-cart-icon');
+            AddClassToNewElement(addToCartButton, "btn-cart-icon");
 
             const addToCartButtonSpan = CreateNewElement("span");
             addToCartButtonSpan.innerHTML = "Add To Cart";
@@ -328,28 +328,28 @@ const PullProductsFromBackendAPI = () => {
             AddClassToNewElement(addToCartButtonIcon, "fa");
             AddClassToNewElement(addToCartButtonIcon, "fa-cart-plus");
             AppendElementAsFirstChildUsingElement(
-              addToCartButton, 
+              addToCartButton,
               addToCartButtonIcon
-              );
+            );
             AppendChildToParentElementUsingElement(
               productInformation,
               addToCartButton
             );
 
-            addToCartButton.addEventListener("click", (e) => {
+            addToCartButton.addEventListener("click", e => {
               e.preventDefault();
               addToCartButtonSpan.innerHTML = "Go to Cart";
-              RemoveClass(addToCartButtonIcon, 'fa-cart-plus');
+              RemoveClass(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
 
               let cartArray = [];
-              const idOfItemAddToCart = 
-              addToCartButton.parentElement.parentElement.id;
-              const pickedItem = data.data.filter (
+              const idOfItemAddToCart =
+                addToCartButton.parentElement.parentElement.id;
+              const pickedItem = data.data.filter(
                 item => item.id === idOfItemAddToCart
               );
-              const {id, title, image} = pickedItem[0];
+              const { id, title, image } = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
               const cartArrayItem = {
@@ -360,16 +360,18 @@ const PullProductsFromBackendAPI = () => {
                 itemQuantityToBuy
               };
 
-              const storedCartItems = JSON.parse(localStorage.getItem('cart-items'));
-              
+              const storedCartItems = JSON.parse(
+                localStorage.getItem("cart-items")
+              );
+
               const isItemAddToCart = storedCartItems.filter(
                 item => item.id === cartArrayItem.id
               );
-              if (isItemAddToCart.length !== 0) {
-                console.log('Item already added to cart');
+              if (isItemAddToCart.length === 0) {
+                cartArray = [...storedCartItems, cartArrayItem];
+                localStorage.setItem("cart-items", JSON.stringify(cartArray));
+                return;
               }
-              cartArray = [...storedCartItems, cartArrayItem];
-              localStorage.setItem('cart-items', JSON.stringify(cartArray));
               //Handling Clicking Go To Cart Button
             });
 
@@ -409,7 +411,10 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const fullDescriptionTextSpan = CreateNewElement("span");
-            AddClassToNewElement(fullDescriptionTextSpan, "product-description");
+            AddClassToNewElement(
+              fullDescriptionTextSpan,
+              "product-description"
+            );
             fullDescriptionTextSpan.innerHTML = SingleProduct[0].description;
             AppendChildToParentElementUsingElement(
               productInformation,
