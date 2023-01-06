@@ -366,7 +366,9 @@ const PullProductsFromBackendAPI = () => {
               );
 
               const isItemAddToCart = storedCartItems.map(
-                (item) => {item.id === cartArrayItem.id}
+                (item) => {
+                  item.id === cartArrayItem.id
+                }
               );
 
               if (isItemAddToCart.length === 0) {
