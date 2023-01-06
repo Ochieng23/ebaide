@@ -112,6 +112,7 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(titleIcons, "fa-map-marker-alt");
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
           AddAttributeToElement(titleText, "style", "height:7vh;");
+          AddClassToNewElement(titleText, "product-description");
           let titleArray = title.split(" ");
           let reducedTitle = [];
           for (let i = 0; i < 3; i++) {
