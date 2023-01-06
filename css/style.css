@@ -1495,6 +1495,9 @@ header .logo{
 .cart {
   cursor: pointer;
 }
+.cart-container{
+  background-color: #fff;
+}
 .emptyCartTextSpan {
   font-size:1.2em;
   display: block;
