@@ -54,7 +54,7 @@ const Cart = e => {
     
     goBackToGoProductButton.addEventListener ('click', (e) => {
       e.preventDefault();
-      window.location.href = '';
+      window.location.href = 'index.html#';
     });
 
 
