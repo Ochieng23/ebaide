@@ -300,7 +300,7 @@ const PullProductsFromBackendAPI = () => {
                 sizeList
               );
             }
-
+        
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
             AddAttributeToElement(
