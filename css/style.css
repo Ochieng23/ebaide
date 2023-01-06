@@ -1503,5 +1503,5 @@ header .logo{
 .emptyCartTextSpan {
   font-size:2em;
   display: block;
-
+  text-transform: lowercase !important;;
 }
