@@ -346,7 +346,7 @@ const PullProductsFromBackendAPI = () => {
               const idOfItemAddToCart = 
               addToCartButton.parentElement.parentElement.id;
               const pickedItem = data.data.filter (
-                item => 
+                item => item.id === idOfItemAddToCart
               )
               console.log(idOfItemAddToCart);
               //Handling Clicking Go To Cart Button
