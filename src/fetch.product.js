@@ -337,8 +337,8 @@ const PullProductsFromBackendAPI = () => {
 
             addToCartButton.addEventListener("click", (e) => {
               e.preventDefault();
-              addToCartButton
               addToCartButtonSpan.innerHTML = "Go to Cart";
+              RemoveClass(addToCartButtonIcon, 'fa-cart-plus');
               fa-shopping-cart
               AddClassToNewElement(addToCartButton, "view-cart-button");
             });
