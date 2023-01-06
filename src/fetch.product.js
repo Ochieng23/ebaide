@@ -360,7 +360,7 @@ const PullProductsFromBackendAPI = () => {
                 itemQuantityToBuy
               };
 
-              
+              localStorage.getItem('cart-items');
               cartArray = [...cartArray, cartArrayItem];
               localStorage.setItem('cart-items', JSON.stringify(cartArray));
               //Handling Clicking Go To Cart Button
