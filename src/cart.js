@@ -46,6 +46,8 @@ const Cart = e => {
       FindSingleElement,
       cartDiv
     );
+
+    
   }, 1500);
 };
 
