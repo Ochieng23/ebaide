@@ -365,8 +365,9 @@ const PullProductsFromBackendAPI = () => {
               const isItemAddToCart = storedCartItems.filter(
                 item => item.id === cartArrayItem.id
               );
-              if (isItemAddToCart.length !== 0) {};
-              cartArray = [cartArrayItem];
+              if (isItemAddToCart.length !== 0) {
+                cartArray = [...storedCartItems, cartArrayItem];
+              };
               localStorage.setItem('cart-items', JSON.stringify(cartArray));
               //Handling Clicking Go To Cart Button
             });
