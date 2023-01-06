@@ -347,7 +347,7 @@ const PullProductsFromBackendAPI = () => {
               addToCartButton.parentElement.parentElement.id;
               const pickedItem = data.data.filter (
                 item => item.id === idOfItemAddToCart
-              )
+              );
               console.log(idOfItemAddToCart);
               //Handling Clicking Go To Cart Button
             });
