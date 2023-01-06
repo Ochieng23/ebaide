@@ -177,6 +177,8 @@ const PullBlogsFromBackendAPI = () => {
         AddClassToElement(titleText, "title-positioning");
         titleText.innerHTML = title;
         AppendChildToParentUsingElement(productContent, titleText);
+
+        AddClassToElement (productDescription, 'blog-description');
         let contentArray = content.split(" ");
         let reducedContent = [];
         for (let i = 0; i < 28; i++) {
