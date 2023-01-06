@@ -58,7 +58,7 @@ const Cart = e => {
       if (window.location.href === 'index.html#packages'){
         window.location.reload ();
         setTimeout (
-          window.location.href = 'index.html#packages';
+          window.location.href = 'index.html#packages', 500
         );
       };
     });
