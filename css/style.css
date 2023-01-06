@@ -1520,8 +1520,9 @@ header .logo{
 .btn-cart-icon{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  
 }
 .btn-cart-icon > i {
   display: block;
