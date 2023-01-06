@@ -35,8 +35,8 @@ const Cart = e => {
   ClearContent(FindSingleElement, "#body");
   setTimeout(() => {
     const cartDiv = CreateNewHTMLElement('div');
-    
-    
+    AddClass (cartDiv, "cart-container");
+
     const emptyCartTextSpan = CreateNewHTMLElement("span");
     emptyCartTextSpan.innerHTML = "Your Cart is empty";
     AppendChildToDynamicElement (cartDiv, emptyCartTextSpan);
