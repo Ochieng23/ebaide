@@ -36,7 +36,7 @@ const Cart = e => {
     AppendHTMLChildToStaticElement(
       "#body",
       FindSingleElement,
-      emptyCartTextSpan
+      cartDiv
     );
   }, 1500);
 };
