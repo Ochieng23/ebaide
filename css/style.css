@@ -1521,6 +1521,7 @@ header .logo{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .btn-cart-icon > i {
   display: block;
