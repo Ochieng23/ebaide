@@ -320,6 +320,7 @@ const PullProductsFromBackendAPI = () => {
             addToCartButton.addEventListener("click", (e) => {
               e.preventDefault();
               addToCartButton.innerHTML = "Go to Cart";
+              AddClassToNewElement(addToCartButton, "view-cart-button");
             });
 
             const continueShoppingButton = CreateNewElement("button");
