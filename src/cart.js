@@ -39,19 +39,14 @@ const Cart = e => {
 
     const cartItems = localStorage.getItem('cart-items');
     if (cartItems === null) {
-      
-    }
+
+    };
     console.log(cartItems);
 
     const emptyCartTextSpan = CreateNewHTMLElement("span");
     AddClass (emptyCartTextSpan, "emptyCartTextSpan");
     emptyCartTextSpan.innerHTML = "Your Cart is empty";
     AppendChildToDynamicElement (cartDiv, emptyCartTextSpan);
-    AppendHTMLChildToStaticElement(
-      "#body",
-      FindSingleElement,
-      cartDiv
-    );
 
    const goBackToGoProductButton = CreateNewHTMLElement("button"); 
    AddClass (goBackToGoProductButton, 'btn');
