@@ -275,6 +275,7 @@ const PullBlogsFromBackendAPI = () => {
               "style",
               "font-weight: bolder;"
             );
+            AddClassToElement (productTitle, "blog-description");
             productTitle.innerHTML = SingleBlog[0].title;
 
             AppendChildToParentUsingElement(
