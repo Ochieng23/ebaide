@@ -348,9 +348,9 @@ const PullProductsFromBackendAPI = () => {
               const pickedItem = data.data.filter (
                 item => item.id === idOfItemAddToCart
               );
-              const {title, image} = pickedItem[0];
+              const {id, title, image} = pickedItem[0];
               console.log(pickedItem);
-              console.log(title, image);
+              console.log(id, title, image);
               //Handling Clicking Go To Cart Button
             });
 
