@@ -54,6 +54,12 @@ const Cart = e => {
    goBackToGoProductButton.textContent = "Go back to product";
    AppendChildToDynamicElement(cartDiv, goBackToGoProductButton);
 
+   AppendHTMLChildToStaticElement(
+    "#body",
+    FindSingleElement,
+    cartDiv
+  );
+
   }, 1500);
 };
 
