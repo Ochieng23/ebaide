@@ -12,8 +12,15 @@ const ClearContent = (cd, identifer) => {
     const element = cb (identifer);
 };
 
-const Cart = (e) => {
+const CreateNewHTMLElement = (tag) => {
+    const newElement = document.createElement(tag);
+    return newElement;
+};
 
+const AppendHTMLChild = (indetifier, cb)
+
+const Cart = (e) => {
+    e.preventDefault();
 }
 
 FindSingleElement ('.cart').addEventListener('click', () => {
