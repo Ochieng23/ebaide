@@ -43,11 +43,6 @@ const Cart = e => {
     };
     console.log(cartItems);
 
-    const emptyCartTextSpan = CreateNewHTMLElement("span");
-    AddClass (emptyCartTextSpan, "emptyCartTextSpan");
-    emptyCartTextSpan.innerHTML = "Your Cart is empty";
-    AppendChildToDynamicElement (cartDiv, emptyCartTextSpan);
-
    const goBackToGoProductButton = CreateNewHTMLElement("button"); 
    AddClass (goBackToGoProductButton, 'btn');
    AddClass (goBackToGoProductButton, 'go-back-to-product')
