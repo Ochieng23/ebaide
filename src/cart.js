@@ -38,7 +38,7 @@ const Cart = e => {
     AddClass (cartDiv, "cart-container");
 
     const cartItems = localStorage.getItem('cart-items');
-    
+    console.log(cartItems);
 
     const emptyCartTextSpan = CreateNewHTMLElement("span");
     AddClass (emptyCartTextSpan, "emptyCartTextSpan");
