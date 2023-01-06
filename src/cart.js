@@ -22,7 +22,7 @@ const AppendHTMLChildToStaticElement = (indentifier, cb, child) => {
   cb(indentifier).appendChild(child);
 };
 
-
+const AppendChildToDynamicElement = ()
 
 const Cart = e => {
   e.preventDefault();
