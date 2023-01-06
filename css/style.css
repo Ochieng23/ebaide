@@ -1515,5 +1515,5 @@ header .logo{
   text-transform: uppercase !important;
 }
 .go-back-to-product {
-  
+  text-transform: capitalize;
 }
