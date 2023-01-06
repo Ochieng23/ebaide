@@ -360,7 +360,7 @@ const PullProductsFromBackendAPI = () => {
                 itemQuantityToBuy
               };
 
-              cartArray
+              cartArray = [...cartArrayItem];
               //Handling Clicking Go To Cart Button
             });
 
