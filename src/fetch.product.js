@@ -97,7 +97,7 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
-          
+
           AddAttributeToElement(
             productImage,
             "src",
@@ -163,98 +163,87 @@ const PullProductsFromBackendAPI = () => {
             .parentElement.id;
 
           //FETCH SINGLE PRODUCT:
-          fetch(SingleProductURI, {
-            method: "GET"
-          })
-            .then(response => {
-              return response.json();
-            })
-            .then(data => {
-              if (data.status === "success") {
-                ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
-                setTimeout(() => {
-                  const productContainer = CreateNewElement("div");
+          const SingleProduct = data.data.filter(product => {
+            return product.id === productid;
+          });
+          ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
+          setTimeout(() => {
+            const productContainer = CreateNewElement("div");
 
-                  const productBox = CreateNewElement("div");
-                  AddClassToNewElement(productBox, "col-lg-5");
-                  AddClassToNewElement(productBox, "col-md-12");
-                  AddClassToNewElement(productBox, "col-12");
-                  AddAttributeToElement(productBox, "id", data.data[0].id);
+            const productBox = CreateNewElement("div");
+            AddClassToNewElement(productBox, "col-lg-5");
+            AddClassToNewElement(productBox, "col-md-12");
+            AddClassToNewElement(productBox, "col-12");
+            AddAttributeToElement(productBox, "id", SingleProduct[0].id);
 
-                  const productFirstImage = CreateNewElement("img");
-                  AddClassToNewElement(productFirstImage, "mt-5");
-                  AddClassToNewElement(productFirstImage, "img-fluid");
-                  AddClassToNewElement(productFirstImage, "w-100");
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "alt",
-                    "product first image"
-                  );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "style",
-                    "width: 300px; height: auto;"
-                  );
-                  AddAttributeToElement(
-                    productFirstImage,
-                    "src",
-                    `https://service.goebaide.com/${data.data[0].image}`
-                  );
-                  AppendChildToParentElementUsingElement(
-                    productBox,
-                    productFirstImage
-                  );
+            const productFirstImage = CreateNewElement("img");
+            AddClassToNewElement(productFirstImage, "mt-5");
+            AddClassToNewElement(productFirstImage, "img-fluid");
+            AddClassToNewElement(productFirstImage, "w-100");
+            AddAttributeToElement(
+              productFirstImage,
+              "alt",
+              "product first image"
+            );
+            AddAttributeToElement(
+              productFirstImage,
+              "style",
+              "width: 300px; height: auto;"
+            );
+            AddAttributeToElement(
+              productFirstImage,
+              "src",
+              `https://service.goebaide.com/${SingleProduct[0].image}`
+            );
+            AppendChildToParentElementUsingElement(
+              productBox,
+              productFirstImage
+            );
 
-                  const smallImageGroup = CreateNewElement("div");
-                  AddClassToNewElement(smallImageGroup, "small-img-group");
-                  for (let i = 0; i < 4; i++) {
-                    const smallImageGroupColumn = CreateNewElement("div");
-                    AddClassToNewElement(
-                      smallImageGroupColumn,
-                      "small-img-col"
-                    );
+            const smallImageGroup = CreateNewElement("div");
+            AddClassToNewElement(smallImageGroup, "small-img-group");
+            for (let i = 0; i < 4; i++) {
+              const smallImageGroupColumn = CreateNewElement("div");
+              AddClassToNewElement(smallImageGroupColumn, "small-img-col");
 
-                    const smallImage = CreateNewElement('img');
-                    AddClassToNewElement(smallImage, 'small-img');
-                    AddClassToNewElement(smallImage, 'w-100');
-                    AddClassToNewElement(smallImage, 'img-fluid');
-                    AddAttributeToElement(
-                      smallImage,
-                      "src",
-                      "https://service.goebaide.com"
-                    );
-                    AddAttributeToElement(
-                      smallImage,
-                      "alt",
-                      "product-image-"+[i+1]
-                    );
+              const smallImage = CreateNewElement("img");
+              AddClassToNewElement(smallImage, "small-img");
+              AddClassToNewElement(smallImage, "w-100");
+              AddClassToNewElement(smallImage, "img-fluid");
+              AddAttributeToElement(
+                smallImage,
+                "src",
+                "https://service.goebaide.com"
+              );
+              AddAttributeToElement(
+                smallImage,
+                "alt",
+                "product-image-" + [i + 1]
+              );
 
-                    AppendChildToParentElementUsingElement(
-                      smallImageGroupColumn,
-                      smallImage
-                    );
-                    AppendChildToParentElementUsingElement(
-                      smallImageGroup,
-                      smallImageGroupColumn
-                    );
-                  };
-                  AppendChildToParentElementUsingElement(
-                    productBox,
-                    smallImageGroup
-                  )
+              AppendChildToParentElementUsingElement(
+                smallImageGroupColumn,
+                smallImage
+              );
+              AppendChildToParentElementUsingElement(
+                smallImageGroup,
+                smallImageGroupColumn
+              );
+            }
+            AppendChildToParentElementUsingElement(productBox, smallImageGroup);
 
-                  const productInformation = CreateNewElement('div');
-                  AddClassToNewElement(productInformation, 'col-lg-5');
-                  AddClassToNewElement(productInformation, 'col-md-12');
-                  AddClassToNewElement(productInformation, 'col-12');
-                  AddClassToNewElement(productInformation, 'my-5');
-                  AddClassToNewElement(productInformation, 'pt-5');
-                  
-                  AddAttributeToElement(
-                    productInformation, 
-                    'style', 
-                    'background-color: white;'
-                    );
+            const productInformation = CreateNewElement("div");
+            AddClassToNewElement(productInformation, "col-lg-5");
+            AddClassToNewElement(productInformation, "col-md-12");
+            AddClassToNewElement(productInformation, "col-12");
+            AddClassToNewElement(productInformation, "my-5");
+            AddClassToNewElement(productInformation, "pt-5");
+
+            AddAttributeToElement(
+              productInformation,
+              "style",
+              "background-color: white;"
+            );
 
             const productTitle = CreateNewElement("h1");
             AddAttributeToElement(
@@ -272,16 +261,16 @@ const PullProductsFromBackendAPI = () => {
             const productPriceSpanHolder = CreateNewElement("h2");
             AddClassToNewElement(productPriceSpanHolder, "price");
 
-                    const priceSpanHolder = CreateNewElement('span');
-                    priceSpanHolder.innerHTML = 'Ksh. '+data.data[0].price;
-                    AppendChildToParentElementUsingElement(
-                      productPriceSpanHolder,
-                      priceSpanHolder
-                      );
-                    AppendChildToParentElementUsingElement(
-                      productInformation,
-                      productPriceSpanHolder
-                    );
+            const priceSpanHolder = CreateNewElement("span");
+            priceSpanHolder.innerHTML = "Ksh. " + SingleProduct[0].price;
+            AppendChildToParentElementUsingElement(
+              productPriceSpanHolder,
+              priceSpanHolder
+            );
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              productPriceSpanHolder
+            );
 
             const sizeList = CreateNewElement("select");
             AddClassToNewElement(sizeList, "my-3");
@@ -326,32 +315,40 @@ const PullProductsFromBackendAPI = () => {
               addToCartButton
             );
 
-                    const continueShoppingButton = CreateNewElement ('button');
-                    AddClassToNewElement(continueShoppingButton, 'btn');
-                    continueShoppingButton.innerHTML = 'Continue Shopping';
-                    continueShoppingButton.addEventListener('click', (e) =>{
-                      e.preventDefault();
-                      //console.log(window.location.href);
-                      if(
-                        window.location.href === 
-                        `https://goebaide.com/index.html#packages`
-                      ){
-                        window.location.href = 'https://goebaide.com/';
-                        return;
-                      };
-                      window.location.href = 'https://goebaide.com#packages';
-                    });
-                    AppendChildToParentElementUsingElement(
-                      productInformation,
-                      continueShoppingButton
-                    );
-                    
-                    const productDescriptionDetails = CreateNewElement('h4');
-                    productDescriptionDetails.innerHTML = 'Product Description';
-                    AppendChildToParentElementUsingElement(
-                      productInformation,
-                      productDescriptionDetails
-                    );
+            const continueShoppingButton = CreateNewElement("button");
+            AddClassToNewElement(continueShoppingButton, "btn");
+            continueShoppingButton.innerHTML = "Continue Shopping";
+            continueShoppingButton.addEventListener("click", e => {
+              e.preventDefault();
+              //console.log(window.location.href);
+              if (
+                window.location.href ===
+                `https://goebaide.com/index.html#packages`
+              ) {
+                window.location.reload();
+                setTimeout(() => {
+                  (window.location.href =
+                    "https://goebaide.com/index.html#blog"), 1500;
+                });
+                return;
+              }
+              window.location.reload();
+              setTimeout(() => {
+                (window.location.href =
+                  "https://goebaide.com/index.html#blog"), 1500;
+              });
+            });
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              continueShoppingButton
+            );
+
+            const productDescriptionDetails = CreateNewElement("h4");
+            productDescriptionDetails.innerHTML = "Product Description";
+            AppendChildToParentElementUsingElement(
+              productInformation,
+              productDescriptionDetails
+            );
 
             const fullDescriptionTextSpan = CreateNewElement("span");
             fullDescriptionTextSpan.innerHTML = SingleProduct[0].description;
