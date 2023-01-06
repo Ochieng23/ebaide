@@ -12,6 +12,10 @@ const ClearContent = (cd, identifer) => {
     const element = cb (identifer);
 };
 
+const Cart = (e) => {
+
+}
+
 FindSingleElement ('.cart').addEventListener('click', () => {
 
 })
