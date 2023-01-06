@@ -52,7 +52,9 @@ const Cart = e => {
     goBackToGoProductButton.textContent = "Go back to product";
     AppendChildToDynamicElement(cartDiv, goBackToGoProductButton);
     
-    goBackToGoProductButton.addEventListener ('click');
+    goBackToGoProductButton.addEventListener ('click', (e) => {
+
+    });
 
 
 
