@@ -181,6 +181,8 @@ const PullProductsFromBackendAPI = () => {
                 setTimeout(() => {
                   const productContainer = CreateNewElement("div");
                   
+
+
                   AddClassToNewElement(productContainer,'row')
                   
                   AddAttributeToElement(productContainer, 'style', 'border: 2px solid black; display:flex;')
@@ -199,7 +201,7 @@ const PullProductsFromBackendAPI = () => {
                   
                   AddClassToNewElement(productFirstImage, "mt-5");
                   AddClassToNewElement(productFirstImage, "img-fluid");
-                  /*AddClassToNewElement(productFirstImage, "w-100");*/
+                  AddClassToNewElement(productFirstImage, "w-80");
                   AddAttributeToElement(
                     productFirstImage,
                     "alt",
@@ -236,7 +238,7 @@ const PullProductsFromBackendAPI = () => {
 
                     const smallImage = CreateNewElement('img');
                     AddClassToNewElement(smallImage, 'small-img');
-                    /*AddClassToNewElement(smallImage, 'w-100');*/
+                    AddClassToNewElement(smallImage, 'w-80');
                     AddClassToNewElement(smallImage, 'img-fluid');
                     AddAttributeToElement(
                       smallImage,
