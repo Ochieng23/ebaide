@@ -395,9 +395,9 @@ header .search-bar-container label:hover{
   text-decoration: line-through;
 }
 .services{
-  height:fit-content;
   margin-top: -4em;
-  padding-bottom: 8em;
+  margin-bottom: 5em;
+  height: max-content;
 }
 .services .box-container{
   display: flex;
@@ -1316,7 +1316,6 @@ header .search-bar-container label:hover{
     column-gap: 2.5%;
     row-gap: 1.2%;
     margin-bottom: 4%;
-    
   }
   
 }
@@ -1326,16 +1325,14 @@ header .search-bar-container label:hover{
   border: 2px solid black;
   padding: 20px;
   font-size: 1em;
+  
+  
+
 }
 .product-box{
   width: 100vw;
 }
-.product-description{
-  text-transform: lowercase;
-}
-.product-description::first-letter{
-  text-transform: uppercase;
-}
+
 .blogs-box {
   background-color: #fff;
   height: 100vh;
@@ -1355,16 +1352,16 @@ header .search-bar-container label:hover{
   height: 20vh;
 }
 .date-style{
-  font-weight: 100;
-  font-size: 1em;
-  text-transform: lowercase;
+  font-weight: 800;
 }
 .blog-description {
-  text-transform: lowercase;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
 }
-.blog-description::first-letter {
-  text-transform: uppercase;
-}
+
 
 
 
@@ -1490,49 +1487,4 @@ header .logo{
   .contact .row form .inputBox input{
     width:100%;
   }
-}
-
-.cart {
-  cursor: pointer;
-}
-.cart-container{
-  background-color: #fff;
-  height: 100vh;
-  width: 100vw;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.emptyCartTextSpan {
-  font-size:3.6em;
-  display: block;
-  text-transform: lowercase !important;
-  text-align: center;
-  margin-bottom: 2em;
-}
-.emptyCartTextSpan::first-letter{
-  text-transform: uppercase !important;
-}
-.go-back-to-product {
-  text-transform: capitalize;
-}
-.btn-cart-icon{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  padding-right: 8%;
-}
-.btn-cart-icon:hover{
-  background-color: rgb(5, 158, 218);
-  color: #fff;
-}
-.btn-cart-icon > i {
-  display: block;
-}
-.btn-cart-icon > span {
-  display: block;
-  margin-left: .4em;
 }

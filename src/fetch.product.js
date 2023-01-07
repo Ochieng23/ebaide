@@ -16,10 +16,6 @@ const AddClassToNewElement = (element, namedClass) => {
   element.classList.add(namedClass);
 };
 
-const RemoveClass = (element, namedClass) => {
-  element.classList.remove(namedClass);
-};
-
 const RemoveClassFromNewElement = (element, id, className) => {
   element(id).classList.remove(className);
 };
@@ -101,6 +97,7 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
+          
 
           AddAttributeToElement(
             productImage,
@@ -115,8 +112,11 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(titleIcons, "fas");
           AddClassToNewElement(titleIcons, "fa-map-marker-alt");
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
-          AddAttributeToElement(titleText, "style", "height:7vh;");
-          AddClassToNewElement(titleText, "product-description");
+          AddAttributeToElement (
+            titleText, 
+            "style",
+            "height:7vh;"
+            );
           let titleArray = title.split(" ");
           let reducedTitle = [];
           for (let i = 0; i < 3; i++) {
@@ -166,273 +166,263 @@ const PullProductsFromBackendAPI = () => {
         productCollection.item(i).addEventListener("click", () => {
           const productid = productCollection.item(i).parentElement
             .parentElement.id;
+          const SingleProductURI = `https://service.goebaide.com/api/product/one_products/${productid}`;
 
           //FETCH SINGLE PRODUCT:
-          const SingleProduct = data.data.filter(product => {
-            return product.id === productid;
-          });
-          ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
-          setTimeout(() => {
-            const productContainer = CreateNewElement("div");
-
-            const productBox = CreateNewElement("div");
-            AddClassToNewElement(productBox, "col-lg-5");
-            AddClassToNewElement(productBox, "col-md-12");
-            AddClassToNewElement(productBox, "col-12");
-            AddAttributeToElement(productBox, "id", SingleProduct[0].id);
-
-            const productFirstImage = CreateNewElement("img");
-            AddClassToNewElement(productFirstImage, "mt-5");
-            AddClassToNewElement(productFirstImage, "img-fluid");
-            AddClassToNewElement(productFirstImage, "w-100");
-            AddAttributeToElement(
-              productFirstImage,
-              "alt",
-              "product first image"
-            );
-            AddAttributeToElement(
-              productFirstImage,
-              "style",
-              "width: 300px; height: auto;"
-            );
-            AddAttributeToElement(
-              productFirstImage,
-              "src",
-              `https://service.goebaide.com/${SingleProduct[0].image}`
-            );
-            AppendChildToParentElementUsingElement(
-              productBox,
-              productFirstImage
-            );
-
-            const smallImageGroup = CreateNewElement("div");
-            AddClassToNewElement(smallImageGroup, "small-img-group");
-            for (let i = 0; i < 4; i++) {
-              const smallImageGroupColumn = CreateNewElement("div");
-              AddClassToNewElement(smallImageGroupColumn, "small-img-col");
-
-              const smallImage = CreateNewElement("img");
-              AddClassToNewElement(smallImage, "small-img");
-              AddClassToNewElement(smallImage, "w-100");
-              AddClassToNewElement(smallImage, "img-fluid");
-              AddAttributeToElement(
-                smallImage,
-                "src",
-                "https://service.goebaide.com"
-              );
-              AddAttributeToElement(
-                smallImage,
-                "alt",
-                "product-image-" + [i + 1]
-              );
-
-              AppendChildToParentElementUsingElement(
-                smallImageGroupColumn,
-                smallImage
-              );
-              AppendChildToParentElementUsingElement(
-                smallImageGroup,
-                smallImageGroupColumn
-              );
-            }
-            AppendChildToParentElementUsingElement(productBox, smallImageGroup);
-
-            const productInformation = CreateNewElement("div");
-            AddClassToNewElement(productInformation, "col-lg-5");
-            AddClassToNewElement(productInformation, "col-md-12");
-            AddClassToNewElement(productInformation, "col-12");
-            AddClassToNewElement(productInformation, "my-5");
-            AddClassToNewElement(productInformation, "pt-5");
-
-            AddAttributeToElement(
-              productInformation,
-              "style",
-              "background-color: white;"
-            );
-
-            const productTitle = CreateNewElement("h1");
-            AddAttributeToElement(
-              productTitle,
-              "style",
-              "font-weight: bolder;"
-            );
-            AddClassToNewElement(productTitle, "product-description");
-            productTitle.innerHTML = SingleProduct[0].title;
-
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              productTitle
-            );
-
-            const productPriceSpanHolder = CreateNewElement("h2");
-            AddClassToNewElement(productPriceSpanHolder, "price");
-
-            const priceSpanHolder = CreateNewElement("span");
-            priceSpanHolder.innerHTML = "Ksh. " + SingleProduct[0].price;
-            AppendChildToParentElementUsingElement(
-              productPriceSpanHolder,
-              priceSpanHolder
-            );
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              productPriceSpanHolder
-            );
-
-            const sizeList = CreateNewElement("select");
-            AddClassToNewElement(sizeList, "my-3");
-            AddAttributeToElement(
-              sizeList,
-              "style",
-              "width:100px; height: 10%;"
-            );
-            AddAttributeToElement(sizeList, "name", "size");
-
-            const sizeArray = SingleProduct[0].size.split(" ");
-            for (let i = 0; i < sizeArray.length; i++) {
-              const sizeListItem = CreateNewElement("option");
-              AddAttributeToElement(sizeListItem, "value", sizeArray[i]);
-              AddAttributeToElement(sizeListItem, "style", "font-size: 1em;");
-              sizeListItem.innerHTML = sizeArray[i];
-              AppendChildToParentElementUsingElement(sizeList, sizeListItem);
-
-              AppendChildToParentElementUsingElement(
-                productInformation,
-                sizeList
-              );
-            }
-
-            const quantityToBuy = CreateNewElement("input");
-            AddAttributeToElement(quantityToBuy, "type", "number");
-            AddAttributeToElement(
-              quantityToBuy,
-              "style",
-              "width:30px; height: 10%;"
-            );
-            AddAttributeToElement(quantityToBuy, "value", "1");
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              quantityToBuy
-            );
-
-            const addToCartButton = CreateNewElement("button");
-            AddClassToNewElement(addToCartButton, "btn");
-            AddClassToNewElement(addToCartButton, "btn-cart-icon");
-
-            const addToCartButtonSpan = CreateNewElement("span");
-            addToCartButtonSpan.innerHTML = "Add To Cart";
-            AppendChildToParentElementUsingElement(
-              addToCartButton,
-              addToCartButtonSpan
-            );
-            const addToCartButtonIcon = CreateNewElement("i");
-            AddClassToNewElement(addToCartButtonIcon, "fa");
-            AddClassToNewElement(addToCartButtonIcon, "fa-cart-plus");
-            AppendElementAsFirstChildUsingElement(
-              addToCartButton,
-              addToCartButtonIcon
-            );
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              addToCartButton
-            );
-
-            addToCartButton.addEventListener("click", e => {
-              e.preventDefault();
-              console.log(e)
-              addToCartButtonSpan.innerHTML = "Go to Cart";
-              RemoveClass(addToCartButtonIcon, "fa-cart-plus");
-              AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
-              AddClassToNewElement(addToCartButton, "view-cart-button");
-
-              let cartArray = [];
-              const idOfItemAddToCart =
-                addToCartButton.parentElement.parentElement.id;
-              const pickedItem = data.data.filter(
-                item => item.id === idOfItemAddToCart
-              );
-              const { id, title, image } = pickedItem[0];
-              const itemSize = sizeList.value;
-              const itemQuantityToBuy = quantityToBuy.value;
-              const cartArrayItem = {
-                id,
-                title,
-                image,
-                itemSize,
-                itemQuantityToBuy
-              };
-
-              const storedCartItems = JSON.parse(
-                localStorage.getItem("cart-items")
-              );
-              // if (isItemAddToCart.length === 0) {
-            cartArray = [...storedCartItems, cartArrayItem];
-            localStorage.setItem("cart-items", JSON.stringify(cartArray));
-              // }
-              //console.log("Item already added to cart");
-              //Handling Clicking Go To Cart Button
-            });
-
-            const continueShoppingButton = CreateNewElement("button");
-            AddClassToNewElement(continueShoppingButton, "btn");
-            continueShoppingButton.innerHTML = "Continue Shopping";
-            continueShoppingButton.addEventListener("click", e => {
-              e.preventDefault();
-              //console.log(window.location.href);
-              if (
-                window.location.href ===
-                `https://goebaide.com/index.html#packages`
-              ) {
-                window.location.reload();
+          fetch(SingleProductURI, {
+            method: "GET"
+          })
+            .then(response => {
+              return response.json();
+            })
+            .then(data => {
+              if (data.status === "success") {
+                ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
                 setTimeout(() => {
-                  (window.location.href =
-                    "https://goebaide.com/index.html#blog"), 1500;
-                });
-                return;
+                  const productContainer = CreateNewElement("div");
+                  
+                  AddClassToNewElement(productContainer,'row')
+                  
+                  AddAttributeToElement(productContainer, 'style', 'border: 2px solid black; display:flex;')
+
+                  const productBox = CreateNewElement("div");
+                  AddClassToNewElement(productBox, 'product-box')
+                  AddClassToNewElement(productBox, 'col')
+                  AddAttributeToElement(productBox, 'style', 'border: 2px solid black')
+                  AddClassToNewElement(productBox, "col-lg-5");
+                  AddClassToNewElement(productBox, "col-md-12");
+                  AddClassToNewElement(productBox, "col-12");
+                  AddAttributeToElement(productBox, "id", data.data[0].id);
+
+                  const productFirstImage = CreateNewElement("img");
+                  AddClassToNewElement(productFirstImage, 'product-image')
+                  
+                  AddClassToNewElement(productFirstImage, "mt-5");
+                  AddClassToNewElement(productFirstImage, "img-fluid");
+                  /*AddClassToNewElement(productFirstImage, "w-100");*/
+                  AddAttributeToElement(
+                    productFirstImage,
+                    "alt",
+                    "product first image"
+                  );
+                  AddAttributeToElement(
+                    productFirstImage,
+                    "style",
+                    "width: 50vw; height: 60vh;padding:0px;margin:20px;"
+                  );
+                  AddAttributeToElement(
+                    productFirstImage,
+                    "src",
+                    `https://service.goebaide.com/${data.data[0].image}`
+                  );
+                  AppendChildToParentElementUsingElement(
+                    productBox,
+                    productFirstImage
+                  );
+
+                  const smallImageGroup = CreateNewElement("div");
+                  AddClassToNewElement(smallImageGroup, "small-img-group");
+                  for (let i = 0; i < 4; i++) {
+                    const smallImageGroupColumn = CreateNewElement("div");
+                    AddClassToNewElement(
+                      smallImageGroupColumn,
+                      "small-img-col"
+                    );
+                    AddAttributeToElement(
+                      smallImageGroup,
+                      'style',
+                      'width: 50vw; margin:20px;'
+                    )
+
+                    const smallImage = CreateNewElement('img');
+                    AddClassToNewElement(smallImage, 'small-img');
+                    /*AddClassToNewElement(smallImage, 'w-100');*/
+                    AddClassToNewElement(smallImage, 'img-fluid');
+                    AddAttributeToElement(
+                      smallImage,
+                      "src",
+                      "https://service.goebaide.com"
+                    );
+                    AddAttributeToElement(
+                      smallImage,
+                      "alt",
+                      "product-image-"+[i+1]
+                    );
+                    
+
+                    AppendChildToParentElementUsingElement(
+                      smallImageGroupColumn,
+                      smallImage
+                    );
+                    AppendChildToParentElementUsingElement(
+                      smallImageGroup,
+                      smallImageGroupColumn
+                    );
+                  };
+                  AppendChildToParentElementUsingElement(
+                    productBox,
+                    smallImageGroup
+                  )
+
+                  const productInformation = CreateNewElement('div');
+                  AddClassToNewElement(productInformation, 'product-info')
+                  AddClassToNewElement(productInformation, 'col-lg-5');
+                  AddClassToNewElement(productInformation, 'col-md-12');
+                  AddClassToNewElement(productInformation, 'col-12');
+                  AddClassToNewElement(productInformation, 'my-5');
+                  AddClassToNewElement(productInformation, 'pt-5');
+                  
+                  AddAttributeToElement(
+                    productInformation, 
+                    'style', 
+                    'background-color: white;'
+                    );
+                    AddClassToNewElement(productInformation, 'col')
+
+                    const productTitle = CreateNewElement('h1');
+                    AddAttributeToElement(
+                      productTitle, 
+                      'style', 
+                      'font-weight: bolder;'
+                      );
+                    productTitle.innerHTML = data.data[0].title;
+
+                    AppendChildToParentElementUsingElement(
+                      productInformation, 
+                      productTitle
+                    )
+
+                    const productPriceSpanHolder = CreateNewElement('h2');
+                    AddClassToNewElement(productPriceSpanHolder, 'price');
+
+                    const priceSpanHolder = CreateNewElement('span');
+                    priceSpanHolder.innerHTML = 'Ksh. '+data.data[0].price;
+                                       
+                    AppendChildToParentElementUsingElement(
+                      productPriceSpanHolder,
+                      priceSpanHolder
+                      );
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      productPriceSpanHolder
+                    );
+
+                    const sizeList = CreateNewElement('select');
+                    AddClassToNewElement(sizeList, 'my-3');
+                    AddAttributeToElement(sizeList, 'style', 'width:100px; height: 10%;');
+
+                    const sizeArray = data.data[0].size.split(' ');
+                    for (let i = 0; i < sizeArray.length; i++) {
+                      const sizeListItem = CreateNewElement('option');
+                      AddAttributeToElement(
+                        sizeListItem, 
+                        'value',
+                        sizeArray[i]
+                        );
+                      AddAttributeToElement(
+                        sizeListItem, 
+                        'style',
+                        'font-size: 1em;'
+                        );
+                      sizeListItem.innerHTML = sizeArray[i];
+                      AppendChildToParentElementUsingElement(
+                        sizeList,
+                        sizeListItem
+                      );
+
+                      AppendChildToParentElementUsingElement (
+                        productInformation,
+                        sizeList
+                      );
+                    };
+
+                    const quantityToBuy = CreateNewElement('input');
+                    AddAttributeToElement(
+                      quantityToBuy,
+                      "type",
+                      "number"
+                    );
+                    AddAttributeToElement(
+                      quantityToBuy,
+                      "style",
+                      "width:30px; height: 10%;"
+                    );
+                    AddAttributeToElement(
+                      quantityToBuy,
+                      "value",
+                      '1'
+                    );
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      quantityToBuy
+                    );
+
+                    const addToCartButton = CreateNewElement ('button');
+                    AddClassToNewElement(addToCartButton, 'btn');
+                    addToCartButton.innerHTML = 'Add To Cart';
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      addToCartButton
+                    );
+
+                    const continueShoppingButton = CreateNewElement ('button');
+                    AddAttributeToElement(continueShoppingButton,
+                      'style',
+                      'margin-left:5px'
+                      )
+                    AddClassToNewElement(continueShoppingButton, 'btn');
+                    continueShoppingButton.innerHTML = 'Continue Shopping';
+                    continueShoppingButton.addEventListener('click', (e) =>{
+                      e.preventDefault();
+                      //console.log(window.location.href);
+                      if(
+                        window.location.href === 
+                        `https://goebaide.com/index.html#packages`
+                      ){
+                        window.location.href = 'https://goebaide.com/';
+                        return;
+                      };
+                      window.location.href = 'https://goebaide.com#packages';
+                    });
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      continueShoppingButton
+                    );
+                    
+                    const productDescriptionDetails = CreateNewElement('h4');
+                    productDescriptionDetails.innerHTML = 'Product Description';
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      productDescriptionDetails
+                    );
+
+                    const fullDescriptionTextSpan = CreateNewElement('span');
+                    fullDescriptionTextSpan.innerHTML = data.data[0].description;
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      fullDescriptionTextSpan
+                    );
+        
+                    AppendChildToParentElementUsingElement(
+                      productBox, 
+                      productInformation
+                    );
+                  AppendChildToParentElementUsingElement(
+                    productContainer,
+                    productBox
+                  );
+                  AppendChildToParentElement(
+                    "#body",
+                    QuerySelectorForDocumentElement,
+                    productContainer
+                  );
+                }, 100);
               }
-              window.location.reload();
-              setTimeout(() => {
-                (window.location.href =
-                  "https://goebaide.com/index.html#blog"), 1500;
-              });
+              //console.log(data.data);
+            })
+            .catch(error => {
+              console.log(error);
             });
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              continueShoppingButton
-            );
-
-            const productDescriptionDetails = CreateNewElement("h4");
-            productDescriptionDetails.innerHTML = "Product Description";
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              productDescriptionDetails
-            );
-
-            const fullDescriptionTextSpan = CreateNewElement("span");
-            AddClassToNewElement(
-              fullDescriptionTextSpan,
-              "product-description"
-            );
-            fullDescriptionTextSpan.innerHTML = SingleProduct[0].description;
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              fullDescriptionTextSpan
-            );
-
-            AppendChildToParentElementUsingElement(
-              productBox,
-              productInformation
-            );
-            AppendChildToParentElementUsingElement(
-              productContainer,
-              productBox
-            );
-            AppendChildToParentElement(
-              "#body",
-              QuerySelectorForDocumentElement,
-              productContainer
-            );
-          }, 100);
-          //console.log(data.data);
         });
       }
     })
@@ -442,3 +432,4 @@ const PullProductsFromBackendAPI = () => {
 };
 
 PullProductsFromBackendAPI();
+
