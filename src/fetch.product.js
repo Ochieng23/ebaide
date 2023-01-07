@@ -362,7 +362,7 @@ const PullProductsFromBackendAPI = () => {
               };
 
               const storedCartItems = JSON.parse(
-                localStorage.getItem("cart-items")
+                localStorage.getItem("cart-items") || "[]",
               );
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
