@@ -55,11 +55,10 @@ const DisplayCartItems = (cartItemsArray) => {
   const displayTableBody = CreateNewHTMLElement('tbody');
   const displayTableBodyRow = CreateNewHTMLElement('tr');
   cartItemsArray.map ( (cartItem) =>{
-    
+
   })
     const tableData = CreateNewHTMLElement ('td');
     tableData.innerHTML = cartItemsArray[k];
-    if (k === cartItemsArray.length){
       const trashIcon = CreateNewHTMLElement('i');
       AddClass (trashIcon, 'fas');
       AddClass (trashIcon, 'fa-trash-o');
