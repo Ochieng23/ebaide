@@ -1509,3 +1509,9 @@ header .logo{
 .cart-container > span::first-letter {
   text-transform: uppercase;
 }
+.btn-cart-icon {
+
+}
+.btn-cart-icon:hover{
+  
+}
