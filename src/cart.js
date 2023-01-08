@@ -52,10 +52,6 @@ const DisplayCartItems = (parentCartHolder) => {
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
   
-  setTimeout (
-    AppendHTMLChildToStaticElement (parentCartHolder, FindSingleElement, displayTable),
-    5000
-  );
 };
 
 const Cart = e => {
