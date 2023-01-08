@@ -75,6 +75,7 @@ const DisplayCartItems = (cartItemsArray) => {
     //   AppendChildToDynamicElement (tableData, trashIcon);
     // }
     AppendChildToDynamicElement (displayTableBodyRow, tableDataImageHolder);
+    AppendChildToDynamicElement (displayTableBodyRow, tableDataTitle);
   };
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   AppendChildToDynamicElement (displayTable, displayTableBody);
