@@ -421,7 +421,6 @@ const PullProductsFromBackendAPI = () => {
                 const cartElement = 
                 GetSelectedElementWithClassName('view-cart-button');
                 cartElement.addEventListener( 'click', CartHandler);
-                console.log(cartElement);
                 return;
               };
               // if (isItemAddToCart.length === 0) {
