@@ -387,7 +387,7 @@ const PullProductsFromBackendAPI = () => {
                   }
                 }
               );
-             const removeModifiedCartItem = storedCartItems.filter (
+             const filteredToReInsertToCart = storedCartItems.filter (
               item => item.id !== cartArrayItem.id
              )
               console.log (itemToUpdate, removeModifiedCartItem);
