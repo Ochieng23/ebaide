@@ -60,6 +60,7 @@ const ClearContentOfElement = (cb, element) => {
 };
 
 
+
 const ProductBackendAPIURI =
   "https://service.goebaide.com/api/product/all_products";
 
