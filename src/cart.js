@@ -64,12 +64,12 @@ const DisplayCartItems = (cartItemsArray) => {
       );
 
       AppendChildToDynamicElement (tableDataImageHolder, tableImage);
-    if (k === cartItemsArray.length){
-      const trashIcon = CreateNewHTMLElement('i');
-      AddClass (trashIcon, 'fas');
-      AddClass (trashIcon, 'fa-trash-o');
-      AppendChildToDynamicElement (tableData, trashIcon);
-    }
+    // if (k === cartItemsArray.length){
+    //   const trashIcon = CreateNewHTMLElement('i');
+    //   AddClass (trashIcon, 'fas');
+    //   AddClass (trashIcon, 'fa-trash-o');
+    //   AppendChildToDynamicElement (tableData, trashIcon);
+    // }
     AppendChildToDynamicElement (displayTableBodyRow, tableData);
   };
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
