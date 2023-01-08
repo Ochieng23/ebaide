@@ -32,7 +32,7 @@ const AddClass = (element, className) => {
 
 const DisplayCartItems = (arrOfCartItems) => {
   const displayTable = CreateNewHTMLElement (table);
-  const 
+  const displayTableHeader = CreateNewHTMLElement (thea);
 };
 
 const Cart = e => {
