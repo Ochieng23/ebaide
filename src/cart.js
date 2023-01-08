@@ -79,14 +79,14 @@ const Cart = e => {
     AddClass(cartDiv, "cart-container");
 
     const cartItems = JSON.parse(localStorage.getItem("cart-items"));
-    if (cartItems === null) {
+    if (cartItems.length < 1) {
       const emptyCartTextSpan = CreateNewHTMLElement("span");
       AddClass(emptyCartTextSpan, "emptyCartTextSpan");
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    DisplayCartItems ();
+    DisplayCartItems (cartItems);
     console.log(cartItems);
 
     AppendChildToDynamicElement (cartDiv, displayTable);
