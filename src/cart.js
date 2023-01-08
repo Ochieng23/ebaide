@@ -56,7 +56,7 @@ const DisplayCartItems = (cartItemsArray) => {
   const displayTableBodyRow = CreateNewHTMLElement('tr');
   for (let k =0; k === cartItemsArray.length; k++) {
     const tableData = CreateNewHTMLElement ('td');
-    tableData.innerHTML = cartItemsArray[k];
+    tableData.innerHTML = cartItemsArray[k].title;
     if (k === cartItemsArray.length){
       const trashIcon = CreateNewHTMLElement('i');
       AddClass (trashIcon, 'fas');
