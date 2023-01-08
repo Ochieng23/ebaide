@@ -48,6 +48,7 @@ const DisplayCartItems = arrOfCartItems => {
     tableHeading.innerHTML = CartTableHeadingsArray[i];
     AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
   };
+  
 };
 
 const Cart = e => {
