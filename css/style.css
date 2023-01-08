@@ -1506,3 +1506,6 @@ header .logo{
 .cart-container > button{
   display: block;
 }
+.cart-container > span::first-letter {
+
+}
