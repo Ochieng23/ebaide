@@ -1524,7 +1524,7 @@ header .logo{
   display: block;
 }
 .btn-cart-icon > i{
-  
+  margin-left: -.4em;
 }
 .btn-cart-icon > span {
   margin-left: .4em;
