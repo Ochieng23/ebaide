@@ -419,7 +419,7 @@ const PullProductsFromBackendAPI = () => {
               )
               if (isItemExists !== undefined) {
                 const cartElement = 
-                GetSelectedElementWithClassName( 'cart');
+                GetSelectedElementWithClassName('cart');
                 
                 //cartElement.addEventListener( 'click', CartHandler);
                 console.log(cartElement);
