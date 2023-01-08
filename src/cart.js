@@ -69,8 +69,8 @@ const DisplayCartItems = (cartItemsArray) => {
       const tableDataTitle = CreateNewHTMLElement ('td');
       tableDataTitle.innerHTML = cartItemsArray[k].title; 
       
-      const tableDataTitle = CreateNewHTMLElement ('td');
-      tableDataTitle.innerHTML = cartItemsArray[k].title; 
+      const tableDataSize = CreateNewHTMLElement ('td');
+      tableDataSize.innerHTML = cartItemsArray[k].itemSize; 
     // if (k === cartItemsArray.length){
     //   const trashIcon = CreateNewHTMLElement('i');
     //   AddClass (trashIcon, 'fas');
@@ -79,6 +79,7 @@ const DisplayCartItems = (cartItemsArray) => {
     // }
     AppendChildToDynamicElement (displayTableBodyRow, tableDataImageHolder);
     AppendChildToDynamicElement (displayTableBodyRow, tableDataTitle);
+    AppendChildToDynamicElement (displayTableBodyRow, tableDataSize);
   };
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   AppendChildToDynamicElement (displayTable, displayTableBody);
