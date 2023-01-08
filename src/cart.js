@@ -40,11 +40,11 @@ const CartTableHeadingsArray = [
 ];
 
 const DisplayCartItems = arrOfCartItems => {
-  const displayTable = CreateNewHTMLElement(table);
-  const displayTableHeader = CreateNewHTMLElement(thead);
-  const displayTableHeaderRow = CreateNewHTMLElement(tr);
+  const displayTable = CreateNewHTMLElement('table');
+  const displayTableHeader = CreateNewHTMLElement('thead');
+  const displayTableHeaderRow = CreateNewHTMLElement('tr');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
-    const tableHeading = 
+    const tableHeading = CreateNewHTMLElement ('th');
   };
 };
 
