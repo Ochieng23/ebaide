@@ -421,8 +421,8 @@ const PullProductsFromBackendAPI = () => {
                 const cartElement = 
                 GetSelectedElementWithClassName( 'cart');
                 
-                cartElement.addEventListener( 'click', CartHandler);
-                console.log("GO TO CART");
+                //cartElement.addEventListener( 'click', CartHandler);
+                console.log(cartElement);
                 return;
               };
               // if (isItemAddToCart.length === 0) {
