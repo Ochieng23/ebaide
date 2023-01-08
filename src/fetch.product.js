@@ -371,7 +371,7 @@ const PullProductsFromBackendAPI = () => {
                 itemQuantityToBuy
               };
 
-              if (addToCartButtonSpan.innerHTML = "Go to Cart"){
+              if (addToCartButtonSpan.innerHTML === "Go to Cart"){
 
               };
               const storedCartItems = JSON.parse(
