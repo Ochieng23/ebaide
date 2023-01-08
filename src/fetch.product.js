@@ -380,7 +380,7 @@ const PullProductsFromBackendAPI = () => {
                 }
               )
               if (isItemExists !== undefined) {
-                console.log(isItemExists)
+                console.log("GO TO CART");
                 return;
               };
               // if (isItemAddToCart.length === 0) {
