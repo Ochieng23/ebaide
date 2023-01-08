@@ -30,7 +30,7 @@ const AddClass = (element, className) => {
   element.classList.add(className);
 };
 
-const CartTableHeadingsArray = ['image', 'title', '',];
+const CartTableHeadingsArray = ['image', 'title', 'size', ''];
 
 const DisplayCartItems = (arrOfCartItems) => {
   const displayTable = CreateNewHTMLElement (table);
