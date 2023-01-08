@@ -380,19 +380,7 @@ const PullProductsFromBackendAPI = () => {
                 }
               )
 
-              const itemToUpdate = storedCartItems.map (
-                item => {
-                  if (item.id ===cartArrayItem.id){
-                    return {
-                      ...item,
-                      itemQuantityToBuy: parseInt(itemQuantityToBuy) + 1,
-                    }
-                  }
-                  else {
-                    return item;
-                  }
-                }
-              );
+              
              const removedCartItem = storedCartItems.filter (
               item => item.id === cartArrayItem.id
              )
