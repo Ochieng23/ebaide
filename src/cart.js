@@ -63,6 +63,9 @@ const DisplayCartItems = cartItemsArray => {
       <td>
         ${cartItem.title}
       </td>
+      <td>
+        ${cartItem.size}
+      </td>
 
     </tr>
     `;
