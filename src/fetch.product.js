@@ -381,6 +381,7 @@ const PullProductsFromBackendAPI = () => {
               )
               if (isItemExists !== undefined) {
                 console.log(isItemExists)
+                return;
               };
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
