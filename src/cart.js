@@ -58,7 +58,7 @@ const DisplayCartItems = (cartItemsArray) => {
     const tableData = CreateNewHTMLElement ('td');
     tableData.innerHTML = cartItemsArray[k];
     if (k === cartItemsArray.length){
-      
+      tableData.innerHTML = 
     }
   };
   
