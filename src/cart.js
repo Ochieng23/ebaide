@@ -61,7 +61,7 @@ const DisplayCartItems = (cartItemsArray) => {
       const trashIcon = CreateNewHTMLElement('i');
       AddClass (trashIcon, 'fas');
       AddClass (trashIcon, 'fa-trash-o');
-      tableData.innerHTML = 
+      AppendChildToDynamicElement (tableData, trashIcon);
     }
   };
   
