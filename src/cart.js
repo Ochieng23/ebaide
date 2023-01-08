@@ -57,6 +57,7 @@ const DisplayCartItems = (cartItemsArray) => {
   cartItemsArray.map ( (cartItem) =>{
     const tableImage = CreateNewHTMLElement ('td');
     tableImage.innerHTML = `https://service.goebaide.com/${cartItem.image}`;
+    AppendChildToDynamicElement (displayTableBodyRow, tableImage);
   })
     // const tableData = CreateNewHTMLElement ('td');
     // tableData.innerHTML = cartItemsArray[k];
