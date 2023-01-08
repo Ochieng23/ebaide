@@ -30,6 +30,8 @@ const AddClass = (element, className) => {
   element.classList.add(className);
 };
 
+
+
 const Cart = e => {
   e.preventDefault();
   ClearContent(FindSingleElement, "#body");
@@ -44,6 +46,7 @@ const Cart = e => {
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     };
+
     console.log(cartItems);
 
     const goBackToGoProductButton = CreateNewHTMLElement("button");
