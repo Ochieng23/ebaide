@@ -379,7 +379,7 @@ const PullProductsFromBackendAPI = () => {
                   return item.id === cartArrayItem.id;
                 }
               )
-              isItemExists
+              if (isItemExists !== undefined) {
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
             localStorage.setItem("cart-items", JSON.stringify(cartArray));
