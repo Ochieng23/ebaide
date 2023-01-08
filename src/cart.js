@@ -50,6 +50,7 @@ const DisplayCartItems = arrOfCartItems => {
   };
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
+  AppendHTMLChildToStaticElement ('cart-container', FindSingleElement, displayTable);
 };
 
 const Cart = e => {
