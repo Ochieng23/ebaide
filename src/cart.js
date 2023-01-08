@@ -59,6 +59,8 @@ const DisplayCartItems = (cartItemsArray) => {
     tableData.innerHTML = cartItemsArray[k];
     if (k === cartItemsArray.length){
       const trashIcon = CreateNewHTMLElement('i');
+      AddClass (trashIcon, 'fas');
+      AddClass (trashIcon, 'fa-trash-o');
       tableData.innerHTML = 
     }
   };
