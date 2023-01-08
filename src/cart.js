@@ -39,67 +39,36 @@ const CartTableHeadingsArray = [
   "remove"
 ];
 
-const displayTable = CreateNewHTMLElement("table");
+const displayTable = CreateNewHTMLElement('table');
 
-const DisplayCartItems = cartItemsArray => {
-  const displayTableHeader = CreateNewHTMLElement("thead");
-  const displayTableHeaderRow = CreateNewHTMLElement("tr");
+const DisplayCartItems = (cartItemsArray) => {
+  const displayTableHeader = CreateNewHTMLElement('thead');
+  const displayTableHeaderRow = CreateNewHTMLElement('tr');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
-    const tableHeading = CreateNewHTMLElement("th");
+    const tableHeading = CreateNewHTMLElement ('th');
     tableHeading.innerHTML = CartTableHeadingsArray[i];
-    AppendChildToDynamicElement(displayTableHeaderRow, tableHeading);
-  }
-  AppendChildToDynamicElement(displayTableHeader, displayTableHeaderRow);
-  AppendChildToDynamicElement(displayTable, displayTableHeader);
+    AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
+  };
+  AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
+  AppendChildToDynamicElement (displayTable, displayTableHeader);
 
-  const displayTableBody = CreateNewHTMLElement("tbody");
-  const displayTableBodyRow = CreateNewHTMLElement("tr");
-  cartItemsArray.map(cartItem => {
-    const itemRow =`
-    <tr id="${cartItem.id}">
-      <td>
-        <img class="cart-display-image" src="https://service.goebaide.com/${cartItem.image}"
-      </td>
-      <td>
-        ${cartItem.title}
-      </td>
-      <td>
-        ${cartItem.itemSize}
-      </td>
-      <td>
-       ${cartItem.itemQuantityToBuy}
-      </td>
-      <td>
-       700
-      </td>
-
-    </tr>
-    `;
-    displayTableBody.innerHTML = itemRow
-    // const tableDataImageHolder = CreateNewHTMLElement('td');
-    // const tableImage = CreateNewHTMLElement ('img');
-    // AddClass (tableImage, 'cart-display-image');
-    // AddAttributeToElement(
-    //   tableImage,
-    //    'src',
-    //   `https://service.goebaide.com/${cartItem.image}`
-    // );
-    // AppendChildToDynamicElement( tableDataImageHolder, tableImage)
-    // AppendChildToDynamicElement (displayTableBodyRow, tableDataImageHolder);
-
-    // const tableDataTitle = CreateNewHTMLElement('td');
-    // tableDataTitle.innerHTML = `${cartItem.title}`;
-    // AppendChildToDynamicElement (displayTableBodyRow, tableDataTitle);
-  });
-  // const tableData = CreateNewHTMLElement ('td');
-  // tableData.innerHTML = cartItemsArray[k];
-  //   const trashIcon = CreateNewHTMLElement('i');
-  //   AddClass (trashIcon, 'fas');
-  //   AddClass (trashIcon, 'fa-trash-o');
-  //   AppendChildToDynamicElement (tableData, trashIcon);
-
-  AppendChildToDynamicElement(displayTableBody, displayTableBodyRow);
-  AppendChildToDynamicElement(displayTable, displayTableBody);
+  const displayTableBody = CreateNewHTMLElement('tbody');
+  const displayTableBodyRow = CreateNewHTMLElement('tr');
+  for (let k =0; k === cartItemsArray.length; k++) {
+    const tableData = CreateNewHTMLElement ('td');
+    tableData.innerHTML = cartItemsArray[k];
+    if (k === cartItemsArray.length){
+      const trashIcon = CreateNewHTMLElement('i');
+      AddClass (trashIcon, 'fas');
+      AddClass (trashIcon, 'fa-trash-o');
+      AppendChildToDynamicElement (tableData, trashIcon);
+    }
+    AppendChildToDynamicElement (displayTableBodyRow, tableData);
+  };
+  AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
+  AppendChildToDynamicElement (displayTable, displayTableBody);
+  
+  
 };
 
 const Cart = e => {
@@ -117,10 +86,10 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    DisplayCartItems(cartItems);
+    DisplayCartItems (cartItems);
     console.log(cartItems);
 
-    AppendChildToDynamicElement(cartDiv, displayTable);
+    AppendChildToDynamicElement (cartDiv, displayTable);
     const goBackToGoProductButton = CreateNewHTMLElement("button");
     AddClass(goBackToGoProductButton, "btn");
     AddClass(goBackToGoProductButton, "go-back-to-product");
