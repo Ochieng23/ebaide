@@ -1507,5 +1507,5 @@ header .logo{
   display: block;
 }
 .cart-container > span::first-letter {
-
+  text-transform: uppercase;
 }
