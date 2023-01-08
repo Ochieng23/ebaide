@@ -38,12 +38,12 @@ const Cart = e => {
     AddClass(cartDiv, "cart-container");
 
     const cartItems = localStorage.getItem("cart-items");
-    if (cartItems === null) {
+    //if (cartItems === null) {
       const emptyCartTextSpan = CreateNewHTMLElement("span");
       AddClass(emptyCartTextSpan, "emptyCartTextSpan");
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
-    };
+   // };
     console.log(cartItems);
 
     const goBackToGoProductButton = CreateNewHTMLElement("button");
