@@ -50,6 +50,7 @@ const DisplayCartItems = (cartItemsArray) => {
     AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
   };
 
+
   
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
