@@ -59,6 +59,41 @@ const ClearContentOfElement = (cb, element) => {
   cb(element).innerHTML = "";
 };
 
+const CartHandler = e => {
+  e.preventDefault();
+  ClearContent(FindSingleElement, "#body");
+  setTimeout(() => {
+    const cartDiv = CreateNewHTMLElement("div");
+    AddClass(cartDiv, "cart-container");
+
+    const cartItems = localStorage.getItem("cart-items");
+    if (cartItems === null) {
+      const emptyCartTextSpan = CreateNewHTMLElement("span");
+      AddClass(emptyCartTextSpan, "emptyCartTextSpan");
+      emptyCartTextSpan.innerHTML = "Your Cart is empty";
+      AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
+    };
+    console.log(cartItems);
+
+    const goBackToGoProductButton = CreateNewHTMLElement("button");
+    AddClass(goBackToGoProductButton, "btn");
+    AddClass(goBackToGoProductButton, "go-back-to-product");
+    goBackToGoProductButton.textContent = "Go back to product";
+    AppendChildToDynamicElement(cartDiv, goBackToGoProductButton);
+    
+    goBackToGoProductButton.addEventListener ('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'index.html#packages';
+      if (window.location.href === 'http://localhost:5503/index.html#packages'){
+        window.location.reload ();
+      };
+    });
+
+
+
+    AppendHTMLChildToStaticElement("#body", FindSingleElement, cartDiv);
+  }, 1500);
+};
 
 
 const ProductBackendAPIURI =
