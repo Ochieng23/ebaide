@@ -1500,3 +1500,6 @@ header .logo{
   font-size: 3.6em;
   display: block;
 }
+.cart-container > button{
+  display: block;
+}
