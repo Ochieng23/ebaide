@@ -16,8 +16,8 @@ const AddClassToNewElement = (element, namedClass) => {
   element.classList.add(namedClass);
 };
 
-const RemoveClassFromNewElement = (element, id, className) => {
-  element(id).classList.remove(className);
+const RemoveClassFromNewElement = (element, className) => {
+  element.classList.remove(className);
 };
 
 const GetSelectedElementWithClassName = className => {
@@ -349,7 +349,6 @@ const PullProductsFromBackendAPI = () => {
             addToCartButton.addEventListener("click", e => {
               e.preventDefault();
               console.log(e)
-              addToCartButtonSpan.innerHTML = "Go to Cart";
               RemoveClass(addToCartButtonIcon, "fa-cart-plus");
               //AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
