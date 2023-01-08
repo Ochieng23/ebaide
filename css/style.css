@@ -1497,7 +1497,6 @@ header .logo{
   justify-content: center;
   align-items: center;
   margin: 0 .1%;
-  cursor: grabbing;
 }
 .cart-container > span {
   font-size: 3.6em;
