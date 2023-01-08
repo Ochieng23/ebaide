@@ -63,7 +63,7 @@ const DisplayCartItems = (cartItemsArray) => {
       `https://service.goebaide.com/${cartItemsArray[k].image}`
       );
 
-      AppendChildToDynamicElement (tableDataImageHolder, tableImage)
+      AppendChildToDynamicElement (tableDataImageHolder, tableImage);
     if (k === cartItemsArray.length){
       const trashIcon = CreateNewHTMLElement('i');
       AddClass (trashIcon, 'fas');
