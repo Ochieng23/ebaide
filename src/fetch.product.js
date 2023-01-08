@@ -39,7 +39,7 @@ AppendChildToParentElement = (element, cb, child) => {
   cb(element).appendChild(child);
 };
 
-AddAttributeToElement = (element, attribute, value) => {
+const AddAttributeToElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
