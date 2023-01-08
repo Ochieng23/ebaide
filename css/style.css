@@ -1488,6 +1488,7 @@ header .logo{
 .cart{
   margin-right: 0;
   font-size: 3.3em;
+  cursor: pointer;
 }
 .cart-container{
   background-color: #fff;
