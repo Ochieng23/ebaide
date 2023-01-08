@@ -376,7 +376,7 @@ const PullProductsFromBackendAPI = () => {
 
               const isItemExists = storedCartItems.find(
                 (item)=>{
-                  
+                  return item.id === cartArrayItem.id;
                 }
               )
 
