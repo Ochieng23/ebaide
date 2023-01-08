@@ -21,7 +21,7 @@ const RemoveClassFromNewElement = (element, className) => {
 };
 
 const GetSelectedElementWithClassName = className => {
-  const element = document.querySelector("." + className);
+  const element = document.querySelector("."+className);
   return element;
 };
 
