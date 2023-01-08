@@ -372,7 +372,7 @@ const PullProductsFromBackendAPI = () => {
               };
 
               if (addToCartButtonSpan.innerHTML === "Go to Cart"){
-
+                
               };
               const storedCartItems = JSON.parse(
                 localStorage.getItem("cart-items") || "[]",
