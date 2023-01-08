@@ -387,7 +387,9 @@ const PullProductsFromBackendAPI = () => {
                   }
                 }
               );
-             const removeModifiedCartItem = 
+             const removeModifiedCartItem = storedCartItems.filter (
+              
+             )
               console.log (itemToUpdate);
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
