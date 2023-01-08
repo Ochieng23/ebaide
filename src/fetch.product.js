@@ -58,6 +58,8 @@ const AppendElementAsFirstChildUsingElement = (element, child) => {
 const ClearContentOfElement = (cb, element) => {
   cb(element).innerHTML = "";
 };
+
+
 const ProductBackendAPIURI =
   "https://service.goebaide.com/api/product/all_products";
 
