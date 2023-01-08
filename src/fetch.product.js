@@ -371,6 +371,7 @@ const PullProductsFromBackendAPI = () => {
                 itemQuantityToBuy
               };
 
+              
               const storedCartItems = JSON.parse(
                 localStorage.getItem("cart-items") || "[]",
               );
