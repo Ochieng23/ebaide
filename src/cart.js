@@ -64,8 +64,6 @@ const DisplayCartItems = (cartItemsArray) => {
     //   AddClass (trashIcon, 'fas');
     //   AddClass (trashIcon, 'fa-trash-o');
     //   AppendChildToDynamicElement (tableData, trashIcon);
-    
-    
 
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   AppendChildToDynamicElement (displayTable, displayTableBody);
