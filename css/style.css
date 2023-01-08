@@ -1518,5 +1518,5 @@ header .logo{
 }
 .btn-cart-icon > i,
 .btn-cart-icon > span {
-  
+  display: block;
 }
