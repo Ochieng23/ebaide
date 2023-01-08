@@ -377,7 +377,10 @@ const PullProductsFromBackendAPI = () => {
               const itemToUpdate = storedCartItems.map (
                 item => {
                   if (item.id ===cartArrayItem.id){
-                    
+                    return {
+                      ...item,
+                      itemQuantityToBuy: itemQuantityToBuy + 1,
+                    }
                   }
                 }
               )
