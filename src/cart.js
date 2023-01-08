@@ -70,7 +70,7 @@ const DisplayCartItems = cartItemsArray => {
        ${cartItem.itemQuantityToBuy}
       </td>
       <td>
-       ${cartItem.itemQuantityToBuy}
+       700
       </td>
 
     </tr>
