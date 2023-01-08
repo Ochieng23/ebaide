@@ -1422,14 +1422,7 @@ header .logo{
   width: 70px;
   margin-left: -16px;
 }
-
-.cart{
-  color: white;
-  font-size: 25px;
-  margin-top: 6px;
-}
-
-  header .navbar{
+ header .navbar{
     position: absolute;
     top:100%; right:0; left: 0;
     background: #333;
