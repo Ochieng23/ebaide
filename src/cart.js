@@ -66,7 +66,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
       AppendChildToDynamicElement (tableDataImageHolder, tableImage);
 
-      
+      const tableDataTitle = CreateNewHTMLElement ('td');  
     // if (k === cartItemsArray.length){
     //   const trashIcon = CreateNewHTMLElement('i');
     //   AddClass (trashIcon, 'fas');
