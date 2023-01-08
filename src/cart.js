@@ -50,8 +50,8 @@ const DisplayCartItems = (cartItemsArray) => {
     AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
   };
 
+  const displayTableBody = CreateNewHTMLElement('tbody');
 
-  
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
   
