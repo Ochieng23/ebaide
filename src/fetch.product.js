@@ -43,15 +43,15 @@ AddAttributeToElement = (element, attribute, value) => {
   element.setAttribute(attribute, value);
 };
 
-AppendElementAsFirstChild = (element, cb, child) => {
+const AppendElementAsFirstChild = (element, cb, child) => {
   cb(element).prepend(child);
 };
 
-AppendChildToParentElementUsingElement = (element, child) => {
+const AppendChildToParentElementUsingElement = (element, child) => {
   element.appendChild(child);
 };
 
-AppendElementAsFirstChildUsingElement = (element, child) => {
+const AppendElementAsFirstChildUsingElement = (element, child) => {
   element.prepend(child);
 };
 const CartHandler = e => {
