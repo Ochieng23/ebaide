@@ -30,10 +30,12 @@ const AddClass = (element, className) => {
   element.classList.add(className);
 };
 
+
+
 const DisplayCartItems = (arrOfCartItems) => {
   const displayTable = CreateNewHTMLElement (table);
   const displayTableHeader = CreateNewHTMLElement (thead);
-  
+
 };
 
 const Cart = e => {
