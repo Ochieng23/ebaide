@@ -1523,6 +1523,9 @@ header .logo{
 .btn-cart-icon > span {
   display: block;
 }
+.btn-cart-icon > i{
+  
+}
 .btn-cart-icon > span {
   margin-left: .4em;
 }
