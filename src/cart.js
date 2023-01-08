@@ -57,7 +57,11 @@ const DisplayCartItems = (cartItemsArray) => {
   for (let k =0; k < cartItemsArray.length; k++) {
     const tableDataImageHolder = CreateNewHTMLElement ('td');
     const tableImage = CreateNewHTMLElement('img');
-    AddAttributeToElement (tableImage, 'src', `https://service.goebaide.com/${cartItemsArray[k].image)
+    AddAttributeToElement (
+      tableImage, 
+      'src', 
+      `https://service.goebaide.com/${cartItemsArray[k].image}`
+      );
     tableData.innerHTML = cartItemsArray[k].title;
     if (k === cartItemsArray.length){
       const trashIcon = CreateNewHTMLElement('i');
