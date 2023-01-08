@@ -420,7 +420,7 @@ const PullProductsFromBackendAPI = () => {
               if (isItemExists !== undefined) {
                 const cartElement = 
                 GetSelectedElementWithClassName('view-cart-button');
-                cartElement.addEventListener( 'click', CartHandler);
+                cartElement.addEventListener( 'click', Cart);
                 return;
               };
               // if (isItemAddToCart.length === 0) {
