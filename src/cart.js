@@ -75,6 +75,7 @@ const DisplayCartItems = cartItemsArray => {
 
     </tr>
     `;
+    displayTableBody.outerHTML = 
     // const tableDataImageHolder = CreateNewHTMLElement('td');
     // const tableImage = CreateNewHTMLElement ('img');
     // AddClass (tableImage, 'cart-display-image');
