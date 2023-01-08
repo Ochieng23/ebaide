@@ -72,6 +72,7 @@ const Cart = e => {
     DisplayCartItems ("cart-container");
     console.log(cartItems);
 
+    AppendChildToDynamicElement (cartDiv, displayTable);
     const goBackToGoProductButton = CreateNewHTMLElement("button");
     AddClass(goBackToGoProductButton, "btn");
     AddClass(goBackToGoProductButton, "go-back-to-product");
