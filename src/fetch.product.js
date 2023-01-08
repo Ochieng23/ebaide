@@ -374,7 +374,11 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items") || "[]",
               );
 
-            
+              const isItemExists = storedCartItems.find(
+                ()=>{
+                  
+                }
+              )
 
               const itemToUpdate = storedCartItems.map (
                 item => {
