@@ -1512,6 +1512,8 @@ header .logo{
 .btn-cart-icon {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .btn-cart-icon:hover{
   background-color: rgb(3, 155, 215);
