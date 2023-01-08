@@ -31,7 +31,7 @@ const AddClass = (element, className) => {
 };
 
 const DisplayCartItems = (arrOfCartItems) => {
-
+  const DisplayTable = 
 };
 
 const Cart = e => {
