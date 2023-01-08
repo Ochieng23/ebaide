@@ -374,6 +374,8 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items") || "[]",
               );
 
+              
+
               const itemToUpdate = storedCartItems.map (
                 item => {
                   if (item.id ===cartArrayItem.id){
