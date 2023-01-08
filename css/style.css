@@ -1510,7 +1510,7 @@ header .logo{
   text-transform: uppercase;
 }
 .btn-cart-icon {
-
+  display: flex;
 }
 .btn-cart-icon:hover{
   background-color: rgb(3, 155, 215);
