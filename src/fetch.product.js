@@ -375,7 +375,8 @@ const PullProductsFromBackendAPI = () => {
               );
 
               if (addToCartButtonSpan.innerHTML === "Go to Cart"){
-                console.log(
+                console.log(storedCartItems)
+                
               };
 
               const itemToUpdate = storedCartItems.map (
