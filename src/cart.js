@@ -56,7 +56,7 @@ const DisplayCartItems = (cartItemsArray) => {
   const displayTableBodyRow = CreateNewHTMLElement('tr');
   cartItemsArray.map ( (cartItem) =>{
     const tableImage = CreateNewHTMLElement ('td');
-    tableImage.innerHTML = `cartItem.image`;
+    tableImage.innerHTML = `https://service.goebaide.com/${cartItem.image}`;
   })
     const tableData = CreateNewHTMLElement ('td');
     tableData.innerHTML = cartItemsArray[k];
