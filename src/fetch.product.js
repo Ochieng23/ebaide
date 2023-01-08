@@ -61,7 +61,7 @@ const ClearContentOfElement = (cb, element) => {
 
 const CartHandler = e => {
   e.preventDefault();
-  ClearContentOfElement(FindSingleElement, "#body");
+  ClearContentOfElement(FindSingleElement, "body");
   setTimeout(() => {
     const cartDiv = CreateNewHTMLElement("div");
     AddClass(cartDiv, "cart-container");
