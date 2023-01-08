@@ -56,9 +56,9 @@ const DisplayCartItems = cartItemsArray => {
   const displayTableBodyRow = CreateNewHTMLElement("tr");
   cartItemsArray.map(cartItem => {
     const itemRow =`
-    <tr id="${cartItem.id}" class="">
+    <tr id="${cartItem.id}">
       <td>
-        <img src="https://service.goebaide.com/${cartItem.image}"
+        <img class="cart-display-image" src="https://service.goebaide.com/${cartItem.image}"
       </td>
       <td>
         ${cartItem.title}
