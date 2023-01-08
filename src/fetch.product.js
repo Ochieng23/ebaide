@@ -438,16 +438,10 @@ const PullProductsFromBackendAPI = () => {
                     productContainer
                   );
                 }, 100);
-              }
+              })
               //console.log(data.data);
-            })
-            .catch(error => {
-              console.log(error);
-            });
-        });
+        };
       })
-    }
-  })
     .catch(err => {
       console.error(err);
     });
