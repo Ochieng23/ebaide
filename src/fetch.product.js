@@ -16,10 +16,6 @@ const AddClassToNewElement = (element, namedClass) => {
   element.classList.add(namedClass);
 };
 
-const RemoveClass = (element, namedClass) => {
-  element.classList.remove(namedClass);
-};
-
 const RemoveClassFromNewElement = (element, id, className) => {
   element(id).classList.remove(className);
 };
@@ -101,6 +97,7 @@ const PullProductsFromBackendAPI = () => {
 
           AddClassToNewElement(divProductBox, "box");
           AddAttributeToElement(divProductBox, "id", id);
+          
 
           AddAttributeToElement(
             productImage,
@@ -115,8 +112,11 @@ const PullProductsFromBackendAPI = () => {
           AddClassToNewElement(titleIcons, "fas");
           AddClassToNewElement(titleIcons, "fa-map-marker-alt");
           AppendElementAsFirstChildUsingElement(titleText, titleIcons);
-          AddAttributeToElement(titleText, "style", "height:7vh;");
-          AddClassToNewElement(titleText, "product-description");
+          AddAttributeToElement (
+            titleText, 
+            "style",
+            "height:7vh;"
+            );
           let titleArray = title.split(" ");
           let reducedTitle = [];
           for (let i = 0; i < 3; i++) {
@@ -205,11 +205,19 @@ const PullProductsFromBackendAPI = () => {
               productFirstImage
             );
 
-            const smallImageGroup = CreateNewElement("div");
-            AddClassToNewElement(smallImageGroup, "small-img-group");
-            for (let i = 0; i < 4; i++) {
-              const smallImageGroupColumn = CreateNewElement("div");
-              AddClassToNewElement(smallImageGroupColumn, "small-img-col");
+                  const smallImageGroup = CreateNewElement("div");
+                  AddClassToNewElement(smallImageGroup, "small-img-group");
+                  for (let i = 0; i < 4; i++) {
+                    const smallImageGroupColumn = CreateNewElement("div");
+                    AddClassToNewElement(
+                      smallImageGroupColumn,
+                      "small-img-col"
+                    );
+                    AddAttributeToElement(
+                      smallImageGroup,
+                      'style',
+                      'width: 50vw; margin:20px;'
+                    )
 
               const smallImage = CreateNewElement("img");
               AddClassToNewElement(smallImage, "small-img");
@@ -237,18 +245,20 @@ const PullProductsFromBackendAPI = () => {
             }
             AppendChildToParentElementUsingElement(productBox, smallImageGroup);
 
-            const productInformation = CreateNewElement("div");
-            AddClassToNewElement(productInformation, "col-lg-5");
-            AddClassToNewElement(productInformation, "col-md-12");
-            AddClassToNewElement(productInformation, "col-12");
-            AddClassToNewElement(productInformation, "my-5");
-            AddClassToNewElement(productInformation, "pt-5");
-
-            AddAttributeToElement(
-              productInformation,
-              "style",
-              "background-color: white;"
-            );
+                  const productInformation = CreateNewElement('div');
+                  AddClassToNewElement(productInformation, 'product-info')
+                  AddClassToNewElement(productInformation, 'col-lg-5');
+                  AddClassToNewElement(productInformation, 'col-md-12');
+                  AddClassToNewElement(productInformation, 'col-12');
+                  AddClassToNewElement(productInformation, 'my-5');
+                  AddClassToNewElement(productInformation, 'pt-5');
+                  
+                  AddAttributeToElement(
+                    productInformation, 
+                    'style', 
+                    'background-color: white;'
+                    );
+                    AddClassToNewElement(productInformation, 'col')
 
             const productTitle = CreateNewElement("h1");
             AddAttributeToElement(
@@ -407,38 +417,41 @@ const PullProductsFromBackendAPI = () => {
               productDescriptionDetails
             );
 
-            const fullDescriptionTextSpan = CreateNewElement("span");
-            AddClassToNewElement(
-              fullDescriptionTextSpan,
-              "product-description"
-            );
-            fullDescriptionTextSpan.innerHTML = SingleProduct[0].description;
-            AppendChildToParentElementUsingElement(
-              productInformation,
-              fullDescriptionTextSpan
-            );
-
-            AppendChildToParentElementUsingElement(
-              productBox,
-              productInformation
-            );
-            AppendChildToParentElementUsingElement(
-              productContainer,
-              productBox
-            );
-            AppendChildToParentElement(
-              "#body",
-              QuerySelectorForDocumentElement,
-              productContainer
-            );
-          }, 100);
-          //console.log(data.data);
+                    const fullDescriptionTextSpan = CreateNewElement('span');
+                    fullDescriptionTextSpan.innerHTML = data.data[0].description;
+                    AppendChildToParentElementUsingElement(
+                      productInformation,
+                      fullDescriptionTextSpan
+                    );
+        
+                    AppendChildToParentElementUsingElement(
+                      productBox, 
+                      productInformation
+                    );
+                  AppendChildToParentElementUsingElement(
+                    productContainer,
+                    productBox
+                  );
+                  AppendChildToParentElement(
+                    "#body",
+                    QuerySelectorForDocumentElement,
+                    productContainer
+                  );
+                }, 100);
+              }
+              //console.log(data.data);
+            })
+            .catch(error => {
+              console.log(error);
+            });
         });
-      }
-    })
+      })
+    }
+  })
     .catch(err => {
       console.error(err);
     });
 };
 
 PullProductsFromBackendAPI();
+
