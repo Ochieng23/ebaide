@@ -39,8 +39,9 @@ const CartTableHeadingsArray = [
   "remove"
 ];
 
+
 const DisplayCartItems = (parentCartHolder) => {
-  const displayTable = CreateNewHTMLElement('table');
+
   const displayTableHeader = CreateNewHTMLElement('thead');
   const displayTableHeaderRow = CreateNewHTMLElement('tr');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
@@ -53,7 +54,7 @@ const DisplayCartItems = (parentCartHolder) => {
   
   setTimeout (
     AppendHTMLChildToStaticElement (parentCartHolder, FindSingleElement, displayTable),
-    2500
+    5000
   );
 };
 
