@@ -54,7 +54,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
   const displayTableBody = CreateNewHTMLElement('tbody');
   const displayTableBodyRow = CreateNewHTMLElement('tr');
-  for (let k =0; k < cartItemsArray.length; k++) {
+  for (let k =0; k = cartItemsArray.length; k++) {
     const tableData = CreateNewHTMLElement ('td');
     tableData.innerHTML = cartItemsArray[k];
   };
