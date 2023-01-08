@@ -56,6 +56,7 @@ const DisplayCartItems = (cartItemsArray) => {
   const displayTableBodyRow = CreateNewHTMLElement('tr');
   
   
+  
 };
 
 const Cart = e => {
