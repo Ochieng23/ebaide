@@ -390,7 +390,7 @@ const PullProductsFromBackendAPI = () => {
              const removeModifiedCartItem = storedCartItems.filter (
               item => item.id !== cartArrayItem.id
              )
-              console.log (itemToUpdate);
+              console.log (itemToUpdate, removeModifiedCartItem);
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
             localStorage.setItem("cart-items", JSON.stringify(cartArray));
