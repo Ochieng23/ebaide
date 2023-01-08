@@ -50,7 +50,11 @@ const DisplayCartItems = (parentCartHolder) => {
   };
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
-  AppendHTMLChildToStaticElement (parentCartHolder, FindSingleElement, displayTable);
+  
+  setTimeout (
+    AppendHTMLChildToStaticElement (parentCartHolder, FindSingleElement, displayTable),
+    2500
+  );
 };
 
 const Cart = e => {
