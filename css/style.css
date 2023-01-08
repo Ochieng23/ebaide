@@ -1496,6 +1496,7 @@ header .logo{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .cart-container > span {
   font-size: 3.6em;
