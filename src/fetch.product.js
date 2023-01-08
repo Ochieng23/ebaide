@@ -54,7 +54,7 @@ AppendChildToParentElementUsingElement = (element, child) => {
 AppendElementAsFirstChildUsingElement = (element, child) => {
   element.prepend(child);
 };
-const Cart = e => {
+const CartHandler = e => {
   e.preventDefault();
   ClearContent(FindSingleElement, "#body");
   setTimeout(() => {
