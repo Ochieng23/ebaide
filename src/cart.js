@@ -58,15 +58,15 @@ const DisplayCartItems = (cartItemsArray) => {
     const tableImage = CreateNewHTMLElement ('td');
     tableImage.innerHTML = `https://service.goebaide.com/${cartItem.image}`;
   })
-    const tableData = CreateNewHTMLElement ('td');
-    tableData.innerHTML = cartItemsArray[k];
-      const trashIcon = CreateNewHTMLElement('i');
-      AddClass (trashIcon, 'fas');
-      AddClass (trashIcon, 'fa-trash-o');
-      AppendChildToDynamicElement (tableData, trashIcon);
-    }
-    AppendChildToDynamicElement (displayTableBodyRow, tableData);
-  };
+    // const tableData = CreateNewHTMLElement ('td');
+    // tableData.innerHTML = cartItemsArray[k];
+    //   const trashIcon = CreateNewHTMLElement('i');
+    //   AddClass (trashIcon, 'fas');
+    //   AddClass (trashIcon, 'fa-trash-o');
+    //   AppendChildToDynamicElement (tableData, trashIcon);
+    
+    /AppendChildToDynamicElement (displayTableBodyRow, tableData);
+
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   AppendChildToDynamicElement (displayTable, displayTableBody);
   
