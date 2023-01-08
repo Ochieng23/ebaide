@@ -379,7 +379,7 @@ const PullProductsFromBackendAPI = () => {
                   if (item.id ===cartArrayItem.id){
                     return {
                       ...item,
-                      itemQuantityToBuy: itemQuantityToBuy + 1,
+                      itemQuantityToBuy: (itemQuantityToBuy) + 1,
                     }
                   }
                   else {
