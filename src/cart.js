@@ -59,8 +59,8 @@ const DisplayCartItems = (cartItemsArray) => {
     AddAttributeToElement(
       tableImage,
        'src',
-        '')
-    tableImage.innerHTML = ;
+      `https://service.goebaide.com/${cartItem.image}`
+      );
     AppendChildToDynamicElement (displayTableBodyRow, tableImage);
   })
     // const tableData = CreateNewHTMLElement ('td');
