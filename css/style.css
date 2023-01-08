@@ -1497,5 +1497,5 @@ header .logo{
   align-items: center;
 }
 .cart-container > span {
-  
+  display: block;
 }
