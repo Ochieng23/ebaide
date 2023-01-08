@@ -374,10 +374,7 @@ const PullProductsFromBackendAPI = () => {
                 localStorage.getItem("cart-items") || "[]",
               );
 
-              if (addToCartButtonSpan.innerHTML === "Go to Cart"){
-                console.log(storedCartItems)
-                return;
-              };
+            
 
               const itemToUpdate = storedCartItems.map (
                 item => {
