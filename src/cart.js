@@ -53,6 +53,7 @@ const DisplayCartItems = (cartItemsArray) => {
   AppendChildToDynamicElement (displayTable, displayTableHeader);
 
   const displayTableBody = CreateNewHTMLElement('tbody');
+  const displayTableBodyRow = CreateNewHTMLElement('tr');
   
   
 };
