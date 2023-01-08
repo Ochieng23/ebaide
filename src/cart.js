@@ -39,7 +39,7 @@ const CartTableHeadingsArray = [
   "remove"
 ];
 
-const DisplayCartItems = () => {
+const DisplayCartItems = (parentCartHolder) => {
   const displayTable = CreateNewHTMLElement('table');
   const displayTableHeader = CreateNewHTMLElement('thead');
   const displayTableHeaderRow = CreateNewHTMLElement('tr');
@@ -50,7 +50,7 @@ const DisplayCartItems = () => {
   };
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
   AppendChildToDynamicElement (displayTable, displayTableHeader);
-  AppendHTMLChildToStaticElement ('cart-container', FindSingleElement, displayTable);
+  AppendHTMLChildToStaticElement (parentCartHolder, FindSingleElement, displayTable);
 };
 
 const Cart = e => {
@@ -68,7 +68,7 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    DisplayCartItems ();
+    DisplayCartItems ("cart-container");
     console.log(cartItems);
 
     const goBackToGoProductButton = CreateNewHTMLElement("button");
