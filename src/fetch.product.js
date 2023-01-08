@@ -382,6 +382,9 @@ const PullProductsFromBackendAPI = () => {
                       itemQuantityToBuy: itemQuantityToBuy + 1,
                     }
                   }
+                  else {
+                    return item;
+                  }
                 }
               );
               console.log (itemToUpdate);
