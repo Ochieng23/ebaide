@@ -30,7 +30,9 @@ const AddClass = (element, className) => {
   element.classList.add(className);
 };
 
-const DisplayCartItems = () => {};
+const DisplayCartItems = (arrOfCartItems) => {
+
+};
 
 const Cart = e => {
   e.preventDefault();
