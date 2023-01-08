@@ -86,6 +86,7 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
+
     
     DisplayCartItems ();
     console.log(cartItems);
