@@ -379,11 +379,6 @@ const PullProductsFromBackendAPI = () => {
                   return item.id === cartArrayItem.id;
                 }
               )
-
-              
-             const removedCartItem = storedCartItems.filter (
-              item => item.id === cartArrayItem.id
-             )
               console.log (itemToUpdate, removedCartItem);
               // if (isItemAddToCart.length === 0) {
             cartArray = [...storedCartItems, cartArrayItem];
