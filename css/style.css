@@ -1496,11 +1496,12 @@ header .logo{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 2.5%;
 }
 .cart-container > span {
   font-size: 3.6em;
   display: block;
+  text-transform: lowercase;
 }
 .cart-container > button{
   display: block;
