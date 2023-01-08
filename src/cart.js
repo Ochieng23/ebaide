@@ -39,7 +39,7 @@ const CartTableHeadingsArray = [
   "remove"
 ];
 
-const displayTable = CreateNewHTMLElement('table');
+const displayTable = CreateNewHTMLElement('div');
 
 const DisplayCartItems = (cartItemsArray) => {
   const displayTableHeader = CreateNewHTMLElement('thead');
