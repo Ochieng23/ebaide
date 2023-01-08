@@ -57,7 +57,7 @@ const DisplayCartItems = (cartItemsArray) => {
   for (let k =0; k < cartItemsArray.length; k++) {
     const tableDataImageHolder = CreateNewHTMLElement ('td');
     const tableImage = CreateNewHTMLElement('img');
-    AddClass (tableImage, '.cart-display-image');
+    AddClass (tableImage, 'cart-display-image');
     AddAttributeToElement (
       tableImage, 
       'src', 
