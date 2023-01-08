@@ -58,6 +58,7 @@ const DisplayCartItems = (cartItemsArray) => {
     const tableData = CreateNewHTMLElement ('td');
     tableData.innerHTML = cartItemsArray[k];
     if (k === cartItemsArray.length){
+      const trashIcon = CreateNewHTMLElement('i');
       tableData.innerHTML = 
     }
   };
