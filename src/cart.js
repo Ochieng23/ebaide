@@ -65,7 +65,7 @@ const DisplayCartItems = (cartItemsArray) => {
     }
     AppendChildToDynamicElement (displayTableBodyRow, tableData);
   };
-  
+  AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   
   
 };
