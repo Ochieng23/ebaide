@@ -30,12 +30,18 @@ const AddClass = (element, className) => {
   element.classList.add(className);
 };
 
-const CartTableHeadingsArray = ['image', 'title', 'size', 'quantity', 'price per item', 'remove'];
+const CartTableHeadingsArray = [
+  "image",
+  "title",
+  "size",
+  "quantity",
+  "price per item",
+  "remove"
+];
 
-const DisplayCartItems = (arrOfCartItems) => {
-  const displayTable = CreateNewHTMLElement (table);
-  const displayTableHeader = CreateNewHTMLElement (thead);
-
+const DisplayCartItems = arrOfCartItems => {
+  const displayTable = CreateNewHTMLElement(table);
+  const displayTableHeader = CreateNewHTMLElement(thead);
 };
 
 const Cart = e => {
@@ -51,7 +57,7 @@ const Cart = e => {
       AddClass(emptyCartTextSpan, "emptyCartTextSpan");
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
-    };
+    }
 
     console.log(cartItems);
 
@@ -60,16 +66,16 @@ const Cart = e => {
     AddClass(goBackToGoProductButton, "go-back-to-product");
     goBackToGoProductButton.textContent = "Go back to product";
     AppendChildToDynamicElement(cartDiv, goBackToGoProductButton);
-    
-    goBackToGoProductButton.addEventListener ('click', (e) => {
+
+    goBackToGoProductButton.addEventListener("click", e => {
       e.preventDefault();
-      window.location.href = 'index.html#packages';
-      if (window.location.href === 'http://localhost:5503/index.html#packages'){
-        window.location.reload ();
-      };
+      window.location.href = "index.html#packages";
+      if (
+        window.location.href === "http://localhost:5503/index.html#packages"
+      ) {
+        window.location.reload();
+      }
     });
-
-
 
     AppendHTMLChildToStaticElement("#body", FindSingleElement, cartDiv);
   }, 1500);
