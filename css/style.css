@@ -1566,6 +1566,7 @@ header .logo{
   margin-left: 11.2em;
   padding-top: 2%;
   font-size: 1.6em;
+  cursor: pointer;
  }
 .cart-display-image {
   height:auto;
