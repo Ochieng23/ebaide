@@ -1559,6 +1559,7 @@ header .logo{
  background-color: red;
 }
 .cart-items-last-column{
+  margin-right: -4em;
   text-align: end;
  }
 .cart-display-image {
