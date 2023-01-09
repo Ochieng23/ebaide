@@ -1537,6 +1537,9 @@ table, th, td {
 table{
   width: 80%;
 }
+th{
+  text-align: center;
+}
 .cart-display-image {
   height:auto;
   width: 2.8vw;
