@@ -1545,16 +1545,12 @@ header .logo{
   border-bottom: .1em solid #222;
   display: grid;
   grid-template-columns: 16% 16% 16% 16% 16% 16% ;
-  flex-basis: 16.6%;
-  flex-direction: row;
 }
 .cart-display-image {
-  flex: 1 0 16.6%;
   height:auto;
   width: 1.6vw;
   display: block;
 }
 .display-item-title{
-  flex: 1 0 16.6%;
   display: block;
 }
