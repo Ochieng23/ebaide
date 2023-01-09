@@ -1530,7 +1530,9 @@ header .logo{
 .btn-cart-icon > span {
   margin-left: .4em;
 }
-.
+.display-item-row{
+  
+}
 .cart-display-image {
   height:auto;
   width: 1.6vw;
