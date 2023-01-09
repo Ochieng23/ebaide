@@ -83,6 +83,8 @@ const DisplayCartItems = (cartItemsArray) => {
       itemSize.innerHTML = item.itemSize;
       AppendChildToDynamicElement (itemsRow, itemSize);
 
+      
+
 
 
 
