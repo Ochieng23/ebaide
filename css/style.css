@@ -1570,7 +1570,8 @@ header .logo{
   border-bottom: .1em solid #222;
 }
 .cart-items-first-column{
-  margin-right: -40em;
+  background-color: blue;
+  padding-left: 10em;
 }
 .cart-items-second-column{
   margin-right: -16em;
