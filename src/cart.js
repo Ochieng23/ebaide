@@ -93,7 +93,8 @@ const DisplayCartItems = cartItemsArray => {
      //Delete Product:
      const deleteItem = CreateNewHTMLElement("td");
      const deleteItemIcon = CreateNewHTMLElement("i");
-     AddClass(deleteItem, 
+     AddClass (transhIcon, 'fas');
+     AddClass (transhIcon, 'fa-trash');
      AppendChildToDynamicElement(itemsRow, );
 
     AppendChildToDynamicElement(tableBody, itemsRow);
