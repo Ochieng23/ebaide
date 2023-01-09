@@ -46,7 +46,7 @@ const DisplayCartItems = (cartItemsArray) => {
   AddClass(displayRow, 'display-item-row');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
     const tableHeading = CreateNewHTMLElement ('span');
-    AddClass()
+    AddClass(tableHeading, 'display-item-heading');
     tableHeading.innerHTML = CartTableHeadingsArray[i];
     AppendChildToDynamicElement (displayRow, tableHeading);
   };
