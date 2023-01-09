@@ -43,14 +43,14 @@ const displayContainer = CreateNewHTMLElement('div');
 
 const DisplayCartItems = (cartItemsArray) => {
   const displayHeadingRow = CreateNewHTMLElement('div');
-  AddClass(displayRow, 'display-item-row');
+  AddClass(displayHeadingRow, 'display-item-row');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
     const tableHeading = CreateNewHTMLElement ('span');
     AddClass(tableHeading, 'display-item-heading');
     tableHeading.innerHTML = CartTableHeadingsArray[i];
-    AppendChildToDynamicElement (displayRow, tableHeading);
+    AppendChildToDynamicElement (displayHeadingRow, tableHeading);
   };
-  AppendChildToDynamicElement (displayContainer, displayRow);
+  AppendChildToDynamicElement (displayContainer, displayHeadingRow);
 
   for (let k =0; k < cartItemsArray.length; k++) {
     const displayItemImage = CreateNewHTMLElement ('img');
