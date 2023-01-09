@@ -42,6 +42,8 @@ const CartTableHeadingsArray = [
 const displayTable = CreateNewHTMLElement('table');
 
 const DisplayCartItems = (cartItemsArray) => {
+  const tableHeader = CreateNewHTMLElement('thead');
+
   // const displayHeadingRow = CreateNewHTMLElement('div');
   // AddClass(displayHeadingRow, 'display-item-row');
   // for (let i = 0; i < CartTableHeadingsArray.length; i++) {
