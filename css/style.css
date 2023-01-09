@@ -1559,12 +1559,10 @@ header .logo{
  background-color: red;
 }
 .cart-items-last-column{
-  background-color: blue;
   margin-right: -4.8em;
   text-align: center;
  }
  .cart-items-last-column > i {
-  background-color: red;
   margin-left: 17.2em;
  }
 .cart-display-image {
