@@ -1534,7 +1534,6 @@ header .logo{
   border-bottom: .1em solid #222;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
 }
 .display-item-row > .display-item-heading{
   display: block;
