@@ -1536,6 +1536,7 @@ header .logo{
 .display-item-row > .display-item-heading{
   display: block;
   font-size: 2.8em ;
+  font-weight: 700;
 }
 .cart-display-image {
   height:auto;
