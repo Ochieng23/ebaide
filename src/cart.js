@@ -59,7 +59,7 @@ const DisplayCartItems = (cartItemsArray) => {
   cartItemsArray.map (
     item => {
       const itemsRow = CreateNewHTMLElement('tr');
-      
+      const itemImageTD = CreateNewHTMLElement('td'); 
     }
   );
   // const displayHeadingRow = CreateNewHTMLElement('div');
