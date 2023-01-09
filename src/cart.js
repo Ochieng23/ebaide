@@ -61,7 +61,7 @@ const DisplayCartItems = (cartItemsArray) => {
       `https://service.goebaide.com/${cartItemsArray[k].image}`
       );
 
-  //     AppendChildToDynamicElement (displayRow, displayItemImage);
+      AppendChildToDynamicElement (displayRow, displayItemImage);
 
   //     const tableDataTitle = CreateNewHTMLElement ('td');
   //     tableDataTitle.innerHTML = cartItemsArray[k].title; 
