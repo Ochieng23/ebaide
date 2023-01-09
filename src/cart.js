@@ -46,10 +46,9 @@ const DisplayCartItems = (cartItemsArray) => {
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
     const tableHeading = CreateNewHTMLElement ('span');
     tableHeading.innerHTML = CartTableHeadingsArray[i];
-    AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
+    AppendChildToDynamicElement (displayRow, tableHeading);
   };
-  AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
-  AppendChildToDynamicElement (displayContainer, displayTableHeader);
+  AppendChildToDynamicElement (displayContainer, displayRow);
 
   const displayTableBody = CreateNewHTMLElement('tbody');
   const displayTableBodyRow = CreateNewHTMLElement('tr');
