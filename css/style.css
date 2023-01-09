@@ -1571,9 +1571,10 @@ header .logo{
   border-bottom: .1em solid #222;
 }
 .cart-items-second-last-column{
-  margin-left: -1.8em;
+  margin-left: -8.8em;
   text-align: center;
   font-size: 1.6em;
+  background-color: red;
 }
 .cart-items-third-last-column{
   margin-right: -21.8em;
