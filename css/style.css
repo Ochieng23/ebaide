@@ -1549,10 +1549,12 @@ header .logo{
   flex-direction: row;
 }
 .cart-display-image {
+  flex: 1 0 16.6%;
   height:auto;
   width: 1.6vw;
   display: block;
 }
 .display-item-title{
+  flex: 1 0 16.6%;
   display: block;
 }
