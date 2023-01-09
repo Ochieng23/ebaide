@@ -62,7 +62,10 @@ const DisplayCartItems = (cartItemsArray) => {
       const itemImageTD = CreateNewHTMLElement('td'); 
       const itemImage = CreateNewHTMLElement('img');
       AddAttributeToElement (
-        itemImage, 'src', );
+        itemImage, 
+        'src', 
+        `https://service.goebaide.com/${item.image}`
+        );
     }
   );
   // const displayHeadingRow = CreateNewHTMLElement('div');
