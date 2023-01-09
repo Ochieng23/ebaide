@@ -1541,12 +1541,12 @@ header .logo{
   font-weight: 600;
   margin: 0 4.0em;
 }
-.display-item-heading:first-child{
-  margin-left: -.2em;
-}
-.display-item-heading:nth-child(2){
-  margin-left: -.4em;
-}
+/* .display-item-heading:first-child{
+  margin-left: -8em;
+} */
+/* .display-item-heading:nth-child(2){
+  margin-left: -4em;
+} */
 .display-item-heading:nth-child(3){
   margin-right: -.2em;
 } 

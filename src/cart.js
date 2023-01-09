@@ -74,6 +74,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
       const displayItemSize = CreateNewHTMLElement ('span');
       AddClass(displayItemSize, 'display-item-title');
+      AddClass(displayItemSize, 'cart-items-third-last-column');
       AddClass (displayItemSize, 'cart-display-item-row');
       displayItemSize.innerHTML = cartItemsArray[k].itemSize; 
       AppendChildToDynamicElement(displayBodyRow, displayItemSize);
