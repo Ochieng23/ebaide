@@ -1544,6 +1544,9 @@ header .logo{
 .display-item-heading:first-child{
   margin-left: -.2em;
 }
+.display-item-heading:first-child{
+  margin-left: -.2em;
+}
 .display-item-body{
   
   display: grid;
