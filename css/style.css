@@ -1552,6 +1552,9 @@ header .logo{
 .cart-display-item-row{
   border-bottom: .1em solid #222;
 }
+.cart-display-item-row:first-child{
+ 
+}
 .cart-display-image {
   height:auto;
   width: 1.6vw;
