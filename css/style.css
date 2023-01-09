@@ -1533,7 +1533,9 @@ header .logo{
 .display-item-row{
   border-bottom: .2em solid #222;
 }
-.display-item-row > 
+.display-item-row > .display-item-heading{
+  
+}
 .cart-display-image {
   height:auto;
   width: 1.6vw;
