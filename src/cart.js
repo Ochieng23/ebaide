@@ -52,7 +52,7 @@ const DisplayCartItems = (cartItemsArray) => {
   };
   AppendChildToDynamicElement (displayContainer, displayHeadingRow);
 
-  
+  const displayBodyRow = CreateNewHTMLElement ('div');
   for (let k =0; k < cartItemsArray.length; k++) {
     const displayItemImage = CreateNewHTMLElement ('img');
     AddClass (displayItemImage, 'cart-display-image');
