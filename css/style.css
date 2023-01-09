@@ -1553,11 +1553,11 @@ header .logo{
   border-bottom: .1em solid #222;
 }
 .cart-display-item-row:first-child{
- 
+ background-color: red;
 }
 .cart-display-image {
   height:auto;
-  width: 1.6vw;
+  width: 2.0vw;
   display: block;
 }
 .display-item-title{
