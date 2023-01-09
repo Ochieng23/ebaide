@@ -1531,7 +1531,7 @@ header .logo{
   margin-left: .4em;
 }
 table, th, td {
-  
+  border: .1em solid rgba(0,0,0,.7);
 }
 .cart-display-image {
   height:auto;
