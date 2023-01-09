@@ -49,7 +49,7 @@ const DisplayCartItems = (cartItemsArray) => {
     AppendChildToDynamicElement (displayTableHeaderRow, tableHeading);
   };
   AppendChildToDynamicElement (displayTableHeader, displayTableHeaderRow);
-  AppendChildToDynamicElement (displayTable, displayTableHeader);
+  AppendChildToDynamicElement (displayContainer, displayTableHeader);
 
   const displayTableBody = CreateNewHTMLElement('tbody');
   const displayTableBodyRow = CreateNewHTMLElement('tr');
@@ -81,7 +81,7 @@ const DisplayCartItems = (cartItemsArray) => {
     AppendChildToDynamicElement (displayTableBodyRow, tableDataSize);
   };
   AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
-  AppendChildToDynamicElement (displayTable, displayTableBody);
+  AppendChildToDynamicElement (displayContainer, displayTableBody);
   
   
 };
