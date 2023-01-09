@@ -1540,6 +1540,9 @@ table{
 th{
   text-align: center;
 }
+td{
+  text-align: center;
+}
 .cart-display-image {
   height:auto;
   width: 2.8vw;
