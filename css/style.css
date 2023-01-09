@@ -1559,8 +1559,8 @@ header .logo{
  background-color: red;
 }
 .cart-items-last-column{
-  margin-right: -4em;
-  text-align: end;
+  margin-right: -8em;
+  text-align: center;
  }
 .cart-display-image {
   height:auto;
