@@ -1531,7 +1531,7 @@ header .logo{
   margin-left: .4em;
 }
 .display-item-row{
-  
+  border-bottom: .2em solid #222;
 }
 .cart-display-image {
   height:auto;
