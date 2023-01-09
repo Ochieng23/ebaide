@@ -62,7 +62,7 @@ const DisplayCartItems = (cartItemsArray) => {
       `https://service.goebaide.com/${cartItemsArray[k].image}`
       );
 
-      AppendChildToDynamicElement (displayRow, displayItemImage);
+      AppendChildToDynamicElement (displayBodyRow, displayItemImage);
 
   //     const tableDataTitle = CreateNewHTMLElement ('td');
   //     tableDataTitle.innerHTML = cartItemsArray[k].title; 
@@ -80,7 +80,7 @@ const DisplayCartItems = (cartItemsArray) => {
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataSize);
   };
   // AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
-  // AppendChildToDynamicElement (displayContainer, displayTableBody);
+  AppendChildToDynamicElement (displayContainer, displayBodyRow);
   
   
 };
