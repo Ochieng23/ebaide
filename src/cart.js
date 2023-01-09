@@ -68,7 +68,7 @@ const DisplayCartItems = (cartItemsArray) => {
         );
       AddClass (itemImage, 'cart-display-image');
 
-      AppendChildToDynamicElement (itemImageTD, itemImage)
+      AppendChildToDynamicElement (itemImageTD, itemImage);
     }
   );
   // const displayHeadingRow = CreateNewHTMLElement('div');
