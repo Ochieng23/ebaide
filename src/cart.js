@@ -88,8 +88,8 @@ const DisplayCartItems = (cartItemsArray) => {
       const displayItemDeleteIcom = CreateNewHTMLElement ('span');
       const transhIcon = CreateNewHTMLElement('i');
       AddClass(displayItemDeleteIcom, 'display-item-title');
-      AddClass (transhIcon, 'fa');
-      AddClass (transhIcon, 'fa-trash-o');
+      AddClass (transhIcon, 'fas');
+      AddClass (transhIcon, 'fa-trash');
       //displayItemDeleteIcom.innerHTML = 'delete'; 
       AppendChildToDynamicElement (displayItemDeleteIcom, transhIcon);
       AppendChildToDynamicElement(displayBodyRow, displayItemDeleteIcom);
