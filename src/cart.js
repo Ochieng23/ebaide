@@ -58,6 +58,7 @@ const DisplayCartItems = (cartItemsArray) => {
     const displayItemImage = CreateNewHTMLElement ('img');
     AddClass (displayItemImage, 'cart-display-image');
     AddClass (displayItemImage, 'cart-display-item-row');
+    AddClass(displayItemImage, 'cart-items-first-column');
     AddAttributeToElement (
       displayItemImage, 
       'src', 
