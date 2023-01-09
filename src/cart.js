@@ -86,14 +86,14 @@ const DisplayCartItems = (cartItemsArray) => {
 
       const displayItemPrice = CreateNewHTMLElement ('span');
       AddClass(displayItemPrice, 'display-item-title');
-      AddClass (displayItemImage, 'cart-display-item-row');
+      AddClass (displayItemPrice, 'cart-display-item-row');
       displayItemPrice.innerHTML = '600'; 
       AppendChildToDynamicElement(displayBodyRow, displayItemPrice);
 
       const displayItemDeleteIcom = CreateNewHTMLElement ('span');
       const transhIcon = CreateNewHTMLElement('i');
       AddClass(displayItemDeleteIcom, 'display-item-title');
-      AddClass (displayItemImage, 'cart-display-item-row');
+      AddClass (displayItemDeleteIcom, 'cart-display-item-row');
       AddClass (transhIcon, 'fas');
       AddClass (transhIcon, 'fa-trash');
       //displayItemDeleteIcom.innerHTML = 'delete'; 
