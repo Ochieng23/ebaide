@@ -80,7 +80,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
       const displayItemQuantity = CreateNewHTMLElement ('span');
       AddClass(displayItemQuantity, 'display-item-title');
-      AddClass(displayItemQuantity, 'display-item-title');
+      AddClass(displayItemQuantity, 'cart-items-fourth-last-column');
       AddClass (displayItemQuantity, 'cart-display-item-row');
       displayItemQuantity.innerHTML = cartItemsArray[k].itemQuantityToBuy; 
       AppendChildToDynamicElement(displayBodyRow, displayItemQuantity);
