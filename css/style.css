@@ -1542,7 +1542,7 @@ header .logo{
   margin: 0 4.0em;
 }
 .display-item-heading:first-child{
-  margin-left: -2em;
+  margin-left: -.2em;
 
 }
 .display-item-heading:nth-child(2){
@@ -1571,7 +1571,7 @@ header .logo{
 }
 .cart-items-first-column{
   background-color: blue;
-  margin-left: 4em;
+  margin-left: .8em;
 }
 .cart-items-second-column{
   margin-right: -16em;
