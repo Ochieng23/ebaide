@@ -59,6 +59,8 @@ const DisplayCartItems = (cartItemsArray) => {
   cartItemsArray.map (
     item => {
       const itemsRow = CreateNewHTMLElement('tr');
+
+      //
       const itemImageTD = CreateNewHTMLElement('td'); 
       const itemImage = CreateNewHTMLElement('img');
       AddAttributeToElement (
@@ -74,7 +76,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
 
 
-      
+
       AppendChildToDynamicElement (tableBody, itemsRow);
     }
   );
