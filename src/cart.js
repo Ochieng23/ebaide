@@ -55,6 +55,7 @@ const DisplayCartItems = (cartItemsArray) => {
   AppendChildToDynamicElement (displayTable, tableHeader);
 
   //Table Body:
+  const tableBody = CreateNewHTMLElement('
   cartItemsArray.map (
     item => {
       
