@@ -56,7 +56,7 @@ const DisplayCartItems = (cartItemsArray) => {
     const displayItemImage = CreateNewHTMLElement ('img');
     AddClass (displayItemImage, 'cart-display-image');
     AddAttributeToElement (
-      tableImage, 
+      displayItemImage, 
       'src', 
       `https://service.goebaide.com/${cartItemsArray[k].image}`
       );
