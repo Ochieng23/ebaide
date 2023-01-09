@@ -43,9 +43,10 @@ const displayTable = CreateNewHTMLElement('table');
 
 const DisplayCartItems = (cartItemsArray) => {
   const tableHeader = CreateNewHTMLElement('thead');
+  const tableHeaderRow = CreateNewHTMLElement('tr');
   CartTableHeadingsArray.map (
     item => {
-      
+      const tableHeading = CreateNewHTMLElement('th');
     }
   )
   // const displayHeadingRow = CreateNewHTMLElement('div');
