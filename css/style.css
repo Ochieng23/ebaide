@@ -1546,7 +1546,7 @@ header .logo{
 
 } */
 .display-item-heading:nth-child(2){
-  margin-right: 12em;
+  margin-right: 2em;
   background-color: blue;
   text-align: start;
 }
