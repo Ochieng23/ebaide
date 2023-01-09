@@ -73,6 +73,7 @@ const DisplayCartItems = (cartItemsArray) => {
       AppendChildToDynamicElement (itemImageTD, itemImage);
       AppendChildToDynamicElement (itemsRow, itemImageTD);
 
+      //Product Title:
 
 
 
