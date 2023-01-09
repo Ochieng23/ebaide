@@ -42,7 +42,7 @@ const CartTableHeadingsArray = [
 const displayContainer = CreateNewHTMLElement('div');
 
 const DisplayCartItems = (cartItemsArray) => {
-  const displayRow = CreateNewHTMLElement('div');
+  const displayHeadingRow = CreateNewHTMLElement('div');
   AddClass(displayRow, 'display-item-row');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
     const tableHeading = CreateNewHTMLElement ('span');
