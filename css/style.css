@@ -1541,10 +1541,10 @@ header .logo{
   font-weight: 600;
   margin: 0 4.0em;
 }
-/* .display-item-heading:first-child{
-  margin-left: -8em;
+.display-item-heading:first-child{
+  margin-left: -.8em;
 
-} */
+}
 .display-item-heading:nth-child(2){
   margin-right: 12em;
   text-align: start;
