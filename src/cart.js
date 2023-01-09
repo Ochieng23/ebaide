@@ -50,25 +50,25 @@ const DisplayCartItems = (cartItemsArray) => {
   };
   AppendChildToDynamicElement (displayContainer, displayRow);
 
-  const displayTableBody = CreateNewHTMLElement('tbody');
-  const displayTableBodyRow = CreateNewHTMLElement('tr');
-  for (let k =0; k < cartItemsArray.length; k++) {
-    const tableDataImageHolder = CreateNewHTMLElement ('td');
-    const tableImage = CreateNewHTMLElement('img');
-    AddClass (tableImage, 'cart-display-image');
-    AddAttributeToElement (
-      tableImage, 
-      'src', 
-      `https://service.goebaide.com/${cartItemsArray[k].image}`
-      );
+  // const displayTableBody = CreateNewHTMLElement('tbody');
+  // const displayTableBodyRow = CreateNewHTMLElement('tr');
+  // for (let k =0; k < cartItemsArray.length; k++) {
+  //   const tableDataImageHolder = CreateNewHTMLElement ('td');
+  //   const tableImage = CreateNewHTMLElement('img');
+  //   AddClass (tableImage, 'cart-display-image');
+  //   AddAttributeToElement (
+  //     tableImage, 
+  //     'src', 
+  //     `https://service.goebaide.com/${cartItemsArray[k].image}`
+  //     );
 
-      AppendChildToDynamicElement (tableDataImageHolder, tableImage);
+  //     AppendChildToDynamicElement (tableDataImageHolder, tableImage);
 
-      const tableDataTitle = CreateNewHTMLElement ('td');
-      tableDataTitle.innerHTML = cartItemsArray[k].title; 
+  //     const tableDataTitle = CreateNewHTMLElement ('td');
+  //     tableDataTitle.innerHTML = cartItemsArray[k].title; 
       
-      const tableDataSize = CreateNewHTMLElement ('td');
-      tableDataSize.innerHTML = cartItemsArray[k].itemSize; 
+  //     const tableDataSize = CreateNewHTMLElement ('td');
+  //     tableDataSize.innerHTML = cartItemsArray[k].itemSize; 
     // if (k === cartItemsArray.length){
     //   const trashIcon = CreateNewHTMLElement('i');
     //   AddClass (trashIcon, 'fas');
