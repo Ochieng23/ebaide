@@ -76,6 +76,7 @@ const DisplayCartItems = (cartItemsArray) => {
       //Product Title:
       const itemTitle = CreateNewHTMLElement('td');
       itemTitle.innerHTML = item.title;
+      AppendChildToDynamicElement (itemsRow, itemTitle);
 
 
 
