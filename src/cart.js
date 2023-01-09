@@ -84,6 +84,11 @@ const DisplayCartItems = (cartItemsArray) => {
       AddClass(displayItemPrice, 'display-item-title');
       displayItemPrice.innerHTML = '600'; 
       AppendChildToDynamicElement(displayBodyRow, displayItemPrice);
+
+      const displayItemPrice = CreateNewHTMLElement ('span');
+      AddClass(displayItemPrice, 'display-item-title');
+      displayItemPrice.innerHTML = '600'; 
+      AppendChildToDynamicElement(displayBodyRow, displayItemPrice);
       
   //     const tableDataSize = CreateNewHTMLElement ('td');
   //     tableDataSize.innerHTML = cartItemsArray[k].itemSize; 
