@@ -1535,7 +1535,6 @@ header .logo{
   display: flex;
   flex-direction: row;
   background-color: blue;
-  padding: 0 .8em;
 }
 .display-item-row > .display-item-heading{
   display: block;
