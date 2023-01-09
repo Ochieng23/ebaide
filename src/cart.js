@@ -66,6 +66,7 @@ const DisplayCartItems = (cartItemsArray) => {
         'src', 
         `https://service.goebaide.com/${item.image}`
         );
+      AddClass (itemImage, '')
     }
   );
   // const displayHeadingRow = CreateNewHTMLElement('div');
