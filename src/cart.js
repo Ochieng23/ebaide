@@ -39,68 +39,61 @@ const CartTableHeadingsArray = [
   "remove"
 ];
 
-const displayTable = CreateNewHTMLElement('table');
+const displayTable = CreateNewHTMLElement("table");
 
-const DisplayCartItems = (cartItemsArray) => {
-  const tableHeader = CreateNewHTMLElement('thead');
-  const tableHeaderRow = CreateNewHTMLElement('tr');
-  CartTableHeadingsArray.map (
-    item => {
-      const tableHeading = CreateNewHTMLElement('th');
-      tableHeading.innerHTML = item;
-      AppendChildToDynamicElement (tableHeaderRow, tableHeading);
-    }
-  );
-  AppendChildToDynamicElement (tableHeader, tableHeaderRow);
-  AppendChildToDynamicElement (displayTable, tableHeader);
+const DisplayCartItems = cartItemsArray => {
+  const tableHeader = CreateNewHTMLElement("thead");
+  const tableHeaderRow = CreateNewHTMLElement("tr");
+  CartTableHeadingsArray.map(item => {
+    const tableHeading = CreateNewHTMLElement("th");
+    tableHeading.innerHTML = item;
+    AppendChildToDynamicElement(tableHeaderRow, tableHeading);
+  });
+  AppendChildToDynamicElement(tableHeader, tableHeaderRow);
+  AppendChildToDynamicElement(displayTable, tableHeader);
 
   //Table Body:
-  const tableBody = CreateNewHTMLElement('tbody');
-  cartItemsArray.map (
-    item => {
-      const itemsRow = CreateNewHTMLElement('tr');
+  const tableBody = CreateNewHTMLElement("tbody");
+  cartItemsArray.map(item => {
+    const itemsRow = CreateNewHTMLElement("tr");
 
-      //product image
-      const itemImageTD = CreateNewHTMLElement('td'); 
-      const itemImage = CreateNewHTMLElement('img');
-      AddAttributeToElement (
-        itemImage, 
-        'src', 
-        `https://service.goebaide.com/${item.image}`
-        );
-      AddClass (itemImage, 'cart-display-image');
+    //product image
+    const itemImageTD = CreateNewHTMLElement("td");
+    const itemImage = CreateNewHTMLElement("img");
+    AddAttributeToElement(
+      itemImage,
+      "src",
+      `https://service.goebaide.com/${item.image}`
+    );
+    AddClass(itemImage, "cart-display-image");
 
-      AppendChildToDynamicElement (itemImageTD, itemImage);
-      AppendChildToDynamicElement (itemsRow, itemImageTD);
+    AppendChildToDynamicElement(itemImageTD, itemImage);
+    AppendChildToDynamicElement(itemsRow, itemImageTD);
 
-      //Product Title:
-      const itemTitle = CreateNewHTMLElement('td');
-      itemTitle.innerHTML = item.title;
-      AppendChildToDynamicElement (itemsRow, itemTitle);
+    //Product Title:
+    const itemTitle = CreateNewHTMLElement("td");
+    itemTitle.innerHTML = item.title;
+    AppendChildToDynamicElement(itemsRow, itemTitle);
 
-      //Product Size:
-      const itemSize = CreateNewHTMLElement('td');
-      itemSize.innerHTML = item.itemSize;
-      AppendChildToDynamicElement (itemsRow, itemSize);
+    //Product Size:
+    const itemSize = CreateNewHTMLElement("td");
+    itemSize.innerHTML = item.itemSize;
+    AppendChildToDynamicElement(itemsRow, itemSize);
 
-      //Product Qunatity:
-      const itemQuantity = CreateNewHTMLElement('td');
-      itemQuantity.innerHTML = item.itemQuantityToBuy;
-      AppendChildToDynamicElement (itemsRow, itemQuantity);
+    //Product Qunatity:
+    const itemQuantity = CreateNewHTMLElement("td");
+    itemQuantity.innerHTML = item.itemQuantityToBuy;
+    AppendChildToDynamicElement(itemsRow, itemQuantity);
 
-            //Product Size:
-            const itemQuantity = CreateNewHTMLElement('td');
-            itemQuantity.innerHTML = item.itemQuantityToBuy;
-            AppendChildToDynamicElement (itemsRow, itemQuantity);
+    //Product Size:
+    const itemPrice = CreateNewHTMLElement("td");
+    itemPrice.innerHTML = item.itemPriceToBuy;
+    AppendChildToDynamicElement(itemsRow, itemPrice);
 
+    AppendChildToDynamicElement(tableBody, itemsRow);
+  });
 
-
-
-      AppendChildToDynamicElement (tableBody, itemsRow);
-    }
-  );
-
-  AppendChildToDynamicElement (displayTable, tableBody);
+  AppendChildToDynamicElement(displayTable, tableBody);
   // const displayHeadingRow = CreateNewHTMLElement('div');
   // AddClass(displayHeadingRow, 'display-item-row');
   // for (let i = 0; i < CartTableHeadingsArray.length; i++) {
@@ -119,8 +112,8 @@ const DisplayCartItems = (cartItemsArray) => {
   //   AddClass (displayItemImage, 'cart-display-item-row');
   //   AddClass(displayItemImage, 'cart-items-first-column');
   //   AddAttributeToElement (
-  //     displayItemImage, 
-  //     'src', 
+  //     displayItemImage,
+  //     'src',
   //     `https://service.goebaide.com/${cartItemsArray[k].image}`
   //     );
 
@@ -130,28 +123,28 @@ const DisplayCartItems = (cartItemsArray) => {
   //     AddClass(displayItemTitle, 'display-item-title');
   //     AddClass(displayItemTitle, 'cart-items-second-column');
   //     AddClass (displayItemTitle, 'cart-display-item-row');
-  //     displayItemTitle.innerHTML = cartItemsArray[k].title; 
+  //     displayItemTitle.innerHTML = cartItemsArray[k].title;
   //     AppendChildToDynamicElement(displayBodyRow, displayItemTitle);
 
   //     const displayItemSize = CreateNewHTMLElement ('span');
   //     AddClass(displayItemSize, 'display-item-title');
   //     AddClass(displayItemSize, 'cart-items-third-column');
   //     AddClass (displayItemSize, 'cart-display-item-row');
-  //     displayItemSize.innerHTML = cartItemsArray[k].itemSize; 
+  //     displayItemSize.innerHTML = cartItemsArray[k].itemSize;
   //     AppendChildToDynamicElement(displayBodyRow, displayItemSize);
 
   //     const displayItemQuantity = CreateNewHTMLElement ('span');
   //     AddClass(displayItemQuantity, 'display-item-title');
   //     AddClass(displayItemQuantity, 'cart-items-fourth-column');
   //     AddClass (displayItemQuantity, 'cart-display-item-row');
-  //     displayItemQuantity.innerHTML = cartItemsArray[k].itemQuantityToBuy; 
+  //     displayItemQuantity.innerHTML = cartItemsArray[k].itemQuantityToBuy;
   //     AppendChildToDynamicElement(displayBodyRow, displayItemQuantity);
 
   //     const displayItemPrice = CreateNewHTMLElement ('span');
   //     AddClass(displayItemPrice, 'display-item-title');
   //     AddClass (displayItemPrice, 'cart-display-item-row');
   //     AddClass (displayItemPrice, 'cart-items-second-last-column');
-  //     displayItemPrice.innerHTML = '600'; 
+  //     displayItemPrice.innerHTML = '600';
   //     AppendChildToDynamicElement(displayBodyRow, displayItemPrice);
 
   //     const displayItemDeleteIcom = CreateNewHTMLElement ('span');
@@ -161,26 +154,24 @@ const DisplayCartItems = (cartItemsArray) => {
   //     AddClass (displayItemDeleteIcom, 'cart-items-last-column');
   //     AddClass (transhIcon, 'fas');
   //     AddClass (transhIcon, 'fa-trash');
-  //     //displayItemDeleteIcom.innerHTML = 'delete'; 
+  //     //displayItemDeleteIcom.innerHTML = 'delete';
   //     AppendChildToDynamicElement (displayItemDeleteIcom, transhIcon);
   //     AppendChildToDynamicElement(displayBodyRow, displayItemDeleteIcom);
-      
+
   //     const tableDataSize = CreateNewHTMLElement ('td');
-  //     tableDataSize.innerHTML = cartItemsArray[k].itemSize; 
-    // if (k === cartItemsArray.length){
-    //   const trashIcon = CreateNewHTMLElement('i');
-    //   AddClass (trashIcon, 'fas');
-    //   AddClass (trashIcon, 'fa-trash-o');
-    //   AppendChildToDynamicElement (tableData, trashIcon);
-    // }
+  //     tableDataSize.innerHTML = cartItemsArray[k].itemSize;
+  // if (k === cartItemsArray.length){
+  //   const trashIcon = CreateNewHTMLElement('i');
+  //   AddClass (trashIcon, 'fas');
+  //   AddClass (trashIcon, 'fa-trash-o');
+  //   AppendChildToDynamicElement (tableData, trashIcon);
+  // }
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataImageHolder);
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataTitle);
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataSize);
- // };
+  // };
   // AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   //AppendChildToDynamicElement (displayContainer, displayBodyRow);
-  
-  
 };
 
 const Cart = e => {
@@ -198,9 +189,9 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    DisplayCartItems (cartItems);
+    DisplayCartItems(cartItems);
     console.log(cartItems);
-    AppendChildToDynamicElement (cartDiv, displayTable);
+    AppendChildToDynamicElement(cartDiv, displayTable);
     const goBackToGoProductButton = CreateNewHTMLElement("button");
     AddClass(goBackToGoProductButton, "btn");
     AddClass(goBackToGoProductButton, "go-back-to-product");
