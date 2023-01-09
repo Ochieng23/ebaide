@@ -68,6 +68,7 @@ const DisplayCartItems = (cartItemsArray) => {
 
       const displayItemTitle = CreateNewHTMLElement ('span');
       AddClass(displayItemTitle, 'display-item-title');
+      AddClass(displayItemTitle, 'display-item-title');
       AddClass (displayItemTitle, 'cart-display-item-row');
       displayItemTitle.innerHTML = cartItemsArray[k].title; 
       AppendChildToDynamicElement(displayBodyRow, displayItemTitle);
