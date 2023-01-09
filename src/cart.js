@@ -61,7 +61,8 @@ const DisplayCartItems = (cartItemsArray) => {
       const itemsRow = CreateNewHTMLElement('tr');
       const itemImageTD = CreateNewHTMLElement('td'); 
       const itemImage = CreateNewHTMLElement('img');
-      A
+      AddAttributeToElement (
+        itemImage, 'src', );
     }
   );
   // const displayHeadingRow = CreateNewHTMLElement('div');
