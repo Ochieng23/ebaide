@@ -42,8 +42,7 @@ const CartTableHeadingsArray = [
 const displayContainer = CreateNewHTMLElement('div');
 
 const DisplayCartItems = (cartItemsArray) => {
-  const displayTableHeader = CreateNewHTMLElement('div');
-  const displayTableHeaderRow = CreateNewHTMLElement('tr');
+  const displayRow = CreateNewHTMLElement('div');
   for (let i = 0; i < CartTableHeadingsArray.length; i++) {
     const tableHeading = CreateNewHTMLElement ('th');
     tableHeading.innerHTML = CartTableHeadingsArray[i];
