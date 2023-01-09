@@ -60,7 +60,7 @@ const DisplayCartItems = (cartItemsArray) => {
     item => {
       const itemsRow = CreateNewHTMLElement('tr');
 
-      //
+      //product image
       const itemImageTD = CreateNewHTMLElement('td'); 
       const itemImage = CreateNewHTMLElement('img');
       AddAttributeToElement (
