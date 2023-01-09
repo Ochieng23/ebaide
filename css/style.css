@@ -1534,6 +1534,9 @@ header .logo{
 table, th, td {
   border: .1em solid rgba(0,0,0,.7);
 }
+table{
+  
+}
 .cart-display-image {
   height:auto;
   width: 2.8vw;
