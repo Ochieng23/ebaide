@@ -91,6 +91,7 @@ const DisplayCartItems = (cartItemsArray) => {
       //AddClass (displayItemDeleteIcom, 'fas');
       AddClass (transhIcon, 'icon-trash');
       //displayItemDeleteIcom.innerHTML = 'delete'; 
+      AppendChildToDynamicElement (displayItemDeleteIcom, transhIcon);
       AppendChildToDynamicElement(displayBodyRow, displayItemDeleteIcom);
       
   //     const tableDataSize = CreateNewHTMLElement ('td');
