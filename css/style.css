@@ -1542,7 +1542,7 @@ header .logo{
   margin: 0 3.2em;
 }
 .display-item-body{
-  
+  border-bottom:solid #222;
 }
 .cart-display-image {
   height:auto;
