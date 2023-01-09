@@ -57,6 +57,7 @@ const DisplayCartItems = (cartItemsArray) => {
   for (let k =0; k < cartItemsArray.length; k++) {
     const displayItemImage = CreateNewHTMLElement ('img');
     AddClass (displayItemImage, 'cart-display-image');
+    AddClass ()
     AddAttributeToElement (
       displayItemImage, 
       'src', 
