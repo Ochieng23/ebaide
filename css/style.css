@@ -1530,11 +1530,6 @@ header .logo{
 .btn-cart-icon > span {
   margin-left: .4em;
 }
-.display-item-row{
-  border-bottom: .1em solid #222;
-  display: flex;
-  flex-direction: row;
-}
 .cart-display-image {
   height:auto;
   width: 2.8vw;
