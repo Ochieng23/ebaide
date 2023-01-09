@@ -94,6 +94,7 @@ const DisplayCartItems = (cartItemsArray) => {
       const transhIcon = CreateNewHTMLElement('i');
       AddClass(displayItemDeleteIcom, 'display-item-title');
       AddClass (displayItemDeleteIcom, 'cart-display-item-row');
+      AddClass (displayItemDeleteIcom, 'cart-items-last-column');
       AddClass (transhIcon, 'fas');
       AddClass (transhIcon, 'fa-trash');
       //displayItemDeleteIcom.innerHTML = 'delete'; 
