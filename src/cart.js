@@ -84,9 +84,9 @@ const DisplayCartItems = (cartItemsArray) => {
       AppendChildToDynamicElement (itemsRow, itemSize);
 
       //Product Size:
-      const itemSize = CreateNewHTMLElement('td');
-      itemSize.innerHTML = item.itemSize;
-      AppendChildToDynamicElement (itemsRow, itemSize);
+      const itemQuantity = CreateNewHTMLElement('td');
+      itemQuantity.innerHTML = item.itemQuantityToBuy;
+      AppendChildToDynamicElement (itemsRow, itemQuantity);
 
 
 
