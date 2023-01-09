@@ -85,7 +85,7 @@ const DisplayCartItems = (cartItemsArray) => {
       displayItemPrice.innerHTML = '600'; 
       AppendChildToDynamicElement(displayBodyRow, displayItemPrice);
 
-      const displayItemDeleteIcom = CreateNewHTMLElement ('span');
+      const displayItemDeleteIcom = CreateNewHTMLElement ('i');
       AddClass(displayItemDeleteIcom, 'display-item-title');
       displayItemDeleteIcom.innerHTML = '600'; 
       AppendChildToDynamicElement(displayBodyRow, displayItemDeleteIcom);
