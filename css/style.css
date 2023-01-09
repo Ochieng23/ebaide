@@ -1543,8 +1543,8 @@ header .logo{
 }
 .display-item-body{
   border-bottom: .1em solid #222;
-  display: flex;
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16% ;
   flex-basis: 16.6%;
   flex-direction: row;
 }
