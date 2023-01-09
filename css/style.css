@@ -1542,7 +1542,7 @@ header .logo{
   margin: 0 3.2em;
 }
 .display-item-heading:first-child{
-  
+  margin-left: -4em;
 }
 .display-item-body{
   border-bottom: .1em solid #222;
