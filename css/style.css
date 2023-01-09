@@ -1571,8 +1571,8 @@ header .logo{
   border-bottom: .1em solid #222;
 }
 .cart-items-second-column{
-  margin-left: .8em;
-  padding-right: -20em; 
+  margin-right: -12em;
+  /* padding-right: -20em;  */
   font-size: 1.6em;
   background-color: red;
 }
