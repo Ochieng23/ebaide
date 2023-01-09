@@ -68,21 +68,21 @@ const DisplayCartItems = (cartItemsArray) => {
 
       const displayItemTitle = CreateNewHTMLElement ('span');
       AddClass(displayItemTitle, 'display-item-title');
-      AddClass(displayItemTitle, 'cart-items-second-last-column');
+      AddClass(displayItemTitle, 'cart-items-second-column');
       AddClass (displayItemTitle, 'cart-display-item-row');
       displayItemTitle.innerHTML = cartItemsArray[k].title; 
       AppendChildToDynamicElement(displayBodyRow, displayItemTitle);
 
       const displayItemSize = CreateNewHTMLElement ('span');
       AddClass(displayItemSize, 'display-item-title');
-      AddClass(displayItemSize, 'cart-items-third-last-column');
+      AddClass(displayItemSize, 'cart-items-third-column');
       AddClass (displayItemSize, 'cart-display-item-row');
       displayItemSize.innerHTML = cartItemsArray[k].itemSize; 
       AppendChildToDynamicElement(displayBodyRow, displayItemSize);
 
       const displayItemQuantity = CreateNewHTMLElement ('span');
       AddClass(displayItemQuantity, 'display-item-title');
-      AddClass(displayItemQuantity, 'cart-items-fourth-last-column');
+      AddClass(displayItemQuantity, 'cart-items-fourth-column');
       AddClass (displayItemQuantity, 'cart-display-item-row');
       displayItemQuantity.innerHTML = cartItemsArray[k].itemQuantityToBuy; 
       AppendChildToDynamicElement(displayBodyRow, displayItemQuantity);

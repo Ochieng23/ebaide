@@ -1546,7 +1546,7 @@ header .logo{
 
 } */
 .display-item-heading:nth-child(2){
-  margin-right: 12em;
+  /* margin-right: 12em; */
   background-color: blue;
   text-align: start;
 }
@@ -1570,18 +1570,18 @@ header .logo{
 .cart-display-item-row{
   border-bottom: .1em solid #222;
 }
-.cart-items-second-last-column{
+.cart-items-second-column{
   margin-left: -8.8em;
   text-align: center;
   font-size: 1.6em;
   background-color: red;
 }
-.cart-items-third-last-column{
+.cart-items-third-column{
   margin-right: -21.8em;
   text-align: center;
   font-size: 1.6em;
 }
-.cart-items-fourth-last-column{
+.cart-items-fourth-column{
   margin-right: -20em;
   text-align: center;
   font-size: 1.6em;
