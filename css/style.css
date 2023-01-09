@@ -1534,7 +1534,8 @@ header .logo{
   border-bottom: .2em solid #222;
 }
 .display-item-row > .display-item-heading{
-  
+  display: block;
+  font-size: ;
 }
 .cart-display-image {
   height:auto;
