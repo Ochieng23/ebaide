@@ -87,7 +87,7 @@ const DisplayCartItems = cartItemsArray => {
 
     //Product Size:
     const itemPrice = CreateNewHTMLElement("td");
-    itemPrice.innerHTML = item.itemPriceToBuy;
+    itemPrice.innerHTML = '1200';
     AppendChildToDynamicElement(itemsRow, itemPrice);
 
     AppendChildToDynamicElement(tableBody, itemsRow);
