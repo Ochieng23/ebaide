@@ -1532,6 +1532,7 @@ header .logo{
 }
 .display-item-row{
   border-bottom: .2em solid #222;
+  display: flex;
 }
 .display-item-row > .display-item-heading{
   display: block;
