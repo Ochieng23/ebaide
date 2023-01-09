@@ -1558,9 +1558,6 @@ header .logo{
 .cart-display-item-row:first-child{
  background-color: red;
 }
-.cart-display-item-row:last-child{
-  
- }
 .cart-display-image {
   height:auto;
   width: 2.0vw;
