@@ -1572,6 +1572,7 @@ header .logo{
 }
 .cart-items-second-column{
   margin-left: -.8em;
+  padding-right: -4em;
   text-align: center;
   font-size: 1.6em;
   background-color: red;
