@@ -1558,7 +1558,7 @@ header .logo{
 .cart-display-item-row:first-child{
  background-color: red;
 }
-.cart-display-item-row:last-child{
+.cart-items-last-column{
   text-align: end;
  }
 .cart-display-image {
