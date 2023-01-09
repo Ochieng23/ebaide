@@ -1563,7 +1563,8 @@ header .logo{
   text-align: center;
  }
  .cart-items-last-column > i {
-  margin-left: 17.2em;
+  margin-left: 4.2em;
+  font-size: 1.2em;
  }
 .cart-display-image {
   height:auto;
