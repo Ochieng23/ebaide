@@ -51,8 +51,6 @@ const DisplayCartItems = (cartItemsArray) => {
     AppendChildToDynamicElement (displayRow, tableHeading);
   };
   AppendChildToDynamicElement (displayContainer, displayRow);
-
-  const displayTableBody = CreateNewHTMLElement('tbody');
   // const displayTableBodyRow = CreateNewHTMLElement('tr');
   // for (let k =0; k < cartItemsArray.length; k++) {
   //   const tableDataImageHolder = CreateNewHTMLElement ('td');
