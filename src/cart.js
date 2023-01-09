@@ -77,7 +77,7 @@ const DisplayCartItems = (cartItemsArray) => {
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataImageHolder);
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataTitle);
   //   AppendChildToDynamicElement (displayTableBodyRow, tableDataSize);
-  // };
+  };
   // AppendChildToDynamicElement (displayTableBody, displayTableBodyRow);
   // AppendChildToDynamicElement (displayContainer, displayTableBody);
   
