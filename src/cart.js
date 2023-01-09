@@ -88,6 +88,8 @@ const DisplayCartItems = (cartItemsArray) => {
       itemQuantity.innerHTML = item.itemQuantityToBuy;
       AppendChildToDynamicElement (itemsRow, itemQuantity);
 
+      
+
 
 
 
