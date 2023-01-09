@@ -48,6 +48,7 @@ const DisplayCartItems = (cartItemsArray) => {
     item => {
       const tableHeading = CreateNewHTMLElement('th');
       tableHeading.innerHTML = item;
+      AppendChildToDynamicElement (tableHeaderRow, tableHeading);
     }
   )
   // const displayHeadingRow = CreateNewHTMLElement('div');
