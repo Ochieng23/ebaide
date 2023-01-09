@@ -56,7 +56,7 @@ const DisplayCartItems = cartItemsArray => {
   const tableBody = CreateNewHTMLElement("tbody");
   cartItemsArray.map(item => {
     const itemsRow = CreateNewHTMLElement("tr");
-
+    AddAttributeToElement (itemsRow, 'id', item.id);
     //product image
     const itemImageTD = CreateNewHTMLElement("td");
     const itemImage = CreateNewHTMLElement("img");
