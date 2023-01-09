@@ -95,6 +95,7 @@ const DisplayCartItems = cartItemsArray => {
      const deleteItemIcon = CreateNewHTMLElement("i");
      AddClass (deleteItemIcon, 'fas');
      AddClass (deleteItemIcon, 'fa-trash');
+     AppendChildToDynamicElement (deleteItem, deleteItemIcon);
      AppendChildToDynamicElement(itemsRow, deleteItem);
 
     AppendChildToDynamicElement(tableBody, itemsRow);
