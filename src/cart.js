@@ -90,9 +90,8 @@ const DisplayCartItems = cartItemsArray => {
     itemPrice.innerHTML = '1200';
     AppendChildToDynamicElement(itemsRow, itemPrice);
 
-     //Product Price:
-     const  = CreateNewHTMLElement("td");
-     .innerHTML = '1200';
+     //Delete Product:
+     const deleteItem = CreateNewHTMLElement("td");
      AppendChildToDynamicElement(itemsRow, );
 
     AppendChildToDynamicElement(tableBody, itemsRow);
