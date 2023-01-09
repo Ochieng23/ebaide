@@ -47,6 +47,7 @@ const DisplayCartItems = (cartItemsArray) => {
   CartTableHeadingsArray.map (
     item => {
       const tableHeading = CreateNewHTMLElement('th');
+      tableHeading.innerHTML = item;
     }
   )
   // const displayHeadingRow = CreateNewHTMLElement('div');
