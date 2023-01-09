@@ -35,7 +35,7 @@ const CartTableHeadingsArray = [
   "title",
   "size",
   "quantity",
-  "price per item",
+  "price",
   "remove"
 ];
 
