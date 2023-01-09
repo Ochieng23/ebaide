@@ -1545,7 +1545,9 @@ td{
   text-align: justify;
   font-size: 1.2em;
 }
-
+td:last-child{
+  
+}
 .cart-display-image {
   height:auto;
   width: 2.8vw;
