@@ -1546,7 +1546,8 @@ header .logo{
 
 } */
 .display-item-heading:nth-child(2){
-  margin-right: 4em;
+  margin-right: 12em;
+  background-color: blue;
 }
 .display-item-heading:nth-child(3){
   margin-right: 2.4em;
