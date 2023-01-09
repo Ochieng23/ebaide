@@ -1555,9 +1555,9 @@ header .logo{
   display: grid;
   grid-template-columns: 16% 16% 16% 16% 16% 16% ;
 }
-/* .cart-display-item-row{
+.cart-display-item-row{
   border-bottom: .1em solid #222;
-} */
+}
 .cart-items-second-last-column{
   margin-right: -13.4em;
   text-align: center;
