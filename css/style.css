@@ -1551,3 +1551,6 @@ header .logo{
   width: 1.6vw;
   display: block;
 }
+.display-item-title{
+  display: block;
+}
