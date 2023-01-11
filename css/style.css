@@ -1641,7 +1641,8 @@ tfoot > tr > td{
 .address-form{
 
 }
-.input-div{
+.input-div > label{
+  font-size: 1.6em !important;
   display: flex;
   flex-direction: column;
   background-color: #F28500;
