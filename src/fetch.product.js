@@ -147,8 +147,8 @@ const PullProductsFromBackendAPI = () => {
           if (isProductInCart === undefined){
             buyNowBtn.innerHTML = "Buy Now";
           };
-          console.log (isProductInCart);
-          buyNowBtn.innerHTML = "Go to Cart";
+          
+          //buyNowBtn.innerHTML = "Go to Cart";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
           AddAttributeToElement(buyNowBtn, "type", "button");
