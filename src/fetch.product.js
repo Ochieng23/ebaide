@@ -144,7 +144,7 @@ const PullProductsFromBackendAPI = () => {
           const isProductInCart = productInCart.find( (product) => {
             return product.id === id;
           })
-          console.log (isProductInCart);
+          if (isProductInCart){};
           buyNowBtn.innerHTML = "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
