@@ -280,7 +280,7 @@ const UserAddress = () => {
   const addressDiv = CreateNewHTMLElement("div");
   AddClass (addressDiv, "input-div");
   const deliveryAddressLabel = CreateNewHTMLElement("label");
-  deliveryAddressLabel.innerHTML = "Delivery Address *";
+  deliveryAddressLabel.innerHTML =` <span>Delivery address *</span>`;
   const deliveryAddress = CreateNewHTMLElement("textarea");
   AddAttributeToElement (
     deliveryAddress,
