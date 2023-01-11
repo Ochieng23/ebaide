@@ -288,6 +288,8 @@ const UserAddress = () => {
       location_address: deliveryAddress.value,
     };
     
+    //Getting Stored order information:
+    
   });
 
 };
