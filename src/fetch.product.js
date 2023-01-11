@@ -424,7 +424,7 @@ const PullProductsFromBackendAPI = () => {
                 });
                 return;
               }
-              C
+              ClearContent(FindSingleElement, "#package");
               PullProductsFromBackendAPI ();
               window.location.reload();
               setTimeout(() => {
