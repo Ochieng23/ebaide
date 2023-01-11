@@ -262,7 +262,7 @@ const UserAddress = () => {
   );
 
   const phoneDiv = CreateNewHTMLElement("div");
-  AddClass (lnameDiv, "input-div");
+  AddClass (phoneDiv, "input-div");
   const labelPhone = CreateNewHTMLElement("label");
   labelPhone.innerHTML = "Phone Number *";
   const inputPhone = CreateNewHTMLElement("input");
