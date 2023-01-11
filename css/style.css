@@ -1647,7 +1647,7 @@ tfoot > tr > td{
 }
 .form-container{
   box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.18);
-  width: 45%;
+  width: 45vw;
   border-radius: .4em;
   padding: .8em 1.6em;
 }
