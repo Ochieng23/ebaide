@@ -1499,7 +1499,6 @@ header .logo{
   align-items: center;
   margin: 0 .1%;
 }
-
 .cart-container > span {
   font-size: 3.6em;
   display: block;
@@ -1511,8 +1510,6 @@ header .logo{
 .cartButtomCollection {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
   margin-top: .8%;
   background-color: #333;
   /* margin-right: -61.2em !important; */
