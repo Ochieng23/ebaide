@@ -187,7 +187,7 @@ const Cart = () => {
     AddClass(goBackToGoProductButton, "go-back-to-product");
     goBackToGoProductButton.textContent = "Go back to product";
     AppendChildToDynamicElement(cartButtomCollection, goBackToGoProductButton);
-
+    if (cartItems.length > 0){};
     AddClass(payButton, "pay-button");
     AppendChildToDynamicElement(cartButtomCollection, payButton);
     AppendChildToDynamicElement(cartDiv, cartButtomCollection);
