@@ -173,7 +173,7 @@ const PullProductsFromBackendAPI = () => {
           return;
         };
 
-          productCollection.item(i).addEventListener("click", () => {
+        item.addEventListener("click", () => {
             const productid = productCollection.item(i).parentElement
               .parentElement.id;
   
