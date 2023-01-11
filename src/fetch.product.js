@@ -169,9 +169,8 @@ const PullProductsFromBackendAPI = () => {
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map ((item) => {
         if (item.innerHTML === "Go to cart") {
-          item.addEventListener ("click", () =>{
-
-          });
+          item.addEventListener ("click", Cart);
+          return;
         };
       });
 
