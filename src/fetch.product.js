@@ -147,13 +147,7 @@ const PullProductsFromBackendAPI = () => {
             }else{
               buyNowBtn.innerHTML = "Buy Now";
             }
-          })
-          if (isProductInCart === undefined){
-          };
-
-          if(isProductInCart !== undefined){
-            
-          };
+          });
 
           if (
             buyNowBtn.innerHTML = "Go to Cart"
