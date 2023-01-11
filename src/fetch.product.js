@@ -137,11 +137,7 @@ const PullProductsFromBackendAPI = () => {
             productPriceEstimate
           );
           AppendChildToParentElementUsingElement(productContent, productPrice);
-          
-          const productInCart = JSON.parse(
-            localStorage.getItem ("cart-items") || "[]"
-          );
-          buyNowBtn.innerHTML === "Go to Cart"
+          buyNowBtn.innerHTML === "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
           AddAttributeToElement(buyNowBtn, "type", "button");
