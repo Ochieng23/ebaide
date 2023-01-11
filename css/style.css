@@ -1656,7 +1656,7 @@ tfoot > tr > td{
 .input-div > label > input{
   display: block;
   box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.126) !important;
-  height: 12vh !important;
+  height: 7vh !important;
   padding: 4%;
   border-radius: .4em !important;
 }
