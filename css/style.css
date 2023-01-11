@@ -1512,7 +1512,7 @@ header .logo{
   flex-direction: row;
   align-items: center;
   margin-top: .8%;
-  margin-right: -61.2em !important;
+  /* margin-right: -61.2em !important; */
 }
 .cartButtomCollection > button {
   display: block;
