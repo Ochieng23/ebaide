@@ -212,7 +212,7 @@ const UserAddress = () => {
   const fnameDiv = CreateNewHTMLElement("div");
   AddClass (fnameDiv, "input-div");
   const labelFName = CreateNewHTMLElement("label");
-  labelFName.innerHTML = "First Name *";
+  labelFName.innerHTML =` <span>First Name *</span>`;
   const inputFName = CreateNewHTMLElement("input");
   AddAttributeToElement (
     inputFName,
