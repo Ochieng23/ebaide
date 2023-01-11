@@ -424,6 +424,7 @@ const PullProductsFromBackendAPI = () => {
                 });
                 return;
               }
+              C
               PullProductsFromBackendAPI ();
               window.location.reload();
               setTimeout(() => {
