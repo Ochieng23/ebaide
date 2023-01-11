@@ -166,6 +166,8 @@ const PullProductsFromBackendAPI = () => {
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
       );
+
+      
       for (let i = 0; i < productCollection.length; i++) {
         productCollection.item(i).addEventListener("click", () => {
           const productid = productCollection.item(i).parentElement
