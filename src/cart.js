@@ -277,6 +277,9 @@ const UserAddress = () => {
   AppendChildToDynamicElement(addressContainer, formContainer);
   AddClass(addressContainer, "address-container");
   AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
+
+  //Address details:
+
 };
 
 FindSingleElement(".cart").addEventListener("click", Cart);
