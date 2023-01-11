@@ -137,7 +137,7 @@ const PullProductsFromBackendAPI = () => {
             productPriceEstimate
           );
           AppendChildToParentElementUsingElement(productContent, productPrice);
-          buyNowBtn.innerHTML === "Buy Now";
+          buyNowBtn.innerHTML = "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
           AddAttributeToElement(buyNowBtn, "type", "button");
@@ -454,6 +454,13 @@ const PullProductsFromBackendAPI = () => {
       console.error(err);
     });
 };
+
+const productInCart = JSON.parse(
+  localStorage.getItem ("cart-items") || "[]"
+);
+
+FindSingleElement
+
 
 PullProductsFromBackendAPI();
 
