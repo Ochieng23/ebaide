@@ -279,6 +279,9 @@ const UserAddress = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
 
   //Address details:
+  form.addEventListener("submit", ()=> {
+
+  });
 
 };
 
