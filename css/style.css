@@ -1547,6 +1547,9 @@ header .logo{
   align-items: center;
   width: 35% !important;
 }
+.btn-specific{
+  width: 35% !important;
+}
 .btn-cart-icon:hover{
   background-color: rgb(3, 155, 215);
   color: #fff;
