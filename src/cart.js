@@ -292,6 +292,7 @@ const UserAddress = () => {
     let order = JSON.parse(
       sessionStorage.getItem ("order-items")
     );
+     order = [...order, ...addresObject];
     console.log (order);
   });
 
