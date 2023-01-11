@@ -279,6 +279,7 @@ const UserAddress = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
 
   //Address details:
+  let addressDetails = [];
   form.addEventListener("submit", ()=> {
 
   });
