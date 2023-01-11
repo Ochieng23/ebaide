@@ -10,7 +10,7 @@ const ClearContent = (cb, identifer) => {
   element.innerHTML = "";
 };
 
-const RemoveElement = (element) => {
+const RemoveElement = element => {
   element.remove();
 };
 
@@ -37,10 +37,7 @@ xButton.innerHTML = "&#10005;";
 const ErrorMessage = (cb1, cb2, tag, parentElement, message) => {
   const element = cb1(tag);
   AddClass(element, "cart-error-message");
-  AddAttributeToElement(element, 
-    "id",
-    "errorMessage"
-    );
+  AddAttributeToElement(element, "id", "errorMessage");
   element.innerHTML = `
   <span class="closs-error-message-btn" id="closeErrorBtn">${xButton.innerHTML}</span>
    <span class="error-text">${message}</span>`;
@@ -176,10 +173,10 @@ const Cart = () => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    if (cartItems.length > 0){
-    DisplayCartItems(cartItems);
-    AppendChildToDynamicElement(cartDiv, displayTable);
-    };
+    if (cartItems.length > 0) {
+      DisplayCartItems(cartItems);
+      AppendChildToDynamicElement(cartDiv, displayTable);
+    }
     const cartButtomCollection = CreateNewHTMLElement("div");
     AddClass(cartButtomCollection, "cartButtomCollection");
     const goBackToGoProductButton = CreateNewHTMLElement("button");
@@ -187,9 +184,11 @@ const Cart = () => {
     AddClass(goBackToGoProductButton, "go-back-to-product");
     goBackToGoProductButton.textContent = "Go back to product";
     AppendChildToDynamicElement(cartButtomCollection, goBackToGoProductButton);
-    if (cartItems.length > 0){
-
-    };
+    if (cartItems.length > 0) {
+      AddClass(payButton, "pay-button");
+      AppendChildToDynamicElement(cartButtomCollection, payButton);
+      AppendChildToDynamicElement(cartDiv, cartButtomCollection);
+    }
 
     goBackToGoProductButton.addEventListener("click", e => {
       e.preventDefault();
@@ -206,120 +205,64 @@ const Cart = () => {
 };
 
 const UserAddress = () => {
-  const formContainer = CreateNewHTMLElement ("div");
+  const formContainer = CreateNewHTMLElement("div");
   AddClass(formContainer, "form-container");
   const form = CreateNewHTMLElement("form");
-  AddClass (form, "address-form");
+  AddClass(form, "address-form");
   const fnameDiv = CreateNewHTMLElement("div");
-  AddClass (fnameDiv, "input-div");
+  AddClass(fnameDiv, "input-div");
   const labelFName = CreateNewHTMLElement("label");
-  labelFName.innerHTML =` <span>First Name *</span>`;
+  labelFName.innerHTML = ` <span>First Name *</span>`;
   const inputFName = CreateNewHTMLElement("input");
-  AddAttributeToElement (
-    inputFName,
-    "required",
-    true
-  );
-  AddAttributeToElement (
-    inputFName,
-    "maxlength",
-    "26"
-  );
-  AddAttributeToElement (
-    inputFName,
-    "minlength",
-    "2"
-  );
-  AddAttributeToElement (
-    inputFName,
-    "type",
-    "text"
-  );
+  AddAttributeToElement(inputFName, "required", true);
+  AddAttributeToElement(inputFName, "maxlength", "26");
+  AddAttributeToElement(inputFName, "minlength", "2");
+  AddAttributeToElement(inputFName, "type", "text");
 
   const lnameDiv = CreateNewHTMLElement("div");
-  AddClass (lnameDiv, "input-div");
+  AddClass(lnameDiv, "input-div");
   const labelLName = CreateNewHTMLElement("label");
-  labelLName.innerHTML =` <span>Last Name *</span>`;
+  labelLName.innerHTML = ` <span>Last Name *</span>`;
   const inputLName = CreateNewHTMLElement("input");
-  AddAttributeToElement (
-    inputLName,
-    "required",
-    true
-  );
-  AddAttributeToElement (
-    inputLName,
-    "maxlength",
-    "26"
-  );
-  AddAttributeToElement (
-    inputLName,
-    "minlength",
-    "2"
-  );
-  AddAttributeToElement (
-    inputLName,
-    "type",
-    "text"
-  );
+  AddAttributeToElement(inputLName, "required", true);
+  AddAttributeToElement(inputLName, "maxlength", "26");
+  AddAttributeToElement(inputLName, "minlength", "2");
+  AddAttributeToElement(inputLName, "type", "text");
 
   const phoneDiv = CreateNewHTMLElement("div");
-  AddClass (phoneDiv, "input-div");
+  AddClass(phoneDiv, "input-div");
   const labelPhone = CreateNewHTMLElement("label");
   labelPhone.innerHTML = ` <span>Phone number *</span>`;
   const inputPhone = CreateNewHTMLElement("input");
-  AddAttributeToElement (
-    inputPhone,
-    "type",
-    "tel"
-  );
-  AddAttributeToElement (
-    inputPhone,
-    "required",
-    true
-  );
+  AddAttributeToElement(inputPhone, "type", "tel");
+  AddAttributeToElement(inputPhone, "required", true);
 
   const addressDiv = CreateNewHTMLElement("div");
-  AddClass (addressDiv, "input-div");
+  AddClass(addressDiv, "input-div");
   const deliveryAddressLabel = CreateNewHTMLElement("label");
-  deliveryAddressLabel.innerHTML =` <span>Delivery address *</span>`;
+  deliveryAddressLabel.innerHTML = ` <span>Delivery address *</span>`;
   const deliveryAddress = CreateNewHTMLElement("textarea");
-  AddAttributeToElement (
-    deliveryAddress,
-    "col",
-    "5"
-  );
-  AddAttributeToElement (
-    deliveryAddress,
-    "row",
-    "3"
-  );
-  AddAttributeToElement (
-    deliveryAddress,
-    "required",
-    true
-  );
+  AddAttributeToElement(deliveryAddress, "col", "5");
+  AddAttributeToElement(deliveryAddress, "row", "3");
+  AddAttributeToElement(deliveryAddress, "required", true);
 
   const saveAddressBtnDiv = CreateNewHTMLElement("div");
   const saveAddressBtn = CreateNewHTMLElement("button");
-  AddClass (saveAddressBtn, "save-address");
+  AddClass(saveAddressBtn, "save-address");
   saveAddressBtn.innerHTML = "Save Address";
 
-  AddAttributeToElement (
-    saveAddressBtn,
-    "type",
-    "submit"
-  );
+  AddAttributeToElement(saveAddressBtn, "type", "submit");
 
-  AppendChildToDynamicElement (labelFName, inputFName);
-  AppendChildToDynamicElement (labelLName, inputLName);
-  AppendChildToDynamicElement (labelPhone, inputPhone);
-  AppendChildToDynamicElement (deliveryAddressLabel, deliveryAddress);
+  AppendChildToDynamicElement(labelFName, inputFName);
+  AppendChildToDynamicElement(labelLName, inputLName);
+  AppendChildToDynamicElement(labelPhone, inputPhone);
+  AppendChildToDynamicElement(deliveryAddressLabel, deliveryAddress);
 
-  AppendChildToDynamicElement (fnameDiv, labelFName);
-  AppendChildToDynamicElement (lnameDiv, labelLName);
-  AppendChildToDynamicElement (phoneDiv, labelPhone);
-  AppendChildToDynamicElement (addressDiv, deliveryAddressLabel);
-  AppendChildToDynamicElement (saveAddressBtnDiv, saveAddressBtn);
+  AppendChildToDynamicElement(fnameDiv, labelFName);
+  AppendChildToDynamicElement(lnameDiv, labelLName);
+  AppendChildToDynamicElement(phoneDiv, labelPhone);
+  AppendChildToDynamicElement(addressDiv, deliveryAddressLabel);
+  AppendChildToDynamicElement(saveAddressBtnDiv, saveAddressBtn);
 
   AppendChildToDynamicElement(form, fnameDiv);
   AppendChildToDynamicElement(form, lnameDiv);
@@ -327,29 +270,18 @@ const UserAddress = () => {
   AppendChildToDynamicElement(form, addressDiv);
   AppendChildToDynamicElement(form, saveAddressBtnDiv);
 
-
-
-  AppendChildToDynamicElement (formContainer, form);
-  AppendChildToDynamicElement (addressContainer, formContainer);
-  AddClass(addressContainer, 'address-container');
-  AppendHTMLChildToStaticElement (
-    "#body",
-    FindSingleElement,
-    addressContainer
-  );
+  AppendChildToDynamicElement(formContainer, form);
+  AppendChildToDynamicElement(addressContainer, formContainer);
+  AddClass(addressContainer, "address-container");
+  AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
 };
-
 
 FindSingleElement(".cart").addEventListener("click", Cart);
 payButton.addEventListener("click", () => {
   if (payButton.innerHTML === "Pay 0") {
-    if (
-      cartDiv.children.length > 3
-    ){
-      RemoveElement (
-        FindSingleElement ("#errorMessage")
-      );
-    };
+    if (cartDiv.children.length > 3) {
+      RemoveElement(FindSingleElement("#errorMessage"));
+    }
     ErrorMessage(
       CreateNewHTMLElement,
       AppendChildToDynamicElement,
@@ -359,22 +291,17 @@ payButton.addEventListener("click", () => {
     );
     const errorPara = cartDiv.children.errorMessage;
     const closeErrorMessageBtn = errorPara.children.closeErrorBtn;
-    closeErrorMessageBtn.addEventListener("click", (e) => {
-      e.preventDefault ();
-      RemoveElement (
-        FindSingleElement ('#errorMessage')
-      );
+    closeErrorMessageBtn.addEventListener("click", e => {
+      e.preventDefault();
+      RemoveElement(FindSingleElement("#errorMessage"));
     });
     return;
   }
   let checkOutArray = [];
   const itemsArray = JSON.parse(localStorage.getItem("cart-items"));
-  checkOutArray = [...itemsArray, {amount: cartTotal}];
-  sessionStorage.setItem (
-    "order-items", JSON.stringify(checkOutArray)
-  );
+  checkOutArray = [...itemsArray, { amount: cartTotal }];
+  sessionStorage.setItem("order-items", JSON.stringify(checkOutArray));
 
-  ClearContent (FindSingleElement, "#body");
-  UserAddress ();
-
+  ClearContent(FindSingleElement, "#body");
+  UserAddress();
 });
