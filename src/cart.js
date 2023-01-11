@@ -188,7 +188,7 @@ const Cart = () => {
       AddClass(payButton, "pay-button");
       AppendChildToDynamicElement(cartButtomCollection, payButton);
     }
-
+    AppendChildToDynamicElement(cartDiv, cartButtomCollection);
     goBackToGoProductButton.addEventListener("click", e => {
       e.preventDefault();
       window.location.href = "index.html#packages";
