@@ -1633,6 +1633,7 @@ tfoot > tr > td{
   align-items: center !important;
 }
 .form-container{
-  box-shadow: .1em .1em .2em .3em #222;
+  box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.021);
   width: 40%;
+  border-radius: .4em;
 }
