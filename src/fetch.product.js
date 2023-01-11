@@ -153,10 +153,16 @@ const PullProductsFromBackendAPI = () => {
         }
       );
 
+      const productInCart = JSON.parse(
+        localStorage.getItem ("cart-items") || "[]"
+      );
+      let divs = productInCart.map((item) => {
+        return item.id;
+      });
 
       console.log (document.getElementById ("prod2538"));
 
-      
+
       //HANDING VIEWING SINGLE PRODUCT:
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
