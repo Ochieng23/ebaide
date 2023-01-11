@@ -208,6 +208,7 @@ const UserAddress = () => {
   const formContainer = CreateNewHTMLElement ("div");
   AddClass(formContainer, "form-container");
   const form = CreateNewHTMLElement("form");
+  AddClass (form, "address-form");
   const fnameDiv = CreateNewHTMLElement("div");
   const labelFName = CreateNewHTMLElement("label");
   labelFName.innerHTML = "First Name *";
