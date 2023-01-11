@@ -1649,7 +1649,6 @@ tfoot > tr > td{
   font-weight: 200;
   display: flex;
   flex-direction: column;
-  background-color: #F28500;
 }
 .input-div > label > span{
   display: block;
