@@ -459,7 +459,7 @@ const productInCart = JSON.parse(
   localStorage.getItem ("cart-items") || "[]"
 );
 
-FindSingleElement(".view-product");
+const productCTAs = GetSelectedElementsWithClassName(".view-product");
 
 
 PullProductsFromBackendAPI();
