@@ -1671,4 +1671,5 @@ tfoot > tr > td{
   display: block;
   background-color: #F28500;
   width: 100% !important;
+  height: 7vh !important;
 }
