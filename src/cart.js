@@ -206,6 +206,7 @@ const Cart = e => {
 
 const UserAddress = () => {
   const formContainer = CreateNewHTMLElement ("div");
+  AddClass(formContainer, "form-container");
   const form = CreateNewHTMLElement("form");
   const fnameDiv = CreateNewHTMLElement("div");
   const labelFName = CreateNewHTMLElement("label");
