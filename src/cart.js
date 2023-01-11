@@ -175,10 +175,10 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
-    if (cartItems.length > 0)
+    if (cartItems.length > 0){
     DisplayCartItems(cartItems);
     AppendChildToDynamicElement(cartDiv, displayTable);
-
+    };
     const cartButtomCollection = CreateNewHTMLElement("div");
     AddClass(cartButtomCollection, "cartButtomCollection");
     const goBackToGoProductButton = CreateNewHTMLElement("button");
