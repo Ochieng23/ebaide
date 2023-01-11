@@ -1511,11 +1511,9 @@ header .logo{
   display: flex;
   flex-direction: row;
   margin-top: .8%;
-  background-color: #333;
   width: 80% !important;
   justify-content: flex-end;
   align-items: center;
-  /* margin-right: -61.2em !important; */
 }
 .cartButtomCollection > button {
   display: block;
