@@ -159,7 +159,7 @@ const PullProductsFromBackendAPI = () => {
       productInCart.map((item) => {
         const prod = document.getElementById (`${item.id}`);
         const updateBtn = prod.children[1].children[3];
-        updateBtn
+        updateBtn.innerHTML = " Go to cart";
       });
 
       //console.log (divs);
