@@ -142,7 +142,7 @@ const PullProductsFromBackendAPI = () => {
             localStorage.getItem ("cart-items") || "[]"
           );
           const isProductInCart = productInCart.find( (product) => {
-            product.id === product
+            return product.id === id;
           })
           buyNowBtn.innerHTML = "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
