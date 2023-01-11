@@ -141,22 +141,7 @@ const PullProductsFromBackendAPI = () => {
           const productInCart = JSON.parse(
             localStorage.getItem ("cart-items") || "[]"
           );
-          //console.log (productInCart)
-          productInCart.map( (product) => {
-            if (product.id !== id){
-              buyNowBtn.innerHTML = "Buy Now";
-            }else{
-              buyNowBtn.innerHTML = "Go to Cart";
-              console.log (product, id)
-            }
-          });
-
-          if (
-            buyNowBtn.innerHTML === "Go to Cart"
-          ){
-            console.log("I am ready to purchase");
-          };
-
+          buyNowBtn.innerHTML === "Go to Cart"
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
           AddAttributeToElement(buyNowBtn, "type", "button");
