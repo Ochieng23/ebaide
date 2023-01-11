@@ -1648,10 +1648,10 @@ tfoot > tr > td{
   flex-direction: column;
   background-color: #F28500;
 }
-.input-div > span{
+.input-div > label > span{
   display: block;
 }
-.input-div > input{
+.input-div > label > input{
   display: block;
   box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.877) !important;
   background-color: blue !important;
