@@ -189,7 +189,7 @@ const Cart = () => {
       AppendChildToDynamicElement(cartButtomCollection, payButton);
     }
     if(cartButtomCollection.children.length < 2){
-      
+      AddClass (cartButtomCollection, "single-button-state");
     };
     AppendChildToDynamicElement(cartDiv, cartButtomCollection);
     goBackToGoProductButton.addEventListener("click", e => {
