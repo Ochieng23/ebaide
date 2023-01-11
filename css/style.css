@@ -1668,5 +1668,7 @@ tfoot > tr > td{
   border-radius: .4em !important;
 }
 .save-address{
+  display: block;
   background-color: #F28500;
+  width: 100% !important;
 }
