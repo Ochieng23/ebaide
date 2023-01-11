@@ -127,7 +127,7 @@ const DisplayCartItems = cartItemsArray => {
 
       const updatedList = storedItems.filter(item => item.id !== itemID);
       localStorage.setItem("cart-items", JSON.stringify(updatedList));
-      ClearContent(FindSingleElement, "#table");
+      ClearContent(FindSingleElement, ".cart-container");
       DisplayCartItems(updatedList);
     });
 
