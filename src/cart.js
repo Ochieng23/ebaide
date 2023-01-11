@@ -199,7 +199,9 @@ const Cart = () => {
       if (
         window.location.href === "https://goebaide.com/index.html#packages"
       ) {
-        window.location.reload();
+        setTimeout (
+        window.location.reload(),1500
+        );
       }
     });
 
