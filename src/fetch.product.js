@@ -75,15 +75,10 @@ const PullProductsFromBackendAPI = () => {
       }
       data.data.map(
         ({
-          color,
-          description,
           id,
           image,
           price,
-          quantity,
-          size,
           title,
-          variation_id
         }) => {
           const divProductBox = CreateNewElement("div");
           const productImage = CreateNewElement("img");
@@ -146,7 +141,9 @@ const PullProductsFromBackendAPI = () => {
           const productInCart = JSON.parse(
             localStorage.getItem ("cart-items") || "[]"
           );
-          const isProductInCart = productInCart.find()
+          const isProductInCart = productInCart.find( (product) => {
+            product.id === product
+          })
           buyNowBtn.innerHTML = "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
