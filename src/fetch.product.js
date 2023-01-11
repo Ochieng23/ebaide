@@ -142,14 +142,16 @@ const PullProductsFromBackendAPI = () => {
             localStorage.getItem ("cart-items") || "[]"
           );
           productInCart.map( (product) => {
-            if (product.id === id){};
+            if (product.id === id){
+              buyNowBtn.innerHTML = "Go to Cart";
+            };
           })
           if (isProductInCart === undefined){
             buyNowBtn.innerHTML = "Buy Now";
           };
 
           if(isProductInCart !== undefined){
-            buyNowBtn.innerHTML = "Go to Cart"
+            
           };
 
           if (
