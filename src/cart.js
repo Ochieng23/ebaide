@@ -175,6 +175,7 @@ const Cart = e => {
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
     }
 
+    
     DisplayCartItems(cartItems);
     AppendChildToDynamicElement(cartDiv, displayTable);
 
