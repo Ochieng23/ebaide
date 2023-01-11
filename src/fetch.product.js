@@ -157,10 +157,10 @@ const PullProductsFromBackendAPI = () => {
         localStorage.getItem ("cart-items") || "[]"
       );
       let divs = productInCart.map((item) => {
-        return item.id;
+        return document.getElementById (`${item.id}`);
       });
 
-      console.log (document.getElementById ("prod2538"));
+      console.log ();
 
 
       //HANDING VIEWING SINGLE PRODUCT:
