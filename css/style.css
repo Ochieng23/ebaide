@@ -1513,6 +1513,7 @@ header .logo{
   margin-top: .8%;
   background-color: #333;
   width: 80% !important;
+  justify-content: flex-end;
   /* margin-right: -61.2em !important; */
 }
 .cartButtomCollection > button {
