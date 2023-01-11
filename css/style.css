@@ -1675,4 +1675,5 @@ tfoot > tr > td{
   box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.126) !important;
   border-radius: .4em !important;
   font-size: 1.6em !important;
+  color: #fff;
 }
