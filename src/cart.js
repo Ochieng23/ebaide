@@ -323,7 +323,7 @@ payButton.addEventListener("click", () => {
   }
   let checkOutArray = [];
   const itemsArray = JSON.parse(localStorage.getItem("cart-items"));
-  checkOutArray = [...itemsArray, { amount: cartTotal }];
+  checkOutArray = [{order_details: itemsArray}, { amount: cartTotal }];
   sessionStorage.setItem("order-items", JSON.stringify(checkOutArray));
 
   ClearContent(FindSingleElement, "#body");
