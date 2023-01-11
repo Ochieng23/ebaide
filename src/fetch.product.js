@@ -458,9 +458,11 @@ const PullProductsFromBackendAPI = () => {
 const productInCart = JSON.parse(
   localStorage.getItem ("cart-items") || "[]"
 );
-productInCart.map((item) => {});
-const productCTAs = GetSelectedElementsWithClassName(".view-product");
-
+let divs = productInCart.map((item) => {
+  return FindSingleElement (`#${item.id}`);
+});
+//const productCTAs = GetSelectedElementsWithClassName(".view-product");
+console.log (divs);
 
 PullProductsFromBackendAPI();
 
