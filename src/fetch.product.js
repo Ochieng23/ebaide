@@ -171,7 +171,8 @@ const PullProductsFromBackendAPI = () => {
         if (item.innerHTML === "Go to cart") {
           item.addEventListener ("click", Cart);
           return;
-        }
+        };
+        
 
       });
 
