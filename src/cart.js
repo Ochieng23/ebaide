@@ -188,6 +188,7 @@ const Cart = () => {
       AddClass(payButton, "pay-button");
       AppendChildToDynamicElement(cartButtomCollection, payButton);
     }
+    console.log(cartButtomCollection.children.length);
     AppendChildToDynamicElement(cartDiv, cartButtomCollection);
     goBackToGoProductButton.addEventListener("click", e => {
       e.preventDefault();
