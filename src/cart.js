@@ -128,6 +128,7 @@ const DisplayCartItems = cartItemsArray => {
       const updatedList = storedItems.filter(item => item.id !== itemID);
       localStorage.setItem("cart-items", JSON.stringify(updatedList));
       ClearContent(FindSingleElement, ".cart-container");
+      Cart()
       DisplayCartItems(updatedList);
     });
 
@@ -161,8 +162,8 @@ const DisplayCartItems = cartItemsArray => {
   cartTotal += sum;
 };
 
-const Cart = e => {
-  e.preventDefault();
+const Cart = () => {
+  //e.preventDefault();
   ClearContent(FindSingleElement, "#body");
   setTimeout(() => {
     AddClass(cartDiv, "cart-container");
