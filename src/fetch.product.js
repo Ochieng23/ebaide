@@ -459,7 +459,7 @@ const productInCart = JSON.parse(
   localStorage.getItem ("cart-items") || "[]"
 );
 let divs = productInCart.map((item) => {
-  return FindSingleElement (`#${item.id}`);
+  return GetSelectedElementWithClassName (`#${item.id}`);
 });
 //const productCTAs = GetSelectedElementsWithClassName(".view-product");
 console.log (divs);
