@@ -360,13 +360,14 @@ const PullProductsFromBackendAPI = () => {
               const pickedItem = data.data.filter(
                 item => item.id === idOfItemAddToCart
               );
-              const { id, title, image } = pickedItem[0];
+              const { id, title, image, price } = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
               const cartArrayItem = {
                 id,
                 title,
                 image,
+                price,
                 itemSize,
                 itemQuantityToBuy
               };

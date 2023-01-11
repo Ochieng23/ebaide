@@ -1,2 +1,6 @@
 #Ignore node modules
 node_modules
+
+
+#Deployment files
+*.zip
