@@ -145,9 +145,9 @@ const PullProductsFromBackendAPI = () => {
           productInCart.map( (product) => {
             if (product.id !== id){
               buyNowBtn.innerHTML = "Buy Now";
-              console.log (product, id)
             }else{
               buyNowBtn.innerHTML = "Go to Cart";
+              console.log (product, id)
             }
           });
 
