@@ -166,7 +166,7 @@ const PullProductsFromBackendAPI = () => {
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
       );
-      const productCollectionArray = array.from(productCollection);
+      const productCollectionArray = Array.from(productCollection);
       console.log (productCollectionArray);
 
       for (let i = 0; i < productCollection.length; i++) {
