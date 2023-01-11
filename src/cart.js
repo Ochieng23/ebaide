@@ -285,8 +285,8 @@ const UserAddress = () => {
       firstname: inputFName.value,
       lastname: inputLName.value,
       phonenumber: inputPhone.value,
-      location_address: 
-    }
+      location_address: deliveryAddress.value,
+    };
   });
 
 };
