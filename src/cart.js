@@ -200,7 +200,10 @@ const Cart = () => {
         window.location.href === "https://goebaide.com/index.html#packages"
       ) {
         window.location.reload()
-
+        setTimeout (
+          window.location.href = "https://goebaide.com/index.html#packages",
+          1500
+        );
       };
     });
 
