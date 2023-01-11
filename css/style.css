@@ -1672,4 +1672,5 @@ tfoot > tr > td{
   background-color: #F28500;
   width: 100% !important;
   height: 7vh !important;
+  box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.126) !important;
 }
