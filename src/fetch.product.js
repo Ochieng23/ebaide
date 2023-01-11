@@ -152,7 +152,11 @@ const PullProductsFromBackendAPI = () => {
           );
         }
       );
+
+
       console.log (document.getElementById ("prod2538"));
+
+      
       //HANDING VIEWING SINGLE PRODUCT:
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
