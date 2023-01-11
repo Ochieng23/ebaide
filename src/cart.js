@@ -289,7 +289,7 @@ const UserAddress = () => {
     };
     
     //Getting Stored order information:
-    
+    sessionStorage.getItem ("order-details");
   });
 
 };
