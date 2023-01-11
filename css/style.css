@@ -1645,8 +1645,8 @@ tfoot > tr > td{
 
 }
 .input-div > span{
-
+  display: block;
 }
 .input-div > input{
-  
+  display: block;
 }
