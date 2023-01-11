@@ -141,8 +141,8 @@ const PullProductsFromBackendAPI = () => {
           const productInCart = JSON.parse(
             localStorage.getItem ("cart-items") || "[]"
           );
-          const isProductInCart = productInCart.find( (product) => {
-            return product.id === id;
+          productInCart.map( (product) => {
+            if (product.id === id){};
           })
           if (isProductInCart === undefined){
             buyNowBtn.innerHTML = "Buy Now";
