@@ -280,7 +280,8 @@ const UserAddress = () => {
 
   //Address details:
   let addressDetails = [];
-  form.addEventListener("submit", ()=> {
+  form.addEventListener("submit", (e)=> {
+    e.preventDefault();
     const addresObject = {
       firstname: inputFName.value,
       lastname: inputLName.value,
