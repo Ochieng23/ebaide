@@ -281,7 +281,9 @@ const UserAddress = () => {
   //Address details:
   let addressDetails = [];
   form.addEventListener("submit", ()=> {
-
+    const addresObject = {
+      
+    }
   });
 
 };
