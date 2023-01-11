@@ -1653,4 +1653,5 @@ tfoot > tr > td{
 }
 .input-div > input{
   display: block;
+  box-shadow: ;
 }
