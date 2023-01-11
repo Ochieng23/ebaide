@@ -206,7 +206,7 @@ const Cart = () => {
     AppendHTMLChildToStaticElement("#body", FindSingleElement, cartDiv);
   }, 1500);
 };
-let addressDetails = [];
+
 const UserAddress = () => {
   const formContainer = CreateNewHTMLElement("div");
   AddClass(formContainer, "form-container");
