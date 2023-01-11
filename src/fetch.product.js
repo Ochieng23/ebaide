@@ -169,7 +169,9 @@ const PullProductsFromBackendAPI = () => {
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map ((item) => {
         if (item.innerHTML === "Go to cart") {
-          console.log ("I am ready for cart");
+          item.addEventListener ("click", () =>{
+
+          });
         };
       });
 
