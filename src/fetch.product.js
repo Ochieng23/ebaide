@@ -162,9 +162,6 @@ const PullProductsFromBackendAPI = () => {
         updateBtn.innerHTML = " Go to cart";
       });
 
-      //console.log (divs);
-
-
       //HANDING VIEWING SINGLE PRODUCT:
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
