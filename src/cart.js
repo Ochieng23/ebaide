@@ -282,9 +282,11 @@ const UserAddress = () => {
 FindSingleElement(".cart").addEventListener("click", Cart);
 payButton.addEventListener("click", () => {
   if (payButton.innerHTML === "Pay 0") {
-    if (cartDiv.children.length > 3) {
+    if (cartDiv.children.length > 2) {
+
       RemoveElement(FindSingleElement("#errorMessage"));
     }
+    console.log(cartDiv.children)
     ErrorMessage(
       CreateNewHTMLElement,
       AppendChildToDynamicElement,
