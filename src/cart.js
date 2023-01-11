@@ -282,7 +282,7 @@ const UserAddress = () => {
   let addressDetails = [];
   form.addEventListener("submit", ()=> {
     const addresObject = {
-      
+      firstname: inputFName.value,
     }
   });
 
