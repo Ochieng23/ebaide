@@ -144,7 +144,7 @@ const PullProductsFromBackendAPI = () => {
           AppendChildToParentElementUsingElement(productContent, productPrice);
           
           const productInCart = JSON.parse(
-            localStorage.getItem ()
+            localStorage.getItem () || "[]"
           );
           const isProductInCart = Array.find()
           buyNowBtn.innerHTML = "Buy Now";
