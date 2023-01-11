@@ -143,11 +143,11 @@ const PullProductsFromBackendAPI = () => {
           );
           //console.log (productInCart)
           productInCart.map( (product) => {
-            if (product.id === id){
-              buyNowBtn.innerHTML = "Go to Cart";
+            if (product.id !== id){
+              buyNowBtn.innerHTML = "Buy Now";
               console.log (product, id)
             }else{
-              buyNowBtn.innerHTML = "Buy Now";
+              buyNowBtn.innerHTML = "Go to Cart";
             }
           });
 
