@@ -316,7 +316,7 @@ const UserAddress = () => {
   AppendChildToDynamicElement (fnameDiv, labelFName);
   AppendChildToDynamicElement (lnameDiv, labelLName);
   AppendChildToDynamicElement (phoneDiv, labelPhone);
-  AppendChildToDynamicElement (addressDiv, deliveryAddress);
+  AppendChildToDynamicElement (addressDiv, deliveryAddressLabel);
   AppendChildToDynamicElement (saveAddressBtnDiv, saveAddressBtn);
 
   AppendChildToDynamicElement(form, fnameDiv);
