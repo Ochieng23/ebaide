@@ -458,7 +458,7 @@ const PullProductsFromBackendAPI = () => {
 const productInCart = JSON.parse(
   localStorage.getItem ("cart-items") || "[]"
 );
-
+productInCart.map((item) => {});
 const productCTAs = GetSelectedElementsWithClassName(".view-product");
 
 
