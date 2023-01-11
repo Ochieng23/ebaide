@@ -456,12 +456,6 @@ const PullProductsFromBackendAPI = () => {
     });
 };
 
-const productInCart = JSON.parse(
-  localStorage.getItem ("cart-items") || "[]"
-);
-let divs = productInCart.map((item) => {
-  return item.id;
-});
 //const productCTAs = GetSelectedElementsWithClassName(".view-product");
 console.log (divs);
 
