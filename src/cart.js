@@ -279,7 +279,6 @@ const UserAddress = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
 
   //Address details:
-  let addressDetails = [];
   form.addEventListener("submit", (e)=> {
     e.preventDefault();
     const addresObject = {
@@ -288,7 +287,7 @@ const UserAddress = () => {
       phonenumber: inputPhone.value,
       location_address: deliveryAddress.value,
     };
-    console.log(addresObject);
+    
   });
 
 };
