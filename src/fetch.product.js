@@ -142,7 +142,8 @@ const PullProductsFromBackendAPI = () => {
             productPriceEstimate
           );
           AppendChildToParentElementUsingElement(productContent, productPrice);
-
+          
+          const isProductInCart = Array.find()
           buyNowBtn.innerHTML = "Buy Now";
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
