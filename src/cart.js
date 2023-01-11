@@ -128,8 +128,8 @@ const DisplayCartItems = cartItemsArray => {
       const updatedList = storedItems.filter(item => item.id !== itemID);
       localStorage.setItem("cart-items", JSON.stringify(updatedList));
       ClearContent(FindSingleElement, ".cart-container");
-      Cart();
-      //DisplayCartItems(updatedList);
+      //Cart();
+      DisplayCartItems(updatedList);
     });
 
     AppendChildToDynamicElement(tableBody, itemsRow);
