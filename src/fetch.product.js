@@ -459,7 +459,7 @@ const productInCart = JSON.parse(
   localStorage.getItem ("cart-items") || "[]"
 );
 
-FindSingleElement
+FindSingleElement(".vi")
 
 
 PullProductsFromBackendAPI();
