@@ -168,7 +168,7 @@ const PullProductsFromBackendAPI = () => {
       );
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map ((item) => {
-        console.log(item.innerHTML)
+        if (item.innerHTML === "") {};
       });
 
       for (let i = 0; i < productCollection.length; i++) {
