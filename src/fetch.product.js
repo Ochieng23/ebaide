@@ -141,16 +141,18 @@ const PullProductsFromBackendAPI = () => {
           const productInCart = JSON.parse(
             localStorage.getItem ("cart-items") || "[]"
           );
+          //console.log (productInCart)
           productInCart.map( (product) => {
             if (product.id === id){
               buyNowBtn.innerHTML = "Go to Cart";
+              console.log (product, id)
             }else{
               buyNowBtn.innerHTML = "Buy Now";
             }
           });
 
           if (
-            buyNowBtn.innerHTML = "Go to Cart"
+            buyNowBtn.innerHTML === "Go to Cart"
           ){
             console.log("I am ready to purchase");
           };
