@@ -158,7 +158,7 @@ const PullProductsFromBackendAPI = () => {
       );
       productInCart.map((item) => {
         const prod = document.getElementById (`${item.id}`);
-        console.log (prod.children[1]);
+        console.log (prod.children[1].children[3]);
       });
 
       //console.log (divs);
