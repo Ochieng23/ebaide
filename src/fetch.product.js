@@ -160,7 +160,7 @@ const PullProductsFromBackendAPI = () => {
         return document.getElementById (`${item.id}`);
       });
 
-      console.log ();
+      console.log (divs);
 
 
       //HANDING VIEWING SINGLE PRODUCT:
@@ -465,10 +465,6 @@ const PullProductsFromBackendAPI = () => {
       console.error(err);
     });
 };
-
-//const productCTAs = GetSelectedElementsWithClassName(".view-product");
-console.log (divs);
-
 
 PullProductsFromBackendAPI();
 
