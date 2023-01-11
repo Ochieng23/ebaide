@@ -152,7 +152,9 @@ const PullProductsFromBackendAPI = () => {
             buyNowBtn.innerHTML = "Go to Cart"
           };
 
-          
+          if (
+            buyNowBtn.innerHTML = "Go to Cart"
+          )
           AddClassToNewElement(buyNowBtn, "view-product");
           AddClassToNewElement(buyNowBtn, "btn");
           AddAttributeToElement(buyNowBtn, "type", "button");
