@@ -264,7 +264,7 @@ const UserAddress = () => {
   const phoneDiv = CreateNewHTMLElement("div");
   AddClass (phoneDiv, "input-div");
   const labelPhone = CreateNewHTMLElement("label");
-  labelPhone.innerHTML = "Phone Number *";
+  labelPhone.innerHTML = ` <span>Phone number *</span>`;
   const inputPhone = CreateNewHTMLElement("input");
   AddAttributeToElement (
     inputPhone,
