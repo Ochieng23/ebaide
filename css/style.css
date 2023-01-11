@@ -697,7 +697,8 @@ header .search-bar-container label:hover{
     width:100%;
   }
 
-}@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
   --orange: #F28500;
@@ -1316,7 +1317,6 @@ header .search-bar-container label:hover{
     column-gap: 2.5%;
     row-gap: 1.2%;
     margin-bottom: 4%;
-    
   }
   
 }
@@ -1326,16 +1326,14 @@ header .search-bar-container label:hover{
   border: 2px solid black;
   padding: 20px;
   font-size: 1em;
+  
+  
+
 }
 .product-box{
   width: 100vw;
 }
-.product-description{
-  text-transform: lowercase;
-}
-.product-description::first-letter{
-  text-transform: uppercase;
-}
+
 .blogs-box {
   background-color: #fff;
   height: 100vh;
@@ -1411,10 +1409,6 @@ header .search-bar-container label:hover{
 header{
   
   width: 100vw;
-}
-.cart{
-  margin-right: 0em;
-  font-size: 3.3em;
 }
 
   #menu-bar{
