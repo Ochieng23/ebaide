@@ -424,6 +424,7 @@ const PullProductsFromBackendAPI = () => {
                 });
                 return;
               }
+              PullProductsFromBackendAPI ();
               window.location.reload();
               setTimeout(() => {
                 (window.location.href =
