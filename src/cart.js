@@ -236,6 +236,7 @@ const UserAddress = () => {
   );
 
   const lnameDiv = CreateNewHTMLElement("div");
+  AddClass (lnameDiv, "input-div");
   const labelLName = CreateNewHTMLElement("label");
   labelLName.innerHTML = "Last Name *";
   const inputLName = CreateNewHTMLElement("input");
