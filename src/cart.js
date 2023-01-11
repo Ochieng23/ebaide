@@ -290,6 +290,7 @@ const UserAddress = () => {
     
     //Getting Stored order information:
     let order = sessionStorage.getItem ("order-details");
+    console.log (order);
   });
 
 };
