@@ -1516,7 +1516,12 @@ header .logo{
   align-items: center;
 }
 .single-button-state{
-  
+  display: flex;
+  flex-direction: row;
+  margin-top: .8%;
+  width: 80% !important;
+  justify-content: center !important;;
+  align-items: center;
 }
 .cartButtomCollection > button {
   display: block;
