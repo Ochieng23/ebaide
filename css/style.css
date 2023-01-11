@@ -1643,6 +1643,7 @@ tfoot > tr > td{
 }
 .input-div{
   display: flex;
+  flex-direction: column;
 }
 .input-div > span{
   display: block;
