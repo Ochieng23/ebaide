@@ -167,7 +167,9 @@ const PullProductsFromBackendAPI = () => {
         "view-product"
       );
       const productCollectionArray = Array.from(productCollection);
-      productCollectionArray.map ((item) => {});
+      productCollectionArray.map ((item) => {
+        
+      });
 
       for (let i = 0; i < productCollection.length; i++) {
         productCollection.item(i).addEventListener("click", () => {
