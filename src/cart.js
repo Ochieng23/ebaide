@@ -300,12 +300,13 @@ const UserAddress = () => {
 
   const saveAddressBtnDiv = CreateNewHTMLElement("div");
   const saveAddressBtn = CreateNewHTMLElement("button");
+  AddClass (saveAddressBtn, "save-address");
   saveAddressBtn.innerHTML = "Save Address";
 
   AddAttributeToElement (
     saveAddressBtn,
     "type",
-    "button"
+    "submit"
   );
 
   AppendChildToDynamicElement (labelFName, inputFName);
