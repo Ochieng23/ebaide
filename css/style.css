@@ -1641,8 +1641,8 @@ tfoot > tr > td{
 .address-form{
 
 }
-..input-div{
-  margin-bottom: .8em;
+.input-div{
+  margin-bottom: 1.6em;
 }
 .input-div > label{
   font-size: 1.6em !important;
