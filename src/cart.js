@@ -287,6 +287,7 @@ const UserAddress = () => {
       phonenumber: inputPhone.value,
       location_address: deliveryAddress.value,
     };
+    console.log(addresObject);
   });
 
 };
