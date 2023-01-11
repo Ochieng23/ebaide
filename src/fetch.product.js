@@ -172,7 +172,7 @@ const PullProductsFromBackendAPI = () => {
           item.addEventListener ("click", Cart);
           return;
         };
-        for (let i = 0; i < productCollection.length; i++) {
+
           productCollection.item(i).addEventListener("click", () => {
             const productid = productCollection.item(i).parentElement
               .parentElement.id;
@@ -464,7 +464,7 @@ const PullProductsFromBackendAPI = () => {
                   }, 100);
                 })
                 //console.log(data.data);
-          };
+          ;
 
       });
 
