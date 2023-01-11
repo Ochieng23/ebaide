@@ -159,7 +159,7 @@ const PullProductsFromBackendAPI = () => {
       productInCart.map((item) => {
         const prod = document.getElementById (`${item.id}`);
         const updateBtn = prod.children[1].children[3];
-        updateBtn.innerHTML = " Go to cart";
+        updateBtn.innerHTML = "Go to cart";
       });
 
       //HANDING VIEWING SINGLE PRODUCT:
@@ -168,7 +168,9 @@ const PullProductsFromBackendAPI = () => {
       );
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map ((item) => {
-        if (item.innerHTML === "") {};
+        if (item.innerHTML === "Go to cart") {
+          
+        };
       });
 
       for (let i = 0; i < productCollection.length; i++) {
