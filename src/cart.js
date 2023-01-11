@@ -189,6 +189,7 @@ const Cart = () => {
       AppendChildToDynamicElement(cartButtomCollection, payButton);
     }
     if(cartButtomCollection.children.length < 2){
+      RemoveClassFromNewElement();
       AddClass (cartButtomCollection, "single-button-state");
     };
     AppendChildToDynamicElement(cartDiv, cartButtomCollection);
