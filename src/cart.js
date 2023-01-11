@@ -284,6 +284,8 @@ const UserAddress = () => {
     const addresObject = {
       firstname: inputFName.value,
       lastname: inputLName.value,
+      phonenumber: inputPhone.value,
+      location_address: 
     }
   });
 
