@@ -291,8 +291,9 @@ const CheckoutPage = () => {
   const orderSummeryFooterSection = CreateNewHTMLElement("div");
   const checkoutButton = CreateNewHTMLElement("button");
   checkoutButton.innerHTML = "ORDER";
-
+  AppendChildToDynamicElement (orderSummeryFooterSection, checkoutButton);
   AppendChildToDynamicElement(checkOutDiv, checkoutButton);
+  
   AppendChildToDynamicElement(checkoutContainer, checkOutDiv);
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 };
