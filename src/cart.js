@@ -213,7 +213,7 @@ const Cart = () => {
 
 //CHECKOUT PAGE:
 const CheckoutPage =() => {
-  
+  const checkOutDiv = CreateNewHTMLElement('div');
 };
 
 const UserAddress = () => {
