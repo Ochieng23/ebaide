@@ -212,7 +212,7 @@ const Cart = () => {
 };
 
 //CHECKOUT PAGE:
-
+const CheckoutPage =() => {};
 
 const UserAddress = () => {
   const formContainer = CreateNewHTMLElement("div");
