@@ -234,7 +234,10 @@ const CheckoutPage =() => {
   const discountValue = CreateNewHTMLElement("span");
 
   //GETTING STORED ORDER:
-
+  let order = JSON.parse(
+    sessionStorage.getItem ("order-items")
+  );
+    
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
