@@ -211,6 +211,9 @@ const Cart = () => {
   }, 1500);
 };
 
+//CHECKOUT PAGE:
+
+
 const UserAddress = () => {
   const formContainer = CreateNewHTMLElement("div");
   AddClass(formContainer, "form-container");
