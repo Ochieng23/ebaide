@@ -337,7 +337,8 @@ const UserAddress = () => {
       sessionStorage.getItem ("order-items")
     );
      order = [...order, {address: addresObject}];
-
+     
+     console.log (order);
      setTimeout ( ()=> {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
