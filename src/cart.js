@@ -272,7 +272,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(vatTax, vatTaxText);
   AppendChildToDynamicElement(orderSummeryBodySection, vatTax);
   const vatTaxValue = CreateNewHTMLElement("span");
-  const vatTaxAmount = (amount * 0.16);
+  const vatTaxAmount = amount * 0.16;
   vatTaxValue.innerHTML = "Ksh. " + vatTaxAmount;
   AppendChildToDynamicElement(vatTax, vatTaxValue);
   AppendChildToDynamicElement(orderSummeryBodySection, vatTax);
