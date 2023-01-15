@@ -237,7 +237,7 @@ const CheckoutPage =() => {
   let order = JSON.parse(
     sessionStorage.getItem ("order-items")
   );
-  const [amount] = order.filter((orderItem) => {
+  const [{amount}] = order.filter((orderItem) => {
     if (orderItem.amount){
       return orderItem.amount;
     }
