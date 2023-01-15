@@ -249,7 +249,7 @@ const CheckoutPage =() => {
 
   const orderShipping = CreateNewHTMLElement("div");
   const shippingText = CreateNewHTMLElement("span");
-  shippingText.innerHTML = 'Discount 10% OFF';
+  shippingText.innerHTML = 'Express shipping';
   AppendChildToDynamicElement(orderShipping, shippingText);
   const shippingValue = CreateNewHTMLElement("span");
   const shippingAmount = (Math.floor( Math.random() * 1000));
