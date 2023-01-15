@@ -217,6 +217,7 @@ const Cart = () => {
 const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
 
+  AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 };
 
 const UserAddress = () => {
