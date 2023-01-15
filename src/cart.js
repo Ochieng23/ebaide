@@ -237,7 +237,7 @@ const CheckoutPage =() => {
   let order = JSON.parse(
     sessionStorage.getItem ("order-items")
   );
-  console.log (order);  
+    
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
