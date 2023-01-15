@@ -245,6 +245,8 @@ const CheckoutPage =() => {
   const discountAmount = (Math.floor( Math.random() * 100));
   discountValue.innerHTML = 'Ksh. '+discountAmount;
   AppendChildToDynamicElement(orderDiscount, discountValue);
+
+  
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
   const checkoutButton = CreateNewHTMLElement('button');
