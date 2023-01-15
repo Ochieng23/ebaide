@@ -279,7 +279,7 @@ const CheckoutPage = () => {
 
   const total = CreateNewHTMLElement("div");
   const totalText = CreateNewHTMLElement("span");
-  vatTaxText.innerHTML = "Total";
+  totalText.innerHTML = "Total";
   AppendChildToDynamicElement(total, totalText);
   AppendChildToDynamicElement(orderSummeryBodySection, total);
   const totalValue = CreateNewHTMLElement("span");
