@@ -216,9 +216,10 @@ const Cart = () => {
 //CHECKOUT PAGE:
 const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
+  const heading = CreateNewHTMLElement('h2');
   const checkoutButton = CreateNewHTMLElement('button');
   checkoutButton.innerHTML = 'Checkout';
-  
+
 
   AppendChildToDynamicElement (checkOutDiv, checkoutButton)
   AppendChildToDynamicElement (checkoutContainer, checkOutDiv);
