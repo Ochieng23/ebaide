@@ -252,6 +252,9 @@ const CheckoutPage =() => {
   shippingText.innerHTML = 'Discount 10% OFF';
   AppendChildToDynamicElement(orderShipping, shippingText);
   const discountValue = CreateNewHTMLElement("span");
+  const discountAmount = (Math.floor( Math.random() * 100));
+  discountValue.innerHTML = 'Ksh. '+discountAmount;
+  AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderShipping);
 
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
