@@ -59,6 +59,7 @@ const payButton = CreateNewHTMLElement("button");
 const addressContainer = CreateNewHTMLElement("div");
 const checkoutContainer = CreateNewHTMLElement("div");
 
+
 const DisplayCartItems = cartItemsArray => {
   const tableHeader = CreateNewHTMLElement("thead");
   const tableHeaderRow = CreateNewHTMLElement("tr");
