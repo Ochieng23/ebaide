@@ -219,7 +219,7 @@ const CheckoutPage =() => {
   const checkoutButton = CreateNewHTMLElement('button');
   checkoutButton.innerHTML = 'Checkout';
 
-  
+
   AppendChildToDynamicElement (checkOutDiv, checkoutButton)
   AppendChildToDynamicElement (checkoutContainer, checkOutDiv);
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
@@ -311,7 +311,8 @@ const UserAddress = () => {
       sessionStorage.getItem ("order-items")
     );
      order = [...order, {address: addresObject}];
-    console.log (order);
+
+     
   });
 
 };
