@@ -59,7 +59,6 @@ const payButton = CreateNewHTMLElement("button");
 const addressContainer = CreateNewHTMLElement("div");
 const checkoutContainer = CreateNewHTMLElement("div");
 
-
 const DisplayCartItems = cartItemsArray => {
   const tableHeader = CreateNewHTMLElement("thead");
   const tableHeaderRow = CreateNewHTMLElement("tr");
@@ -190,23 +189,21 @@ const Cart = () => {
       AddClass(payButton, "pay-button");
       AppendChildToDynamicElement(cartButtomCollection, payButton);
     }
-    if(cartButtomCollection.children.length < 2){
+    if (cartButtomCollection.children.length < 2) {
       RemoveClassFromNewElement(cartButtomCollection, "cartButtomCollection");
-      AddClass (cartButtomCollection, "single-button-state");
-    };
+      AddClass(cartButtomCollection, "single-button-state");
+    }
     AppendChildToDynamicElement(cartDiv, cartButtomCollection);
     goBackToGoProductButton.addEventListener("click", e => {
       e.preventDefault();
       window.location.href = "https://goebaide.com/index.html#packages";
-      if (
-        window.location.href === "https://goebaide.com/index.html#packages"
-      ) {
-        window.location.reload()
-        setTimeout (
-          window.location.href = "https://goebaide.com/index.html#packages",
+      if (window.location.href === "https://goebaide.com/index.html#packages") {
+        window.location.reload();
+        setTimeout(
+          (window.location.href = "https://goebaide.com/index.html#packages"),
           1500
         );
-      };
+      }
     });
 
     AppendHTMLChildToStaticElement("#body", FindSingleElement, cartDiv);
@@ -214,46 +211,44 @@ const Cart = () => {
 };
 
 //CHECKOUT PAGE:
-const CheckoutPage =() => {
-  const checkOutDiv = CreateNewHTMLElement('div');
-  const orderSummeryHeadingSection = CreateNewHTMLElement('div');
-  const heading = CreateNewHTMLElement('h2');
-  heading.innerHTML = 'Order summery';
-  AppendChildToDynamicElement (orderSummeryHeadingSection, heading);
+const CheckoutPage = () => {
+  const checkOutDiv = CreateNewHTMLElement("div");
+  const orderSummeryHeadingSection = CreateNewHTMLElement("div");
+  const heading = CreateNewHTMLElement("h2");
+  heading.innerHTML = "Order summery";
+  AppendChildToDynamicElement(orderSummeryHeadingSection, heading);
 
-  const editCartButton = CreateNewHTMLElement('button');
-  editCartButton.innerHTML = 'Edit Cart';
-  AppendChildToDynamicElement (orderSummeryHeadingSection, editCartButton);
-  AppendChildToDynamicElement (checkOutDiv, orderSummeryHeadingSection);
+  const editCartButton = CreateNewHTMLElement("button");
+  editCartButton.innerHTML = "Edit Cart";
+  AppendChildToDynamicElement(orderSummeryHeadingSection, editCartButton);
+  AppendChildToDynamicElement(checkOutDiv, orderSummeryHeadingSection);
 
-  const orderSummeryBodySection = CreateNewHTMLElement('div');
+  const orderSummeryBodySection = CreateNewHTMLElement("div");
   const orderDiscount = CreateNewHTMLElement("div");
   const discountText = CreateNewHTMLElement("span");
-  discountText.innerHTML = 'Discount 10% OFF';
+  discountText.innerHTML = "Discount 10% OFF";
   AppendChildToDynamicElement(orderDiscount, discountText);
   const discountValue = CreateNewHTMLElement("span");
 
   //GETTING STORED ORDER:
-  let order = JSON.parse(
-    sessionStorage.getItem ("order-items")
-  );
-  const [{amount}] = order.filter((orderItem) => {
-    if (orderItem.amount){
+  let order = JSON.parse(sessionStorage.getItem("order-items"));
+  const [{ amount }] = order.filter(orderItem => {
+    if (orderItem.amount) {
       return orderItem;
     }
-  });  
-  const discountAmount = (Math.floor( Math.random() * 100));
-  discountValue.innerHTML = 'Ksh. '+discountAmount;
+  });
+  const discountAmount = Math.floor(Math.random() * 100);
+  discountValue.innerHTML = "Ksh. " + discountAmount;
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
 
   const orderShipping = CreateNewHTMLElement("div");
   const shippingText = CreateNewHTMLElement("span");
-  shippingText.innerHTML = 'Express shipping';
+  shippingText.innerHTML = "Express shipping";
   AppendChildToDynamicElement(orderShipping, shippingText);
   const shippingValue = CreateNewHTMLElement("span");
-  const shippingAmount = (Math.floor( Math.random() * 1000));
-  shippingValue.innerHTML = 'Ksh. '+shippingAmount;
+  const shippingAmount = Math.floor(Math.random() * 1000);
+  shippingValue.innerHTML = "Ksh. " + shippingAmount;
   AppendChildToDynamicElement(orderShipping, shippingValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderShipping);
 
@@ -261,18 +256,22 @@ const CheckoutPage =() => {
   const deliveryDateText = CreateNewHTMLElement("span");
   const dateOfOrder = new Date();
   const result = dateOfOrder.setDate(dateOfOrder.getDate() + 7);
-  const deliverydate = new Date(result);
-  deliveryDateText.innerHTML = 'Delivers on '+deliverydate;
+  const deliverydate = new Date(result).toLocaleDateString("en-us", {
+    weekday: "long",
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+  deliveryDateText.innerHTML = "Delivers on " + deliverydate;
   AppendChildToDynamicElement(deliveryDate, deliveryDateText);
   AppendChildToDynamicElement(orderSummeryBodySection, deliveryDate);
 
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
-  const checkoutButton = CreateNewHTMLElement('button');
-  checkoutButton.innerHTML = 'Checkout';
+  const checkoutButton = CreateNewHTMLElement("button");
+  checkoutButton.innerHTML = "Checkout";
 
-
-  AppendChildToDynamicElement (checkOutDiv, checkoutButton)
-  AppendChildToDynamicElement (checkoutContainer, checkOutDiv);
+  AppendChildToDynamicElement(checkOutDiv, checkoutButton);
+  AppendChildToDynamicElement(checkoutContainer, checkOutDiv);
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 };
 
@@ -348,39 +347,35 @@ const UserAddress = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, addressContainer);
 
   //Address details:
-  form.addEventListener("submit", (e)=> {
+  form.addEventListener("submit", e => {
     e.preventDefault();
     const addresObject = {
       firstname: inputFName.value,
       lastname: inputLName.value,
       phonenumber: inputPhone.value,
-      location_address: deliveryAddress.value,
+      location_address: deliveryAddress.value
     };
-    
-    //Getting Stored order information:
-    let order = JSON.parse(
-      sessionStorage.getItem ("order-items")
-    );
-     order = [...order, {address: addresObject}];
 
-     sessionStorage.setItem("order-items", JSON.stringify(order));
-     console.log (order);
-     setTimeout ( ()=> {
+    //Getting Stored order information:
+    let order = JSON.parse(sessionStorage.getItem("order-items"));
+    order = [...order, { address: addresObject }];
+
+    sessionStorage.setItem("order-items", JSON.stringify(order));
+    console.log(order);
+    setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
-     }, 1500);
+    }, 1500);
   });
-
 };
 
 FindSingleElement(".cart").addEventListener("click", Cart);
 payButton.addEventListener("click", () => {
   if (payButton.innerHTML === "Pay 0") {
     if (cartDiv.children.length > 2) {
-
       RemoveElement(FindSingleElement("#errorMessage"));
     }
-    console.log(cartDiv.children)
+    console.log(cartDiv.children);
     ErrorMessage(
       CreateNewHTMLElement,
       AppendChildToDynamicElement,
@@ -398,7 +393,7 @@ payButton.addEventListener("click", () => {
   }
   let checkOutArray = [];
   const itemsArray = JSON.parse(localStorage.getItem("cart-items"));
-  checkOutArray = [{order_details: itemsArray}, { amount: cartTotal }];
+  checkOutArray = [{ order_details: itemsArray }, { amount: cartTotal }];
   sessionStorage.setItem("order-items", JSON.stringify(checkOutArray));
 
   ClearContent(FindSingleElement, "#body");
