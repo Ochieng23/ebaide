@@ -260,6 +260,7 @@ const CheckoutPage =() => {
   const deliveryDate = CreateNewHTMLElement("div");
   const deliveryDateText = CreateNewHTMLElement("span");
   const dateOfOrder = new Date();
+  const result = dateOfOrder.setDate(dateOfOrder.getDate + 7);
   deliveryDateText.innerHTML = 'Delivers on '+deliverydate;
   AppendChildToDynamicElement(deliveryDate, deliveryDateText);
   AppendChildToDynamicElement(orderSummeryBodySection, deliveryDate);
