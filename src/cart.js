@@ -225,6 +225,8 @@ const CheckoutPage =() => {
   editCartButton.innerHTML = 'Edit Cart';
   AppendChildToDynamicElement (orderSummeryHeadingSection, editCartButton);
   AppendChildToDynamicElement (checkOutDiv, orderSummeryHeadingSection);
+
+  const orderSummeryBodySection = CreateNewHTMLElement('div');
   const checkoutButton = CreateNewHTMLElement('button');
   checkoutButton.innerHTML = 'Checkout';
 
