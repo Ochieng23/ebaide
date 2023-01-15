@@ -259,7 +259,7 @@ const CheckoutPage =() => {
 
   const deliveryDate = CreateNewHTMLElement("div");
   const deliveryDateText = CreateNewHTMLElement("span");
-  shippingText.innerHTML = 'Express shipping';
+  shippingText.innerHTML = 'Delivers on '+deliveryDate;
   AppendChildToDynamicElement(orderShipping, shippingText);
 
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
