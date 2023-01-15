@@ -242,7 +242,7 @@ const CheckoutPage =() => {
       return orderItem;
     }
   });  
-  console.log (amount);
+  
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
