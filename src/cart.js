@@ -259,9 +259,9 @@ const CheckoutPage =() => {
 
   const deliveryDate = CreateNewHTMLElement("div");
   const deliveryDateText = CreateNewHTMLElement("span");
-  shippingText.innerHTML = 'Delivers on '+deliveryDate;
-  AppendChildToDynamicElement(orderShipping, shippingText);
-
+  deliveryDateText.innerHTML = 'Delivers on '+deliverydate;
+  AppendChildToDynamicElement(deliveryDate, deliveryDateText);
+  AppendChildToDynamicElement(orderSummeryBodySection, deliveryDate);
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
   const checkoutButton = CreateNewHTMLElement('button');
   checkoutButton.innerHTML = 'Checkout';
