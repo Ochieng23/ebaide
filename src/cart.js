@@ -286,11 +286,9 @@ const CheckoutPage = () => {
   totalValue.innerHTML = "Ksh. " + amount;
   AppendChildToDynamicElement(total, totalValue);
   AppendChildToDynamicElement(orderSummeryBodySection, total);
-
-
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
-  const checkoutButton = CreateNewHTMLElement("button");
-  checkoutButton.innerHTML = "ORDER";
+
+  const orderSummeryFooterSection = CreateNewHTMLElement("div");
 
   AppendChildToDynamicElement(checkOutDiv, checkoutButton);
   AppendChildToDynamicElement(checkoutContainer, checkOutDiv);
