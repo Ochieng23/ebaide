@@ -216,6 +216,7 @@ const Cart = () => {
 //CHECKOUT PAGE:
 const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
+  
   AppendChildToDynamicElement (checkoutContainer, checkOutDiv);
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 };
