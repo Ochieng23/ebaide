@@ -239,7 +239,7 @@ const CheckoutPage =() => {
   );
   const [{amount}] = order.filter((orderItem) => {
     if (orderItem.amount){
-      return orderItem.amount;
+      return orderItem;
     }
   });  
   console.log (amount);
