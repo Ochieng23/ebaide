@@ -237,11 +237,10 @@ const CheckoutPage =() => {
   let order = JSON.parse(
     sessionStorage.getItem ("order-items")
   );
-  let amount = order.map((orderItem) => {
+  let amount = order.filter((orderItem) => {
     if (orderItem.amount){
       return orderItem.amount;
     }
-    return;
   });  
   console.log (amount);
   discountValue.innerHTML = '';
