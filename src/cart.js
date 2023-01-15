@@ -57,6 +57,7 @@ const displayTable = CreateNewHTMLElement("table");
 AddAttributeToElement(displayTable, "id", "table");
 const payButton = CreateNewHTMLElement("button");
 const addressContainer = CreateNewHTMLElement("div");
+const checkoutContainer = CreateNewHTMLElement("div");
 
 const DisplayCartItems = cartItemsArray => {
   const tableHeader = CreateNewHTMLElement("thead");
@@ -214,7 +215,7 @@ const Cart = () => {
 //CHECKOUT PAGE:
 const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
-  
+
 };
 
 const UserAddress = () => {
