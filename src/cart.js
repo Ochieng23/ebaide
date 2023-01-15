@@ -313,6 +313,7 @@ const UserAddress = () => {
      order = [...order, {address: addresObject}];
 
      setTimeout ( ()=> {
+      ClearContent(FindSingleElement, "#body");
       CheckoutPage();
      }, 1500);
   });
