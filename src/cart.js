@@ -218,7 +218,7 @@ const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
   const heading = CreateNewHTMLElement('h2');
   heading.innerHTML = 'Order summery';
-  
+  AppendChildToDynamicElement (checkOutDiv, heading);
   const checkoutButton = CreateNewHTMLElement('button');
   checkoutButton.innerHTML = 'Checkout';
 
