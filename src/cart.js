@@ -312,7 +312,9 @@ const UserAddress = () => {
     );
      order = [...order, {address: addresObject}];
 
-     
+     setTimeout ( ()=> {
+      
+     }, 1500);
   });
 
 };
