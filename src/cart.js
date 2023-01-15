@@ -238,7 +238,11 @@ const CheckoutPage =() => {
     sessionStorage.getItem ("order-items")
   );
   order.map((orderItem) => {
-    
+    if (orderItem.amount){
+      return orderItem.amount;
+    }else{
+      continue;
+    }
   });  
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
