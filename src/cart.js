@@ -240,9 +240,8 @@ const CheckoutPage =() => {
   order.map((orderItem) => {
     if (orderItem.amount){
       return orderItem.amount;
-    }else{
-      continue;
     }
+    return;
   });  
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
