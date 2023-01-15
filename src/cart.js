@@ -216,6 +216,7 @@ const Cart = () => {
 //CHECKOUT PAGE:
 const CheckoutPage =() => {
   const checkOutDiv = CreateNewHTMLElement('div');
+  const orderSummeryHeadingSection = CreateNewHTMLElement('div');
   const heading = CreateNewHTMLElement('h2');
   heading.innerHTML = 'Order summery';
   AppendChildToDynamicElement (checkOutDiv, heading);
