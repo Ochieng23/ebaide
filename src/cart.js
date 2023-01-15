@@ -237,7 +237,9 @@ const CheckoutPage =() => {
   let order = JSON.parse(
     sessionStorage.getItem ("order-items")
   );
-  order.map((orderItem));  
+  order.map((orderItem) => {
+    
+  });  
   discountValue.innerHTML = '';
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
