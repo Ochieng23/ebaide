@@ -313,7 +313,7 @@ const UserAddress = () => {
      order = [...order, {address: addresObject}];
 
      setTimeout ( ()=> {
-      
+      CheckoutPage();
      }, 1500);
   });
 
