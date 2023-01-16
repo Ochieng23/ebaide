@@ -288,6 +288,7 @@ const CheckoutPage = () => {
 
   const total = CreateNewHTMLElement("div");
   AddClass(total, 'order-body-items');
+  AddClass(total, 'totals');
   const totalText = CreateNewHTMLElement("span");
   totalText.innerHTML = "Total";
   AppendChildToDynamicElement(total, totalText);
