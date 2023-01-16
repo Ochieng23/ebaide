@@ -231,10 +231,7 @@ const CheckoutPage = () => {
 
   //EDIT Cart ACTION:
   editCartButton.addEventListener("click", event => {
-    ClearContent(FindSingleElement, "#body");
-    setTimeout(() => {
-      Cart();
-    }, 500);
+    DisplayCartItems(updatedList);
   });
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
