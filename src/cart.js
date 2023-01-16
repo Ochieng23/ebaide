@@ -163,6 +163,7 @@ const DisplayCartItems = cartItemsArray => {
 const Cart = () => {
   //e.preventDefault();
   ClearContent(FindSingleElement, "#body");
+  console.log(FindSingleElement(".cart-container"))
   if(FindSingleElement(".cart-container") !== null) {
     ClearContent(FindSingleElement, ".cart-container");
   };
