@@ -1749,9 +1749,8 @@ tfoot > tr > td{
   display: block !important;
   font-size: 1.6em !important;
   font-weight: 100;
+  text-transform: lowercase !important;
 }
 .order-body-items > span::first-letter {
-  display: block !important;
-  font-size: 1.6em !important;
-  font-weight: 100;
+  text-transform: uppercase;
 }
