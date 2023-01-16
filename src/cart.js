@@ -318,6 +318,7 @@ const CheckoutPage = () => {
 };
 
 const PaymentPhoneNumber = () => {
+  const formHolder = CreateNewHTMLElement("div");
   AppendChildToDynamicElement ("#body", FindSingleElement, phoneNumberPageContainer)
 };
 
