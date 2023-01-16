@@ -366,6 +366,7 @@ const PaymentPhoneNumber = () => {
       {paymentDetails: phoneNumberInput.value}
     ];
     console.log ("Updated order:", updatedOrder);
+    sessionStorage.setItem ("order-items", updatedOrder);
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
