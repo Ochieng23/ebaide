@@ -1693,7 +1693,7 @@ tfoot > tr > td{
 
 /* CHECKOUT PAGE */
 .Checkout-container {
-  background-color: #fff;
+  background-color: whitesmoke;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
