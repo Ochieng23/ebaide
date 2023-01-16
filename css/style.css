@@ -1716,7 +1716,7 @@ tfoot > tr > td{
   border-bottom: .1em solid rgba(51, 51, 51, 0.091);
 }
 .order-header > h2 {
-  
+  font-weight: 600;
 }
 .order-header > button {
   display: block !important;
