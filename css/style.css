@@ -1759,7 +1759,10 @@ tfoot > tr > td{
   
 }
 .delivery-date > span {
+  display: block;
   border-left: .1em solid blue !important;
   text-transform: capitalize !important;
   font-size: 1.2em !important;
+  background-color: #F28500;
+  width: 100%;
 }
