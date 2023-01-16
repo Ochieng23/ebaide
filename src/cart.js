@@ -360,7 +360,7 @@ const PaymentPhoneNumber = () => {
     const currentOrder = JSON.parse (
       sessionStorage.getItem ("order-items")
     );
-    console.log (currentOrder);
+    console.log ("current order", currentOrder);
     const updatedOrder = {
       ...currentOrder,
       paymentDetails: phoneNumberInput.value
