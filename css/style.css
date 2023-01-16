@@ -1761,6 +1761,8 @@ tfoot > tr > td{
   justify-content: center !important;
   align-items: center !important;
   padding-left: 3.8em !important;
+  margin: 0 auto !important;
+  background-color: rebeccapurple;
 }
 .delivery-date > span {
   display: block;
