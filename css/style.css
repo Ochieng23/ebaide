@@ -1717,6 +1717,7 @@ tfoot > tr > td{
 }
 .order-header > h2 {
   font-weight: 600;
+  text-transform: lowercase;
 }
 .order-header > button {
   display: block !important;
