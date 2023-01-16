@@ -216,6 +216,7 @@ const CheckoutPage = () => {
   const checkOutDiv = CreateNewHTMLElement("div");
   AddClass (checkOutDiv, "checkout-box");
   const orderSummeryHeadingSection = CreateNewHTMLElement("div");
+  AddClass (orderSummeryHeadingSection, "order-header");
   const heading = CreateNewHTMLElement("h2");
   heading.innerHTML = "Order summery";
   AppendChildToDynamicElement(orderSummeryHeadingSection, heading);
