@@ -173,12 +173,12 @@ const Cart = () => {
       AddClass(emptyCartTextSpan, "emptyCartTextSpan");
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
-    };
+    }
 
     if (cartItems.length > 0) {
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
-    };
+    }
     const cartButtomCollection = CreateNewHTMLElement("div");
     AddClass(cartButtomCollection, "cartButtomCollection");
     const goBackToGoProductButton = CreateNewHTMLElement("button");
@@ -327,24 +327,25 @@ const PaymentPhoneNumber = () => {
   AppendChildToDynamicElement(phoneNumberLabel, labelTextSpan);
 
   const phoneNumberInput = CreateNewHTMLElement("input");
-  AddAttributeToElement (phoneNumberInput, "type", "tel");
-  AddAttributeToElement (
+  AddAttributeToElement(phoneNumberInput, "type", "tel");
+  AddAttributeToElement(
     phoneNumberInput,
     "placeholder",
     "Use format e.g. 254700258098"
-    );
-    AddAttributeToElement (
-      phoneNumberInput,
-      "required",
-      true
-    );
+  );
+  AddAttributeToElement(phoneNumberInput, "required", true);
+  
   AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
-  AppendChildToDynamicElement (phoneNumberDiv, phoneNumberLabel);
+  AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
 
   AppendChildToDynamicElement(form, phoneNumberDiv);
-  AppendChildToDynamicElement (formHolder, form);
-  AppendChildToDynamicElement (phoneNumberPageContainer, formHolder);
-  AppendHTMLChildToStaticElement ("#body", FindSingleElement, phoneNumberPageContainer)
+  AppendChildToDynamicElement(formHolder, form);
+  AppendChildToDynamicElement(phoneNumberPageContainer, formHolder);
+  AppendHTMLChildToStaticElement(
+    "#body",
+    FindSingleElement,
+    phoneNumberPageContainer
+  );
 };
 
 const UserAddress = () => {
