@@ -344,7 +344,12 @@ const PullProductsFromBackendAPI = () => {
               e.preventDefault();
               //console.log(e)
               if (quantityToBuy.value < 1){
-                
+                ErrorMessage(
+                  CreateNewElement,
+                  AppendChildToParentElementUsingElement,
+                  "p",
+                  "You must buy at least 1 item." 
+                  );
               };
               RemoveClassFromNewElement(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
