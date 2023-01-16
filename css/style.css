@@ -1708,7 +1708,7 @@ tfoot > tr > td{
 }
 .order-header{ 
   display: grid !important;
-  grid-template-columns: 40% 35% !important;
+  grid-template-columns: 40% 30% !important;
   column-gap: 16%;
   justify-content: center !important;
   align-items: center !important;
