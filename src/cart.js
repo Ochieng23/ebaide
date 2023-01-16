@@ -329,6 +329,9 @@ const CheckoutPage = () => {
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
+      headers:{
+        "Content-Type": "application/json"
+      }
      })
      .then()
      .then()
