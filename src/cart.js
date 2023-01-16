@@ -323,7 +323,10 @@ const CheckoutPage = () => {
   checkoutButton.addEventListener ("click", () => {
      const orderItems = sessionStorage.getItem("order-items");
      //SENDING VIA FETCH TO BACKEND
-     
+     fetch()
+     .then()
+     .then()
+     .catch();
   });
 };
 
