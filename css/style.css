@@ -1772,7 +1772,7 @@ tfoot > tr > td{
 }
 /* totals */
 .totals{
-  grid-template-columns: 38% 24% !important;
+  grid-template-columns: 36% 26% !important;
   justify-content: center !important;
   align-items: center !important;
   column-gap: 28%;
