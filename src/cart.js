@@ -331,7 +331,8 @@ const CheckoutPage = () => {
       body: orderItems,
       headers:{
         "Content-Type": "application/json",
-        "Authorization": "Bearer token" 
+        "Authorization": "Bearer token",
+        "Access-Control-Allow-Origin": "*", 
       }
      })
      .then(
