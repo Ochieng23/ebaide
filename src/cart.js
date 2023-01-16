@@ -237,6 +237,7 @@ const CheckoutPage = () => {
     );
     setTimeout(() => {
       Cart();
+      ClearContent(FindSingleElement, "#table");
     }, 500);
   });
 
