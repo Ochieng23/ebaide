@@ -178,6 +178,7 @@ const Cart = () => {
     };
 
     if (cartItems.length > 0) {
+      
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
     };
