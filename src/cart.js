@@ -326,8 +326,10 @@ const PaymentPhoneNumber = () => {
   const phoneNumberDiv = CreateNewHTMLElement("div");
   AddClass(phoneNumberDiv, "input-div");
   const phoneNumberLabel = CreateNewHTMLElement("label");
-  const labelTextSpan = CreateNewHTMLElement("span");
-  labelTextSpan.innerHTML = "Enter phoneNumber to make payment(use format e.g. 254700258098)*";
+  labelTextSpan.innerHTML = `
+  <span>Enter phoneNumber to make payment</span>
+  <span>(use format e.g. 254700258098)*</span>
+  `;
   AppendChildToDynamicElement(phoneNumberLabel, labelTextSpan);
 
   const phoneNumberInput = CreateNewHTMLElement("input");
