@@ -1761,7 +1761,6 @@ tfoot > tr > td{
   justify-content: center !important;
   align-items: center !important;
   padding-left: 3.8em !important;
-  background-color: rebeccapurple;
 }
 .delivery-date > span {
   display: block;
@@ -1769,5 +1768,4 @@ tfoot > tr > td{
   text-transform: capitalize !important;
   font-size: 1.3em !important;
   width: 50% !important;
-  background-color: #F28500;
 }
