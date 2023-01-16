@@ -351,6 +351,7 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
+  
 };
 
 const UserAddress = () => {
@@ -441,7 +442,7 @@ const UserAddress = () => {
     sessionStorage.setItem("order-items", JSON.stringify(order));
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
-      CheckoutPage();
+      PaymentPhoneNumber();
     }, 1500);
   });
 };
