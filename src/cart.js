@@ -334,7 +334,9 @@ const CheckoutPage = () => {
         "Authorization": "Bearer token" 
       }
      })
-     .then()
+     .then(
+      response => response.json()
+     )
      .then()
      .catch();
   });
