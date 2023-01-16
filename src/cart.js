@@ -351,7 +351,12 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
-  nextButton.addEventListener("click", () => {});
+  nextButton.addEventListener("click", () => {
+    setTimeout(() => {
+      ClearContent(FindSingleElement, "#body");
+      CheckoutPage();
+    }, 1500);
+  });
 };
 
 const UserAddress = () => {
