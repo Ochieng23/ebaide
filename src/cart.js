@@ -327,7 +327,8 @@ const CheckoutPage = () => {
      http://localhost:6000/api/orders/new-order
      `;
      fetch(order_processing_URI, {
-      
+      method: 'POST',
+      body: orderItems,
      })
      .then()
      .then()
