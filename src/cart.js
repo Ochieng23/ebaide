@@ -360,7 +360,8 @@ const PaymentPhoneNumber = () => {
     const currentOrder = JSON.parse (
       sessionStorage.getItem ("order-items")
     );
-    console.log (currentorder)
+    console.log (currentOrder);
+    
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
