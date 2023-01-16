@@ -1791,4 +1791,5 @@ tfoot > tr > td{
 .order-footer > button {
   display: block !important;
   background-color: transparent;
+  text-transform: uppercase !important;
 }
