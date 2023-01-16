@@ -1696,5 +1696,5 @@ tfoot > tr > td{
   background-color: #fff;
   display: flex !important;
   justify-content: center !important;
-  
+  align-items: center !important;
 }
