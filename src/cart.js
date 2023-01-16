@@ -234,7 +234,7 @@ const CheckoutPage = () => {
     const updatedList = JSON.parse(
       localStorage.getItem("cart-items") || "[]"
     );
-    DisplayCartItems(updatedList);
+    DisplayCartItems();
   });
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
