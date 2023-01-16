@@ -1646,7 +1646,13 @@ tfoot > tr > td{
   align-items: center !important;
 }
 .phonenumber-container {
-  
+  background-color: #fff;
+  margin: 0 .1em ;
+  height: 100vh;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .form-container{
   box-shadow: .1em .1em .2em .3em rgba(34, 34, 34, 0.18);
