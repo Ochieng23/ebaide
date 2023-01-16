@@ -353,7 +353,9 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
-  form.addEventListener("submit", () => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log (phoneNumberInput.value);
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
