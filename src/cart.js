@@ -321,7 +321,7 @@ const CheckoutPage = () => {
 
   //SENDING ORDER TO BACKEND SERVICE:
   checkoutButton.addEventListener ("click", () => {
-     
+     const orderItems = sessionStorage.getItem("orderItems");
   });
 };
 
