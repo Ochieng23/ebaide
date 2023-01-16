@@ -230,7 +230,8 @@ const CheckoutPage = () => {
   //EDIT Cart ACTION:
   editCartButton.addEventListener("click", event => {
     setTimeout ( () => {
-      Cart();
+      window.location.reload();
+      //Cart();
     }, 1500)
   });
 
