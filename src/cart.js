@@ -318,6 +318,7 @@ const CheckoutPage = () => {
 };
 
 const PaymentPhoneNumber = () => {
+  AddClass(phoneNumberPageContainer, "phonenumber-container");
   const formHolder = CreateNewHTMLElement("div");
   const form = CreateNewHTMLElement("form");
   const phoneNumberDiv = CreateNewHTMLElement("div");
