@@ -1737,7 +1737,6 @@ tfoot > tr > td{
   padding: 8% 0 !important;
 }
 .order-body-items{
-  background-color: red;
   padding: 2.4%;
   display: grid;
   grid-template-columns: 40% 20% !important;
@@ -1749,4 +1748,5 @@ tfoot > tr > td{
 .order-body-items > span {
   display: block !important;
   font-size: 1.6em !important;
+  font-weight: 200;
 }
