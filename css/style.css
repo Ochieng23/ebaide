@@ -1771,3 +1771,6 @@ tfoot > tr > td{
   width: 70% !important;
 }
 /* totals */
+.totals > span {
+
+}
