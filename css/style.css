@@ -1695,4 +1695,6 @@ tfoot > tr > td{
 .Checkout-container {
   background-color: #fff;
   display: flex !important;
+  justify-content: center !important;
+  
 }
