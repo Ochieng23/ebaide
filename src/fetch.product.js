@@ -348,6 +348,7 @@ const PullProductsFromBackendAPI = () => {
                   CreateNewElement,
                   AppendChildToParentElementUsingElement,
                   "p",
+                  'input[type=number]',
                   "You must buy at least 1 item." 
                   );
               };
