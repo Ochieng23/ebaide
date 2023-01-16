@@ -348,7 +348,7 @@ const PullProductsFromBackendAPI = () => {
                   CreateNewElement,
                   QuerySelectorForDocumentElement,
                   "p",
-                  'input[type=number]',
+                  '.product-info',
                   "You must buy at least 1 item." 
                   );
                   return;
