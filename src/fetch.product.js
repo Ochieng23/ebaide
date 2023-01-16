@@ -346,7 +346,7 @@ const PullProductsFromBackendAPI = () => {
               if (quantityToBuy.value < 1){
                 ErrorMessage(
                   CreateNewElement,
-                  AppendChildToParentElementUsingElement,
+                  QuerySelectorForDocumentElement,
                   "p",
                   'input[type=number]',
                   "You must buy at least 1 item." 
