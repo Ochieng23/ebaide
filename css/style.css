@@ -1741,6 +1741,8 @@ tfoot > tr > td{
   padding: 2.4%;
   display: grid;
   grid-template-columns: 40% 30% !important;
+  justify-content: center !important;
+  align-items: center !important;
   column-gap: 16%;
 }
 .order-body-items > span {
