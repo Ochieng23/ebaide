@@ -321,29 +321,27 @@ const CheckoutPage = () => {
 
   //SENDING ORDER TO BACKEND SERVICE:
   checkoutButton.addEventListener ("click", () => {
-     const orderItems = {
-       details: sessionStorage.getItem("order-items"),
-     };
+     const orderItems = JSON.parse(sessionStorage.getItem("order-items"));
      console.log(orderItems);
      //SENDING VIA FETCH TO BACKEND
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
-     fetch(order_processing_URI, {
-      method: 'POST',
-      body: JSON.stringify(orderItems),
-     })
-     .then(
-      response => response.json()
-     )
-     .then(
-      data => {
-        console.log(data);
-      }
-     )
-     .catch(
-      error => {
-        console.log(error);
-      }
-     );
+    //  fetch(order_processing_URI, {
+    //   method: 'POST',
+    //   body: JSON.stringify(orderItems),
+    //  })
+    //  .then(
+    //   response => response.json()
+    //  )
+    //  .then(
+    //   data => {
+    //     console.log(data);
+    //   }
+    //  )
+    //  .catch(
+    //   error => {
+    //     console.log(error);
+    //   }
+    //  );
   });
 };
 
