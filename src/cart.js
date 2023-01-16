@@ -334,6 +334,8 @@ const PaymentPhoneNumber = () => {
   const phoneNumberInput = CreateNewHTMLElement("input");
   AddAttributeToElement(phoneNumberInput, "type", "tel");
   AddAttributeToElement(phoneNumberInput, "required", true);
+  AddAttributeToElement(phoneNumberInput, "minlength", "12");
+  AddAttributeToElement(phoneNumberInput, "maxlength", "12");
   AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
   AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
 
