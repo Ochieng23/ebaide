@@ -365,6 +365,7 @@ const PaymentPhoneNumber = () => {
       ...currentOrder,
       paymentDetails: phoneNumberInput.value
     };
+    console.log ("Updated order:", updatedOrder);
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
