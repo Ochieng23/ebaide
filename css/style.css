@@ -1711,5 +1711,5 @@ tfoot > tr > td{
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 0 4em !important;
+  padding: 4em 0 !important;
 }
