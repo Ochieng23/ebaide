@@ -322,6 +322,7 @@ const PaymentPhoneNumber = () => {
   const formHolder = CreateNewHTMLElement("div");
   AddClass(formHolder, "form-container");
   const form = CreateNewHTMLElement("form");
+  AddClass(form, "address-form");
   const phoneNumberDiv = CreateNewHTMLElement("div");
   const phoneNumberLabel = CreateNewHTMLElement("label");
   const labelTextSpan = CreateNewHTMLElement("span");
