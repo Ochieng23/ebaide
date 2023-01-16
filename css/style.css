@@ -1784,7 +1784,6 @@ tfoot > tr > td{
 
 /* Order Footer */
 .order-footer{
-  background-color: rebeccapurple;
   padding: 4% 0 !important;
   margin-bottom: 8% !important;
   display: flex !important;
