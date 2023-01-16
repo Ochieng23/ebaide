@@ -1734,7 +1734,8 @@ tfoot > tr > td{
   flex-direction: column;
   justify-content: center !important;
   align-items: center !important;
+  padding: 4% 0 !important;
 }
 .order-body-items{
-  
+  background-color: red;
 }
