@@ -1793,7 +1793,7 @@ tfoot > tr > td{
 }
 .order-footer > button {
   display: block !important;
-  background-color: transparent;
+  background: linear-gradient(to right, rgb(3, 3, 121), rgb(40, 40, 237) );
   text-transform: uppercase !important;
   color: whitesmoke !important;
 }
