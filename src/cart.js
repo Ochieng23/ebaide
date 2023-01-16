@@ -175,7 +175,7 @@ const Cart = () => {
       AddClass(emptyCartTextSpan, "emptyCartTextSpan");
       emptyCartTextSpan.innerHTML = "Your Cart is empty";
       AppendChildToDynamicElement(cartDiv, emptyCartTextSpan);
-    }
+    };
 
     if (cartItems.length > 0) {
       DisplayCartItems(cartItems);
