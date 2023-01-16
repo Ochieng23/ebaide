@@ -322,7 +322,7 @@ const PaymentPhoneNumber = () => {
   const form = CreateNewHTMLElement("form");
   AppendChildToDynamicElement (formHolder, form);
   AppendChildToDynamicElement (phoneNumberPageContainer, formHolder);
-  AppendChildToDynamicElement ("#body", FindSingleElement, phoneNumberPageContainer)
+  AppendHTMLChildToStaticElement ("#body", FindSingleElement, phoneNumberPageContainer)
 };
 
 const UserAddress = () => {
