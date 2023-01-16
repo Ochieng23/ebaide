@@ -214,9 +214,9 @@ const Cart = () => {
 const CheckoutPage = () => {
   AddClass(checkoutContainer, "Checkout-container");
   const checkOutDiv = CreateNewHTMLElement("div");
-  AddClass (checkOutDiv, "checkout-box");
+  AddClass(checkOutDiv, "checkout-box");
   const orderSummeryHeadingSection = CreateNewHTMLElement("div");
-  AddClass (orderSummeryHeadingSection, "order-header");
+  AddClass(orderSummeryHeadingSection, "order-header");
   const heading = CreateNewHTMLElement("h2");
   heading.innerHTML = "Order summery";
   AppendChildToDynamicElement(orderSummeryHeadingSection, heading);
@@ -226,21 +226,18 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryHeadingSection, editCartButton);
   AppendChildToDynamicElement(checkOutDiv, orderSummeryHeadingSection);
 
-
   //EDIT Cart ACTION:
-  editCartButton.addEventListener("click", (event) => {
-    ClearContent (
-        FindSingleElement, '#body'
-      )
+  editCartButton.addEventListener("click", event => {
+    ClearContent(FindSingleElement, "#body");
     setTimeout(() => {
-      Cart ()
+      Cart();
     }, 500);
   });
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
-  AddClass(orderSummeryBodySection, 'order-body');
+  AddClass(orderSummeryBodySection, "order-body");
   const orderDiscount = CreateNewHTMLElement("div");
-  AddClass(orderDiscount, 'order-body-items');
+  AddClass(orderDiscount, "order-body-items");
   const discountText = CreateNewHTMLElement("span");
   discountText.innerHTML = "Discount 10% OFF";
   AppendChildToDynamicElement(orderDiscount, discountText);
@@ -259,7 +256,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
 
   const orderShipping = CreateNewHTMLElement("div");
-  AddClass(orderShipping, 'order-body-items');
+  AddClass(orderShipping, "order-body-items");
   const shippingText = CreateNewHTMLElement("span");
   shippingText.innerHTML = "Express shipping";
   AppendChildToDynamicElement(orderShipping, shippingText);
@@ -270,8 +267,8 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, orderShipping);
 
   const deliveryDate = CreateNewHTMLElement("div");
-  AddClass(deliveryDate, 'order-body-items');
-  AddClass(deliveryDate, 'delivery-date');
+  AddClass(deliveryDate, "order-body-items");
+  AddClass(deliveryDate, "delivery-date");
   const deliveryDateText = CreateNewHTMLElement("span");
   const dateOfOrder = new Date();
   const result = dateOfOrder.setDate(dateOfOrder.getDate() + 7);
@@ -286,7 +283,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, deliveryDate);
 
   const vatTax = CreateNewHTMLElement("div");
-  AddClass(vatTax, 'order-body-items');
+  AddClass(vatTax, "order-body-items");
   const vatTaxText = CreateNewHTMLElement("span");
   vatTaxText.innerHTML = "VAT 16% ";
   AppendChildToDynamicElement(vatTax, vatTaxText);
@@ -298,8 +295,8 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, vatTax);
 
   const total = CreateNewHTMLElement("div");
-  AddClass(total, 'order-body-items');
-  AddClass(total, 'totals');
+  AddClass(total, "order-body-items");
+  AddClass(total, "totals");
   const totalText = CreateNewHTMLElement("span");
   totalText.innerHTML = "Total";
   AppendChildToDynamicElement(total, totalText);
@@ -314,7 +311,7 @@ const CheckoutPage = () => {
   AddClass(orderSummeryFooterSection, "order-footer");
   const checkoutButton = CreateNewHTMLElement("button");
   checkoutButton.innerHTML = "ORDER";
-  AppendChildToDynamicElement (orderSummeryFooterSection, checkoutButton);
+  AppendChildToDynamicElement(orderSummeryFooterSection, checkoutButton);
   AppendChildToDynamicElement(checkOutDiv, orderSummeryFooterSection);
 
   AppendChildToDynamicElement(checkoutContainer, checkOutDiv);
