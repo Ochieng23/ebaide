@@ -1792,4 +1792,5 @@ tfoot > tr > td{
   display: block !important;
   background-color: transparent;
   text-transform: uppercase !important;
+  color: whitesmoke !important;
 }
