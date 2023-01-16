@@ -321,7 +321,10 @@ const CheckoutPage = () => {
 
   //SENDING ORDER TO BACKEND SERVICE:
   checkoutButton.addEventListener ("click", () => {
-     const orderItems = sessionStorage.getItem("order-items");
+     const orderItems = {
+       details: sessionStorage.getItem("order-items"),
+     };
+     console.log(orderItems);
      //SENDING VIA FETCH TO BACKEND
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
      fetch(order_processing_URI, {
