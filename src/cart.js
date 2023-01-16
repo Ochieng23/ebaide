@@ -324,7 +324,7 @@ const PaymentPhoneNumber = () => {
   const form = CreateNewHTMLElement("form");
   AddClass(form, "address-form");
   const phoneNumberDiv = CreateNewHTMLElement("div");
-  AddClass(fnameDiv, "input-div");
+  AddClass(phoneNumberDiv, "input-div");
   const phoneNumberLabel = CreateNewHTMLElement("label");
   const labelTextSpan = CreateNewHTMLElement("span");
   labelTextSpan.innerHTML = "Enter phoneNumber to make payment*";
