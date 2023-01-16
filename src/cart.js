@@ -163,9 +163,6 @@ const DisplayCartItems = cartItemsArray => {
 const Cart = () => {
   //e.preventDefault();
   ClearContent(FindSingleElement, "#body");
-  if(FindSingleElement(".cart-container") !== null) {
-    ClearContent(FindSingleElement, ".cart-container");
-  };
   setTimeout(() => {
     AddClass(cartDiv, "cart-container");
 
@@ -178,7 +175,7 @@ const Cart = () => {
     };
 
     if (cartItems.length > 0) {
-      
+
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
     };
