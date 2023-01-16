@@ -179,6 +179,7 @@ const Cart = () => {
         ClearContent(FindSingleElement, ".cart-container");
         console.log (FindSingleElement(".cart-container"));
       };
+      console.log (FindSingleElement(".cart-container"))
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
     };
