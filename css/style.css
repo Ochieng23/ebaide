@@ -1739,4 +1739,7 @@ tfoot > tr > td{
 .order-body-items{
   background-color: red;
   padding: 2.4%;
+  display: grid;
+  grid-template-columns: 40% 30% !important;
+  column-gap: 16%;
 }
