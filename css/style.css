@@ -1756,9 +1756,10 @@ tfoot > tr > td{
 }
 /* Delivery date */
 .delivery-date {
-  border-left: .1em solid blue !important;
+  
 }
 .delivery-date > span {
+  border-left: .1em solid blue !important;
   text-transform: capitalize !important;
   font-size: 1.2em !important;
 }
