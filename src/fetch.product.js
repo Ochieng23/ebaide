@@ -343,7 +343,9 @@ const PullProductsFromBackendAPI = () => {
             addToCartButton.addEventListener("click", e => {
               e.preventDefault();
               //console.log(e)
-              if (quantityToBuy.value < 1){};
+              if (quantityToBuy.value < 1){
+                
+              };
               RemoveClassFromNewElement(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
