@@ -1788,6 +1788,8 @@ tfoot > tr > td{
   padding: 4% 0 !important;
   margin-bottom: 8% !important;
   display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .order-footer > button {
   display: block !important;
