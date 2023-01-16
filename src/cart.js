@@ -219,7 +219,7 @@ const CheckoutPage = () => {
   const orderSummeryHeadingSection = CreateNewHTMLElement("div");
   AddClass(orderSummeryHeadingSection, "order-header");
   const heading = CreateNewHTMLElement("h2");
-  heading.innerHTML = "Order summery";
+  heading.innerHTML = "Order summary";
   AppendChildToDynamicElement(orderSummeryHeadingSection, heading);
 
   const editCartButton = CreateNewHTMLElement("button");
