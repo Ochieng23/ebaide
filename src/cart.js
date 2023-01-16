@@ -362,7 +362,7 @@ const PaymentPhoneNumber = () => {
     );
     const updatedOrder = [
       ...currentOrder,
-      {paymentDetails: phoneNumberInput.value}
+      {paymentDetail: phoneNumberInput.value}
     ];
     sessionStorage.setItem ("order-items", JSON.stringify(updatedOrder));
     setTimeout(() => {
