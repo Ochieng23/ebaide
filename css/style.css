@@ -1719,4 +1719,5 @@ tfoot > tr > td{
   display: block !important;
   background-color: transparent !important;
   color: blue !important;
+  font-size: 2em !important;
 }
