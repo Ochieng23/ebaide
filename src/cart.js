@@ -163,8 +163,8 @@ const DisplayCartItems = cartItemsArray => {
 const Cart = () => {
   //e.preventDefault();
   ClearContent(FindSingleElement, "#body");
-  ClearContent(FindSingleElement, ".cart-container");
   setTimeout(() => {
+    ClearContent(FindSingleElement, ".cart-container");
     AddClass(cartDiv, "cart-container");
 
     const cartItems = JSON.parse(localStorage.getItem("cart-items") || "[]");
