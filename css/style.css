@@ -1694,4 +1694,5 @@ tfoot > tr > td{
 /* CHECKOUT PAGE */
 .Checkout-container {
   background-color: #fff;
+  display: flex !important;
 }
