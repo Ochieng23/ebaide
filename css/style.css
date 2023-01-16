@@ -1740,11 +1740,13 @@ tfoot > tr > td{
   background-color: red;
   padding: 2.4%;
   display: grid;
-  grid-template-columns: 40% 30% !important;
+  grid-template-columns: 40% 20% !important;
   justify-content: center !important;
   align-items: center !important;
-  column-gap: 16%;
+  column-gap: 20%;
+  width: 100% !important;
 }
 .order-body-items > span {
   display: block !important;
+  font-size: 1.6em !important;
 }
