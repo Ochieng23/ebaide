@@ -286,6 +286,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, vatTax);
 
   const total = CreateNewHTMLElement("div");
+  AddClass(total, 'order-body-items');
   const totalText = CreateNewHTMLElement("span");
   totalText.innerHTML = "Total";
   AppendChildToDynamicElement(total, totalText);
