@@ -1756,6 +1756,7 @@ tfoot > tr > td{
 }
 /* Delivery date */
 .delivery-date {
+  display: grid;
   background-color: rebeccapurple;
 }
 .delivery-date > span {
