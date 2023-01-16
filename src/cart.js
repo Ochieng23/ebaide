@@ -328,6 +328,10 @@ const PaymentPhoneNumber = () => {
 
   const phoneNumberInput = CreateNewHTMLElement("input");
   AddAttributeToElement (phoneNumberInput, "type", "tel");
+  AddAttributeToElement (
+    phoneNumberInput,
+    
+    )
   AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
   AppendChildToDynamicElement (phoneNumberDiv, phoneNumberLabel);
   AppendChildToDynamicElement(form, phoneNumberDiv);
