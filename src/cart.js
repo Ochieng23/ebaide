@@ -229,6 +229,9 @@ const CheckoutPage = () => {
 
   //EDIT Cart ACTION:
   editCartButton.addEventListener("click", (event) => {
+    ClearContent (
+        
+      )
     setTimeout(() => {
       Cart ()
     }, 500);
