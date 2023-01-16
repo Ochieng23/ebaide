@@ -330,8 +330,9 @@ const PaymentPhoneNumber = () => {
   AddAttributeToElement (phoneNumberInput, "type", "tel");
   AddAttributeToElement (
     phoneNumberInput,
-    
-    )
+    "placeholder",
+    "Use format e.g. 254700258098"
+    );
   AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
   AppendChildToDynamicElement (phoneNumberDiv, phoneNumberLabel);
   AppendChildToDynamicElement(form, phoneNumberDiv);
