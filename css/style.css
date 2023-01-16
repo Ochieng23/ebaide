@@ -1743,3 +1743,6 @@ tfoot > tr > td{
   grid-template-columns: 40% 30% !important;
   column-gap: 16%;
 }
+.order-body-items > span {
+  display: block !important;
+}
