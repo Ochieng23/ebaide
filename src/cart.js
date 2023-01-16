@@ -229,6 +229,7 @@ const CheckoutPage = () => {
   const orderSummeryBodySection = CreateNewHTMLElement("div");
   AddClass(orderSummeryBodySection, 'order-body');
   const orderDiscount = CreateNewHTMLElement("div");
+  AddClass(orderDiscount, 'order-body-items');
   const discountText = CreateNewHTMLElement("span");
   discountText.innerHTML = "Discount 10% OFF";
   AppendChildToDynamicElement(orderDiscount, discountText);
