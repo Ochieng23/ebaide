@@ -351,7 +351,7 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
-  
+  nextButton.addEventListener("click", () => {});
 };
 
 const UserAddress = () => {
