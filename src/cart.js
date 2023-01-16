@@ -352,7 +352,7 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
-  nextButton.addEventListener("click", () => {
+  form.addEventListener("submit", () => {
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
