@@ -1754,6 +1754,9 @@ tfoot > tr > td{
 .order-body-items > span::first-letter {
   text-transform: uppercase;
 }
+.vat-tax{
+  text-transform: uppercase !important;
+}
 /* Delivery date */
 .delivery-date {
   display: grid;
