@@ -1729,3 +1729,6 @@ tfoot > tr > td{
   color: blue !important;
   font-size: 2em !important;
 }
+.order-body {
+  display: flex !important;
+}
