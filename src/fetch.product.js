@@ -351,6 +351,7 @@ const PullProductsFromBackendAPI = () => {
                   'input[type=number]',
                   "You must buy at least 1 item." 
                   );
+                  return;
               };
               RemoveClassFromNewElement(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
