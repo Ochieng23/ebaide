@@ -180,8 +180,7 @@ const Cart = () => {
     if (cartItems.length > 0) {
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
-    }
-    console.log (FindSingleElement('#table'));
+    };
     const cartButtomCollection = CreateNewHTMLElement("div");
     AddClass(cartButtomCollection, "cartButtomCollection");
     const goBackToGoProductButton = CreateNewHTMLElement("button");
