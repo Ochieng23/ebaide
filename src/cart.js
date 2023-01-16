@@ -363,7 +363,7 @@ const PaymentPhoneNumber = () => {
     console.log ("current order", currentOrder);
     const updatedOrder = [
       ...currentOrder,
-      paymentDetails: phoneNumberInput.value
+      {paymentDetails: phoneNumberInput.value}
     ];
     console.log ("Updated order:", updatedOrder);
     setTimeout(() => {
