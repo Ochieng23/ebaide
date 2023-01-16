@@ -1767,6 +1767,6 @@ tfoot > tr > td{
   border-left: .1em solid blue !important;
   text-transform: capitalize !important;
   font-size: 1.2em !important;
+  width: 50% !important;
   background-color: #F28500;
-  width: 100%;
 }
