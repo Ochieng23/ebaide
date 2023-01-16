@@ -337,7 +337,11 @@ const CheckoutPage = () => {
      .then(
       response => response.json()
      )
-     .then()
+     .then(
+      data => {
+        console.log(data);
+      }
+     )
      .catch();
   });
 };
