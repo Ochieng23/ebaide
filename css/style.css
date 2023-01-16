@@ -1718,4 +1718,5 @@ tfoot > tr > td{
 .order-header > button {
   display: block !important;
   background-color: transparent !important;
+  color: blue !important;
 }
