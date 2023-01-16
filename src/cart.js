@@ -318,7 +318,7 @@ const CheckoutPage = () => {
 };
 
 const PaymentPhoneNumber = () => {
-
+  AppendChildToDynamicElement ("#body", FindSingleElement, phoneNumberPageContainer)
 };
 
 const UserAddress = () => {
