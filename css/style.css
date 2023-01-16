@@ -1719,6 +1719,9 @@ tfoot > tr > td{
   font-weight: 600;
   text-transform: lowercase;
 }
+.order-header > h2::first-letter {
+  text-transform: uppercase !important;
+}
 .order-header > button {
   display: block !important;
   background-color: transparent !important;
