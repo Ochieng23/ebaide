@@ -274,6 +274,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, deliveryDate);
 
   const vatTax = CreateNewHTMLElement("div");
+  AddClass(vatTax, 'order-body-items');
   const vatTaxText = CreateNewHTMLElement("span");
   vatTaxText.innerHTML = "VAT 16% ";
   AppendChildToDynamicElement(vatTax, vatTaxText);
