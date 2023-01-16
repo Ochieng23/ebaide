@@ -175,7 +175,9 @@ const Cart = () => {
     };
 
     if (cartItems.length > 0) {
-
+      if(FindSingleElement(".cart-container") !== null) {
+        ClearContent(FindSingleElement, ".cart-container");
+      };
       DisplayCartItems(cartItems);
       AppendChildToDynamicElement(cartDiv, displayTable);
     };
