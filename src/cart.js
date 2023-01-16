@@ -326,7 +326,9 @@ const CheckoutPage = () => {
      const order_processing_URI = `
      http://localhost:6000/api/orders/new-order
      `;
-     fetch()
+     fetch(order_processing_URI, {
+      
+     })
      .then()
      .then()
      .catch();
