@@ -357,7 +357,9 @@ const PaymentPhoneNumber = () => {
   );
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log (phoneNumberInput.value);
+    const currentorder = JSON.parse (
+      sessionStorage.getItem ("order-items")
+    );
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
