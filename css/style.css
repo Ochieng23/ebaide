@@ -1787,6 +1787,7 @@ tfoot > tr > td{
   background-color: rebeccapurple;
   padding: 4% 0 !important;
   margin-bottom: 8% !important;
+  display: flex !important;
 }
 .order-footer > button {
   display: block !important;
