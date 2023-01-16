@@ -1792,7 +1792,7 @@ tfoot > tr > td{
 }
 .order-footer > button {
   display: block !important;
-  background: linear-gradient(to right, rgb(255, 167, 4), rgb(255, 167, 4) );
+  background: linear-gradient(to right, rgb(255, 167, 4), rgb(241, 174, 48) );
   text-transform: uppercase !important;
   color: whitesmoke !important;
   font-size: 2.4em !important;
