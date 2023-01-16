@@ -320,8 +320,8 @@ const CheckoutPage = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 
   //SENDING ORDER TO BACKEND SERVICE:
-  checkoutButton.addEventListener ("click", async() => {
-
+  checkoutButton.addEventListener ("click", () => {
+     
   });
 };
 
