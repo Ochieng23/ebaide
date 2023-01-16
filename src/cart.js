@@ -60,6 +60,7 @@ const addressContainer = CreateNewHTMLElement("div");
 const checkoutContainer = CreateNewHTMLElement("div");
 
 const DisplayCartItems = cartItemsArray => {
+  console.log (FindSingleElement('#table'));
   const tableHeader = CreateNewHTMLElement("thead");
   const tableHeaderRow = CreateNewHTMLElement("tr");
   CartTableHeadingsArray.map(item => {
