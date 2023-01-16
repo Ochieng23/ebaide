@@ -212,6 +212,7 @@ const Cart = () => {
 
 //CHECKOUT PAGE:
 const CheckoutPage = () => {
+  AddClass(checkoutContainer, "Checkout-container");
   const checkOutDiv = CreateNewHTMLElement("div");
   const orderSummeryHeadingSection = CreateNewHTMLElement("div");
   const heading = CreateNewHTMLElement("h2");
