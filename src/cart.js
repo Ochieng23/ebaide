@@ -321,6 +321,8 @@ const PaymentPhoneNumber = () => {
   const formHolder = CreateNewHTMLElement("div");
   const form = CreateNewHTMLElement("form");
   const phoneNumberDiv = CreateNewHTMLElement("div");
+  const phoneNumberLabel = CreateNewHTMLElement("label");
+  AppendChildToDynamicElement (phoneNumberDiv, phoneNumberLabel);
   AppendChildToDynamicElement(form, phoneNumberDiv);
   AppendChildToDynamicElement (formHolder, form);
   AppendChildToDynamicElement (phoneNumberPageContainer, formHolder);
