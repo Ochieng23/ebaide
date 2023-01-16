@@ -1750,3 +1750,8 @@ tfoot > tr > td{
   font-size: 1.6em !important;
   font-weight: 100;
 }
+.order-body-items > span::first-letter {
+  display: block !important;
+  font-size: 1.6em !important;
+  font-weight: 100;
+}
