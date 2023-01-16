@@ -248,6 +248,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
 
   const orderShipping = CreateNewHTMLElement("div");
+  AddClass(orderShipping, 'order-body-items');
   const shippingText = CreateNewHTMLElement("span");
   shippingText.innerHTML = "Express shipping";
   AppendChildToDynamicElement(orderShipping, shippingText);
