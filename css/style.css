@@ -1708,7 +1708,8 @@ tfoot > tr > td{
 }
 .order-header{ 
   background-color: red !important;
-  display: flex !important;
+  display: grid !important;
+  grid-template-columns: 35% 35% !important;
   justify-content: center !important;
   align-items: center !important;
   padding: 4em 0 !important;
