@@ -228,8 +228,7 @@ const CheckoutPage = () => {
 
 
   //EDIT Cart ACTION:
-  
-
+  editCartButton.addEventListener("click", Cart);
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
   AddClass(orderSummeryBodySection, 'order-body');
