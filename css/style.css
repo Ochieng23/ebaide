@@ -1789,5 +1789,5 @@ tfoot > tr > td{
   margin-bottom: 8% !important;
 }
 .order-footer > button {
-  
+  display: block !important;
 }
