@@ -1710,6 +1710,7 @@ tfoot > tr > td{
   background-color: red !important;
   display: grid !important;
   grid-template-columns: 35% 35% !important;
+  column-gap: 12%;
   justify-content: center !important;
   align-items: center !important;
   padding: 4em 0 !important;
