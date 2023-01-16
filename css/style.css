@@ -1760,7 +1760,7 @@ tfoot > tr > td{
   grid-template-columns: 100% !important;
   justify-content: center !important;
   align-items: center !important;
-  padding-left: 4em !important;
+  padding-left: 3.8em !important;
   background-color: rebeccapurple;
 }
 .delivery-date > span {
