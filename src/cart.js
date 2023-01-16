@@ -404,8 +404,11 @@ const UserAddress = () => {
 
     sessionStorage.setItem("order-items", JSON.stringify(order));
     setTimeout(() => {
+      console.log("before clearing");
       ClearContent(FindSingleElement, "#body");
+      console.log("after clearing");
       CheckoutPage();
+      console.log("after calling CheckoutPage");
     }, 1500);
   });
 };
