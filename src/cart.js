@@ -334,11 +334,11 @@ const PaymentPhoneNumber = () => {
     "Use format e.g. 254700258098"
   );
   AddAttributeToElement(phoneNumberInput, "required", true);
-  
   AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
   AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
 
   AppendChildToDynamicElement(form, phoneNumberDiv);
+  
   AppendChildToDynamicElement(formHolder, form);
   AppendChildToDynamicElement(phoneNumberPageContainer, formHolder);
   AppendHTMLChildToStaticElement(
