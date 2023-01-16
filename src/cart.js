@@ -232,7 +232,7 @@ const CheckoutPage = () => {
   //EDIT Cart ACTION:
   editCartButton.addEventListener("click", event => {
     const updatedList = JSON.parse(
-
+      localStorage.getItem("") || "[]"
     );
     DisplayCartItems(updatedList);
   });
