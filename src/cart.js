@@ -212,7 +212,6 @@ const Cart = () => {
 
 //CHECKOUT PAGE:
 const CheckoutPage = () => {
-  console.log("CheckoutPage")
   AddClass(checkoutContainer, "Checkout-container");
   const checkOutDiv = CreateNewHTMLElement("div");
   AddClass(checkOutDiv, "checkout-box");
