@@ -1707,7 +1707,6 @@ tfoot > tr > td{
   padding: .8em .8em !important;
 }
 .order-header{ 
-  background-color: red !important;
   display: grid !important;
   grid-template-columns: 35% 35% !important;
   column-gap: 12%;
