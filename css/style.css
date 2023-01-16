@@ -1713,6 +1713,7 @@ tfoot > tr > td{
   justify-content: center !important;
   align-items: center !important;
   padding: 4em 0 !important;
+  border-bottom: #333;
 }
 .order-header > button {
   display: block !important;
