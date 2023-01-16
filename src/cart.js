@@ -316,6 +316,10 @@ const CheckoutPage = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 };
 
+const PaymentPhoneNumber = () => {
+
+};
+
 const UserAddress = () => {
   const formContainer = CreateNewHTMLElement("div");
   AddClass(formContainer, "form-container");
