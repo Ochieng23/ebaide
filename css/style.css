@@ -1742,11 +1742,11 @@ tfoot > tr > td{
   grid-template-columns: 40% 20% !important;
   justify-content: center !important;
   align-items: center !important;
-  column-gap: 20%;
+  column-gap: 28%;
   width: 100% !important;
 }
 .order-body-items > span {
   display: block !important;
   font-size: 1.6em !important;
-  font-weight: 200;
+  font-weight: 100;
 }
