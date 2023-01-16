@@ -300,7 +300,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(checkOutDiv, orderSummeryBodySection);
 
   const orderSummeryFooterSection = CreateNewHTMLElement("div");
-  AddClass();
+  AddClass(orderSummeryFooterSection, "order-footer");
   const checkoutButton = CreateNewHTMLElement("button");
   checkoutButton.innerHTML = "ORDER";
   AppendChildToDynamicElement (orderSummeryFooterSection, checkoutButton);
