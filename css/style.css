@@ -1768,7 +1768,7 @@ tfoot > tr > td{
 }
 .delivery-date > span {
   display: block;
-  border-left: .1em solid rgb(0, 0, 134) !important;
+  border-left: .1em solid rgb(0, 0, 239) !important;
   text-transform: capitalize !important;
   font-size: 1.3em !important;
   width: 70% !important;
