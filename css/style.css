@@ -1701,5 +1701,6 @@ tfoot > tr > td{
   margin: .2em 0 !important;
 }
 .checkout-box{
-  
+  background-color: #fff !important;
+
 }
