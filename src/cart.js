@@ -342,7 +342,11 @@ const CheckoutPage = () => {
         console.log(data);
       }
      )
-     .catch();
+     .catch(
+      error => {
+        console.log(error);
+      }
+     );
   });
 };
 
