@@ -1772,5 +1772,5 @@ tfoot > tr > td{
 }
 /* totals */
 .totals > span {
-
+  font-weight: 700;
 }
