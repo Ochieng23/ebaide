@@ -227,9 +227,9 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(checkOutDiv, orderSummeryHeadingSection);
 
   //EDIT Cart ACTION:
-  editCartButton.addEventListener("click", event => {
-    Cart();
-  });
+  // editCartButton.addEventListener("click", event => {
+  //   Cart();
+  // });
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
   AddClass(orderSummeryBodySection, "order-body");
