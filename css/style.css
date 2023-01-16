@@ -1760,4 +1760,5 @@ tfoot > tr > td{
 }
 .delivery-date > span {
   text-transform: capitalize !important;
+  font-size: 1em !important;
 }
