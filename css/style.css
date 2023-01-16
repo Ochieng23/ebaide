@@ -1703,7 +1703,7 @@ tfoot > tr > td{
 .checkout-box{
   background-color: #fff !important;
   box-shadow: .1em .1em .2em .4em rgba(0, 0, 0, 0.037) !important;
-  width: 70vh !important;
+  width: 80vh !important;
   padding: .8em .8em !important;
 }
 .order-header{ 
