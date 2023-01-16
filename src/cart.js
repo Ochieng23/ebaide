@@ -318,6 +318,9 @@ const CheckoutPage = () => {
 
   AppendChildToDynamicElement(checkoutContainer, checkOutDiv);
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
+
+  //SENDING ORDER TO BACKEND SERVICE:
+  
 };
 
 const PaymentPhoneNumber = () => {
