@@ -260,6 +260,7 @@ const CheckoutPage = () => {
 
   const deliveryDate = CreateNewHTMLElement("div");
   AddClass(deliveryDate, 'order-body-items');
+  AddClass(deliveryDate, 'delivery-date');
   const deliveryDateText = CreateNewHTMLElement("span");
   const dateOfOrder = new Date();
   const result = dateOfOrder.setDate(dateOfOrder.getDate() + 7);
