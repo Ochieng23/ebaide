@@ -1758,6 +1758,8 @@ tfoot > tr > td{
 .delivery-date {
   display: grid;
   grid-template-columns: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
   background-color: rebeccapurple;
 }
 .delivery-date > span {
