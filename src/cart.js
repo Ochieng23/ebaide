@@ -362,7 +362,8 @@ const PaymentPhoneNumber = () => {
     );
     console.log (currentOrder);
     const updatedOrder = {
-
+      ...currentOrder,
+      paymentDetails: phoneNumberInput.value
     };
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
