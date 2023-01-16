@@ -1756,5 +1756,8 @@ tfoot > tr > td{
 }
 /* Delivery date */
 .delivery-date {
-  
+
+}
+.delivery-date > span {
+  text-transform: capitalize !important;
 }
