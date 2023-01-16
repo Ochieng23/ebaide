@@ -1717,5 +1717,5 @@ tfoot > tr > td{
 }
 .order-header > button {
   display: block !important;
-  background-color: none !important;
+  background-color: transparent !important;
 }
