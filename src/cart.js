@@ -330,7 +330,7 @@ const CheckoutPage = () => {
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
      fetch(order_processing_URI, {
       method: 'POST',
-      body: JSON.stringify({todo: "this is a new order"}),
+      body: {todo: "this is a new order"},
      })
      .then(
       response => response.json()
