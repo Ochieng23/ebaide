@@ -325,12 +325,12 @@ const CheckoutPage = () => {
      const orderObject = {
        data: orderItems
      };
-     console.log(orderObject);
+     //console.log(orderObject);
      //SENDING VIA FETCH TO BACKEND
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
      fetch(order_processing_URI, {
       method: 'POST',
-      body: JSON.stringify(orderItems),
+      body: JSON.stringify({todo: "this is a new order"}),
      })
      .then(
       response => response.json()
