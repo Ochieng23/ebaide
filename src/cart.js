@@ -330,7 +330,7 @@ const CheckoutPage = () => {
       if (sessionStorage.getItem("login_token") === null ){
         window.location.reload();
         setTimeout (() => {
-          window.location.href = "index.html#login_form";
+          let formBtn = document.querySelector('#login-btn');
         }, 1500);
         return;
       }
