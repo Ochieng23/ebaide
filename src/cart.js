@@ -347,6 +347,7 @@ const CheckoutPage = () => {
       data => {
         if(data.error){
           console.log(data.error);
+          return;
         };
       }
      )
