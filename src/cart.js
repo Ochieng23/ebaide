@@ -329,7 +329,7 @@ const CheckoutPage = () => {
      
       if (sessionStorage.getItem("login_token") === null ){
         window.location.href = "index.html";
-        
+        setTimeout (() => {});
         return;
       }
      fetch(order_processing_URI, {
