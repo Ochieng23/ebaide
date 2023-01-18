@@ -328,7 +328,7 @@ const CheckoutPage = () => {
      //CHECK IF USER IS LOGGED IN:
      
       if (sessionStorage.getItem("login_token") === null ){
-        
+        window.location.
       }
      fetch(order_processing_URI, {
       method: 'POST',
