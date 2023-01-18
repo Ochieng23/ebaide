@@ -349,10 +349,10 @@ const CheckoutPage = () => {
           console.log(data.error);
           return;
         };
-        if(data.data.error){
-          console.log(data.error);
-          return;
-        };
+        // if(data.data.error){
+        //   console.log(data.error);
+        //   return;
+        // };
         console.log (data);
       }
      )
