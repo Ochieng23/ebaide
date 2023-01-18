@@ -354,7 +354,7 @@ const CheckoutPage = () => {
         //   return;
         // };
         if(data.data.data.errorCode){
-          console.log(data.data.data.errorMessage);
+          console.log(data);
           return;
         };
       }
