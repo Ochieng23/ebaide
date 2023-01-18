@@ -328,7 +328,8 @@ const CheckoutPage = () => {
      //CHECK IF USER IS LOGGED IN:
      
       if (sessionStorage.getItem("login_token") === null ){
-        window.location.href = "index.html#login_form";
+        window.location.href = "index.html";
+        
         return;
       }
      fetch(order_processing_URI, {
