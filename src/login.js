@@ -41,9 +41,9 @@ const newElement = (tag) => {
     });
     /**
      * @TOBERETURNED
-     * 
+     * LOGIN LIVE URI = https://service.goebaide.com/api/auth/login
      */
-    fetch("httploginlocalhost:3000/api/auth/login", {
+    fetch("http://localhost:3000/api/auth/login", {
       method: "POST",
       body: body,
       headers: {
