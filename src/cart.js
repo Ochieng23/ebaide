@@ -330,7 +330,7 @@ const CheckoutPage = () => {
       if (sessionStorage.getItem("login_token") === null ){
         window.location.reload();
         setTimeout (() => {
-          let formBtn = document.querySelector('#login-btn');
+          const formBtn = document.querySelector('#login-btn');
           AddClass (formBtn, "active");
         }, 1500);
         return;
