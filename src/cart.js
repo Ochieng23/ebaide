@@ -328,7 +328,7 @@ const CheckoutPage = () => {
      //CHECK IF USER IS LOGGED IN:
      
       if (sessionStorage.getItem("login_token") === null ){
-        window.location.href = "index.html";
+        window.location.reload();
         setTimeout (() => {
           window.location.href = "index.html#login_form";
         }, 1500);
