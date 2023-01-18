@@ -59,7 +59,7 @@ const ClearContentOfElement = (cb, element) => {
   cb(element).innerHTML = "";
 };
 const ProductBackendAPIURI =
-    "localhost:3000/api/product/all_products";
+    "http://localhost:3000/api/product/all_products";
   /*"https://service.goebaide.com/api/product/all_products";*/
 
 const PullProductsFromBackendAPI = () => {
