@@ -326,9 +326,10 @@ const CheckoutPage = () => {
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
 
      //CHECK IF USER IS LOGGED IN:
-     console.log (
-      sessionStorage.getItem("login_token")
-     )
+     
+      if (sessionStorage.getItem("login_token") === null ){
+        
+      }
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
