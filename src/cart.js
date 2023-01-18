@@ -353,7 +353,7 @@ const CheckoutPage = () => {
         //   console.log(data.error);
         //   return;
         // };
-        console.log (data);
+        console.log (data.status);
       }
      )
      .catch(
