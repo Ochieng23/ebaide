@@ -345,7 +345,9 @@ const CheckoutPage = () => {
      )
      .then(
       data => {
-        console.log(data);
+        if(data.error){
+          
+        };
       }
      )
      .catch(
