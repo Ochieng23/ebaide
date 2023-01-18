@@ -328,7 +328,8 @@ const CheckoutPage = () => {
       method: 'POST',
       body: orderItems,
       headers:{
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + token
       }
      })
      .then(
