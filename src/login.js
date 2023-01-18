@@ -21,7 +21,6 @@ const newElement = (tag) => {
     e.preventDefault();
     const email = ElementById("email").value;
     const password = ElementById("password").value;
-    console.log(ElementById("login_form").childElementCount)
     if (ElementById("login_form").childElementCount > 9) {
       clearingElement (ElementById("login_form").lastElementChild);
       return;
