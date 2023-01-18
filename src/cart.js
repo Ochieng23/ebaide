@@ -331,6 +331,7 @@ const CheckoutPage = () => {
         window.location.reload();
         setTimeout (() => {
           let formBtn = document.querySelector('#login-btn');
+          AddClass (formBtn, "active");
         }, 1500);
         return;
       }
