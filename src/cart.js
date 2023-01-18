@@ -353,8 +353,8 @@ const CheckoutPage = () => {
         //   console.log(data.error);
         //   return;
         // };
-        (data.data.data){
-          console.log(data.data.data);
+        if(data.data.data.errorCode){
+          console.log(data.data.data.errorMessage);
           return;
         };
       }
