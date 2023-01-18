@@ -331,7 +331,7 @@ const CheckoutPage = () => {
         window.location.reload();
         return;
       };
-      const token = sessionStorage.getItem("login_token");
+     const token = sessionStorage.getItem("login_token");
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
