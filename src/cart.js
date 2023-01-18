@@ -329,13 +329,14 @@ const CheckoutPage = () => {
      
       if (sessionStorage.getItem("login_token") === null ){
         window.location.href = "index.html#login_form";
+        return;
       }
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
       headers:{
         "Content-Type": "application/json",
-        "Authorization": "Bearer " + token
+        //"Authorization": "Bearer " + token
       }
      })
      .then(
