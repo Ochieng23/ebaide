@@ -330,7 +330,7 @@ const CheckoutPage = () => {
       if (sessionStorage.getItem("login_token") === null ){
         window.location.reload();
         return;
-      }
+      };
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
