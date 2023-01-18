@@ -91,7 +91,7 @@ const PullProductsFromBackendAPI = () => {
         AddAttributeToElement(
           productImage,
           "src",
-          `localhost:3000/${image}`
+          `http://localhost:3000/${image}`
           /*`https://service.goebaide.com/${image}`*/
         );
         AddAttributeToElement(productImage, "alt", "product image");
