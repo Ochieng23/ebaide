@@ -324,6 +324,11 @@ const CheckoutPage = () => {
      const orderItems = sessionStorage.getItem("order-items");
      //SENDING VIA FETCH TO BACKEND
      const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
+
+     //CHECK IF USER IS LOGGED IN:
+     console.log (
+      sessionStorage.getItem("login_token")
+     )
      fetch(order_processing_URI, {
       method: 'POST',
       body: orderItems,
