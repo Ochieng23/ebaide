@@ -328,7 +328,7 @@ const CheckoutPage = () => {
     //CHECK IF USER IS LOGGED IN:
 
     if (sessionStorage.getItem("login_token") === null) {
-      
+      ClearContent (FindSingleElement, ".Checkout-container");
       setTimeout(() => {
         window.location.reload();
       }, 2000);
