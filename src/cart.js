@@ -332,7 +332,7 @@ const CheckoutPage = () => {
       const errorParentHolder = FindSingleElement(".Checkout-container");
       ErrorMessage(
         CreateNewHTMLElement,
-        AppendHTMLChildToStaticElement,
+        AppendChildToDynamicElement,
         "p",
         errorParentHolder,
         "You are not logged in, please login to finish your checkout!"
