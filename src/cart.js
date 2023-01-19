@@ -331,10 +331,11 @@ const CheckoutPage = () => {
       ClearContent (FindSingleElement, ".Checkout-container");
       ErrorMessage(
         CreateNewHTMLElement,
-         
+        AppendHTMLChildToStaticElement,
         "p",
-
-        )
+        ".Checkout-container",
+        "You are not logged in, please login to finish your checkout!"
+        );
       setTimeout(() => {
         window.location.reload();
       }, 2000);
