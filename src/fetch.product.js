@@ -89,6 +89,8 @@ const PullProductsFromBackendAPI = () => {
         AddClassToNewElement(divProductBox, "box");
         AddAttributeToElement(divProductBox, "id", id);
 
+        //PROCESSING IMAGE:
+        
         AddAttributeToElement(
           productImage,
           "src",
