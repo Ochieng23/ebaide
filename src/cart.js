@@ -329,12 +329,12 @@ const CheckoutPage = () => {
 
     if (sessionStorage.getItem("login_token") === null) {
       ClearContent (FindSingleElement, ".Checkout-container");
-      const errorParentHolder = FindSingleElement
+      const errorParentHolder = FindSingleElement(".Checkout-container");
       ErrorMessage(
         CreateNewHTMLElement,
         AppendHTMLChildToStaticElement,
         "p",
-        ".Checkout-container",
+        errorParentHolder,
         "You are not logged in, please login to finish your checkout!"
         );
       setTimeout(() => {
