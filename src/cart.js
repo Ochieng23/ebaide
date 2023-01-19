@@ -329,6 +329,7 @@ const CheckoutPage = () => {
 
     if (sessionStorage.getItem("login_token") === null) {
       ClearContent (FindSingleElement, ".Checkout-container");
+      const errorParentHolder = FindSingleElement
       ErrorMessage(
         CreateNewHTMLElement,
         AppendHTMLChildToStaticElement,
