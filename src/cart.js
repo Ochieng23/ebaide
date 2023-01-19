@@ -349,14 +349,6 @@ const CheckoutPage = () => {
           console.log(data.error);
           return;
         };
-        // if(data.data.error){
-        //   console.log(data.error);
-        //   return;
-        // };
-        if(data.data.data.errorCode){
-          console.log(data);
-          return;
-        };
       }
      )
      .catch(
