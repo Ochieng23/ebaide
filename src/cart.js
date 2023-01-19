@@ -229,10 +229,10 @@ const CheckoutPage = () => {
 
   //EDIT Cart ACTION:
   editCartButton.addEventListener("click", event => {
-    setTimeout ( () => {
+    setTimeout(() => {
       window.location.reload();
       //Cart();
-    }, 1500)
+    }, 1500);
   });
 
   const orderSummeryBodySection = CreateNewHTMLElement("div");
@@ -320,42 +320,38 @@ const CheckoutPage = () => {
   AppendHTMLChildToStaticElement("#body", FindSingleElement, checkoutContainer);
 
   //SENDING ORDER TO BACKEND SERVICE:
-  checkoutButton.addEventListener ("click", () => {
-     const orderItems = sessionStorage.getItem("order-items");
-     //SENDING VIA FETCH TO BACKEND
-     const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
+  checkoutButton.addEventListener("click", () => {
+    const orderItems = sessionStorage.getItem("order-items");
+    //SENDING VIA FETCH TO BACKEND
+    const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
 
-     //CHECK IF USER IS LOGGED IN:
-     
-      if (sessionStorage.getItem("login_token") === null ){
+    //CHECK IF USER IS LOGGED IN:
+
+    if (sessionStorage.getItem("login_token") === null) {
+      setTimeout(() => {
         window.location.reload();
-        return;
-      };
-     const token = sessionStorage.getItem("login_token");
-     fetch(order_processing_URI, {
-      method: 'POST',
+      }, 2000);
+      return;
+    }
+    const token = sessionStorage.getItem("login_token");
+    fetch(order_processing_URI, {
+      method: "POST",
       body: orderItems,
-      headers:{
+      headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer " + token
+        Authorization: "Bearer " + token
       }
-     })
-     .then(
-      response => response.json()
-     )
-     .then(
-      data => {
-        if(data.error){
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.error) {
           console.log(data.error);
           return;
-        };
-      }
-     )
-     .catch(
-      error => {
+        }
+      })
+      .catch(error => {
         console.log(error);
-      }
-     );
+      });
   });
 };
 
@@ -383,8 +379,8 @@ const PaymentPhoneNumber = () => {
 
   AppendChildToDynamicElement(form, phoneNumberDiv);
 
-  const nextButtonDiv = CreateNewHTMLElement ("div");
-  const nextButton = CreateNewHTMLElement('button');
+  const nextButtonDiv = CreateNewHTMLElement("div");
+  const nextButton = CreateNewHTMLElement("button");
   nextButton.innerHTML = "Next";
   AddClass(nextButton, "save-address");
   AddAttributeToElement(nextButton, "type", "submit");
@@ -397,16 +393,14 @@ const PaymentPhoneNumber = () => {
     FindSingleElement,
     phoneNumberPageContainer
   );
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", e => {
     e.preventDefault();
-    const currentOrder = JSON.parse (
-      sessionStorage.getItem ("order-items")
-    );
+    const currentOrder = JSON.parse(sessionStorage.getItem("order-items"));
     const updatedOrder = [
       ...currentOrder,
-      {paymentDetail: phoneNumberInput.value}
+      { paymentDetail: phoneNumberInput.value }
     ];
-    sessionStorage.setItem ("order-items", JSON.stringify(updatedOrder));
+    sessionStorage.setItem("order-items", JSON.stringify(updatedOrder));
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
