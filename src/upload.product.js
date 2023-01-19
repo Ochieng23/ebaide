@@ -38,7 +38,8 @@ const GetToken = () => {
   return token;
 };
 
-const uploadApiUri = "https://service.goebaide.com/api/product/new";
+const uploadApiUri = "http://localhost:3000/api/product/new"
+//"https://service.goebaide.com/api/product/new";
 
 const PingFetchRequest = e => {
   e.preventDefault();
