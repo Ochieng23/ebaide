@@ -91,7 +91,7 @@ const PullProductsFromBackendAPI = () => {
 
         //PROCESSING IMAGE:
         const img = image.split(",");
-        console.log(img);
+        console.log(img[0]);
 
         AddAttributeToElement(
           productImage,
