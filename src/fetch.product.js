@@ -204,8 +204,8 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(
               productFirstImage,
               "src",
-              `http://localhost:3000/${SingleProduct[0].image}`
-              /*`https://service.goebaide.com/${SingleProduct[0].image}`*/
+              `http://localhost:3000/${singleProductImage[0]}`
+              /*`https://service.goebaide.com/${singleProductImage[0]}`*/
             );
             AppendChildToParentElementUsingElement(
               productBox,
