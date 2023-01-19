@@ -339,7 +339,7 @@ const CheckoutPage = () => {
         );
       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 3000);
       return;
     }
     const token = sessionStorage.getItem("login_token");
