@@ -14,6 +14,8 @@ const cartSize = JSON.parse(
   localStorage.getItem("cart-items") || '[]'
 );
 
+
+
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
