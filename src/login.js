@@ -33,11 +33,11 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   parentElement.appendChild (element);
 };
 
-const closeMsgBtn = document.querySelector(".close-msg-btn");
-closeMsgBtn.addEventListener ("click", (e) =>{
-  e.preventDefault ();
-  clearingElement (ElementById("login-form-container"));
-})
+// const closeMsgBtn = document.querySelector(".close-msg-btn");
+// closeMsgBtn.addEventListener ("click", (e) =>{
+//   e.preventDefault ();
+//   clearingElement (ElementById("login-form-container"));
+// })
 
   const getData = (e) => {
     e.preventDefault();
