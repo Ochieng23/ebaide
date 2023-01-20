@@ -132,7 +132,7 @@ const PullProductsFromBackendAPI = () => {
           productPriceEstimate
         );
         AppendChildToParentElementUsingElement(productContent, productPrice);
-        
+
         buyNowBtn.innerHTML = "Buy Now";
         AddClassToNewElement(buyNowBtn, "view-product");
         AddClassToNewElement(buyNowBtn, "btn");
@@ -161,6 +161,7 @@ const PullProductsFromBackendAPI = () => {
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
       );
+      console (productCollection);
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map(item => {
         if (item.innerHTML === "Go to cart") {
