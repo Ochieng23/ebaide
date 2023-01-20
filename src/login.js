@@ -36,6 +36,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
 const closeMsgBtn = document.querySelector(".close-msg-btn");
 closeMsgBtn.addEventListener ("click", (e) =>{
   e.preventDefault ();
+  
 })
 
   const getData = (e) => {
