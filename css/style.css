@@ -1835,7 +1835,7 @@ tfoot > tr > td{
   color: black;
   border: .1em solid #eee;
   border-radius: 50% !important;
-  padding: .4% .8% !important;
+  padding: .4% 1.6% !important;
 }
 .msg-span {
   font-size: 2em !important;
