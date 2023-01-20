@@ -65,7 +65,7 @@ const newElement = (tag) => {
         };
         //console.log(data.token);
         sessionStorage.setItem("login_token", data.token);
-        setTimeout ()
+        setTimeout (() => {}, 3500);
       })
       .catch(error => {
         Error(error.error);
