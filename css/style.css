@@ -1843,3 +1843,6 @@ tfoot > tr > td{
   margin-left: .8em !important;
   text-transform: lowercase !important;
 }
+.msg-span ::first-letter {
+  
+}
