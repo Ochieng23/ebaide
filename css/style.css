@@ -1816,7 +1816,7 @@ tfoot > tr > td{
 
 /* STYLING ON SUCCESS MESSAGES */
 .onSuccess{
-  width: 100%;
+  background-color: #F28500;
 }
 .onSuccessMessage{
   background-color: rgb(0, 255, 0) !important;
