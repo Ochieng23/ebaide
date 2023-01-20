@@ -1844,5 +1844,5 @@ tfoot > tr > td{
   text-transform: lowercase !important;
 }
 .msg-span ::first-letter {
-  
+  text-transform: uppercase !important;
 }
