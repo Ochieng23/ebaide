@@ -1835,5 +1835,6 @@ tfoot > tr > td{
   color: black;
 }
 .msg-span {
-  
+  font-size: 2em !important;
+  margin-left: .4em !important;
 }
