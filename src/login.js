@@ -87,7 +87,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
           ElementById, 
           'p', 
           "login-form-container",
-          "Login successfull"
+          "You have successfully logged in"
           );
         //setTimeout(window.location.href = '/index.html#packages', 3500);
       
