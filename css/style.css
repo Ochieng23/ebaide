@@ -1821,4 +1821,5 @@ tfoot > tr > td{
 .onSuccessMessage{
   background-color: rgb(0, 255, 0) !important;
   width: 100%;
+  padding: .4em 0;
 }
