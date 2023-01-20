@@ -26,7 +26,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   AddClass (element, 'onSuccessMessage');
   element.innerHTML = `
     <span class="close-msg-btn">&times;</span>
-    <span>${message}</span>
+    <span class="msg-span">${message}</span>
   `;
   const parentElement = cb2 (parent);
   AddClass (parentElement, 'onSuccess');
