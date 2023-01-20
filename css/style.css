@@ -1821,10 +1821,11 @@ tfoot > tr > td{
 .onSuccessMessage{
   background-color: rgb(0, 255, 0) !important;
   width:80% !important;
-  padding: .4em 0;
+  padding: .2em 0;
   text-align: center;
   
 }
 .close-msg-btn {
   font-size: 3.6em !important;
+  color: whitesmoke;
 }
