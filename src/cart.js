@@ -82,7 +82,7 @@ const DisplayCartItems = cartItemsArray => {
     AddAttributeToElement(
       itemImage,
       "src",
-      `https://service.goebaide.com/${item.image}`
+      `https://service.goebaide.com/${item.img}`
     );
     AddClass(itemImage, "cart-display-image");
 
