@@ -17,7 +17,9 @@ const newElement = (tag) => {
     ElementById("login_form").appendChild(para);
   };
   
-const onSuccessMessage = (message) => {};
+const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
+
+};
 
   const getData = (e) => {
     e.preventDefault();
