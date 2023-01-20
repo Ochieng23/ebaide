@@ -1824,6 +1824,8 @@ tfoot > tr > td{
   padding: .2em 0;
   display: flex !important;
   flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .onSuccessMessage > span{
   display: block;
