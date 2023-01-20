@@ -17,7 +17,9 @@ const newElement = (tag) => {
     ElementById("login_form").appendChild(para);
   };
   
-const clearingContent = () => {};
+const clearingContent = (identifer, cb) => {
+
+};
 
 const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
 
