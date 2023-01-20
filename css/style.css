@@ -1825,6 +1825,9 @@ tfoot > tr > td{
   text-align: center;
   
 }
+.onSuccessMessage > span{
+  display: block;
+}
 .close-msg-btn {
   font-size: 3.6em !important;
   color: black;
