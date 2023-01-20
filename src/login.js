@@ -81,7 +81,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
           ElementById, 
           'p', 
           "login-container-div",
-          )
+          );
         //setTimeout(window.location.href = '/index.html#packages', 3500);
       
       })
