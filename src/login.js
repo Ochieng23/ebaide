@@ -36,6 +36,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
 const closeMsgBtn = document.querySelector(".close-msg-btn");
 if (closeMsgBtn) {
   closeMsgBtn.addEventListener("click", e => {
+    console.log(closeMsgBtn);
     e.preventDefault();
     clearingElement(ElementById("login-form-container"));
   });
@@ -97,7 +98,7 @@ const getData = e => {
         "login-form-container",
         "You have successfully logged in"
       );
-      setTimeout((window.location.href = "/index.html#packages"), 4500);
+      setTimeout((window.location.href = "/index.html#packages"), 10500);
     })
     .catch(error => {
       Error(error.error);
