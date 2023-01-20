@@ -1855,7 +1855,7 @@ tfoot > tr > td{
 .position-number-of-cart-items > .items-number{
   display: block;
   position: absolute;
-  top: -.6em;
+  top: -.4em;
   left: .4em;
   color: #F28500;
 }
