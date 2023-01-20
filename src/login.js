@@ -65,7 +65,8 @@ const newElement = (tag) => {
         };
         //console.log(data.token);
         sessionStorage.setItem("login_token", data.token);
-        setTimeout (() => {}, 3500);
+        setTimeout(window.location.href = '/index.html#packages', 2500);
+      
       })
       .catch(error => {
         Error(error.error);
