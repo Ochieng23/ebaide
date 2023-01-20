@@ -1853,5 +1853,8 @@ tfoot > tr > td{
   position: relative;
 }
 .position-number-of-cart-items > .items-number{
-  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20%;
 }
