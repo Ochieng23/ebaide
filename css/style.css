@@ -1833,9 +1833,10 @@ tfoot > tr > td{
 .close-msg-btn {
   font-size: 2.4em !important;
   color: black;
-  border: .1em solid #eee;
+  border: .1em solid #000;
   border-radius: 50% !important;
   padding: .4% 2% !important;
+  cursor: pointer !important;
 }
 .msg-span {
   font-size: 2em !important;
