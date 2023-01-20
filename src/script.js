@@ -11,7 +11,7 @@ let regClose = document.querySelector('#reg-close');
 const itemsInCart = document.querySelector('.items-number');
 
 const cartSize = JSON.parse(
-
+  localStorage.getItem("cart-items") || '[]'
 );
 
 window.onscroll = () =>{
