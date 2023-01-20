@@ -1822,4 +1822,5 @@ tfoot > tr > td{
   background-color: rgb(0, 255, 0) !important;
   width: 100%;
   padding: .4em 0;
+  text-align: center;
 }
