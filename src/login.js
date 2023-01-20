@@ -24,7 +24,10 @@ const clearingContent = (identifer, cb) => {
 const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   const element = cb1 (tag);
   AddClass (element, 'onSuccessMessage');
-  element.innerHTML = message;
+  element.innerHTML = `
+    <span class="close-msg-btn"></span>
+    <span>${message}</span>
+  `;
   const parentElement = cb2 (parent);
   AddClass (parentElement, 'onSuccess');
   parentElement.appendChild (element);
