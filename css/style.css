@@ -1835,7 +1835,7 @@ tfoot > tr > td{
   color: black;
   border: .1em solid #000;
   border-radius: 50% !important;
-  padding: .4% 2% !important;
+  padding: .2% 2% !important;
   cursor: pointer !important;
 }
 .msg-span {
@@ -1843,6 +1843,6 @@ tfoot > tr > td{
   margin-left: .8em !important;
   text-transform: lowercase !important;
 }
-.msg-span ::first-letter {
+.msg-span::first-letter {
   text-transform: uppercase !important;
 }
