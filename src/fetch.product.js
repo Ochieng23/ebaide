@@ -378,11 +378,12 @@ const PullProductsFromBackendAPI = () => {
               const { id, title, image, price } = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
-              const img = image.split(',');
+              const img = image.split(',')[0];
+              console.log (img);
               const cartArrayItem = {
                 id,
                 title,
-                image,
+                img,
                 price,
                 itemSize,
                 itemQuantityToBuy
