@@ -18,7 +18,7 @@ const newElement = (tag) => {
   };
   
 const clearingContent = (identifer, cb) => {
-
+  cb (identifer).innerHTML ='';
 };
 
 const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
