@@ -24,7 +24,7 @@ const clearingContent = (identifer, cb) => {
 const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   const element = cb1 (tag);
   element.innerHTML = message;
-  cb2 (parent)
+  cb2 (parent).appendChild (element);
 };
 
   const getData = (e) => {
