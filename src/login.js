@@ -17,6 +17,8 @@ const newElement = (tag) => {
     ElementById("login_form").appendChild(para);
   };
   
+
+  
   const getData = (e) => {
     e.preventDefault();
     const email = ElementById("email").value;
@@ -65,7 +67,7 @@ const newElement = (tag) => {
         };
         //console.log(data.token);
         sessionStorage.setItem("login_token", data.token);
-        
+
         setTimeout(window.location.href = '/index.html#packages', 3500);
       
       })
