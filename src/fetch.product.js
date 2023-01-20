@@ -379,7 +379,6 @@ const PullProductsFromBackendAPI = () => {
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
               const img = image.split(',')[0];
-              console.log (img);
               const cartArrayItem = {
                 id,
                 title,
