@@ -1823,7 +1823,7 @@ tfoot > tr > td{
   width:80% !important;
   padding: .2em 0;
   display: flex !important;
-
+  flex-direction: row !important;
 }
 .onSuccessMessage > span{
   display: block;
