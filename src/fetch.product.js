@@ -160,7 +160,6 @@ const PullProductsFromBackendAPI = () => {
       const productCollection = GetSelectedElementsWithClassName(
         "view-product"
       );
-      console.log (productCollection);
       const productCollectionArray = Array.from(productCollection);
       productCollectionArray.map(item => {
         if (item.innerHTML === "Go to cart") {
