@@ -33,6 +33,9 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   parentElement.appendChild (element);
 };
 
+const closeMsgBtn = document.querySelector(".close-msg-btn");
+
+
   const getData = (e) => {
     e.preventDefault();
     const email = ElementById("email").value;
