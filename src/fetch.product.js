@@ -473,7 +473,7 @@ const PullProductsFromBackendAPI = () => {
       });
     })
     .catch(err => {
-      console.error(err);
+      console.log(err);
     });
 };
 
