@@ -8,7 +8,7 @@ let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 let regForm = document.querySelector('.register-form-container');
 let regClose = document.querySelector('#reg-close');
-
+const itemsInCart = document.querySelector('.items-number');
 
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
