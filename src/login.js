@@ -76,6 +76,7 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
         //console.log(data.token);
         sessionStorage.setItem("login_token", data.token);
         clearingContent ("login-container-div", ElementById);
+        onSuccessMessage ()
         //setTimeout(window.location.href = '/index.html#packages', 3500);
       
       })
