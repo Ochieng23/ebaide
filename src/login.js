@@ -31,16 +31,14 @@ const onSuccessMessage = (cb1, cb2, tag, parent, message) => {
   const parentElement = cb2(parent);
   AddClass(parentElement, "onSuccess");
   parentElement.appendChild(element);
-};
 
-const closeMsgBtn = document.querySelector(".close-msg-btn");
-if (closeMsgBtn) {
+  const closeMsgBtn = document.querySelector(".close-msg-btn");
   closeMsgBtn.addEventListener("click", e => {
     console.log(closeMsgBtn);
     e.preventDefault();
     clearingElement(ElementById("login-form-container"));
   });
-}
+};
 
 const getData = e => {
   e.preventDefault();
