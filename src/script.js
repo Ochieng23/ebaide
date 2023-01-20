@@ -13,7 +13,7 @@ const itemsInCart = document.querySelector('.items-number');
 const cartSize = JSON.parse(
   localStorage.getItem("cart-items") || '[]'
 );
-
+console.log (cartSize);
 itemsInCart.innerHTML = cartSize.length;
 
 window.onscroll = () =>{
