@@ -1849,3 +1849,6 @@ tfoot > tr > td{
 }
 
 /* POSITION CART ITEMS NUMBER */
+.position-number-of-cart-items {
+  position: relative;
+}
