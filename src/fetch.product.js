@@ -227,7 +227,7 @@ const PullProductsFromBackendAPI = () => {
               AddAttributeToElement(
                 smallImage,
                 "src",
-                `https://service.goebaide.com/${singleProductImage[i]}`
+                `https://api.goebaide.com/${singleProductImage[i]}`
               );
               AddAttributeToElement(
                 smallImage,
