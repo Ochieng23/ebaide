@@ -134,7 +134,7 @@ const PostedDateUpdater = (cb, d) => {
   return outputSincePosted;
 };
 
-const BlogBackendAPIURI = "https://service.goebaide.com/api/blog/get";
+const BlogBackendAPIURI = "https://api.goebaide.com/api/blog/get";
 
 const PullBlogsFromBackendAPI = () => {
   fetch(BlogBackendAPIURI, {
