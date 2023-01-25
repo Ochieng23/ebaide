@@ -250,7 +250,7 @@ const PullBlogsFromBackendAPI = () => {
             AddAttributeNamedElement(
               productFirstImage,
               "src",
-              `https://service.goebaide.com/${SingleBlog[0].image}`
+              `https://api.goebaide.com/${SingleBlog[0].image}`
             );
             AppendChildToParentUsingElement(
               productBox,
