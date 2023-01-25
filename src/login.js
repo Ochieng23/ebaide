@@ -64,7 +64,7 @@ const getData = e => {
      * @TOBERETURNED
      * LOGIN LIVE URI = https://api.goebaide.com/api/auth/login
      */
-  fetch("http://localhost:3000/api/auth/login", {
+  fetch("https://api.goebaide.com/api/auth/login", {
     method: "POST",
     body: body,
     headers: {
