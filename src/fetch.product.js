@@ -59,8 +59,7 @@ const ClearContentOfElement = (cb, element) => {
   cb(element).innerHTML = "";
 };
 const ProductBackendAPIURI =
-    "http://localhost:3000/api/product/all_products";
-  /*"https://service.goebaide.com/api/product/all_products";*/
+  "https://api.goebaide.com/api/product/all_products";
 
 const PullProductsFromBackendAPI = () => {
   fetch(ProductBackendAPIURI, {
@@ -94,8 +93,7 @@ const PullProductsFromBackendAPI = () => {
         AddAttributeToElement(
           productImage,
           "src",
-          `http://localhost:3000/${img[0]}`
-          /*`https://service.goebaide.com/${image}`*/
+          `https://api.goebaide.com/${img[0]}`
         );
         AddAttributeToElement(productImage, "alt", "product image");
         AppendChildToParentElementUsingElement(divProductBox, productImage);
