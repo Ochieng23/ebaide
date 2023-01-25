@@ -163,7 +163,7 @@ const PullBlogsFromBackendAPI = () => {
         AddAttributeNamedElement(
           productImage,
           "src",
-          `https://service.goebaide.com/${image}`
+          `https://api.goebaide.com/${image}`
         );
         AddAttributeNamedElement(productImage, "alt", "product image");
         AddAttributeNamedElement(
