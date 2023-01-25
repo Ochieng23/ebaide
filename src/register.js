@@ -97,7 +97,7 @@ const getData = (e) => {
     password
   });
 
-  fetch("https://service.goebaide.com/api/auth/register", {
+  fetch("https://api.goebaide.com/api/auth/register", {
     method: "POST",
     body: body,
     headers: {
