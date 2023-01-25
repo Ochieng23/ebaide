@@ -323,7 +323,7 @@ const CheckoutPage = () => {
   checkoutButton.addEventListener("click", () => {
     const orderItems = sessionStorage.getItem("order-items");
     //SENDING VIA FETCH TO BACKEND
-    const order_processing_URI = `http://localhost:3000/api/orders/new-order`;
+    const order_processing_URI = `https://api.goebaide.com/api/orders/new-order`;
 
     //CHECK IF USER IS LOGGED IN:
 
