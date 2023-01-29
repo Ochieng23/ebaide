@@ -370,7 +370,18 @@ const CheckoutPage = () => {
         }
       })
       .catch(error => {
-        console.log(error);
+        ClearContent (FindSingleElement, ".Checkout-container");
+      const errorParentHolder = FindSingleElement(".Checkout-container");
+      ErrorMessage(
+        CreateNewHTMLElement,
+        AppendChildToDynamicElement,
+        "p",
+        errorParentHolder,
+        error
+        );
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
       });
   });
 };
