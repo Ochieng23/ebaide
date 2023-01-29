@@ -341,7 +341,7 @@ const CheckoutPage = () => {
       }, 3000);
       return;
     };
-    //SENDING VIA FETCH TO BACKEND
+    //SENDING VIA FETCH TO BACKEND IF USER IS LOGGED IN
     const order_processing_URI = `https://api.goebaide.com/api/orders/new-order`;
 
   
