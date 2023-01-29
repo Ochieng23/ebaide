@@ -244,7 +244,7 @@ const PullProductsFromBackendAPI = () => {
                 smallImageGroupColumn
               );
               smallImageGroupColumn.addEventListener ("click", () =>{
-                console.log(smallImageGroupColumn.children);
+                console.log(smallImageGroupColumn.children[0].currentSrc);
               });
             }
             AppendChildToParentElementUsingElement(productBox, smallImageGroup);
