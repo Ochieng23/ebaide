@@ -183,14 +183,14 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
             
             const productEntitiesRows = CreateNewElement("div");
-            AddAttributeToElement(
-              productEntitiesRows,
-              "style",
-              `
-              display:grid;
-              grid-template-columns: 40% 20% !important;
-              `
-              ); 
+            // AddAttributeToElement(
+            //   productEntitiesRows,
+            //   "style",
+            //   `
+            //   display:grid;
+            //   grid-template-columns: 40% 20% !important;
+            //   `
+            //   ); 
             const productImageColumn = CreateNewElement("div");
             AddAttributeToElement(
               productImageColumn,
@@ -278,7 +278,7 @@ const PullProductsFromBackendAPI = () => {
               productInformation,
               "style",
              ` 
-             background-color: transparent !important;
+             background-color: white !important;
       
              `
             );
