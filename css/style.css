@@ -1653,7 +1653,7 @@ display: block;
     text-transform: lowercase;
     margin-left: 4%;
   }
-  .error-text::first-letter{
+  .success-text::first-letter{
     text-transform: uppercase;
   }
 tfoot > tr > td{
