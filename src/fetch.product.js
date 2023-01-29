@@ -187,6 +187,8 @@ const PullProductsFromBackendAPI = () => {
               productEntitiesRows,
               "style",
               `
+              display:grid;
+              grid-template-columns: 40% 40%;
               `
               ); 
             const productImageColumn = CreateNewElement("div");
