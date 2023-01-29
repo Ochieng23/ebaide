@@ -427,12 +427,12 @@ const PaymentPhoneNumber = () => {
   );
   form.addEventListener("submit", e => {
     e.preventDefault();
-    const currentOrder = JSON.parse(sessionStorage.getItem("order-items"));
-    const updatedOrder = [
-      ...currentOrder,
-      { paymentDetail: phoneNumberInput.value }
-    ];
-    sessionStorage.setItem("order-items", JSON.stringify(updatedOrder));
+    // const currentOrder = JSON.parse(sessionStorage.getItem("order-items"));
+    // const updatedOrder = [
+    //   ...currentOrder,
+    //   { paymentDetail: phoneNumberInput.value }
+    // ];
+    // sessionStorage.setItem("order-items", JSON.stringify(updatedOrder));
     setTimeout(() => {
       ClearContent(FindSingleElement, "#body");
       CheckoutPage();
