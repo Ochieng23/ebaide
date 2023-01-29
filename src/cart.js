@@ -390,7 +390,7 @@ const PaymentPhoneNumber = () => {
   AddClass(phoneNumberPageContainer, "phonenumber-container");
   const formHolder = CreateNewHTMLElement("div");
   AddClass(formHolder, "form-container");
-  // const form = CreateNewHTMLElement("form");
+  const form = CreateNewHTMLElement("form");
   // AddClass(form, "address-form");
   // const phoneNumberDiv = CreateNewHTMLElement("div");
   // AddClass(phoneNumberDiv, "input-div");
