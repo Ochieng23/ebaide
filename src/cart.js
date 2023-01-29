@@ -370,7 +370,18 @@ const CheckoutPage = () => {
           }, 3000);
           return;
         }
-        console.log (data);
+        ClearContent(FindSingleElement, ".Checkout-container");
+        const errorParentHolder = FindSingleElement(".Checkout-container");
+        ErrorMessage(
+          CreateNewHTMLElement,
+          AppendChildToDynamicElement,
+          "p",
+          errorParentHolder,
+          data.message
+        );
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
       })
       .catch(error => {
         ClearContent(FindSingleElement, ".Checkout-container");
