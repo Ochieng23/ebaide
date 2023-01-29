@@ -453,14 +453,14 @@ const PullProductsFromBackendAPI = () => {
             const productDescriptionDetails = CreateNewElement("h4");
             productDescriptionDetails.innerHTML = "Product Description";
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productionDescriptionSection,
               productDescriptionDetails
             );
 
             const fullDescriptionTextSpan = CreateNewElement("span");
             fullDescriptionTextSpan.innerHTML = data.data[0].description;
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productionDescriptionSection,
               fullDescriptionTextSpan
             );
 
@@ -468,6 +468,8 @@ const PullProductsFromBackendAPI = () => {
               productBox,
               productInformation
             );
+
+            
             AppendChildToParentElementUsingElement(
               productContainer,
               productBox
