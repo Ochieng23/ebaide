@@ -49,8 +49,8 @@ const SuccessMessage = (cb1, cb2, tag, parentElement, message) => {
   AddClass(element, "cart-sucsess-message");
   AddAttributeToElement(element, "id", "errorMessage");
   element.innerHTML = `
-  <span class="closs-error-message-btn" id="closeErrorBtn">${xButton.innerHTML}</span>
-   <span class="error-text">${message}</span>`;
+  <span class="close-success-message-btn" id="closeErrorBtn">${xButton.innerHTML}</span>
+   <span class="success-text">${message}</span>`;
   cb2(parentElement, element);
 };
 

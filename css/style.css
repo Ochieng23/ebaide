@@ -1643,7 +1643,7 @@ display: block;
 .cart-sucsess-message > span {
   display: block;
   }
-  .closs-error-message-btn{
+  .close-success-message-btn{
     border: .1em solid #fff;
     padding: .4% 1.8%;
     border-radius: 50%;
