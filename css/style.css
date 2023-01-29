@@ -1649,7 +1649,7 @@ display: block;
     border-radius: 50%;
     cursor: pointer;
   }
-  .error-text{
+  .success-text{
     text-transform: lowercase;
     margin-left: 4%;
   }
