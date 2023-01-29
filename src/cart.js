@@ -370,6 +370,8 @@ const CheckoutPage = () => {
           }, 3000);
           return;
         }
+
+        
         ClearContent(FindSingleElement, ".Checkout-container");
         const errorParentHolder = FindSingleElement(".Checkout-container");
         ErrorMessage(
