@@ -372,9 +372,9 @@ const CheckoutPage = () => {
         }
 
         //CLEAR UP STORAGE:
-        sessionStorage.clear();
+        sessionStorage.removeItem()
         localStorage.clear();
-        
+
         ClearContent(FindSingleElement, ".Checkout-container");
         const errorParentHolder = FindSingleElement(".Checkout-container");
         ErrorMessage(
