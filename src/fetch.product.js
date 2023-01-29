@@ -179,7 +179,7 @@ const PullProductsFromBackendAPI = () => {
               productContainer,
               "style",
               "padding:4%;"
-            )
+            );
             const productBox = CreateNewElement("div");
             AddClassToNewElement(productBox, "col-lg-5");
             AddClassToNewElement(productBox, "col-md-12");
