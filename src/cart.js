@@ -368,25 +368,26 @@ const PaymentPhoneNumber = () => {
   AddClass(phoneNumberPageContainer, "phonenumber-container");
   const formHolder = CreateNewHTMLElement("div");
   AddClass(formHolder, "form-container");
-  const form = CreateNewHTMLElement("form");
-  AddClass(form, "address-form");
-  const phoneNumberDiv = CreateNewHTMLElement("div");
-  AddClass(phoneNumberDiv, "input-div");
-  const phoneNumberLabel = CreateNewHTMLElement("label");
-  phoneNumberLabel.innerHTML = `
-  <span>Enter phoneNumber to make payment</span>
-  <span>(use format e.g. 254700258098)*</span>
-  `;
+  // const form = CreateNewHTMLElement("form");
+  // AddClass(form, "address-form");
+  // const phoneNumberDiv = CreateNewHTMLElement("div");
+  // AddClass(phoneNumberDiv, "input-div");
+  // const phoneNumberLabel = CreateNewHTMLElement("label");
+  // phoneNumberLabel.innerHTML = `
+  // <span>Enter phoneNumber to make payment</span>
+  // <span>(use format e.g. 254700258098)*</span>
+  // `;
 
-  const phoneNumberInput = CreateNewHTMLElement("input");
-  AddAttributeToElement(phoneNumberInput, "type", "tel");
-  AddAttributeToElement(phoneNumberInput, "required", true);
-  AddAttributeToElement(phoneNumberInput, "minlength", "12");
-  AddAttributeToElement(phoneNumberInput, "maxlength", "12");
-  AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
-  AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
+  // const phoneNumberInput = CreateNewHTMLElement("input");
+  // AddAttributeToElement(phoneNumberInput, "type", "tel");
+  // AddAttributeToElement(phoneNumberInput, "required", true);
+  // AddAttributeToElement(phoneNumberInput, "minlength", "12");
+  // AddAttributeToElement(phoneNumberInput, "maxlength", "12");
+  // AppendChildToDynamicElement(phoneNumberLabel, phoneNumberInput);
+  // AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
 
-  AppendChildToDynamicElement(form, phoneNumberDiv);
+  // AppendChildToDynamicElement(form, phoneNumberDiv);
+  formHolder.innerHTML = "You'll pay for the product on delivery!"
 
   const nextButtonDiv = CreateNewHTMLElement("div");
   const nextButton = CreateNewHTMLElement("button");
