@@ -188,7 +188,7 @@ const PullProductsFromBackendAPI = () => {
               "style",
               `
               display:grid;
-              grid-template-columns: 60% 20%;
+              grid-template-columns: 40% 20%;
               `
               ); 
             const productImageColumn = CreateNewElement("div");
