@@ -44,6 +44,16 @@ const ErrorMessage = (cb1, cb2, tag, parentElement, message) => {
   cb2(parentElement, element);
 };
 
+const SuccessMessage = (cb1, cb2, tag, parentElement, message) => {
+  const element = cb1(tag);
+  AddClass(element, "cart-error-message");
+  AddAttributeToElement(element, "id", "errorMessage");
+  element.innerHTML = `
+  <span class="closs-error-message-btn" id="closeErrorBtn">${xButton.innerHTML}</span>
+   <span class="error-text">${message}</span>`;
+  cb2(parentElement, element);
+};
+
 const CartTableHeadingsArray = [
   "image",
   "title",
