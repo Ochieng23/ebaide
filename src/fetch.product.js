@@ -460,7 +460,7 @@ const PullProductsFromBackendAPI = () => {
               productBox
             );
             AppendChildToParentElement(
-              "#body",
+              "#packages",
               QuerySelectorForDocumentElement,
               productContainer
             );
