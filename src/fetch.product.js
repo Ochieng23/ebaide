@@ -181,6 +181,8 @@ const PullProductsFromBackendAPI = () => {
             AddClassToNewElement(productBox, "col-md-12");
             AddClassToNewElement(productBox, "col-12");
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
+            
+            const productEntitiesRows = CreateNewElement("div");
 
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
@@ -209,7 +211,7 @@ const PullProductsFromBackendAPI = () => {
               productImageColumn,
               productFirstImage
             );
-            
+
             const smallImageGroup = CreateNewElement("div");
             AddClassToNewElement(smallImageGroup, "small-img-group");
             for (let i = 0; i < singleProductImage.length; i++) {
