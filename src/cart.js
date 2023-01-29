@@ -340,7 +340,7 @@ const CheckoutPage = () => {
         window.location.reload();
       }, 3000);
       return;
-    }
+    };
     //SENDING VIA FETCH TO BACKEND
     const order_processing_URI = `https://api.goebaide.com/api/orders/new-order`;
 
