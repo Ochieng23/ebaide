@@ -1631,7 +1631,7 @@ display: block;
 .cart-sucsess-message {
   width: 32%;
   margin-top: .8em;
-  background-color: rgb(255, 0, 0);
+  background-color: green;
   font-size: 1.6em;
   color: #fff;
   padding: .4% .8%;
