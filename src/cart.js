@@ -354,7 +354,18 @@ const CheckoutPage = () => {
       .then(response => response.json())
       .then(data => {
         if (data.error) {
-          console.log(data.error);
+          ClearContent (FindSingleElement, ".Checkout-container");
+      const errorParentHolder = FindSingleElement(".Checkout-container");
+      ErrorMessage(
+        CreateNewHTMLElement,
+        AppendChildToDynamicElement,
+        "p",
+        errorParentHolder,
+        data.error
+        );
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
           return;
         }
       })
