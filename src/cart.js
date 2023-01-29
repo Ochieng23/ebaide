@@ -252,7 +252,7 @@ const CheckoutPage = () => {
     }
   });
   const discountAmount = Math.floor(Math.random() * 100);
-  discountValue.innerHTML = "Ksh. " + discountAmount;
+  discountValue.innerHTML = "Ksh. " + discountAmount.toFixed(2);
   AppendChildToDynamicElement(orderDiscount, discountValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderDiscount);
 
