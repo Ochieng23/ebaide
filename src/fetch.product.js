@@ -255,7 +255,7 @@ const PullProductsFromBackendAPI = () => {
               });
             }
             AppendChildToParentElementUsingElement(productImageColumn, smallImageGroup);
-            AppendChildToParentElementUsingElement(productBox, productImageColumn);
+            AppendChildToParentElementUsingElement(productEntitiesRows, productImageColumn);
 
             const productInformation = CreateNewElement("div");
             AddClassToNewElement(productInformation, "product-info");
