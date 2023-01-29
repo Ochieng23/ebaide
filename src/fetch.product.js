@@ -186,7 +186,8 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(
               productEntitiesRows,
               "style",
-              ""
+              `
+              `
               ); 
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
