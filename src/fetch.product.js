@@ -385,7 +385,6 @@ const PullProductsFromBackendAPI = () => {
               RemoveClassFromNewElement(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
-              addToCartButtonSpan.innerHTML = "Go to Cart";
 
               let cartArray = [];
               const idOfItemAddToCart =
