@@ -175,18 +175,13 @@ const PullProductsFromBackendAPI = () => {
           ClearContentOfElement(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
-            AddAttributeToElement (
-              productContainer,
-              "style",
-              "padding:8% 4%;"
-            );
+            AddAttributeToElement(productContainer, "style", "padding:8% 4%;");
             const productBox = CreateNewElement("div");
             AddClassToNewElement(productBox, "col-lg-5");
             AddClassToNewElement(productBox, "col-md-12");
             AddClassToNewElement(productBox, "col-12");
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
-            
-            
+
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
             AddClassToNewElement(productFirstImage, "mt-5");
@@ -254,7 +249,7 @@ const PullProductsFromBackendAPI = () => {
                 smallImageGroup,
                 smallImageGroupColumn
               );
-              smallImageGroupColumn.addEventListener ("click", () =>{
+              smallImageGroupColumn.addEventListener("click", () => {
                 AddAttributeToElement(
                   productFirstImage,
                   "src",
@@ -262,6 +257,7 @@ const PullProductsFromBackendAPI = () => {
                 );
               });
             }
+            AppendChildToParentElementUsingElement(productBox, smallImageGroup);
             AppendChildToParentElementUsingElement(productBox, smallImageGroup);
 
             const productInformation = CreateNewElement("div");
@@ -368,16 +364,16 @@ const PullProductsFromBackendAPI = () => {
             addToCartButton.addEventListener("click", e => {
               e.preventDefault();
               //console.log(e)
-              if (quantityToBuy.value < 1){
+              if (quantityToBuy.value < 1) {
                 ErrorMessage(
                   CreateNewElement,
                   QuerySelectorForDocumentElement,
                   "p",
-                  '.product-info',
-                  "You must buy at least 1 item." 
-                  );
-                  return;
-              };
+                  ".product-info",
+                  "You must buy at least 1 item."
+                );
+                return;
+              }
               RemoveClassFromNewElement(addToCartButtonIcon, "fa-cart-plus");
               AddClassToNewElement(addToCartButtonIcon, "fa-shopping-cart");
               AddClassToNewElement(addToCartButton, "view-cart-button");
@@ -392,7 +388,7 @@ const PullProductsFromBackendAPI = () => {
               const { id, title, image, price } = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
-              const img = image.split(',')[0];
+              const img = image.split(",")[0];
               const cartArrayItem = {
                 id,
                 title,
@@ -432,7 +428,7 @@ const PullProductsFromBackendAPI = () => {
               //console.log(window.location.href);
               if (
                 window.location.href ===
-               "https://goebaide.com/index.html#packages"
+                "https://goebaide.com/index.html#packages"
               ) {
                 window.location.reload();
                 setTimeout(() => {
