@@ -183,14 +183,14 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
             
             const productEntitiesRows = CreateNewElement("div");
-            AddAttributeToElement(
-              productEntitiesRows,
-              "style",
-              `
-              display:grid;
-              grid-template-columns: 60% 20%;
-              `
-              ); 
+            // AddAttributeToElement(
+            //   productEntitiesRows,
+            //   "style",
+            //   `
+            //   display:grid;
+            //   grid-template-columns: 60% 20%;
+            //   `
+            //   ); 
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
             AddClassToNewElement(productFirstImage, "mt-5");
