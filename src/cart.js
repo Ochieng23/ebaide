@@ -263,7 +263,7 @@ const CheckoutPage = () => {
   AppendChildToDynamicElement(orderShipping, shippingText);
   const shippingValue = CreateNewHTMLElement("span");
   const shippingAmount = Math.floor(Math.random() * 1000);
-  shippingValue.innerHTML = "Ksh. " + shippingAmount;
+  shippingValue.innerHTML = "Ksh. " + shippingAmount.toFixed(0);
   AppendChildToDynamicElement(orderShipping, shippingValue);
   AppendChildToDynamicElement(orderSummeryBodySection, orderShipping);
 
