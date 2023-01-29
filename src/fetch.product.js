@@ -173,7 +173,7 @@ const PullProductsFromBackendAPI = () => {
           const SingleProduct = data.data.filter(product => {
             return product.id === productid;
           });
-          ClearContentOfElement(QuerySelectorForDocumentElement, "#packages");
+          ClearContentOfElement(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
 
@@ -460,7 +460,7 @@ const PullProductsFromBackendAPI = () => {
               productBox
             );
             AppendChildToParentElement(
-              "#packages",
+              "#main",
               QuerySelectorForDocumentElement,
               productContainer
             );
