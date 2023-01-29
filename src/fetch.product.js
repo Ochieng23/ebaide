@@ -244,6 +244,11 @@ const PullProductsFromBackendAPI = () => {
                 smallImageGroupColumn
               );
               smallImageGroupColumn.addEventListener ("click", () =>{
+                AddAttributeToElement(
+                  productFirstImage,
+                  "src",
+                  `https://api.goebaide.com/${singleProductImage[0]}`
+                );
                 console.log(smallImageGroupColumn.children[0].currentSrc);
               });
             }
