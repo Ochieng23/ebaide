@@ -192,13 +192,13 @@ const PullProductsFromBackendAPI = () => {
             //   `
             //   ); 
             const productImageColumn = CreateNewElement("div");
-            AddAttributeToElement(
-              productImageColumn,
-              "style",
-              `
-              background-color: blue;
-              `
-            )
+            // AddAttributeToElement(
+            //   productImageColumn,
+            //   "style",
+            //   `
+            //   background-color: blue;
+            //   `
+            // )
             const productFirstImage = CreateNewElement("img");
             AddClassToNewElement(productFirstImage, "mt-5");
             AddClassToNewElement(productFirstImage, "img-fluid");
