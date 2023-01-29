@@ -278,7 +278,8 @@ const PullProductsFromBackendAPI = () => {
               productInformation,
               "style",
              ` 
-             background-color: white;
+             background-color: transparent !important;
+      
              `
             );
             AddClassToNewElement(productInformation, "col");
