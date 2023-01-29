@@ -372,7 +372,7 @@ const CheckoutPage = () => {
         }
 
         //CLEAR UP STORAGE:
-        sessionStorage.removeItem()
+        sessionStorage.removeItem("order-items");
         localStorage.clear();
 
         ClearContent(FindSingleElement, ".Checkout-container");
