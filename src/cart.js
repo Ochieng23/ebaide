@@ -46,7 +46,7 @@ const ErrorMessage = (cb1, cb2, tag, parentElement, message) => {
 
 const SuccessMessage = (cb1, cb2, tag, parentElement, message) => {
   const element = cb1(tag);
-  AddClass(element, "cart-error-message");
+  AddClass(element, "cart-sucsess-message");
   AddAttributeToElement(element, "id", "errorMessage");
   element.innerHTML = `
   <span class="closs-error-message-btn" id="closeErrorBtn">${xButton.innerHTML}</span>
@@ -387,7 +387,7 @@ const CheckoutPage = () => {
 
         ClearContent(FindSingleElement, ".Checkout-container");
         const errorParentHolder = FindSingleElement(".Checkout-container");
-        ErrorMessage(
+        SuccessMessage(
           CreateNewHTMLElement,
           AppendChildToDynamicElement,
           "p",
