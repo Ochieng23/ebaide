@@ -215,6 +215,11 @@ const PullProductsFromBackendAPI = () => {
               productFirstImage
             );
 
+            AppendChildToParentElementUsingElement(
+              productBox,
+              productFirstImage
+            );
+            
             const smallImageGroup = CreateNewElement("div");
             AddClassToNewElement(smallImageGroup, "small-img-group");
             for (let i = 0; i < singleProductImage.length; i++) {
