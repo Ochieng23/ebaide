@@ -392,7 +392,6 @@ const PullProductsFromBackendAPI = () => {
               const pickedItem = data.data.filter(
                 item => item.id === idOfItemAddToCart
               );
-              console.log (pickedItem);
               const { id, title, image, price } = pickedItem[0];
               const itemSize = sizeList.value;
               const itemQuantityToBuy = quantityToBuy.value;
