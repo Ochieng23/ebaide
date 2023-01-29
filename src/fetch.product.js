@@ -247,9 +247,8 @@ const PullProductsFromBackendAPI = () => {
                 AddAttributeToElement(
                   productFirstImage,
                   "src",
-                  `https://api.goebaide.com/${singleProductImage[0]}`
+                  `${smallImageGroupColumn.children[0].currentSrc}`
                 );
-                console.log(smallImageGroupColumn.children[0].currentSrc);
               });
             }
             AppendChildToParentElementUsingElement(productBox, smallImageGroup);
