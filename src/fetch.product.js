@@ -183,7 +183,9 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
             
             const productEntitiesRows = CreateNewElement("div");
-
+            AddAttributeToElement(
+              productEntitiesRows,
+              ); 
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
             AddClassToNewElement(productFirstImage, "mt-5");
