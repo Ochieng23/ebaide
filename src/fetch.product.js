@@ -273,11 +273,6 @@ const PullProductsFromBackendAPI = () => {
 
             const productInformation = CreateNewElement("div");
             AddClassToNewElement(productInformation, "product-info");
-            // AddClassToNewElement(productInformation, "col-lg-5");
-            // AddClassToNewElement(productInformation, "col-md-12");
-            // AddClassToNewElement(productInformation, "col-12");
-            // AddClassToNewElement(productInformation, "my-5");
-            // AddClassToNewElement(productInformation, "pt-5");
 
             AddAttributeToElement(
               productInformation,
