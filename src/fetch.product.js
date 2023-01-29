@@ -211,15 +211,15 @@ const PullProductsFromBackendAPI = () => {
               `https://api.goebaide.com/${singleProductImage[0]}`
             );
             AppendChildToParentElementUsingElement(
-              productBox,
+              productImageColumn,
               productFirstImage
             );
 
             AppendChildToParentElementUsingElement(
               productBox,
-              productFirstImage
+              productImageColumn
             );
-            
+
             const smallImageGroup = CreateNewElement("div");
             AddClassToNewElement(smallImageGroup, "small-img-group");
             for (let i = 0; i < singleProductImage.length; i++) {
