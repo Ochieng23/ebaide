@@ -370,6 +370,7 @@ const CheckoutPage = () => {
           }, 3000);
           return;
         }
+        console.log (data);
       })
       .catch(error => {
         ClearContent(FindSingleElement, ".Checkout-container");
