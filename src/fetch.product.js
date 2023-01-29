@@ -185,6 +185,8 @@ const PullProductsFromBackendAPI = () => {
             AddClassToNewElement(productBox, "col-md-12");
             AddClassToNewElement(productBox, "col-12");
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
+            
+            //const product
 
             const productFirstImage = CreateNewElement("img");
             AddClassToNewElement(productFirstImage, "mt-5");
@@ -447,6 +449,7 @@ const PullProductsFromBackendAPI = () => {
               continueShoppingButton
             );
 
+            const productionDescriptionSection = CreateNewElement("div");
             const productDescriptionDetails = CreateNewElement("h4");
             productDescriptionDetails.innerHTML = "Product Description";
             AppendChildToParentElementUsingElement(
