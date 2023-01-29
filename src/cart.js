@@ -381,7 +381,7 @@ const CheckoutPage = () => {
         );
         setTimeout(() => {
           window.location.reload();
-        }, 5000);
+        }, 8000);
       })
       .catch(error => {
         ClearContent(FindSingleElement, ".Checkout-container");
