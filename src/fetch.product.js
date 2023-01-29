@@ -175,7 +175,11 @@ const PullProductsFromBackendAPI = () => {
           ClearContentOfElement(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
-
+            AddAttributeToElement (
+              productContainer,
+              "style",
+              "padding:4%;"
+            )
             const productBox = CreateNewElement("div");
             AddClassToNewElement(productBox, "col-lg-5");
             AddClassToNewElement(productBox, "col-md-12");
