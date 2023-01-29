@@ -173,7 +173,7 @@ const PullProductsFromBackendAPI = () => {
           const SingleProduct = data.data.filter(product => {
             return product.id === productid;
           });
-          ClearContentOfElement(QuerySelectorForDocumentElement, "#body");
+          ClearContentOfElement(QuerySelectorForDocumentElement, "#packages");
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
 
