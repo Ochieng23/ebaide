@@ -327,7 +327,7 @@ const CheckoutPage = () => {
     //CHECK IF USER IS LOGGED IN:
 
     if (sessionStorage.getItem("login_token") === null) {
-      ClearContent (FindSingleElement, ".Checkout-container");
+      ClearContent(FindSingleElement, ".Checkout-container");
       const errorParentHolder = FindSingleElement(".Checkout-container");
       ErrorMessage(
         CreateNewHTMLElement,
@@ -335,12 +335,12 @@ const CheckoutPage = () => {
         "p",
         errorParentHolder,
         "You are not logged in, please login to finish your checkout!"
-        );
+      );
       setTimeout(() => {
         window.location.reload();
       }, 3000);
       return;
-    };
+    }
     //SENDING VIA FETCH TO BACKEND IF USER IS LOGGED IN
     const order_processing_URI = `https://api.goebaide.com/api/orders/new-order`;
 
@@ -356,34 +356,34 @@ const CheckoutPage = () => {
       .then(response => response.json())
       .then(data => {
         if (data.error) {
-          ClearContent (FindSingleElement, ".Checkout-container");
-      const errorParentHolder = FindSingleElement(".Checkout-container");
-      ErrorMessage(
-        CreateNewHTMLElement,
-        AppendChildToDynamicElement,
-        "p",
-        errorParentHolder,
-        data.error
-        );
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+          ClearContent(FindSingleElement, ".Checkout-container");
+          const errorParentHolder = FindSingleElement(".Checkout-container");
+          ErrorMessage(
+            CreateNewHTMLElement,
+            AppendChildToDynamicElement,
+            "p",
+            errorParentHolder,
+            data.error
+          );
+          setTimeout(() => {
+            window.location.reload();
+          }, 3000);
           return;
         }
       })
       .catch(error => {
-        ClearContent (FindSingleElement, ".Checkout-container");
-      const errorParentHolder = FindSingleElement(".Checkout-container");
-      ErrorMessage(
-        CreateNewHTMLElement,
-        AppendChildToDynamicElement,
-        "p",
-        errorParentHolder,
-        error
+        ClearContent(FindSingleElement, ".Checkout-container");
+        const errorParentHolder = FindSingleElement(".Checkout-container");
+        ErrorMessage(
+          CreateNewHTMLElement,
+          AppendChildToDynamicElement,
+          "p",
+          errorParentHolder,
+          error
         );
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
       });
   });
 };
@@ -411,7 +411,7 @@ const PaymentPhoneNumber = () => {
   // AppendChildToDynamicElement(phoneNumberDiv, phoneNumberLabel);
 
   // AppendChildToDynamicElement(form, phoneNumberDiv);
-  formHolder.innerHTML = "You'll pay for the product on delivery!"
+  formHolder.innerHTML = "You'll pay for the product on delivery!";
 
   const nextButtonDiv = CreateNewHTMLElement("div");
   const nextButton = CreateNewHTMLElement("button");
