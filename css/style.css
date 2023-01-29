@@ -1321,9 +1321,8 @@ header .search-bar-container label:hover{
   
 }
 .product-info{
-  margin-left: 40em;
+  margin-left: 20px;
   width: 50vw;
-  height: auto !important;
   border: 2px solid black;
   padding: 20px;
   font-size: 1em;
