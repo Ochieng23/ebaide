@@ -69,7 +69,6 @@ const PullProductsFromBackendAPI = () => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
       if (data.error) {
         console.log(data);
         return;
