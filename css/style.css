@@ -1341,7 +1341,8 @@ header .search-bar-container label:hover{
   background-color: red !important;
 }
 .product-images > img {
-  
+  width: 40vw;
+  height: auto !important;
 }
 
 .blogs-box {
