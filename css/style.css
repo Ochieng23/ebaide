@@ -1320,16 +1320,7 @@ header .search-bar-container label:hover{
   }
   
 }
-.product-info{
-  margin-left: 20px;
-  width: 50vw;
-  border: 2px solid black;
-  padding: 20px;
-  font-size: 1em;
-}
-.product-box{
-  width: 100vw;
-}
+/* SINGLE PRODUCT VIEW */
 
 .blogs-box {
   background-color: #fff;
