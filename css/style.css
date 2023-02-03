@@ -1341,9 +1341,10 @@ header .search-bar-container label:hover{
 /* PRODUCT IMAGES */
 .product-images{
   background-color: red !important;
-  
+
 }
 .product-images > img {
+  display: block;
   width: 25vw;
   height: auto !important;
 }
