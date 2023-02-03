@@ -253,7 +253,7 @@ const PullProductsFromBackendAPI = () => {
             productTitle.innerHTML = SingleProduct[0].title;
 
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productDetailsColumn,
               productTitle
             );
 
@@ -266,7 +266,7 @@ const PullProductsFromBackendAPI = () => {
               priceSpanHolder
             );
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productDetailsColumn,
               productPriceSpanHolder
             );
 
@@ -281,7 +281,7 @@ const PullProductsFromBackendAPI = () => {
               AppendChildToParentElementUsingElement(sizeList, sizeListItem);
 
               AppendChildToParentElementUsingElement(
-                productInformation,
+                productDetailsColumn,
                 sizeList
               );
             }
@@ -290,7 +290,7 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(quantityToBuy, "type", "number");
             AddAttributeToElement(quantityToBuy, "value", "1");
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productDetailsColumn,
               quantityToBuy
             );
 
@@ -312,7 +312,7 @@ const PullProductsFromBackendAPI = () => {
               addToCartButtonIcon
             );
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productDetailsColumn,
               addToCartButton
             );
 
@@ -401,10 +401,14 @@ const PullProductsFromBackendAPI = () => {
               });
             });
             AppendChildToParentElementUsingElement(
-              productInformation,
+              productDetailsColumn,
               continueShoppingButton
             );
 
+            AppendChildToParentElementUsingElement(
+              productFirstRow,
+              productDetailsColumn
+            )
             const productionDescriptionSection = CreateNewElement("div");
 
             const productDescriptionDetails = CreateNewElement("h4");
