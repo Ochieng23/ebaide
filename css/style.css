@@ -1331,6 +1331,7 @@ header .search-bar-container label:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 /* SINLE PRODUCT FIRST ROW */
 .product-row-1{
