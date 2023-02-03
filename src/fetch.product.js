@@ -246,8 +246,8 @@ const PullProductsFromBackendAPI = () => {
             AppendChildToParentElementUsingElement(productFirstRow, productImageColumn);
 
             const productDetailsColumn = CreateNewElement("div");
+            AddClassToNewElement(productDetailsColumn, 'product-column');
 
-            
             const productTitle = CreateNewElement("h1");
             AddAttributeToElement(
               productTitle,
