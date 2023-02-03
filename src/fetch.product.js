@@ -181,8 +181,8 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(productContainer, "id", SingleProduct[0].id);
 
             //PRODUCT ENTITIES ROWS:
-            const productBox = CreateNewElement("div");
             const productEntitiesRows = CreateNewElement("div");
+            const productBox = CreateNewElement("div");
             
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
