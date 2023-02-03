@@ -289,7 +289,7 @@ const PullProductsFromBackendAPI = () => {
               "style",
               "font-weight: bolder;"
             );
-            AddClassToNewElement(productTitle, "product-description");
+            // AddClassToNewElement(productTitle, "product-description");
             productTitle.innerHTML = SingleProduct[0].title;
 
             AppendChildToParentElementUsingElement(
@@ -298,7 +298,7 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const productPriceSpanHolder = CreateNewElement("h2");
-            AddClassToNewElement(productPriceSpanHolder, "price");
+            // AddClassToNewElement(productPriceSpanHolder, "price");
 
             const priceSpanHolder = CreateNewElement("span");
             priceSpanHolder.innerHTML = "Ksh. " + SingleProduct[0].price;
@@ -312,19 +312,19 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const sizeList = CreateNewElement("select");
-            AddClassToNewElement(sizeList, "my-3");
-            AddAttributeToElement(
-              sizeList,
-              "style",
-              "width:100px; height: 10%;"
-            );
+            // AddClassToNewElement(sizeList, "my-3");
+            // AddAttributeToElement(
+            //   sizeList,
+            //   "style",
+            //   "width:100px; height: 10%;"
+            // );
             AddAttributeToElement(sizeList, "name", "size");
 
             const sizeArray = SingleProduct[0].size.split(" ");
             for (let i = 0; i < sizeArray.length; i++) {
               const sizeListItem = CreateNewElement("option");
               AddAttributeToElement(sizeListItem, "value", sizeArray[i]);
-              AddAttributeToElement(sizeListItem, "style", "font-size: 1em;");
+              // AddAttributeToElement(sizeListItem, "style", "font-size: 1em;");
               sizeListItem.innerHTML = sizeArray[i];
               AppendChildToParentElementUsingElement(sizeList, sizeListItem);
 
