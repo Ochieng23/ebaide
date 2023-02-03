@@ -287,11 +287,6 @@ const PullProductsFromBackendAPI = () => {
 
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
-            // AddAttributeToElement(
-            //   quantityToBuy,
-            //   "style",
-            //   "width:30px; height: 10%;"
-            // );
             AddAttributeToElement(quantityToBuy, "value", "1");
             AppendChildToParentElementUsingElement(
               productInformation,
@@ -410,13 +405,6 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const productionDescriptionSection = CreateNewElement("div");
-            // AddClassToNewElement(productionDescriptionSection, "product-info");
-            // AddClassToNewElement(productionDescriptionSection, "col-lg-5");
-            // AddClassToNewElement(productionDescriptionSection, "col-md-12");
-            // AddClassToNewElement(productionDescriptionSection, "col-12");
-            // AddClassToNewElement(productionDescriptionSection, "my-5");
-            // AddClassToNewElement(productionDescriptionSection, "pt-5");
-
             // AddAttributeToElement(
             //   productionDescriptionSection,
             //   "style",
