@@ -1344,6 +1344,9 @@ header .search-bar-container label:hover{
   width: 50vw;
   height: auto !important;
 }
+.smallImage-column div{
+  
+}
 .smallImage-column img{
   width: 10vw !important;
   height: auto !important;
