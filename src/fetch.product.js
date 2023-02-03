@@ -175,34 +175,13 @@ const PullProductsFromBackendAPI = () => {
           ClearContentOfElement(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
             const productContainer = CreateNewElement("div");
-            // AddAttributeToElement(productContainer, "style", "padding:8% 4%;");
             const productBox = CreateNewElement("div");
-            // AddClassToNewElement(productBox, "col-lg-5");
-            // AddClassToNewElement(productBox, "col-md-12");
-            // AddClassToNewElement(productBox, "col-12");
             AddAttributeToElement(productBox, "id", SingleProduct[0].id);
             
             const productEntitiesRows = CreateNewElement("div");
-            // AddAttributeToElement(
-            //   productEntitiesRows,
-            //   "style",
-            //   `
-            //   display:grid;
-            //   grid-template-columns: 40% 20% !important;
-            //   `
-            //   ); 
+            
             const productImageColumn = CreateNewElement("div");
-            // AddAttributeToElement(
-            //   productImageColumn,
-            //   "style",
-            //   `
-            //   background-color: blue;
-            //   `
-            // )
             const productFirstImage = CreateNewElement("img");
-            // AddClassToNewElement(productFirstImage, "mt-5");
-            // AddClassToNewElement(productFirstImage, "img-fluid");
-            // AddClassToNewElement(productFirstImage, "w-100");
             AddAttributeToElement(
               productFirstImage,
               "alt",
