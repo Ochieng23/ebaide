@@ -438,7 +438,7 @@ const PullProductsFromBackendAPI = () => {
 
             AppendChildToParentElementUsingElement(
               productContainer,
-              productBox
+              productEntitiesRows
             );
             AppendChildToParentElement(
               "#main",
