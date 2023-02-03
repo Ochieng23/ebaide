@@ -257,7 +257,6 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const productPriceSpanHolder = CreateNewElement("h2");
-            // AddClassToNewElement(productPriceSpanHolder, "price");
 
             const priceSpanHolder = CreateNewElement("span");
             priceSpanHolder.innerHTML = "Ksh. " + SingleProduct[0].price;
