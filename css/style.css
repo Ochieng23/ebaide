@@ -1362,6 +1362,7 @@ header .search-bar-container label:hover{
 }
 .product-column{
   background-color: yellow;
+  padding: 4% 12% !important;
 }
 
 .blogs-box {
