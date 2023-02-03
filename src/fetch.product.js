@@ -270,12 +270,6 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const sizeList = CreateNewElement("select");
-            // AddClassToNewElement(sizeList, "my-3");
-            // AddAttributeToElement(
-            //   sizeList,
-            //   "style",
-            //   "width:100px; height: 10%;"
-            // );
             AddAttributeToElement(sizeList, "name", "size");
 
             const sizeArray = SingleProduct[0].size.split(" ");
