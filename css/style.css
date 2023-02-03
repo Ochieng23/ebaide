@@ -1345,7 +1345,7 @@ header .search-bar-container label:hover{
 }
 .product-images > img {
   display: block;
-  width: 25vw;
+  width: 35vw;
   height: auto !important;
 }
 .smallImage-column{
