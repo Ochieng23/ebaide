@@ -252,7 +252,7 @@ const PullProductsFromBackendAPI = () => {
             AddAttributeToElement(
               productTitle,
               "style",
-              "font-weight: bolder;"
+              "font-weight: bolder; font-size: 1.6em;"
             );
             productTitle.innerHTML = SingleProduct[0].title;
 
