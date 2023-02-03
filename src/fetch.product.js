@@ -188,6 +188,8 @@ const PullProductsFromBackendAPI = () => {
             const productFirstRow = CreateNewElement("div");
             AddClassToNewElement(productFirstRow, "product-row-1");
             const productImageColumn = CreateNewElement("div");
+            AddClassToNewElement(productImageColumn, "product-images");
+
             const productFirstImage = CreateNewElement("img");
             AddAttributeToElement(
               productFirstImage,
