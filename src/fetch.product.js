@@ -336,11 +336,11 @@ const PullProductsFromBackendAPI = () => {
 
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
-            AddAttributeToElement(
-              quantityToBuy,
-              "style",
-              "width:30px; height: 10%;"
-            );
+            // AddAttributeToElement(
+            //   quantityToBuy,
+            //   "style",
+            //   "width:30px; height: 10%;"
+            // );
             AddAttributeToElement(quantityToBuy, "value", "1");
             AppendChildToParentElementUsingElement(
               productInformation,
