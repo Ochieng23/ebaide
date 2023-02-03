@@ -1337,6 +1337,9 @@ header .search-bar-container label:hover{
   grid-template-columns: 50% 30%;
 }
 /* PRODUCT IMAGES */
+.product-images{
+  
+}
 
 .blogs-box {
   background-color: #fff;
