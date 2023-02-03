@@ -1338,7 +1338,7 @@ header .search-bar-container label:hover{
 }
 /* PRODUCT IMAGES */
 .product-images{
-  background-color: red !important;
+  /* background-color: red !important; */
 }
 .product-images > img {
   width: 50vw;
@@ -1346,7 +1346,7 @@ header .search-bar-container label:hover{
 }
 .smallImage-column{
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
 }
 .smallImage-column div{
   background-color: #000;
