@@ -1340,7 +1340,6 @@ header .search-bar-container label:hover{
 }
 /* PRODUCT IMAGES */
 .product-images{
-  background-color: red !important;
   margin: 0 auto !important;
 }
 .product-images > img {
