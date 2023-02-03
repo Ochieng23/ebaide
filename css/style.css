@@ -1333,7 +1333,7 @@ header .search-bar-container label:hover{
 }
 /* SINLE PRODUCT FIRST ROW */
 .product-row-1{
-  
+  display: grid;
 }
 
 .blogs-box {
