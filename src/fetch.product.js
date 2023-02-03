@@ -200,9 +200,9 @@ const PullProductsFromBackendAPI = () => {
             //   `
             // )
             const productFirstImage = CreateNewElement("img");
-            AddClassToNewElement(productFirstImage, "mt-5");
-            AddClassToNewElement(productFirstImage, "img-fluid");
-            AddClassToNewElement(productFirstImage, "w-100");
+            // AddClassToNewElement(productFirstImage, "mt-5");
+            // AddClassToNewElement(productFirstImage, "img-fluid");
+            // AddClassToNewElement(productFirstImage, "w-100");
             AddAttributeToElement(
               productFirstImage,
               "alt",
