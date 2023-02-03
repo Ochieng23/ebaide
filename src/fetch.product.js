@@ -187,12 +187,6 @@ const PullProductsFromBackendAPI = () => {
               "alt",
               "product first image"
             );
-            AddAttributeToElement(
-              productFirstImage,
-              "style",
-              "width: 300px; height: auto;"
-            );
-
             const singleProductImage = SingleProduct[0].image.split(",");
 
             AddAttributeToElement(
