@@ -1331,6 +1331,8 @@ header .search-bar-container label:hover{
   display: grid;
   grid-template-rows: auto;
 }
+/* SINLE PRODUCT FIRST ROW */
+
 
 .blogs-box {
   background-color: #fff;
