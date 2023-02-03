@@ -425,15 +425,15 @@ const PullProductsFromBackendAPI = () => {
               fullDescriptionTextSpan
             );
 
-            AppendChildToParentElementUsingElement(
-              productEntitiesRows,
-              productInformation
-            );
+            // AppendChildToParentElementUsingElement(
+            //   productEntitiesRows,
+            //   productInformation
+            // );
 
-            AppendChildToParentElementUsingElement(
-              productEntitiesRows,
-              productionDescriptionSection
-            );
+            // AppendChildToParentElementUsingElement(
+            //   productEntitiesRows,
+            //   productionDescriptionSection
+            // );
 
             AppendChildToParentElementUsingElement(
               productEntitiesRows,
