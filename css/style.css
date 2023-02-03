@@ -1340,7 +1340,7 @@ header .search-bar-container label:hover{
 }
 /* PRODUCT IMAGES */
 .product-images{
-  /* background-color: red !important; */
+  background-color: red !important;
 }
 .product-images > img {
   width: 25vw;
