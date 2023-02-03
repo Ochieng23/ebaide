@@ -240,7 +240,7 @@ const PullProductsFromBackendAPI = () => {
               });
             }
             AppendChildToParentElementUsingElement(productImageColumn, smallImageGroup);
-            AppendChildToParentElementUsingElement(productEntitiesRows, productImageColumn);
+            AppendChildToParentElementUsingElement(productFirstRow, productImageColumn);
 
             const productInformation = CreateNewElement("div");
 
@@ -432,8 +432,8 @@ const PullProductsFromBackendAPI = () => {
             );
 
             AppendChildToParentElementUsingElement(
-              productBox,
-              productEntitiesRows
+              productEntitiesRows,
+              productFirstRow
             )
 
             AppendChildToParentElementUsingElement(
