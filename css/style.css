@@ -1330,6 +1330,7 @@ header .search-bar-container label:hover{
   background-color: blue;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 /* SINLE PRODUCT FIRST ROW */
 .product-row-1{
