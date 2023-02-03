@@ -1880,8 +1880,8 @@ tfoot > tr > td{
 }
 .position-number-of-cart-items > .items-number{
   display: block;
-  position: absolute;
+  /* position: absolute;
   top: -.4em;
-  left: .4em;
+  left: .4em; */
   color: #F28500;
 }
