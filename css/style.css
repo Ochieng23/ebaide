@@ -1334,6 +1334,7 @@ header .search-bar-container label:hover{
 /* SINLE PRODUCT FIRST ROW */
 .product-row-1{
   display: grid;
+  grid-template-columns: 50% 30%;
 }
 
 .blogs-box {
