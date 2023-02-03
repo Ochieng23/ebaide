@@ -1362,6 +1362,7 @@ header .search-bar-container label:hover{
 }
 .product-column{
   background-color: yellow;
+  width: 50vw !important;
   padding: 4% 4% !important;
 }
 
