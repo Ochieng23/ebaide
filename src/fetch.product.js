@@ -186,7 +186,7 @@ const PullProductsFromBackendAPI = () => {
 
             //PRODUCT IMAGES, PRICE, QUANTITY, COLOR, SIZE & CTAs:
             const productFirstRow = CreateNewElement("div");
-            AddClassToNewElement(productFirstRow, "product-first-row");
+            AddClassToNewElement(productFirstRow, "product-row-1");
             const productImageColumn = CreateNewElement("div");
             const productFirstImage = CreateNewElement("img");
             AddAttributeToElement(
