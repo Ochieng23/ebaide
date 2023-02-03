@@ -1366,7 +1366,7 @@ header .search-bar-container label:hover{
   padding: 4% 4% !important;
 }
 .product-column ~ h1{
-  
+  font-size: 1.6em !important;
 }
 .blogs-box {
   background-color: #fff;
