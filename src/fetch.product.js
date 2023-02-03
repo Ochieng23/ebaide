@@ -276,7 +276,6 @@ const PullProductsFromBackendAPI = () => {
             for (let i = 0; i < sizeArray.length; i++) {
               const sizeListItem = CreateNewElement("option");
               AddAttributeToElement(sizeListItem, "value", sizeArray[i]);
-              // AddAttributeToElement(sizeListItem, "style", "font-size: 1em;");
               sizeListItem.innerHTML = sizeArray[i];
               AppendChildToParentElementUsingElement(sizeList, sizeListItem);
 
