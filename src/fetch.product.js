@@ -209,6 +209,7 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const smallImageGroup = CreateNewElement("div");
+            AddClassToNewElement(smallImageGroup, "smallImage-column");
             for (let i = 0; i < singleProductImage.length; i++) {
               const smallImageGroupColumn = CreateNewElement("div");
 
