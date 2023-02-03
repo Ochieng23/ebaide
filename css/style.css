@@ -1363,7 +1363,8 @@ header .search-bar-container label:hover{
 .product-column{
   background-color: yellow;
   width: 40vw !important;
-  padding: 4% 4% !important;
+  display: flex !important;
+  flex-direction: column;
 }
 .product-column ~ h1{
   font-size: .6em !important;
