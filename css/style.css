@@ -1365,7 +1365,7 @@ header .search-bar-container label:hover{
   width: 40vw !important;
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .product-column ~ h1{
