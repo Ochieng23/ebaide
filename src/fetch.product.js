@@ -459,12 +459,12 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const productionDescriptionSection = CreateNewElement("div");
-            AddClassToNewElement(productionDescriptionSection, "product-info");
-            AddClassToNewElement(productionDescriptionSection, "col-lg-5");
-            AddClassToNewElement(productionDescriptionSection, "col-md-12");
-            AddClassToNewElement(productionDescriptionSection, "col-12");
-            AddClassToNewElement(productionDescriptionSection, "my-5");
-            AddClassToNewElement(productionDescriptionSection, "pt-5");
+            // AddClassToNewElement(productionDescriptionSection, "product-info");
+            // AddClassToNewElement(productionDescriptionSection, "col-lg-5");
+            // AddClassToNewElement(productionDescriptionSection, "col-md-12");
+            // AddClassToNewElement(productionDescriptionSection, "col-12");
+            // AddClassToNewElement(productionDescriptionSection, "my-5");
+            // AddClassToNewElement(productionDescriptionSection, "pt-5");
 
             AddAttributeToElement(
               productionDescriptionSection,
