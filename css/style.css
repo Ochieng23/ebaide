@@ -1365,6 +1365,8 @@ header .search-bar-container label:hover{
   width: 40vw !important;
   display: flex !important;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .product-column ~ h1{
   font-size: .6em !important;
