@@ -1347,6 +1347,7 @@ header .search-bar-container label:hover{
   display: block;
   width: 35vw;
   height: auto !important;
+  border-radius: .2em !important;
 }
 .smallImage-column{
   display: flex !important;
