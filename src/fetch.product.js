@@ -242,7 +242,7 @@ const PullProductsFromBackendAPI = () => {
             AppendChildToParentElementUsingElement(productImageColumn, smallImageGroup);
             AppendChildToParentElementUsingElement(productFirstRow, productImageColumn);
 
-            const productInformation = CreateNewElement("div");
+            const productDetailsColumn = CreateNewElement("div");
 
             const productTitle = CreateNewElement("h1");
             AddAttributeToElement(
