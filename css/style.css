@@ -1344,8 +1344,8 @@ header .search-bar-container label:hover{
   width: 50vw;
   height: auto !important;
 }
-.smallImage-column{
-  
+.smallImage-column img{
+
 }
 .blogs-box {
   background-color: #fff;
