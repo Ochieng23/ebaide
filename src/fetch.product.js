@@ -177,6 +177,8 @@ const PullProductsFromBackendAPI = () => {
             const productContainer = CreateNewElement("div");
             AddClassToNewElement(productContainer, "product-container");
             AddAttributeToElement(productContainer, "id", SingleProduct[0].id);
+
+            //PRODUCT IMAGE AND DETAILS:
             const productBox = CreateNewElement("div");
             
             
