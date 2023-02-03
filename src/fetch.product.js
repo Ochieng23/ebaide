@@ -227,20 +227,20 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const smallImageGroup = CreateNewElement("div");
-            AddClassToNewElement(smallImageGroup, "small-img-group");
+            //AddClassToNewElement(smallImageGroup, "small-img-group");
             for (let i = 0; i < singleProductImage.length; i++) {
               const smallImageGroupColumn = CreateNewElement("div");
-              AddClassToNewElement(smallImageGroupColumn, "small-img-col");
-              AddAttributeToElement(
-                smallImageGroup,
-                "style",
-                "width: 50vw; margin:20px;"
-              );
+              //AddClassToNewElement(smallImageGroupColumn, "small-img-col");
+              // AddAttributeToElement(
+              //   smallImageGroup,
+              //   "style",
+              //   "width: 50vw; margin:20px;"
+              // );
 
               const smallImage = CreateNewElement("img");
-              AddClassToNewElement(smallImage, "small-img");
-              AddClassToNewElement(smallImage, "w-100");
-              AddClassToNewElement(smallImage, "img-fluid");
+              // AddClassToNewElement(smallImage, "small-img");
+              // AddClassToNewElement(smallImage, "w-100");
+              // AddClassToNewElement(smallImage, "img-fluid");
               AddAttributeToElement(
                 smallImage,
                 "src",
