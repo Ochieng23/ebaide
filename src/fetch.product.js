@@ -247,6 +247,7 @@ const PullProductsFromBackendAPI = () => {
 
             const productDetailsColumn = CreateNewElement("div");
 
+            
             const productTitle = CreateNewElement("h1");
             AddAttributeToElement(
               productTitle,
