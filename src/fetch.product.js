@@ -405,12 +405,6 @@ const PullProductsFromBackendAPI = () => {
             );
 
             const productionDescriptionSection = CreateNewElement("div");
-            // AddAttributeToElement(
-            //   productionDescriptionSection,
-            //   "style",
-            //   "background-color: white;"
-            // );
-            // AddClassToNewElement(productionDescriptionSection, "col");
 
             const productDescriptionDetails = CreateNewElement("h4");
             productDescriptionDetails.innerHTML = "Product Description";
