@@ -1341,7 +1341,7 @@ header .search-bar-container label:hover{
   background-color: red !important;
 }
 .product-images > img {
-  width: 40vw;
+  width: 50vw;
   height: auto !important;
 }
 
