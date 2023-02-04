@@ -326,15 +326,7 @@ const PullBlogsFromBackendAPI = () => {
                 productInformation,
                 continueShoppingButton
               );
-
-              AppendChildToParentUsingElement(
-                productBox,
-                productInformation
-              );
-              AppendChildToParentUsingElement(
-                productContainer,
-                productBox
-              );
+              
               AppendChildToParent(
                 "#main",
                 GetElementWithClassName,
