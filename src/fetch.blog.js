@@ -301,7 +301,8 @@ const PullBlogsFromBackendAPI = () => {
               blogMetadata
             );
 
-            const continueShoppingButton = CreateElement("button");
+            const blogButtonSection = CreateElement("div");
+            const continueReading = CreateElement("button");
             AddClassToElement(continueShoppingButton, "btn");
             continueShoppingButton.innerHTML = "Continue reading";
             continueShoppingButton.addEventListener("click", e => {
