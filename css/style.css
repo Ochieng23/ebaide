@@ -2018,6 +2018,7 @@ tfoot > tr > td{
 .blog-container > .blogMetadata {
   background-color: yellow;
   padding: .8%;
+  width: 80%;
   text-align: end;
 }
 .blog-container > .blogMetadata  > span{
