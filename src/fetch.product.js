@@ -272,6 +272,7 @@ const PullProductsFromBackendAPI = () => {
 
             const sizesDiv = CreateNewElement("div");
             const sizesLabel = CreateNewElement("label");
+            sizesLabel.textContent = "Sizes";
             const sizeList = CreateNewElement("select");
             AddAttributeToElement(sizeList, "name", "size");
 
