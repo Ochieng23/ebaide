@@ -324,8 +324,8 @@ const PullBlogsFromBackendAPI = () => {
               });
               });
               AppendChildToParentUsingElement(
-                productInformation,
-                continueShoppingButton
+                blogButtonSection,
+                continueReading
               );
               
               AppendChildToParent(
