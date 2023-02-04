@@ -1419,6 +1419,9 @@ header .search-bar-container label:hover{
   width: 80% !important;
   margin-bottom: 2.8em !important;
 }
+.product-row-2 >div>span{
+  
+}
 
 .blogs-box {
   background-color: #fff;
