@@ -1989,7 +1989,6 @@ tfoot > tr > td{
   flex-direction: column;
 }
 .blog-container > .blog-heading-section {
-  margin-bottom: 4%;
   width: 80% !important;
   margin:  0 auto !important;
 }
@@ -2004,4 +2003,7 @@ tfoot > tr > td{
 .blog-container > .blog-image-section >img {
   width: 100% !important;
   height: auto !important;
+  border-radius: .8em;
+  box-shadow: .1em .1em .1em .2em .4em rgba(0, 0, 0, .2);
+
 }
