@@ -278,9 +278,6 @@ const PullBlogsFromBackendAPI = () => {
               productInformation,
               fullDescriptionTextSpan
               );
-            // const productPriceSpanHolder = CreateElement("h2");
-            // AddClassToElement(productPriceSpanHolder, "price");
-
             // const priceSpanHolder = CreateElement("span");
             // setInterval(() => {
             //   let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
