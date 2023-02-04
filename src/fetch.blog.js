@@ -228,15 +228,23 @@ const PullBlogsFromBackendAPI = () => {
             const productContainer = CreateElement("div");
 
             const productBox = CreateElement("div");
-            AddClassToElement(productBox, "col-lg-5");
-            AddClassToElement(productBox, "col-md-12");
-            AddClassToElement(productBox, "col-12");
             AddAttributeNamedElement(productBox, "id", SingleBlog[0].blogid);
 
+            const productTitle = CreateElement("h1");
+            AddAttributeNamedElement(
+              productTitle,
+              "style",
+              "font-weight: bolder;"
+            );
+            AddClassToElement (productTitle, "blog-description");
+            productTitle.innerHTML = SingleBlog[0].title;
+
+            AppendChildToParentUsingElement(
+              productInformation,
+              productTitle
+            );
+
             const productFirstImage = CreateElement("img");
-            AddClassToElement(productFirstImage, "mt-5");
-            AddClassToElement(productFirstImage, "img-fluid");
-            AddClassToElement(productFirstImage, "w-100");
             AddAttributeNamedElement(
               productFirstImage,
               "alt",
@@ -258,31 +266,13 @@ const PullBlogsFromBackendAPI = () => {
             );
 
             const productInformation = CreateElement("div");
-            AddClassToElement(productInformation, "col-lg-5");
-            AddClassToElement(productInformation, "col-md-12");
-            AddClassToElement(productInformation, "col-12");
-            AddClassToElement(productInformation, "my-5");
-            AddClassToElement(productInformation, "pt-5");
             AddAttributeNamedElement(
               productInformation,
               "style",
               "background-color: white;"
             );
 
-            const productTitle = CreateElement("h1");
-            AddAttributeNamedElement(
-              productTitle,
-              "style",
-              "font-weight: bolder;"
-            );
-            AddClassToElement (productTitle, "blog-description");
-            productTitle.innerHTML = SingleBlog[0].title;
-
-            AppendChildToParentUsingElement(
-              productInformation,
-              productTitle
-            );
-
+            
             const fullDescriptionTextSpan = CreateElement("span");
             AddClassToElement (fullDescriptionTextSpan, "blog-description");
             fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
