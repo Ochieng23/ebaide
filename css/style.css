@@ -1361,7 +1361,6 @@ header .search-bar-container label:hover{
   height: auto !important;
 }
 .product-column{
-  background-color: yellow;
   width: 40vw !important;
   display: flex !important;
   flex-direction: column;
