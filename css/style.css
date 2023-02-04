@@ -1394,6 +1394,8 @@ header .search-bar-container label:hover{
   display: block;
   width: 30vw !important;
   height: 4vh !important;
+  border: .1em solid #000;
+  background-color: transparent;
 }
 
 .blogs-box {
