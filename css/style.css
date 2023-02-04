@@ -1988,6 +1988,6 @@ tfoot > tr > td{
   display: flex;
   flex-direction: column;
 }
-.blog-container > div > h1 {
-  
+.blog-container > .blog-heading-section {
+  background-color: blue;
 }
