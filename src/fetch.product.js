@@ -437,6 +437,7 @@ const PullProductsFromBackendAPI = () => {
               fullDescriptionTextSpan
             );
 
+            
             AppendChildToParentElementUsingElement(
               productEntitiesRows,
               productFirstRow
