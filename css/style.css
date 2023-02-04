@@ -1639,10 +1639,10 @@ header .logo{
   display: block;
 }
 .btn-cart-icon > i{
-  margin-left: -4em;
+  margin-left: -4vw !important;
 }
 .btn-cart-icon > span {
-  margin-left: 5.6em;
+  margin-left: 5.6vw;
 }
 
 table, th, td {
