@@ -1369,7 +1369,7 @@ header .search-bar-container label:hover{
   align-items: center;
   padding: 8% 4% !important;
 }
-.product-column ~ h1{
+.product-title{
   font-size: .6em !important;
   font-weight: 400;
   color: blue !important;
