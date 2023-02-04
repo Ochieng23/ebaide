@@ -265,6 +265,9 @@ const PullBlogsFromBackendAPI = () => {
               productFirstImage
             );
 
+            AppendChildToParentUsingElement(
+              productFirstImage
+            )
             // const productInformation = CreateElement("div");
             // AddAttributeNamedElement(
             //   productInformation,
