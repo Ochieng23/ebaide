@@ -246,6 +246,7 @@ const PullBlogsFromBackendAPI = () => {
             AppendChildToParentUsingElement(blogContainer, blogHeadingSection);
 
 
+            const blogImageSection = CreateElement("div");
             const productFirstImage = CreateElement("img");
             AddAttributeNamedElement(
               productFirstImage,
