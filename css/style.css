@@ -1374,7 +1374,7 @@ header .search-bar-container label:hover{
   font-weight: 400;
   margin-bottom: .8em !important;
 }
-.productPrice{
+.productPrice > span{
   font-weight: 800;
   font-size: 2.0em !important;
 }
