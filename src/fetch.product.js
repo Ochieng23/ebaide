@@ -421,6 +421,7 @@ const PullProductsFromBackendAPI = () => {
               productDetailsColumn
             )
             const productSecondRow = CreateNewElement("div");
+            AddClassToNewElement(productSecondRow, "product-row-2")
             const productSecondRowSubFirstRow = CreateNewElement("div");
             const productDescriptionHeading = CreateNewElement("h3");
             productDescriptionHeading.innerHTML = "Product Description";
