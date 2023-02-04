@@ -427,7 +427,7 @@ const PullProductsFromBackendAPI = () => {
             productDescriptionDetails.innerHTML = "Product Description";
             AppendChildToParentElementUsingElement(
               productSecondRowSubFirstRow,
-              productDescriptionDetails
+              productDescriptionHeading
             );
 
             const fullDescriptionTextSpan = CreateNewElement("span");
