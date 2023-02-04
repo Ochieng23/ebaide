@@ -327,6 +327,10 @@ const PullBlogsFromBackendAPI = () => {
                 blogButtonSection,
                 continueReading
               );
+              AppendChildToParentUsingElement(
+                blogContainer,
+                blogButtonSection
+              );
               
               AppendChildToParent(
                 "#body",
