@@ -424,7 +424,7 @@ const PullProductsFromBackendAPI = () => {
             const productSecondRowSubFirstRow = CreateNewElement("div");
             const productSecondRowSubSecondRow = CreateNewElement("div");
             const productDescriptionHeading = CreateNewElement("h3");
-            productDescriptionDetails.innerHTML = "Product Description";
+            productDescriptionHeading.innerHTML = "Product Description";
             AppendChildToParentElementUsingElement(
               productSecondRowSubFirstRow,
               productDescriptionHeading
