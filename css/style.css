@@ -1353,7 +1353,6 @@ header .search-bar-container label:hover{
   flex-direction: row !important;
 }
 .smallImage-column div{
-  background-color: #000;
   border: .1em solid #000;
 }
 .smallImage-column img{
