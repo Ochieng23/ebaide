@@ -253,15 +253,14 @@ const PullBlogsFromBackendAPI = () => {
               "blog image"
             );
             
-            // AddAttributeNamedElement(
-            //   productFirstImage,
-            //   "src",
-            //   `https://api.goebaide.com/${SingleBlog[0].image}`
-            // );
-            // AppendChildToParentUsingElement(
-            //   productBox,
-            //   productFirstImage
-            // );
+            AddAttributeNamedElement(
+              productFirstImage,
+              "src",
+              `https://api.goebaide.com/${SingleBlog[0].image}`
+            );
+            AppendChildToParentUsingElement(
+              
+            );
 
             // const productInformation = CreateElement("div");
             // AddAttributeNamedElement(
