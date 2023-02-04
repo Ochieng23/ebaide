@@ -1384,7 +1384,11 @@ header .search-bar-container label:hover{
 }
 
 .sizes{
-  
+  background-color: #000;
+  margin-bottom: 2.8em !important;
+}
+.sizes > label {
+  display: block;
 }
 
 .blogs-box {
