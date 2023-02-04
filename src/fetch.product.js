@@ -282,7 +282,7 @@ const PullProductsFromBackendAPI = () => {
               sizeListItem.innerHTML = sizeArray[i];
               AppendChildToParentElementUsingElement(sizeList, sizeListItem);
               AppendChildToParentElementUsingElement(sizesDiv, sizesLabel);
-
+              AppendChildToParentElementUsingElement(sizesDiv, sizeList);
               AppendChildToParentElementUsingElement(
                 productDetailsColumn,
                 sizeList
