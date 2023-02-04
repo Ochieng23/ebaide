@@ -1414,6 +1414,11 @@ header .search-bar-container label:hover{
   padding-left:.4em ;
 }
 
+.product-row-2 {
+  background-color: #ffa500;
+  width: 80% !important;
+  margin-bottom: 2.8em !important;
+}
 
 .blogs-box {
   background-color: #fff;
