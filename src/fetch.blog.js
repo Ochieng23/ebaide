@@ -223,7 +223,7 @@ const PullBlogsFromBackendAPI = () => {
           });
           console.log (SingleBlog)
           //FETCH SINGLE BLOG:
-          ClearElementContent(QuerySelectorForDocumentElement, "#body");
+          ClearElementContent(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
             const productContainer = CreateElement("div");
 
