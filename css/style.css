@@ -1991,4 +1991,6 @@ tfoot > tr > td{
 .blog-container > .blog-heading-section {
   background-color: blue;
   margin-bottom: 4%;
+  width: 80% !important;
+  margin:  0 auto !important;
 }
