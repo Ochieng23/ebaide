@@ -430,7 +430,7 @@ const PullProductsFromBackendAPI = () => {
             );
             AppendChildToParentElementUsingElement(
               productSecondRow,
-              productSecondRowSubSecondRow
+              productSecondRowSubFirstRow
             );
 
             const productSecondRowSubSecondRow = CreateNewElement("div");
