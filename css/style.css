@@ -1421,6 +1421,7 @@ header .search-bar-container label:hover{
 }
 .product-row-2 >div>h3{
   font-size: 2em !important;
+  font-weight: 600;
 }
 .product-row-2 >div>span{
   font-size: 1.6em !important;
