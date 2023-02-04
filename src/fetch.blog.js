@@ -289,16 +289,16 @@ const PullBlogsFromBackendAPI = () => {
             setInterval(() => {
               let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
               let resultArrayLength = resultArray.length;
-              (priceSpanHolder.innerHTML =
+              (blogPostDateMetadata.innerHTML =
                 "\n" + resultArray[resultArrayLength - 1]), 1000;
             });
             AppendChildToParentUsingElement(
-              productPriceSpanHolder,
-              priceSpanHolder
+              productblogPostDateMetadata,
+              blogPostDateMetadata
             );
             AppendChildToParentUsingElement(
               productInformation,
-              productPriceSpanHolder
+              productblogPostDateMetadata
             );
 
             // const continueShoppingButton = CreateElement("button");
