@@ -1392,8 +1392,8 @@ header .search-bar-container label:hover{
 }
 .sizes > select {
   display: block;
-  width: 10vw !important;
-  height: 3vh !important;
+  width: 30vw !important;
+  height: 4vh !important;
 }
 
 .blogs-box {
