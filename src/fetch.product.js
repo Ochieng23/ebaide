@@ -270,6 +270,7 @@ const PullProductsFromBackendAPI = () => {
               productPriceSpanHolder
             );
 
+            const sizesDiv = CreateNewElement("div");
             const sizeList = CreateNewElement("select");
             AddAttributeToElement(sizeList, "name", "size");
 
