@@ -271,6 +271,7 @@ const PullBlogsFromBackendAPI = () => {
             );
             
             const blogContentSection = CreateElement("div");
+            AddClassToElement(blogContentSection,"blog-content-section")
             const fullDescriptionTextSpan = CreateElement("span");
             AddClassToElement (fullDescriptionTextSpan, "blog-description");
             fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
