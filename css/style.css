@@ -1371,6 +1371,7 @@ header .search-bar-container label:hover{
 }
 .product-column ~ h1{
   font-size: .6em !important;
+  font-weight: 400;
 }
 .blogs-box {
   background-color: #fff;
