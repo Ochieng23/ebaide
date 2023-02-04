@@ -247,86 +247,86 @@ const PullBlogsFromBackendAPI = () => {
             AppendChildToParentUsingElement(blogContainer, blogHeadingSection);
 
 
-            const productFirstImage = CreateElement("img");
-            AddAttributeNamedElement(
-              productFirstImage,
-              "alt",
-              "blog image"
-            );
-            AddAttributeNamedElement(
-              productFirstImage,
-              "style",
-              "width: 300px; height: auto;"
-            );
-            AddAttributeNamedElement(
-              productFirstImage,
-              "src",
-              `https://api.goebaide.com/${SingleBlog[0].image}`
-            );
-            AppendChildToParentUsingElement(
-              productBox,
-              productFirstImage
-            );
+            // const productFirstImage = CreateElement("img");
+            // AddAttributeNamedElement(
+            //   productFirstImage,
+            //   "alt",
+            //   "blog image"
+            // );
+            // AddAttributeNamedElement(
+            //   productFirstImage,
+            //   "style",
+            //   "width: 300px; height: auto;"
+            // );
+            // AddAttributeNamedElement(
+            //   productFirstImage,
+            //   "src",
+            //   `https://api.goebaide.com/${SingleBlog[0].image}`
+            // );
+            // AppendChildToParentUsingElement(
+            //   productBox,
+            //   productFirstImage
+            // );
 
-            const productInformation = CreateElement("div");
-            AddAttributeNamedElement(
-              productInformation,
-              "style",
-              "background-color: white;"
-            );
+            // const productInformation = CreateElement("div");
+            // AddAttributeNamedElement(
+            //   productInformation,
+            //   "style",
+            //   "background-color: white;"
+            // );
 
             
-            const fullDescriptionTextSpan = CreateElement("span");
-            AddClassToElement (fullDescriptionTextSpan, "blog-description");
-            fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
-            AppendChildToParentUsingElement(
-              productInformation,
-              fullDescriptionTextSpan
-              );
-            const productPriceSpanHolder = CreateElement("h2");
-            AddClassToElement(productPriceSpanHolder, "price");
+            // const fullDescriptionTextSpan = CreateElement("span");
+            // AddClassToElement (fullDescriptionTextSpan, "blog-description");
+            // fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
+            // AppendChildToParentUsingElement(
+            //   productInformation,
+            //   fullDescriptionTextSpan
+            //   );
+            // const productPriceSpanHolder = CreateElement("h2");
+            // AddClassToElement(productPriceSpanHolder, "price");
 
-            const priceSpanHolder = CreateElement("span");
-            setInterval(() => {
-              let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
-              let resultArrayLength = resultArray.length;
-              (priceSpanHolder.innerHTML =
-                "\n" + resultArray[resultArrayLength - 1]), 1000;
-            });
-            AppendChildToParentUsingElement(
-              productPriceSpanHolder,
-              priceSpanHolder
-            );
-            AppendChildToParentUsingElement(
-              productInformation,
-              productPriceSpanHolder
-            );
+            // const priceSpanHolder = CreateElement("span");
+            // setInterval(() => {
+            //   let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
+            //   let resultArrayLength = resultArray.length;
+            //   (priceSpanHolder.innerHTML =
+            //     "\n" + resultArray[resultArrayLength - 1]), 1000;
+            // });
+            // AppendChildToParentUsingElement(
+            //   productPriceSpanHolder,
+            //   priceSpanHolder
+            // );
+            // AppendChildToParentUsingElement(
+            //   productInformation,
+            //   productPriceSpanHolder
+            // );
 
-            const continueShoppingButton = CreateElement("button");
-            AddClassToElement(continueShoppingButton, "btn");
-            continueShoppingButton.innerHTML = "Continue reading";
-            continueShoppingButton.addEventListener("click", e => {
-              e.preventDefault();
-              //console.log(window.location.href);
-              if (
-                window.location.href ===
-                `https://goebaide.com/index.html#blog`
-              ) {
-                window.location.reload();
-                setTimeout ( () => {
-                  window.location.href = 'https://goebaide.com/index.html#blog', 1500
-                });
-                return;
-              }
-              window.location.reload();
-              setTimeout ( () => {
-                window.location.href = 'https://goebaide.com/index.html#blog', 1500
-              });
-              });
-              AppendChildToParentUsingElement(
-                productInformation,
-                continueShoppingButton
-              );
+            // const continueShoppingButton = CreateElement("button");
+            // AddClassToElement(continueShoppingButton, "btn");
+            // continueShoppingButton.innerHTML = "Continue reading";
+            // continueShoppingButton.addEventListener("click", e => {
+            //   e.preventDefault();
+            //   //console.log(window.location.href);
+            //   if (
+            //     window.location.href ===
+            //     `https://goebaide.com/index.html#blog`
+            //   ) {
+            //     window.location.reload();
+            //     setTimeout ( () => {
+            //       window.location.href = 'https://goebaide.com/index.html#blog', 1500
+            //     });
+            //     return;
+            //   }
+            //   window.location.reload();
+            //   setTimeout ( () => {
+            //     window.location.href = 'https://goebaide.com/index.html#blog', 1500
+            //   });
+            //   });
+            //   AppendChildToParentUsingElement(
+            //     productInformation,
+            //     continueShoppingButton
+            //   );
               
               AppendChildToParent(
                 "#main",
