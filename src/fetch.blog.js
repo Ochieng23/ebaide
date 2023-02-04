@@ -303,9 +303,9 @@ const PullBlogsFromBackendAPI = () => {
 
             const blogButtonSection = CreateElement("div");
             const continueReading = CreateElement("button");
-            AddClassToElement(continueShoppingButton, "btn");
-            continueShoppingButton.innerHTML = "Continue reading";
-            continueShoppingButton.addEventListener("click", e => {
+            AddClassToElement(continueReading, "btn");
+            continueReading.innerHTML = "Continue reading";
+            continueReading.addEventListener("click", e => {
               e.preventDefault();
               //console.log(window.location.href);
               if (
