@@ -2016,13 +2016,11 @@ tfoot > tr > td{
   text-align: justify;
 }
 .blog-container > .blogMetadata {
-  background-color: yellow;
   padding: .8%;
   width: 80%;
   margin: 0 auto !important;
   text-align: end;
 }
 .blog-container > .blogMetadata  > span{
-  background-color: beige;
   text-align: right;
 }
