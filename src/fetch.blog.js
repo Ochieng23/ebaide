@@ -269,13 +269,6 @@ const PullBlogsFromBackendAPI = () => {
               blogContainer,
               blogImageSection
             )
-            // const productInformation = CreateElement("div");
-            // AddAttributeNamedElement(
-            //   productInformation,
-            //   "style",
-            //   "background-color: white;"
-            // );
-
             
             // const fullDescriptionTextSpan = CreateElement("span");
             // AddClassToElement (fullDescriptionTextSpan, "blog-description");
