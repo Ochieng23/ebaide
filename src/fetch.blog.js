@@ -227,8 +227,8 @@ const PullBlogsFromBackendAPI = () => {
           setTimeout(() => {
             const blogContainer = CreateElement("div");
             AddAttributeNamedElement(blogContainer, "id", SingleBlog[0].blogid);
-            const productBox = CreateElement("div");
 
+            const blogHeadingSection = CreateElement("div");
             const productTitle = CreateElement("h1");
             AddAttributeNamedElement(
               productTitle,
