@@ -1327,7 +1327,6 @@ header .search-bar-container label:hover{
 }
 /* SINGLE PRODUCT ROWS */
 .product-rows {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
