@@ -1399,7 +1399,8 @@ header .search-bar-container label:hover{
   background-color: transparent;
 }
 .quantity {
-  background-color: #000;
+  background-color: rgb(34, 12, 231);
+  margin-bottom: 2.8em !important;
 }
 
 .blogs-box {
