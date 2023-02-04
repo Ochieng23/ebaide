@@ -252,11 +252,7 @@ const PullBlogsFromBackendAPI = () => {
               "alt",
               "blog image"
             );
-            // AddAttributeNamedElement(
-            //   productFirstImage,
-            //   "style",
-            //   "width: 300px; height: auto;"
-            // );
+            
             // AddAttributeNamedElement(
             //   productFirstImage,
             //   "src",
