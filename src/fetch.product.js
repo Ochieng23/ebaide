@@ -249,11 +249,7 @@ const PullProductsFromBackendAPI = () => {
             AddClassToNewElement(productDetailsColumn, 'product-column');
 
             const productTitle = CreateNewElement("h1");
-            AddAttributeToElement(
-              productTitle,
-              "style",
-              "font-weight: bolder; font-size: 1.6em;"
-            );
+            
             productTitle.innerHTML = SingleProduct[0].title;
 
             AppendChildToParentElementUsingElement(
