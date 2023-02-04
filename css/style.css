@@ -1367,7 +1367,7 @@ header .search-bar-container label:hover{
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  padding: 12% 0 4% !important;
+  padding: 12% 4% 0 4% !important;
 }
 .product-title{
   font-size: 1.6em !important;
