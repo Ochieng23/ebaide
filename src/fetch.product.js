@@ -285,7 +285,7 @@ const PullProductsFromBackendAPI = () => {
               AppendChildToParentElementUsingElement(sizesDiv, sizeList);
               AppendChildToParentElementUsingElement(
                 productDetailsColumn,
-                sizeList
+                sizesDiv
               );
             }
 
