@@ -2014,4 +2014,5 @@ tfoot > tr > td{
 .blog-container > .blog-content-section > span{
   font-size: 1.2em;
   line-height: 2.4em;
+  text-align: justify;
 }
