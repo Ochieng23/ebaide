@@ -286,6 +286,7 @@ const PullBlogsFromBackendAPI = () => {
 
 
             const blogMetadata = CreateElement("div");
+            AddClassToElement(blogMetadata, "blogMetadata");
             const blogPostDateMetadata = CreateElement("span");
             setInterval(() => {
               let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
