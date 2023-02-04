@@ -421,7 +421,6 @@ const PullProductsFromBackendAPI = () => {
               productDetailsColumn
             )
             const productionDescriptionSection = CreateNewElement("div");
-
             const productDescriptionDetails = CreateNewElement("h4");
             productDescriptionDetails.innerHTML = "Product Description";
             AppendChildToParentElementUsingElement(
