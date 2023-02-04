@@ -292,6 +292,7 @@ const PullProductsFromBackendAPI = () => {
             }
 
             const quantityDiv = CreateNewElement("div");
+            const quantityLabel = CreateNewElement("label");
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
             AddAttributeToElement(quantityToBuy, "value", "1");
