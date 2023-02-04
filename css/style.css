@@ -1626,7 +1626,7 @@ header .logo{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: justify;
+  align-items: center;
   width: 30vw !important;
 }
 .btn-specific{
