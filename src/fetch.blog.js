@@ -282,8 +282,7 @@ const PullBlogsFromBackendAPI = () => {
             AppendChildToParentUsingElement(
               blogContainer,
               blogContentSection
-            )
-lm
+            );
 
             const blogMetadata = CreateElement("div");
             AddClassToElement(blogMetadata, "blogMetadata");
