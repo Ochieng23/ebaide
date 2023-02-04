@@ -278,6 +278,8 @@ const PullBlogsFromBackendAPI = () => {
               productInformation,
               fullDescriptionTextSpan
               );
+
+            const blogMetadata = CreateElement("div");
             setInterval(() => {
               let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
               let resultArrayLength = resultArray.length;
