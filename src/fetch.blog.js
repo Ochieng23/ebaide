@@ -239,7 +239,7 @@ const PullBlogsFromBackendAPI = () => {
             blogTitle.innerHTML = SingleBlog[0].title;
 
             AppendChildToParentUsingElement(
-              productInformation,
+              blogHeadingSection,
               blogTitle
             );
 
