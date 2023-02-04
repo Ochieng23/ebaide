@@ -1993,7 +1993,7 @@ tfoot > tr > td{
   margin:  0 auto !important;
 }
 .blog-container > .blog-heading-section > h1 {
-  text-align: center;
+  text-align: justify;
 }
 .blog-container > .blog-image-section {
   background-color: yellow !important;
