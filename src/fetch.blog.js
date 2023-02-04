@@ -229,18 +229,18 @@ const PullBlogsFromBackendAPI = () => {
             AddAttributeNamedElement(blogContainer, "id", SingleBlog[0].blogid);
 
             const blogHeadingSection = CreateElement("div");
-            const productTitle = CreateElement("h1");
+            const blogTitle = CreateElement("h1");
             AddAttributeNamedElement(
-              productTitle,
+              blogTitle,
               "style",
               "font-weight: bolder;"
             );
-            AddClassToElement (productTitle, "blog-description");
-            productTitle.innerHTML = SingleBlog[0].title;
+            AddClassToElement (blogTitle, "blog-description");
+            blogTitle.innerHTML = SingleBlog[0].title;
 
             AppendChildToParentUsingElement(
               productInformation,
-              productTitle
+              blogTitle
             );
 
             const productFirstImage = CreateElement("img");
