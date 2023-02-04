@@ -223,7 +223,7 @@ const PullBlogsFromBackendAPI = () => {
           });
           console.log (SingleBlog)
           //FETCH SINGLE BLOG:
-          ClearElementContent(QuerySelectorForDocumentElement, "#main");
+          ClearElementContent(QuerySelectorForDocumentElement, "#body");
           setTimeout(() => {
             const blogContainer = CreateElement("div");
             AddClassToElement(blogContainer, "blog-container");
@@ -237,7 +237,6 @@ const PullBlogsFromBackendAPI = () => {
               "style",
               "font-weight: bolder;"
             );
-            AddClassToElement (blogTitle, "blog-description");
             blogTitle.innerHTML = SingleBlog[0].title;
 
             AppendChildToParentUsingElement(
@@ -329,7 +328,7 @@ const PullBlogsFromBackendAPI = () => {
             //   );
               
               AppendChildToParent(
-                "#main",
+                "#body",
                 GetElementWithClassName,
                 blogContainer
               );
