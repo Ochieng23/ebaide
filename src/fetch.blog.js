@@ -304,6 +304,7 @@ const PullBlogsFromBackendAPI = () => {
             );
 
             const blogButtonSection = CreateElement("div");
+            AddClassToElement(blogButtonSection, "blog-button-section");
             const continueReading = CreateElement("button");
             AddClassToElement(continueReading, "btn");
             continueReading.innerHTML = "Continue reading";
