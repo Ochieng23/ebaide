@@ -2008,4 +2008,6 @@ tfoot > tr > td{
 }
 .blog-container > .blog-content-section{
   background-color: yellow;
+  width: 80%;
+  margin: 0 auto !important;
 }
