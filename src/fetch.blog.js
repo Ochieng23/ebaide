@@ -301,31 +301,31 @@ const PullBlogsFromBackendAPI = () => {
               blogMetadata
             );
 
-            // const continueShoppingButton = CreateElement("button");
-            // AddClassToElement(continueShoppingButton, "btn");
-            // continueShoppingButton.innerHTML = "Continue reading";
-            // continueShoppingButton.addEventListener("click", e => {
-            //   e.preventDefault();
-            //   //console.log(window.location.href);
-            //   if (
-            //     window.location.href ===
-            //     `https://goebaide.com/index.html#blog`
-            //   ) {
-            //     window.location.reload();
-            //     setTimeout ( () => {
-            //       window.location.href = 'https://goebaide.com/index.html#blog', 1500
-            //     });
-            //     return;
-            //   }
-            //   window.location.reload();
-            //   setTimeout ( () => {
-            //     window.location.href = 'https://goebaide.com/index.html#blog', 1500
-            //   });
-            //   });
-            //   AppendChildToParentUsingElement(
-            //     productInformation,
-            //     continueShoppingButton
-            //   );
+            const continueShoppingButton = CreateElement("button");
+            AddClassToElement(continueShoppingButton, "btn");
+            continueShoppingButton.innerHTML = "Continue reading";
+            continueShoppingButton.addEventListener("click", e => {
+              e.preventDefault();
+              //console.log(window.location.href);
+              if (
+                window.location.href ===
+                `https://goebaide.com/index.html#blog`
+              ) {
+                window.location.reload();
+                setTimeout ( () => {
+                  window.location.href = 'https://goebaide.com/index.html#blog', 1500
+                });
+                return;
+              }
+              window.location.reload();
+              setTimeout ( () => {
+                window.location.href = 'https://goebaide.com/index.html#blog', 1500
+              });
+              });
+              AppendChildToParentUsingElement(
+                productInformation,
+                continueShoppingButton
+              );
               
               AppendChildToParent(
                 "#body",
