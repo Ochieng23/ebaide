@@ -261,7 +261,8 @@ const PullBlogsFromBackendAPI = () => {
               `https://api.goebaide.com/${SingleBlog[0].image}`
             );
             AppendChildToParentUsingElement(
-              
+              blogImageSection,
+              productFirstImage
             );
 
             // const productInformation = CreateElement("div");
