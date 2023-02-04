@@ -1989,7 +1989,6 @@ tfoot > tr > td{
   flex-direction: column;
 }
 .blog-container > .blog-heading-section {
-  background-color: blue;
   margin-bottom: 4%;
   width: 80% !important;
   margin:  0 auto !important;
