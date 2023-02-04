@@ -1405,6 +1405,9 @@ header .search-bar-container label:hover{
 .quantity > label {
   display: block;
 }
+.quantity > input {
+  display: block;
+}
 
 
 .blogs-box {
