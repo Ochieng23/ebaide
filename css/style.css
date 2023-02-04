@@ -1402,6 +1402,10 @@ header .search-bar-container label:hover{
   background-color: rgb(34, 12, 231);
   margin-bottom: 2.8em !important;
 }
+.quantity > label {
+  display: block;
+}
+
 
 .blogs-box {
   background-color: #fff;
