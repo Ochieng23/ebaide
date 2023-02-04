@@ -1399,11 +1399,11 @@ header .search-bar-container label:hover{
   background-color: transparent;
 }
 .quantity {
-  background-color: rgb(34, 12, 231);
   margin-bottom: 2.8em !important;
 }
 .quantity > label {
   display: block;
+  font-size: 1.2em;
 }
 .quantity > input {
   display: block;
@@ -1412,6 +1412,7 @@ header .search-bar-container label:hover{
   border: .1em solid #000;
   border-radius: .4em;
   background-color: transparent;
+  padding-left:.4em ;
 }
 
 
