@@ -292,6 +292,7 @@ const PullProductsFromBackendAPI = () => {
             }
 
             const quantityDiv = CreateNewElement("div");
+            AddClassToNewElement (quantityDiv, "quantity");
             const quantityLabel = CreateNewElement("label");
             quantityLabel.textContent = "Quantity";
             const quantityToBuy = CreateNewElement("input");
