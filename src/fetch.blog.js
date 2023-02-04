@@ -225,10 +225,9 @@ const PullBlogsFromBackendAPI = () => {
           //FETCH SINGLE BLOG:
           ClearElementContent(QuerySelectorForDocumentElement, "#main");
           setTimeout(() => {
-            const productContainer = CreateElement("div");
-
+            const blogContainer = CreateElement("div");
+            AddAttributeNamedElement(blogContainer, "id", SingleBlog[0].blogid);
             const productBox = CreateElement("div");
-            AddAttributeNamedElement(productBox, "id", SingleBlog[0].blogid);
 
             const productTitle = CreateElement("h1");
             AddAttributeNamedElement(
