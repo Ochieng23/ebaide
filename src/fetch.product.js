@@ -297,9 +297,11 @@ const PullProductsFromBackendAPI = () => {
             const quantityToBuy = CreateNewElement("input");
             AddAttributeToElement(quantityToBuy, "type", "number");
             AddAttributeToElement(quantityToBuy, "value", "1");
+            AppendChildToParentElementUsingElement(quantityDiv, quantityLabel);
+            AppendChildToParentElementUsingElement(quantityDiv, quantityToBuy);
             AppendChildToParentElementUsingElement(
               productDetailsColumn,
-              quantityToBuy
+              quantityDiv
             );
 
             const addToCartButton = CreateNewElement("button");
