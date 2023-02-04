@@ -293,7 +293,7 @@ const PullBlogsFromBackendAPI = () => {
                 "\n" + resultArray[resultArrayLength - 1]), 1000;
             });
             AppendChildToParentUsingElement(
-              productblogPostDateMetadata,
+              blogMetadata,
               blogPostDateMetadata
             );
             AppendChildToParentUsingElement(
