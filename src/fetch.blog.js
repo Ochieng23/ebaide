@@ -247,6 +247,7 @@ const PullBlogsFromBackendAPI = () => {
 
 
             const blogImageSection = CreateElement("div");
+            AddClassToElement(blogImageSection,"blog-image-section")
             const productFirstImage = CreateElement("img");
             AddAttributeNamedElement(
               productFirstImage,
