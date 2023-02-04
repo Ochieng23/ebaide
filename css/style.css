@@ -2020,5 +2020,5 @@ tfoot > tr > td{
   padding: .8%;
 }
 .blog-container > .blogMetadata  > span{
-  
+  text-align: end;
 }
