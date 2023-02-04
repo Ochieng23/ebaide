@@ -268,7 +268,7 @@ const PullBlogsFromBackendAPI = () => {
             AppendChildToParentUsingElement(
               blogContainer,
               blogImageSection
-            )
+            );
             
             // const fullDescriptionTextSpan = CreateElement("span");
             // AddClassToElement (fullDescriptionTextSpan, "blog-description");
