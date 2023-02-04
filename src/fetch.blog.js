@@ -230,6 +230,7 @@ const PullBlogsFromBackendAPI = () => {
             AddAttributeNamedElement(blogContainer, "id", SingleBlog[0].blogid);
 
             const blogHeadingSection = CreateElement("div");
+            AddClassToElement(blogHeadingSection, "blog-heading-section");
             const blogTitle = CreateElement("h1");
             AddAttributeNamedElement(
               blogTitle,
