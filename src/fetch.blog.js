@@ -270,13 +270,13 @@ const PullBlogsFromBackendAPI = () => {
               blogImageSection
             );
             
-            // const fullDescriptionTextSpan = CreateElement("span");
-            // AddClassToElement (fullDescriptionTextSpan, "blog-description");
-            // fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
-            // AppendChildToParentUsingElement(
-            //   productInformation,
-            //   fullDescriptionTextSpan
-            //   );
+            const fullDescriptionTextSpan = CreateElement("span");
+            AddClassToElement (fullDescriptionTextSpan, "blog-description");
+            fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
+            AppendChildToParentUsingElement(
+              productInformation,
+              fullDescriptionTextSpan
+              );
             // const productPriceSpanHolder = CreateElement("h2");
             // AddClassToElement(productPriceSpanHolder, "price");
 
