@@ -275,9 +275,10 @@ const PullBlogsFromBackendAPI = () => {
             AddClassToElement (fullDescriptionTextSpan, "blog-description");
             fullDescriptionTextSpan.innerHTML = SingleBlog[0].content;
             AppendChildToParentUsingElement(
-              productInformation,
+              blogContentSection,
               fullDescriptionTextSpan
               );
+
 
             const blogMetadata = CreateElement("div");
             setInterval(() => {
