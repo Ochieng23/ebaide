@@ -1372,10 +1372,11 @@ header .search-bar-container label:hover{
 .product-title{
   font-size: 1.6em !important;
   font-weight: 400;
-  margin-bottom: .8em !important;
+  margin-bottom: 2.4em !important;
 }
 .productPrice {
   background-color: blue;
+
 }
 .productPrice > span{
   font-weight: 800;
