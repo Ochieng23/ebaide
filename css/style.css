@@ -1625,8 +1625,8 @@ header .logo{
 .btn-cart-icon {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: justify;
   width: 30vw !important;
 }
 .btn-specific{
