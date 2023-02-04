@@ -1996,6 +1996,6 @@ tfoot > tr > td{
 .blog-container > .blog-heading-section > h1 {
   text-align: center;
 }
-.blog-image-section {
+.blog-container > .blog-image-section {
   background-color: yellow !important;
 }
