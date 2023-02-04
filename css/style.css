@@ -1384,11 +1384,12 @@ header .search-bar-container label:hover{
 }
 
 .sizes{
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   margin-bottom: 2.8em !important;
 }
 .sizes > label {
   display: block;
+  font-size: 1.2em;
 }
 
 .blogs-box {
