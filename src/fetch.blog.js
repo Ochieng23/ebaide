@@ -284,21 +284,22 @@ const PullBlogsFromBackendAPI = () => {
             )
 
 
-            // const blogMetadata = CreateElement("div");
-            // setInterval(() => {
-            //   let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
-            //   let resultArrayLength = resultArray.length;
-            //   (priceSpanHolder.innerHTML =
-            //     "\n" + resultArray[resultArrayLength - 1]), 1000;
-            // });
-            // AppendChildToParentUsingElement(
-            //   productPriceSpanHolder,
-            //   priceSpanHolder
-            // );
-            // AppendChildToParentUsingElement(
-            //   productInformation,
-            //   productPriceSpanHolder
-            // );
+            const blogMetadata = CreateElement("div");
+            const blogPostDateMetadata = CreateElement("span");
+            setInterval(() => {
+              let resultArray = PostedDateUpdater(PostDateCount, SingleBlog[0].date);
+              let resultArrayLength = resultArray.length;
+              (priceSpanHolder.innerHTML =
+                "\n" + resultArray[resultArrayLength - 1]), 1000;
+            });
+            AppendChildToParentUsingElement(
+              productPriceSpanHolder,
+              priceSpanHolder
+            );
+            AppendChildToParentUsingElement(
+              productInformation,
+              productPriceSpanHolder
+            );
 
             // const continueShoppingButton = CreateElement("button");
             // AddClassToElement(continueShoppingButton, "btn");
