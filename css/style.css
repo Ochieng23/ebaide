@@ -1419,8 +1419,12 @@ header .search-bar-container label:hover{
   width: 80% !important;
   margin-bottom: 2.8em !important;
 }
+.product-row-2 >div>h3{
+  font-size: 2em !important;
+}
 .product-row-2 >div>span{
-  
+  font-size: 1.6em !important;
+  text-align: justify !important;
 }
 
 .blogs-box {
