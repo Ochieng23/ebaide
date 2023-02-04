@@ -245,6 +245,7 @@ const PullBlogsFromBackendAPI = () => {
               blogTitle
             );
 
+
             const productFirstImage = CreateElement("img");
             AddAttributeNamedElement(
               productFirstImage,
@@ -335,9 +336,9 @@ const PullBlogsFromBackendAPI = () => {
                 productBox
               );
               AppendChildToParent(
-                "#body",
+                "#main",
                 GetElementWithClassName,
-                productContainer
+                blogContainer
               );
             }, 100);
         });
