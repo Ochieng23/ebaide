@@ -297,8 +297,8 @@ const PullBlogsFromBackendAPI = () => {
               blogPostDateMetadata
             );
             AppendChildToParentUsingElement(
-              productInformation,
-              productblogPostDateMetadata
+              blogContainer,
+              blogMetadata
             );
 
             // const continueShoppingButton = CreateElement("button");
