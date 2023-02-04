@@ -1407,6 +1407,11 @@ header .search-bar-container label:hover{
 }
 .quantity > input {
   display: block;
+  width: 30vw !important;
+  height: 4vh !important;
+  border: .1em solid #000;
+  border-radius: .4em;
+  background-color: transparent;
 }
 
 
