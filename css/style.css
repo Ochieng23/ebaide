@@ -1375,7 +1375,7 @@ header .search-bar-container label:hover{
   margin-bottom: 2.8em !important;
 }
 .productPrice {
-  background-color: blue;
+  margin-bottom: 2.8em !important;
 
 }
 .productPrice > span{
